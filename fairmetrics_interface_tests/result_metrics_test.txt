@@ -1,448 +1,0 @@
-Testing GUID: 10.1093/nar/gky376
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Metadata Knowledge Representation Language (weak)
-
-Principle: I1
-
-Description:
-Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation.  This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, anything that can be represented as structured data will be accepted
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[32mSUCCESS[0m: Found linked data (this may or may not have originated from the author).
-
-Score:
-1
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Metadata Knowledge Representation Language (strong)
-
-Principle: I1
-
-Description:
-Maturity Indicator to test if the metadata uses a formal language broadly applicable for knowledge representation.  This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies.  Any form of RDF will pass this test (including RDF that is automatically extracted by third-party parsers such as Apache Tika)
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[32mSUCCESS[0m: Linked data was found.
-
-Score:
-1
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Data Knowledge Representation Language (weak)
-
-Principle: I1
-
-Description:
-Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation.  This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies.  Any form of structured data will pass this test
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[36mINFO[0m: Searching metadata for likely identifiers to the data record
-
-[36mINFO[0m: Searching Linked Data metadata for predicates indicating a pointer to data.
-
-[36mINFO[0m: SPARQLing for http://www.w3.org/ns/ldp#contains.
-
-[36mINFO[0m: SPARQLing for http://xmlns.com/foaf/0.1/primaryTopic.
-
-[36mINFO[0m: SPARQLing for http://schema.org/about.
-
-[36mINFO[0m: SPARQLing for http://schema.org/mainEntity.
-
-[36mINFO[0m: SPARQLing for http://schema.org/codeRepository.
-
-[36mINFO[0m: SPARQLing for http://www.w3.org/ns/dcat#distribution.
-
-[36mINFO[0m: SPARQLing for http://schema.org/distribution.
-
-[36mINFO[0m: SPARQLing for http://semanticscience.org/resource/SIO_000332.
-
-[36mINFO[0m: SPARQLing for http://semanticscience.org/resource/is-about.
-
-[36mINFO[0m: SPARQLing for http://purl.obolibrary.org/obo/IAO_0000136.
-
-[36mINFO[0m: SPARQLing for http://purl.obolibrary.org/obo/IAO:0000136.
-
-[36mINFO[0m: SPARQLing for https://www.w3.org/ns/ldp#contains.
-
-[36mINFO[0m: SPARQLing for https://xmlns.com/foaf/0.1/primaryTopic.
-
-[36mINFO[0m: SPARQLing for https://schema.org/about.
-
-[36mINFO[0m: SPARQLing for https://schema.org/mainEntity.
-
-[36mINFO[0m: SPARQLing for https://schema.org/codeRepository.
-
-[36mINFO[0m: SPARQLing for https://www.w3.org/ns/dcat#distribution.
-
-[36mINFO[0m: SPARQLing for https://schema.org/distribution.
-
-[36mINFO[0m: SPARQLing for https://semanticscience.org/resource/SIO_000332.
-
-[36mINFO[0m: SPARQLing for https://semanticscience.org/resource/is-about.
-
-[36mINFO[0m: SPARQLing for https://purl.obolibrary.org/obo/IAO_0000136.
-
-[31mFAILURE[0m: Was unable to locate the data identifier in the metadata using any (common) property/predicate reserved for this purpose.  Tested the following ["http://www.w3.org/ns/ldp#contains", "http://xmlns.com/foaf/0.1/primaryTopic", "http://schema.org/about", "http://schema.org/mainEntity", "http://schema.org/codeRepository", "http://www.w3.org/ns/dcat#distribution", "http://schema.org/distribution", "http://semanticscience.org/resource/SIO_000332", "http://semanticscience.org/resource/is-about", "http://purl.obolibrary.org/obo/IAO_0000136", "http://purl.obolibrary.org/obo/IAO:0000136", "https://www.w3.org/ns/ldp#contains", "https://xmlns.com/foaf/0.1/primaryTopic", "https://schema.org/about", "https://schema.org/mainEntity", "https://schema.org/codeRepository", "https://www.w3.org/ns/dcat#distribution", "https://schema.org/distribution", "https://semanticscience.org/resource/SIO_000332", "https://semanticscience.org/resource/is-about", "https://purl.obolibrary.org/obo/IAO_0000136"]
-
-Score:
-0
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Data Knowledge Representation Language (strong)
-
-Principle: I1
-
-Description:
-Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation.  This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies.  Any form of ontologically-grounded linked data will pass this test. 
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[36mINFO[0m: Searching metadata for likely identifiers to the data record
-
-[36mINFO[0m: Searching Linked Data metadata for predicates indicating a pointer to data.
-
-[36mINFO[0m: SPARQLing for http://www.w3.org/ns/ldp#contains.
-
-[36mINFO[0m: SPARQLing for http://xmlns.com/foaf/0.1/primaryTopic.
-
-[36mINFO[0m: SPARQLing for http://schema.org/about.
-
-[36mINFO[0m: SPARQLing for http://schema.org/mainEntity.
-
-[36mINFO[0m: SPARQLing for http://schema.org/codeRepository.
-
-[36mINFO[0m: SPARQLing for http://www.w3.org/ns/dcat#distribution.
-
-[36mINFO[0m: SPARQLing for http://schema.org/distribution.
-
-[36mINFO[0m: SPARQLing for http://semanticscience.org/resource/SIO_000332.
-
-[36mINFO[0m: SPARQLing for http://semanticscience.org/resource/is-about.
-
-[36mINFO[0m: SPARQLing for http://purl.obolibrary.org/obo/IAO_0000136.
-
-[36mINFO[0m: SPARQLing for http://purl.obolibrary.org/obo/IAO:0000136.
-
-[36mINFO[0m: SPARQLing for https://www.w3.org/ns/ldp#contains.
-
-[36mINFO[0m: SPARQLing for https://xmlns.com/foaf/0.1/primaryTopic.
-
-[36mINFO[0m: SPARQLing for https://schema.org/about.
-
-[36mINFO[0m: SPARQLing for https://schema.org/mainEntity.
-
-[36mINFO[0m: SPARQLing for https://schema.org/codeRepository.
-
-[36mINFO[0m: SPARQLing for https://www.w3.org/ns/dcat#distribution.
-
-[36mINFO[0m: SPARQLing for https://schema.org/distribution.
-
-[36mINFO[0m: SPARQLing for https://semanticscience.org/resource/SIO_000332.
-
-[36mINFO[0m: SPARQLing for https://semanticscience.org/resource/is-about.
-
-[36mINFO[0m: SPARQLing for https://purl.obolibrary.org/obo/IAO_0000136.
-
-[31mFAILURE[0m: Was unable to locate the data identifier in the metadata using any (common) property/predicate reserved for this purpose.  Tested the following ["http://www.w3.org/ns/ldp#contains", "http://xmlns.com/foaf/0.1/primaryTopic", "http://schema.org/about", "http://schema.org/mainEntity", "http://schema.org/codeRepository", "http://www.w3.org/ns/dcat#distribution", "http://schema.org/distribution", "http://semanticscience.org/resource/SIO_000332", "http://semanticscience.org/resource/is-about", "http://purl.obolibrary.org/obo/IAO_0000136", "http://purl.obolibrary.org/obo/IAO:0000136", "https://www.w3.org/ns/ldp#contains", "https://xmlns.com/foaf/0.1/primaryTopic", "https://schema.org/about", "https://schema.org/mainEntity", "https://schema.org/codeRepository", "https://www.w3.org/ns/dcat#distribution", "https://schema.org/distribution", "https://semanticscience.org/resource/SIO_000332", "https://semanticscience.org/resource/is-about", "https://purl.obolibrary.org/obo/IAO_0000136"]
-
-Score:
-0
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Metadata uses FAIR vocabularies (weak)
-
-Principle: I2
-
-Description:
-Maturity Indicator to test if the linked data metadata uses terms that resolve.  This tests only if they resolve, not if they resolve to FAIR data, therefore is a somewhat weak test. 
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[36mINFO[0m:  Linked data was found.
-
-[32mSUCCESS[0m: 6 of the first 6 predicates discovered in the linked data could be resolved.  This is sufficient to pass this test.
-
-Score:
-1
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Metadata uses FAIR vocabularies (strong)
-
-Principle: I2
-
-Description:
-Maturity Indicator to test if the linked data metadata uses terms that resolve to linked (FAIR) data.  
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[36mINFO[0m: Linked data was found.  Test proceeding
-
-[36mINFO[0m:  testing resolution of predicate http://purl.org/dc/terms/isPartOf
-
-[36mINFO[0m: Resolving http://purl.org/dc/terms/isPartOfreturned linked data, including that URI as a triple Subject.
-
-[36mINFO[0m:  testing resolution of predicate http://prismstandard.org/namespaces/basic/2.1/endingPage
-
-[36mINFO[0m:  testing resolution of predicate http://purl.org/dc/terms/identifier
-
-[36mINFO[0m: Resolving http://purl.org/dc/terms/identifierreturned linked data, including that URI as a triple Subject.
-
-[36mINFO[0m:  testing resolution of predicate http://purl.org/dc/terms/title
-
-[36mINFO[0m: Resolving http://purl.org/dc/terms/titlereturned linked data, including that URI as a triple Subject.
-
-[36mINFO[0m:  testing resolution of predicate http://purl.org/dc/terms/creator
-
-[36mINFO[0m: Resolving http://purl.org/dc/terms/creatorreturned linked data, including that URI as a triple Subject.
-
-[36mINFO[0m:  testing resolution of predicate http://purl.org/ontology/bibo/pageEnd
-
-[32mSUCCESS[0m: 4 of the first 6 predicates discovered in the metadata resolved to Linked Data data.  This is sufficient to pass the test.
-
-Score:
-1
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K####################################################################
-
-FAIR Metrics Gen2 - Metadata contains qualified outward references)
-
-Principle: I3
-
-Description:
-Maturity Indicator to test if the metadata links outward to third-party resources.  It only tests metadata that can be represented as Linked Data.  
-
-Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |Evaluating metric... /Evaluating metric... —Evaluating metric... \Evaluating metric... |[KComment:
-[36mINFO[0m:  Found a DOI.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: Found turtle text/turtle type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
-
-[36mINFO[0m: parsing as linked data. 
-
-[36mINFO[0m: The response message body component appears to contain RDF::Turtle::Format.
-
-[36mINFO[0m:  Attempting to resolve https://doi.org/10.1093/nar/gky376 using HTTP Headers {"Accept"=>"*/*"}.
-
-[36mINFO[0m: Found html text/html type of content when resolving https://doi.org/10.1093/nar/gky376 using HTTP Accept header {"Accept"=>"*/*"}.
-
-[36mINFO[0m: parsing as HTML. 
-
-[36mINFO[0m:  Using 'extruct' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: the extruct tool failed to find parseable data at https://doi.org/10.1093/nar/gky376
-
-[36mINFO[0m: Using 'Kellog's Distiller' to try to extract metadata from return value (message body) of https://doi.org/10.1093/nar/gky376.
-
-[33mWARN[0m: The Distiller tool failed to find parseable data at https://doi.org/10.1093/nar/gky376.
-
-[36mINFO[0m: Linked data was found.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://purl.org/ontology/bibo/Journal.
-
-[36mINFO[0m: Testing http://orcid.org/0000-0002-6075-8003.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://xmlns.com/foaf/0.1/Person.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/aurelien-alexandre-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/thomas-vannier-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/miguelangel-cuenca-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/eric-pelletier-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/shinichi-sunagawa-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/thomas-rosnet-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/emilie-villar-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/pascal-hingamp-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/paul-bachelerie-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/caroline-vernette-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/contributor/magali-lescot-z37iykzwmpqb.
-
-[36mINFO[0m: Testing http://id.crossref.org/issn/0305-1048.
-
-[36mINFO[0m: Testing doi:10.1093/nar/gky376.
-
-[36mINFO[0m: Testing info:doi/10.1093/nar/gky376.
-
-[32mSUCCESS[0m: 27 of the 27 triples discovered in the linked metadata pointed to resources hosted elsewhere.
-
-Score:
-1
-
-Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[KRetrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |Retrieving metric informations... /Retrieving metric informations... —Retrieving metric informations... \Retrieving metric informations... |[K

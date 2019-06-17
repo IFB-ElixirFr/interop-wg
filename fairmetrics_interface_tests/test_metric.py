@@ -71,9 +71,17 @@ def testMetric(metric_api_url, data):
     """
 
     """
-    response = requests.request(method='POST', url=metric_api_url, data=data, timeout=TIMEOUT)
-
-    result = response.json()
+    while True:
+        try:
+            response = requests.request(method='POST', url=metric_api_url, data=data, timeout=TIMEOUT)
+            result = response.json()
+            break
+        except requests.exceptions.Timeout:
+            time.sleep(5)
+        except requests.exceptions.ReadTimeout:
+            time.sleep(20)
+        except SSLError:
+            time.sleep(10)
 
     return result
 
@@ -132,12 +140,20 @@ def testMetrics(GUID):
             test_line_list.append(score)
             headers_list.append(principle)
 
-    writeLineToFile("\t".join(test_line_list), "\t".join(headers_list))
+    writeLineToFile("\t".join(test_line_list), "\t".join(headers_list), "result_metrics_test.tsv")
 
 def getMetricInfo(metric_url):
-    response = requests.request(method='GET', url=metric_url + '.json', allow_redirects=True, timeout=TIMEOUT)
-    result = response.json()
-
+    while True:
+        try:
+            response = requests.request(method='GET', url=metric_url + '.json', allow_redirects=True, timeout=TIMEOUT)
+            result = response.json()
+            break
+        except requests.exceptions.Timeout:
+            time.sleep(5)
+        except requests.exceptions.ReadTimeout:
+            time.sleep(20)
+        except SSLError:
+            time.sleep(10)
     return result
 
 def printTestMetricComment(key, result):
@@ -192,11 +208,11 @@ def getMetrics():
 
     return json_res
 
-def writeLineToFile(test_line, headers_list):
-    filename = "result_metrics_test.tsv"
+def writeLineToFile(test_line, headers_list, filename):
+
     logname = "result_metrics_test.log"
 
-    exists = os.path.isfile('result_metrics_test.tsv')
+    exists = os.path.isfile(filename)
     if exists:
         file = open(filename, "a")
         file.write("\n" + test_line )
