@@ -21,6 +21,8 @@ import multi_progress
 
 PRINT_DETAILS = False
 FILENAME = ""
+OUTPUT_DIR = "output"
+
 # GLOBAL_PBAR = tqdm()
 
 # class Pbar:
@@ -100,7 +102,9 @@ def multiTestMetrics(tuple_GUID):
 
 
     dirpath = os.path.dirname(os.getcwd() + "/" + os.path.basename(FILENAME.split("-")[0]))
-    output = FILENAME.replace(".txt", ".tsv")
+    if not os.path.isdir(OUTPUT_DIR):
+        os.mkdir(OUTPUT_DIR)
+    output = OUTPUT_DIR + "/" + os.path.basename(FILENAME).replace(".txt", ".tsv")
     test_metric.writeLineToFile("\t".join(test_line_list), "\t".join(headers_list), dirpath + "/" + output)
 
 if __name__ == "__main__":
@@ -119,7 +123,7 @@ if __name__ == "__main__":
     dois_list = data.split("\n")
 
     num_cores = multiprocessing.cpu_count()
-    # num_cores = 16
+    # num_cores = 12
     # executing metrics evaluations
     # setting up multi process/progressbars
     maxrows = num_cores + 1

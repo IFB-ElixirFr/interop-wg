@@ -127,6 +127,7 @@ def requestOnRDF(rdf_object, term, prefix):
         # print("%s publisher %s" % row)
         print(o)
 
+    return query_res
 
 
 def listDirFiles(dir):
@@ -170,7 +171,7 @@ if __name__ == "__main__":
             print("\n###########################", end="\n\n")
             print(filename.replace(filename, termcolor.colored(filename, "yellow")))
             for term in terms_list:
-                requestOnRDF(graph, term, prefix)
-            # makeGraph(graph)
+                query_res = requestOnRDF(graph, term, prefix)
+                # makeGraph(query_res)
         except rdflib.plugins.parsers.notation3.BadSyntax:
             pass

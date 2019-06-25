@@ -234,8 +234,16 @@ def readDOIsFile(filename):
 
 if __name__ == "__main__":
 
+    PRINT_DETAILS = True
 
-    GUID_test = "10.1093/nar/gky317"
+    # RSAT paper
+    # GUID_test = "10.1093/nar/gky317"
+
+    # Dataset +++
+    # GUID_test = "https://doi.pangaea.de/10.1594/PANGAEA.902591"
+
+    # Dataset
+    GUID_test = "https://doi.org/10.5061/dryad.615"
 
     # GUID_test = "10.1002/cpbi.72"
     # GUID_test = "10.1093/neuros/nyw135"

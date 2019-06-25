@@ -101,7 +101,7 @@ def xmlMultiRootCleaner(result):
 
 
 def getDOISFromXML(xml_root):
-    # count nb of GSE
+
     dois_list = []
     # print(xml_root)
     for docsums in xml_root.iter('DocumentSummary'):
