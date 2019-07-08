@@ -57,7 +57,7 @@ def readRDF(filename):
 
     # print(len(result))
     rdf_string = g.serialize(format="trig").decode("utf-8")
-    # print(rdf_string)
+    # print(g.serialize(format="json-ld").decode("utf-8"))
 
     # print(s)
     # for s, p, o in g.triples( (None, RDF.type, None) ):
