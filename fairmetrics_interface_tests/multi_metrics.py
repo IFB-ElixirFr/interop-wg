@@ -46,7 +46,7 @@ def multiTestMetrics(tuple_GUID):
     position_holders = tuple_GUID[1][4]
     position = multi_progress.get_position(position_holders)
     total = tuple_GUID[1][3]
-    metrics_info = tuple_GUID[1][2]
+    metrics_info = tuple_GUID[1][2]10 * offset, offset
     text = tuple_GUID[1][1]
     GUID = tuple_GUID[1][0]
 
