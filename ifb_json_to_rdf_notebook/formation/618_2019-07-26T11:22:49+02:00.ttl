@@ -1,0 +1,29 @@
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/formations/rnaseq-novo-assembly> a edam:data_3669 ;
+    dbpedia-owl:location "Auzeville-Tolosane" ;
+    dc:created "2015-09-15T11:04:20+02:00" ;
+    dc:description """<p>This training session has been designed to give you an overview of the methods and tools used to de novo assemble transcriptomic short reads. You will learn how to pre-process your raw data (fastq files), how an assembler works and how to use it. Finally you will learn how to assess the quality of your assemblies in order to choose the best one. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r
+""" ;
+    dc:educationLevel "Formation professionnelle " ;
+    dc:modified "2019-07-10T12:04:36+02:00" ;
+    schema:name "RNAseq de novo assembly" ;
+    schema:url "http://bioinfo.genotoul.fr/index.php/events/rnaseq-de-novo-assembly-2/" .
+

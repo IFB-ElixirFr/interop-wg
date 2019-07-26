@@ -1,0 +1,29 @@
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/vidjil> a schema:SoftwareApplication ;
+    edam:data_1190 "Vidjil" ;
+    dc:created "2016-01-22T11:37:49+01:00" ;
+    dc:description """<p>Vidjil is an open-source platform for the analysis of high-throughput sequencing data from lymphocytes. V(D)J recombinations in lymphocytes are essential for immunological diversity. They are also useful markers of pathologies, and in leukemia, are used to quantify the minimal residual disease during patient follow-up. High-throughput sequencing (NGS/HTS) now enables the deep sequencing of a lymphoid population with dedicated Rep-Seq methods and software.</p>\r
+\r
+<p>Vidjil contains a high-throughput algorithm extracting V(D)J junctions and gather them into clones. This analysis is based on a seed heuristics and is fast and scalable, as, in the first phase, no alignment is performed with database germline sequences. Vidjil also contains a dynamic browser and a patient database for visualization and analysis of clones and their tracking along the time in a MRD setup or in a immunological study.</p>\r
+""" ;
+    dc:modified "2018-12-14T11:27:45+01:00" ;
+    schema:url "http://www.vidjil.org/" .
+

@@ -435,30 +435,30 @@ if __name__ == "__main__":
                 print("Requesting node " + str(node_id) + " ...")
                 json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + str(node_id) + '/node_export/json', s)
 
-                # # if their is a json, rdfize it
-                # if not json_result:
-                #     continue
-                # print("################## " + json_result['type'])
-                # type_to_rdfize = ['outil', 'plateforme', 'formation']
-                # # type_to_rdfize = ['plateforme']
-                # if json_result['type'] in type_to_rdfize:
-                #     raw_jld = rdfize(json_result)
-                #     readRDF(raw_jld)
-                #     writeRDF(raw_jld, json_result['type'], node_id)
+                # if their is a json, rdfize it
+                if not json_result:
+                    continue
+                print("################## " + json_result['type'])
+                type_to_rdfize = ['outil', 'plateforme', 'formation']
+                # type_to_rdfize = ['plateforme']
+                if json_result['type'] in type_to_rdfize:
+                    raw_jld = rdfize(json_result)
+                    readRDF(raw_jld)
+                    writeRDF(raw_jld, json_result['type'], node_id)
 
 
                 # check node if they have json and their title
 
-                title = getPageTitle("https://www.france-bioinformatique.fr/fr/node/" + str(node_id), s)
-                if not json_result:
-                    json_type = "no_json_export"
-                else:
-                    json_type = json_result['type']
-                info_node_list.append((str(node_id), json_type, title))
-                print((node_id, json_type, title))
-
-    with open("pages_info_ifb_5000", "w") as f:
-        string = ""
-        for (node, type, page_title) in info_node_list:
-            string += node + "\t" + type + "\t" + page_title + "\n"
-        f.write(string)
+    #             title = getPageTitle("https://www.france-bioinformatique.fr/fr/node/" + str(node_id), s)
+    #             if not json_result:
+    #                 json_type = "no_json_export"
+    #             else:
+    #                 json_type = json_result['type']
+    #             info_node_list.append((str(node_id), json_type, title))
+    #             print((node_id, json_type, title))
+    #
+    # with open("pages_info_ifb_5000", "w") as f:
+    #     string = ""
+    #     for (node, type, page_title) in info_node_list:
+    #         string += node + "\t" + type + "\t" + page_title + "\n"
+    #     f.write(string)

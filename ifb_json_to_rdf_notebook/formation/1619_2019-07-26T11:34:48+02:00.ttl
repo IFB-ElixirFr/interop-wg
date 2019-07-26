@@ -1,0 +1,24 @@
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/formations/linux-avancé> a edam:data_3669 ;
+    dc:created "2016-03-03T08:50:26+01:00" ;
+    dc:modified "2017-01-10T15:54:36+01:00" ;
+    schema:name "Linux avancé" .
+

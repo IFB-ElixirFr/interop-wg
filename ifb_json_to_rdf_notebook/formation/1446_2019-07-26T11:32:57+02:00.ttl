@@ -1,0 +1,29 @@
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/formations/analyse-gènes-différentiellement-à-partir-données-rnaseq-et-sous-lenvironnement-galaxy> a edam:data_3669 ;
+    dc:created "2016-01-22T11:38:47+01:00" ;
+    dc:description """<p>La formation s’adresse à un public de biologistes et de bio-informaticiens désireux de faire leur premiers pas sous Galaxy et de maîtriser l’analyse d’expression différentielle de gènes à partir de données RNAseq.</p>\r
+\r
+<p>L'analyse d’expression différentielle des gènes entre deux conditions expérimentales est réalisée avec la suite d’outils DESeq que nous avons interfacé pour l’environnement Galaxy. &nbsp;Cette formation alterne des présentations des méthodes, concepts et outils du RNAseq avec des tutoriels pratiques durant lesquels vous utiliserez les outils bio-informatiques du serveur Galaxy de la plate-forme eBio.</p>\r
+""" ;
+    dc:educationLevel "Formation professionnelle " ;
+    dc:modified "2017-01-10T15:54:24+01:00" ;
+    schema:name "Analyse de gènes différentiellement à partir de données RNAseq et sous l'environnement Galaxy" .
+
