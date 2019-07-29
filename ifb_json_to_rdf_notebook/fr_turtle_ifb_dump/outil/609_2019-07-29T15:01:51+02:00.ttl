@@ -1,0 +1,34 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/ng6> a schema:SoftwareApplication ;
+    edam:data_1190 "NG6" ;
+    dc:created "2015-09-15T10:55:27+02:00" ;
+    dc:description """<p>The platform works in tight collaboration with the GeT sequencing platform for the management and the analysis of data produced by their Roche 454 and Illumina HiSeq sequencers.<br />\r
+NG6 is an extensible sequencing provider oriented LIMS. It includes read quality control and first level analysis processes which ease the data validation made jointly by the sequencing facility staff ant the end-users. It provides a secured user-friendly interface to visualize and download the raw sequences files and the analysis results.</p>\r
+""" ;
+    dc:modified "2019-07-09T16:35:52+02:00" ;
+    schema:url "http://ng6.toulouse.inra.fr/index.php?id=3" .
+

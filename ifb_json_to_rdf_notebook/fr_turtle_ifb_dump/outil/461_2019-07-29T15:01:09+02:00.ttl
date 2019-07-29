@@ -1,0 +1,41 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/microscope> a schema:SoftwareApplication ;
+    edam:data_1190 "MicroScope" ;
+    dc:created "2015-08-20T14:41:59+02:00" ;
+    dc:description """<p class="rtejustify">Located at Genoscope (CEA sequencing center for environmental genomics), the LABGeM bioinformatics team has developed MicroScope, a web-based platform for prokaryotic genome analysis and expert functional annotation.</p>\r
+\r
+<p class="rtejustify">MicroScope combines tools and graphical interfaces to analyze genomes and to perform manual curation of gene function in a comparative and metabolic context.</p>\r
+\r
+<p class="rtejustify">This platform provides data from completed and ongoing genome projects together with post-genomic experiments (i.e. transcriptomics, re-sequencing of evolved strains) allowing users to improve the understanding of gene functions. Expert annotations are continuously gathered in the MicroScope database contributing to the improvement of the quality of microbial genome annotations, and thus to the predicted metabolic networks.</p>\r
+\r
+<p class="rtejustify">MicroScope can be used as a community resource for comparative analysis and annotation of publicly available genomes but also as a private resource with restricted access rights on genomic data. In addition, we regularly hold professional trainings sessions on the use of MicroScope platform.</p>\r
+\r
+<p>&nbsp;</p>\r
+""" ;
+    dc:modified "2019-02-19T11:21:15+01:00" ;
+    schema:url "https://www.genoscope.cns.fr/agc/microscope" .
+

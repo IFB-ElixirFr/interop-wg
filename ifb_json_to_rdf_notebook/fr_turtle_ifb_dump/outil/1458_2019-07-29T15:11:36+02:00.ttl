@@ -1,0 +1,34 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/syntview> a schema:SoftwareApplication ;
+    edam:data_1190 "SynTView" ;
+    dc:created "2016-01-22T18:33:01+01:00" ;
+    dc:description """<p>SynTView is a comparative and interactive viewer for microbial genomes, designed to run as either a web-based tool (Flash technology) or a desktop application (AIR environment). The basis of the program is a generic genome browser with sub-maps holding information about genomic objects (annotations). The software is characterised by the presentation of syntenic organisations of microbial genomes and the visualisation of polymorphism data (typically Single Nucleotide Polymorphisms — SNPs) along these genomes; these features are accessible to the user in an integrated way. A variety of specialised views are available and are all dynamically inter-connected (including linear and circular multi-genome representations, dot plots, phylogenetic profiles, SNP density maps, and more).</p>\r
+\r
+<p>Documentation, tutorials and demonstration sites are available at the URL:&nbsp;<a href="http://genopole.pasteur.fr/SynTView">http://genopole.pasteur.fr/SynTView</a></p>\r
+""" ;
+    dc:modified "2017-01-10T15:52:48+01:00" .
+

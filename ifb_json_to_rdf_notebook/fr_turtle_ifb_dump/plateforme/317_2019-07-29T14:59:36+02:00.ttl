@@ -1,0 +1,102 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/genotoul> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<p>La plate-­forme dispose d'une vingtaine de serveurs physiques complétés par soixante-quinze serveurs virtuels qui assurent les services de login, développement, entrées/sorties, bases de données relationnelles, banques de données génomiques, administration, supervision, web, virtualisation, sauvegarde, hébergement de projets, logiciels en bioinformatique. Le serveur principal, servant d'accès aux utilisateurs s'appelle "genologin".<br />\r
+Quelques exemples (liste non exhaustive) de services web hébergés par la plateforme : ng6, galaxy, rnaspace, peroxibase, phyleasprog, multalin, FrameD, MetExplore, Iccare, blast, emboss, biomaj...<br />\r
+Par ailleurs nous hébergeons (formalisation par convention) les données, sites web ou systèmes d'information d'autres plateformes ou d'autres équipes de recherche de la région : get-­‐plage, biopuce, anexplo, toxalim, hsern, sigenae : gbf, lrsv, genphyse</p>\r
+\r
+<p>● Cluster SLURM</p>\r
+\r
+<ul>\r
+	<li>64 noeuds IVYBRIDGE (20c) = 1280 coeurs (2560 threads), 16 Tera Octets RAM</li>\r
+	<li>48 noeuds BROADWELL (32c) = 1536 coeurs (3072 threads), 12 Tera Octets RAM</li>\r
+	<li>1 noeud SMP1 = 120 coeurs, 3 Tera Octets RAM</li>\r
+	<li>1 noeud SMP2 = 48 coeurs, 1.5 Tera Octets RAM</li>\r
+	<li>Interconnexion Infiniband QDR (40Gbs) / FDR (56 Gbs)</li>\r
+</ul>\r
+\r
+<p>● Stockage scratch HPC<br />\r
+→ 900 Tera Octets utiles<br />\r
+→ 25 Giga bits / seconde</p>\r
+\r
+<p>● Stockage NAS</p>\r
+\r
+<p>→ 3 baies ISILON (au total 1.8 Peta Octets utiles)<br />\r
+→ 2 baies COMPELLENT/FLUIDFS (au total 450 Tera Octets utiles)<br />\r
+→ Au total 3.2 Peta Octets utiles</p>\r
+\r
+<p>● Virtualisation de serveurs<br />\r
+→ ferme Vmware de 3 serveurs<br />\r
+→ baie disques DELL-MD (mode SAN) 40To<br />\r
+→ 75 machines virtuelles hébergées (fin 2016)</p>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "2984" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "3200.00" ] ;
+    dbpedia-owl:Infrastructure "Hébergée " ;
+    frapo:hasExpertise [ dc:description """<p>Les domaines d’expertise de la plateforme GenoToul bioinfo sont :</p>\r
+\r
+<ul>\r
+	<li>le traitement des données issues du séquençage haut débit : assemblage,&nbsp;annotation, analyse d’expression (RNAseq, RNAseq de novo, sRNAseq),&nbsp;métagénomique, analyse de variants, méthylSeq.</li>\r
+	<li>l’analyse bioinformatique des ARNnc : annotation, prédiction, recherche de&nbsp;cibles, chez les archae, les bactéries, les plantes et les animaux.</li>\r
+</ul>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>Support for scientific projects is made in two forms:<br />\r
+1) project hosting: this form of accompaniment is to make available a project a virtual machine that will be administered by the members.<br />\r
+2) the accompaniment: the project support is performed preferentially in the form of collaboration. The service is also practiced. In the first case, you are asked to partners a contribution to the functioning of the platform. He also asked them to commit to join the staff of the platform that accompanied the project to various valuation results. In the case of a service, the full cost of the service (storage, computing, human ressources are assessed and charged.</p>\r
+\r
+<p>3) data storage</p>\r
+""" ;
+            wl:Condition """<p>Si vous souhaitez que nous vous accompagnions, contactez nous : <a href="http://bioinfo.genotoul.fr/index.php/ask-for/project/">http://bioinfo.genotoul.fr/index.php/ask-for/project/</a></p>\r
+""" ] ;
+    dc:created "2015-07-24T12:19:41+02:00" ;
+    dc:modified "2019-07-23T16:42:25+02:00" ;
+    geosp:hasProject [ ocds:valueAmount "41" ] ;
+    meb:User [ ocds:valueAmount "850" ] ;
+    schema:name "Genotoul-bioinfo" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "2179",
+                "2198",
+                "4262",
+                "4263",
+                "607",
+                "608",
+                "609",
+                "610",
+                "611",
+                "612" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Castanet Tolosan" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "31326" ;
+            schema:streetAddress "24 Chemin de Borde Rouge" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "" ;
+            schema:url "http://bioinfo.genotoul.fr/" ] .
+

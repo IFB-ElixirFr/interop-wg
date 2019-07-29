@@ -1,0 +1,58 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/prabi-hcl> a schema:LaboratoryScience ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>Le Service de Biostatistique des Hospices Civils de Lyon / Equipe Biostatistique Santé (ESB/SB-­HCL) fournit un appui à la recherche<br />\r
+-­ Lors&nbsp; de&nbsp; la&nbsp; conception&nbsp; de&nbsp; l'étude : en&nbsp; participant&nbsp; à&nbsp; l'élaboration&nbsp; du&nbsp; protocole (discussion du critère principal, étude de faisabilité, choix du schéma d’étude, taille d'échantillons, validation des aspects statistiques du protocole, randomisation),<br />\r
+-­ Pendant la réalisation de l'étude : en réalisant des analyses intermédiaires,<br />\r
+-­ Après&nbsp; le&nbsp; recueil&nbsp; des&nbsp; données : en&nbsp; effectuant&nbsp; des&nbsp; analyses&nbsp; statistiques&nbsp; (statistique<br />\r
+inférentielle, modélisations et simulations),<br />\r
+-­ Lors de la valorisation du projet : en aidant à la rédaction d'articles, la création&nbsp; de<br />\r
+tableaux et de graphiques, la réalisation de présentations scientifiques.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Deux des axes de recherche de l’équipe sont associés à l’utilisation de données de grande dimension. L’axe «Identification de biomarqueurs /Omique /Génétique » animé par le Pr Pascal Roy, et l’axe « Modèles prédictifs / Médecine personnalisée » animé par le Dr Delphine Maucort-­Boulch.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-24T11:45:31+02:00" ;
+    dc:modified "2019-02-11T16:40:17+01:00" ;
+    schema:name "PRABI-HCL" ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Pierre Bénite" ;
+            schema:postOfficeBoxNumber "Faculté de Médecine Lyon Sud" ;
+            schema:postalCode "69310" ;
+            schema:streetAddress "165 chemin du Grand Revoyet" ] .
+

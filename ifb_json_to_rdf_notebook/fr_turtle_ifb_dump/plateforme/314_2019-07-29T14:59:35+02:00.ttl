@@ -1,0 +1,90 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/PRABI-Doua> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<p class="rtejustify">L’infrastructure informatique de la composante PRABI-Doua est commune avec celle de la composante PRABI-AMSB et elle comprend:</p>\r
+\r
+<ul>\r
+	<li>Un serveur NFS.</li>\r
+	<li>Un serveur postgreSQL,</li>\r
+	<li>Trois serveurs Web (service général, ProDom et BiBI).</li>\r
+	<li>Un serveur de soumission de tâches sur le cluster.</li>\r
+</ul>\r
+\r
+<p class="rtejustify">Cette i'infrastructure comprend également un cluster de calcul hébergé dans une salle machine séparée. Les caractéristiques de ce cluster sont les suivantes&nbsp;:</p>\r
+\r
+<ul>\r
+	<li>26 nœuds de calcul (dont deux avec 1 To de RAM).</li>\r
+	<li>96 processeurs</li>\r
+	<li>1032 cœurs/threads.</li>\r
+	<li>7 To RAM totale.</li>\r
+	<li>215 To utile de stockage haute performance (4 tiroirs Panasas PAS11).</li>\r
+	<li>300 To utiles de de stockage «froid» (baie Dell MD3060e + 1 PowerEdge R730.</li>\r
+</ul>\r
+\r
+<p class="rtejustify">Les services proposés comprennent l'accès aux banques de données de séquences «généralistes» (GenBank, EMBL, Ensembl, RefSeq, UniProt), à des banques de données spécialisées développées localement (ProDom, HOGENOM) ainsi qu'a un très large panel de programmes utilisés en bioinformatique.</p>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "1032" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "515.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "1461",
+                "1462",
+                "1504" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p class="rtejustify">Les thématiques de recherche du PRABI-Doua s’organisent autour d’un point de vue méthodologique, qui affirme l’importance de la modélisation tant mathématique qu’informatique et d’une perspective évolutive qui organise les recherches indépendamment du niveau d’organisation biologique. C’est dans la synergie entre des problématiques biologiques propres et des développements méthodologiques que naît la plus grande part des résultats scientifiques de cette composante. Parmi les thématiques abordées figurent en particulier:</p>\r
+\r
+<ul>\r
+	<li>Phylogénie et évolution moléculaire.</li>\r
+	<li>Génomique comparative (organismes eucaryotes et procaryotes).</li>\r
+	<li>Eléments transposables.</li>\r
+	<li>Intreractions hôtes-parasites.</li>\r
+	<li>Statistiques appliquées à l'écologie et l'évolution.</li>\r
+	<li>Analyse statistique de données en grandes dimensions pour la génomique.</li>\r
+</ul>\r
+""" ] ;
+    dc:created "2015-07-24T11:59:50+02:00" ;
+    dc:modified "2019-07-03T18:02:15+02:00" ;
+    meb:User [ ocds:valueAmount "150" ] ;
+    schema:name "PRABI-Lyon-Grenoble" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "1465",
+                "1466",
+                "1499",
+                "1500",
+                "1501" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Villeurbanne" ;
+            schema:postOfficeBoxNumber "43 boulevard du 11 Novembre 1918" ;
+            schema:postalCode "69622" ;
+            schema:streetAddress "Université Claude Bernard – Lyon 1" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "PRABI-Doua" ;
+            schema:url "http://doua.prabi.fr/main/index" ] .
+

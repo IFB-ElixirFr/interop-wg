@@ -1,0 +1,37 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/metavir> a schema:SoftwareApplication ;
+    edam:data_1190 "Metavir" ;
+    dc:created "2016-03-01T21:50:07+01:00" ;
+    dc:description """<p>Web server for the analysis of viral metagenomes. Results from a variety of analyses realized on public viromes can be visualised. Users can also upload their own data in a private mode to be analysed. Recently Metavir was updated to allow for the analysis of assembled viromes.</p>\r
+\r
+<p><br />\r
+&nbsp;&nbsp; &nbsp;Publications :<br />\r
+&nbsp;&nbsp; &nbsp;Roux, S., M. Faubladier, A. Mahul, N. Paulhe, A. Bernard, D. Debroas, and F. Enault (2011) Metavir: a web server dedicated to virome analysis. Bioinformatics (Oxford, England) 27:3074-3075.<br />\r
+&nbsp;&nbsp; &nbsp;Roux, S., J. Tournayre, A. Mahul, D. Debroas, and F. Enault (2014) Metavir 2: new tools for viral metagenome comparison and assembled virome analysis. BMC bioinformatics 15:76.</p>\r
+""" ;
+    dc:modified "2017-01-10T15:52:52+01:00" .
+

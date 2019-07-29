@@ -1,0 +1,38 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/triannot> a schema:SoftwareApplication ;
+    edam:data_1190 "TriAnnot" ;
+    dc:created "2016-03-01T22:28:29+01:00" ;
+    dc:description """<p>Web-oriented platform dedicated to the annotation of plant genome, mainly for wheat but also for maize, rice, barley and oak. The pipeline can be used to annotate full genomes through collaboration. However, on the web site, for technical reasons and parallelization purposes, 10 sequences up to 3 Mb can be submitted online at once. As it would be cumbersome to annotate several Mb or Gb of sequence this way, the online access is more adapted to small scale analyses (i.e. BAC or small BAC contigs) in which the user can submit its sequence directly on the webpage (copy/paste or download) and start the analysis with a single click. However the TriAnnot pipeline can be also used directly on command line for very large projects. The pipeline uses a queuing list for sequence submission. Therefore, the automatic structural and functional annotation process will depend of the queue length. In general, in this configuration, TriAnnot can deliver a BAC annotation in less than one hour depending of the cluster charge. For example: a default analysis of a 117 kb sequence containing 6 genes takes about 30 minutes. TriAnnot is used within the framework of an international effort (International Wheat Genome Sequencing Consortium - <a href="http://www.wheatgenome.org">IWGSC</a>) for obtaining a reference sequence of the bread wheat genome. TriAnnot has already been used to annotate the wheat chromosome 3B (<strong>Choulet <em>et al. </em>2014 Science</strong>) and 4D (<strong>Helguera <em>et al. </em>2015 Plant Science</strong>). Annotation of chromosome 1B is currently underway (INRA - GDEC), as well as the annotation of chromosome 7A in collaboration with the University of Murdoch (Australia). TriAnnot has been used for the annotation of the 21 wheat chromosomes in parallel with MIPS in Germany. The TriAnnot source code has been strongly improved to facilitate its deployment on external computing resources such as: IEB, Olomouc (Czech Republic); CSIRO, Kensington (Australia); Mesocentre, Université Clermont Auvergne (UCA) and ABiMS CNRS bioinformatics platform, Roscoff (France). The development of a virtual machine is also underway in collaboration with ABiMS and the French Institute of bioinformatics (IFB).</p>\r
+\r
+<p>The triAnnot pipeline is referenced within the <a href="https://omictools.com/triannot-tool">omictools web site</a>.</p>\r
+\r
+<p><strong>Publication :</strong><br />\r
+Leroy P, Guilhot N, Sakai H, Bernard A, Choulet F, Theil S, Reboux S, Amano N, Flutre T, Pelegrin C, Ohyanagi H, Seidel M, Giacomoni F, Reichstadt M, Alaux M, Gicquello E, Legeai F, Cerutti L, Numa H, Tanaka T, Mayer K, Itoh T, Quesneville H, Feuillet C (2012) TriAnnot: a versatile and high performance pipeline for the automated annotation of plant genomes.<a href="http://journal.frontiersin.org/article/10.3389/fpls.2012.00005/full"> Frontiers in Plant Sciences 3:1-14</a>.</p>\r
+""" ;
+    dc:modified "2017-03-28T16:05:16+02:00" ;
+    schema:url "http://www.inra.fr/decodage/TriAnnot" .
+

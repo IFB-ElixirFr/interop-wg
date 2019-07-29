@@ -10,6 +10,7 @@ import ifb_logs
 import time
 from rdflib.namespace import RDF
 import rdflib
+import pyshacl
 
 import pytz
 from datetime import datetime
@@ -22,28 +23,36 @@ from multiprocessing import Pool, freeze_support, RLock, Lock, Array, Manager
 
 import sys
 import os
+import logging
+import logging.handlers
 
 TIMEOUT = (10, 300)
 LANGUAGE = "en"
 RDF_FORMAT = "turtle"
+OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump"
 
-def requestsIFB(url, s):
+def requestsIFB(url, s, node_id):
 
     while True:
         try:
+            logger.info('[' + node_id + ']' + " Requesting: [" + url + "]")
             # An authorised request.
             r = s.get(url, timeout=TIMEOUT).json()
             # print(s.get(url).status_code)
                 # etc...
             print("Done")
+            logger.info('[' + node_id + ']' + " JSON retrieved")
             break
         except simplejson.errors.JSONDecodeError:
+            logger.warning('[' + node_id + ']' + " No JSON found...")
             print("No JSON found...")
             return False
         except requests.exceptions.ConnectionError as e:
+            logger.error('[' + node_id + ']' + " ConnectionError, retrying: " + str(e))
             print(str(e) + "\nRetrying...")
             time.sleep(10)
         except requests.exceptions.ReadTimeout as e:
+            logger.error('[' + node_id + ']' + " ReadTimeout, retrying: " + str(e))
             print(str(e) + "\nRetrying...")
             time.sleep(10)
 
@@ -78,6 +87,12 @@ def createContext():
             "gleif-base": "https://www.gleif.org/ontology/Base/",
             "premis": "http://sw-portal.deri.org/ontologies/swportal#",
             "dbpedia-owl": "http://dbpedia.org/ontology/",
+            "cci": "http://cookingbigdata.com/linkeddata/ccinstances#",
+            "ocds": "http://purl.org/onto-ocds/ocds#",
+            "frapo": "http://purl.org/cerif/frapo/",
+            "geosp": "http://rdf.geospecies.org/ont/geospecies#",
+            "meb": "http://rdf.myexperiment.org/ontologies/base/",
+            "wl": "http://www.wsmo.org/ns/wsmo-lite#",
 
             "und": "http://adefinir/",
 
@@ -186,6 +201,8 @@ def formationRDF(key, json_result, jld):
 
 
 
+
+
 def platformRdf(key, json_result, jld):
 
 
@@ -265,6 +282,126 @@ def platformRdf(key, json_result, jld):
             else:
                 jld["dbpedia-owl:Database"]["schema:identifier"].append(elem['target_id'])
 
+    # cpu hour/year
+    # if key == "field_heure_de_cpu_an":
+    #     for i, elem in enumerate(json_result['field_heure_de_cpu_an']['und']):
+    #         if not "cci:hasCPU" in jld.keys():
+    #             jld["cci:hasCPU"] = {
+    #                 "schema:identifier": [elem['value']]
+    #             }
+    #         else:
+    #             jld["cci:hasCPU"]["schema:identifier"].append(elem['value'])
+
+    # cpu number
+    if key == "field_ferme_de_calcul":
+        for i, elem in enumerate(json_result['field_ferme_de_calcul']['und']):
+            if not "cci:hasCPU" in jld.keys():
+                jld["cci:hasCPU"] = {
+                    "@type": "cci:cpu",
+                    "ocds:valueAmount": [elem['value']]
+                }
+            else:
+                jld["cci:hasCPU"]["ocds:valueAmount"].append(elem['value'])
+
+    # expertise
+    if key == "field_description_des_expertises" and language in json_result['field_description_des_expertises'].keys():
+        for i, elem in enumerate(json_result['field_description_des_expertises'][language]):
+            if not "frapo:hasExpertise" in jld.keys():
+                jld["frapo:hasExpertise"] = {
+                    "dc:description": [elem['value']]
+                }
+            else:
+                jld["frapo:hasExpertise"]["dc:description"].append(elem['value'])
+
+
+
+    # projets hébergés
+    if key == "field_projets_h_berg_s" and language in json_result['field_projets_h_berg_s'].keys():
+        for i, elem in enumerate(json_result['field_projets_h_berg_s'][language]):
+            if not "geosp:hasProject" in jld.keys():
+                jld["geosp:hasProject"] = {
+                    "ocds:valueAmount": [elem['value']]
+                }
+            else:
+                jld["geosp:hasProject"]["ocds:valueAmount"].append(elem['value'])
+
+    # type d'infra
+    if key == 'field_type_d_infrastructure' and language in json_result['field_type_d_infrastructure'].keys():
+        for i, elem in enumerate(json_result['field_type_d_infrastructure'][language]):
+            if not 'dbpedia-owl:Infrastructure' in jld.keys():
+                jld['dbpedia-owl:Infrastructure'] = [elem['value']]
+            else :
+                jld['dbpedia-owl:Infrastructure'].append(elem['value'])
+
+    # serveur description
+    if key == 'field_descriptions_des_serveurs' and language in json_result['field_descriptions_des_serveurs'].keys():
+        for i, elem in enumerate(json_result['field_descriptions_des_serveurs'][language]):
+            if not 'cogs:Server' in jld.keys():
+                jld['cogs:Server'] =  {
+                    "dc:description": [elem['value']]
+                }
+            else :
+                jld['cogs:Server']["dc:description"].append(elem['value'])
+
+    # nombre utilisateurs (du serveur ?)
+    if key == "field_nombre_d_utilisateurs":
+        for i, elem in enumerate(json_result['field_nombre_d_utilisateurs']['und']):
+            if not "meb:User" in jld.keys():
+                jld["meb:User"] = {
+                    "ocds:valueAmount": [elem['value']]
+                }
+            else:
+                jld["meb:User"]["ocds:valueAmount"].append(elem['value'])
+
+    # capacité stockage
+    if key == "field_capacit_de_stockage_utile":
+        for i, elem in enumerate(json_result['field_capacit_de_stockage_utile']['und']):
+            if not "cci:hasStorage" in jld.keys():
+                jld["cci:hasStorage"] = {
+                    "@type": "cci:storage",
+                    "cci:storage_size": [elem['value']]
+                }
+            else:
+                jld["cci:hasStorage"]["cci:storage_size"].append(elem['value'])
+
+    # aide projet
+    if key == "field_description_aide_projets" and language in json_result['field_description_aide_projets'].keys():
+        for i, elem in enumerate(json_result['field_description_aide_projets'][language]):
+            if not "frapo:supports" in jld.keys():
+                jld["frapo:supports"] = {}
+
+            if not "dc:description" in jld["frapo:supports"].keys():
+                jld["frapo:supports"].update({"dc:description": [elem['value']]})
+            else:
+                jld["frapo:supports"]["dc:description"].append(elem['value'])
+
+
+    # conditions_d'appui
+    if key == 'field_conditions_d_appui' and language in json_result['field_conditions_d_appui'].keys():
+        for i, elem in enumerate(json_result['field_conditions_d_appui'][language]):
+            if not "frapo:supports" in jld.keys():
+                jld["frapo:supports"] = {}
+
+            if not "wl:Condition" in jld["frapo:supports"].keys():
+                jld["frapo:supports"].update({"wl:Condition": [elem['value']]})
+            else:
+                jld["frapo:supports"]["wl:Condition"].append(elem['value'])
+
+    # titre appui a projet
+    if key == 'field_titre_appui_a_projet' and language in json_result['field_titre_appui_a_projet'].keys():
+        for i, elem in enumerate(json_result['field_titre_appui_a_projet'][language]):
+            if not "frapo:supports" in jld.keys():
+                jld["frapo:supports"] = {}
+
+            if not "dc:title" in jld["frapo:supports"].keys():
+                jld["frapo:supports"].update({"dc:title": [elem['value']]})
+            else:
+                jld["frapo:supports"]["dc:title"].append(elem['value'])
+
+
+
+
+
 
 def toolRdf(key, json_result, jld):
 
@@ -322,15 +459,27 @@ def writeRDF(raw_jld, type, node_id):
     result = g.parse(data=raw_jld, format='json-ld')
 
     rdf_string = g.serialize(format=RDF_FORMAT).decode("utf-8")
-    ts = datetime.now().timestamp()
-    time = timestampToIso(ts)
+    if verifyGraph(g):
+        ts = datetime.now().timestamp()
+        time = timestampToIso(ts)
 
-    dir_path = "./" + type
-    if not os.path.isdir(dir_path):
-        os.mkdir(dir_path)
+        dir_path = OUTPUT_DIR + "/" + type
+        if not os.path.isdir(dir_path):
+            os.makedirs(dir_path)
+        file_path = dir_path + "/" + str(node_id) + "_" + time + ".ttl"
+        with open(file_path  ,"w") as file:
+            file.write(rdf_string)
+        logger.info('[' + str(node_id) + ']' + " Graph created and valid, file path: [" + file_path + "]")
+    else:
+        if not os.path.isdir(OUTPUT_DIR):
+            os.mkdir(OUTPUT_DIR)
+        logger.error('[' + str(node_id) + ']' + " Graph is not valid, no result file created")
 
-    with open(dir_path + "/" + str(node_id) + "_" + time + ".ttl"  ,"w") as file:
-        file.write(rdf_string)
+
+def verifyGraph(g):
+    r = pyshacl.validate(g)
+    conforms, results_graph, results_text = r
+    return conforms
 
 def getPageTitle(node_url, s):
 
@@ -387,21 +536,46 @@ def parallelIfbRequest(tuple):
 def ifbAuthenticate(payload):
     while True:
         try:
+            logger.info('Connecting to IFB website...')
             s.post('https://www.france-bioinformatique.fr/user', data=payload, timeout=TIMEOUT)
+            logger.info('Connected')
             print("Connected !")
             break
         except requests.exceptions.ConnectionError as e:
+            logger.error("ConnectionError, retrying: " + str(e))
             print(str(e) + "\nRetrying...")
             time.sleep(10)
         except requests.exceptions.ReadTimeout as e:
+            logger.error(" ReadTimeout, retrying: " + str(e))
             print(str(e) + "\nRetrying...")
             time.sleep(10)
 
+def setupCustomLogger(name, filename):
+    """
+    @param name String The name of the logger
+    @param filename String The filename
 
+    @return A logger object
+    """
+    formatter = logging.Formatter(fmt='%(asctime)s [%(levelname)s] %(message)s',
+                                  datefmt='%Y-%m-%d %H:%M:%S')
+    handler = logging.FileHandler(filename, mode='w')
+    handler.setFormatter(formatter)
+    # screen_handler = logging.StreamHandler(stream=sys.stdout)
+    # screen_handler.setFormatter(formatter)
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(handler)
+    # logger.addHandler(screen_handler)
+    return logger
 
 if __name__ == "__main__":
 
-    info_node_list = []
+    # info_node_list = []
+
+    if not os.path.isdir(OUTPUT_DIR):
+        os.mkdir(OUTPUT_DIR)
+    logger = setupCustomLogger('rdfize_ifb', OUTPUT_DIR + '/dump_log')
 
     # prepare connection / login informations
     name = ifb_logs.getName()
@@ -433,7 +607,7 @@ if __name__ == "__main__":
                 # 324, 326
 
                 print("Requesting node " + str(node_id) + " ...")
-                json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + str(node_id) + '/node_export/json', s)
+                json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + str(node_id) + '/node_export/json', s, str(node_id))
 
                 # if their is a json, rdfize it
                 if not json_result:
@@ -442,10 +616,12 @@ if __name__ == "__main__":
                 type_to_rdfize = ['outil', 'plateforme', 'formation']
                 # type_to_rdfize = ['plateforme']
                 if json_result['type'] in type_to_rdfize:
+                    logger.info('[' + str(node_id) + ']' + " Type: [" + json_result['type'] + "], rdfize: [True]")
                     raw_jld = rdfize(json_result)
-                    readRDF(raw_jld)
+                    # readRDF(raw_jld)
                     writeRDF(raw_jld, json_result['type'], node_id)
-
+                else:
+                    logger.warning('[' + str(node_id) + ']' + " Type: [" + json_result['type'] + "], rdfize: [False]")
 
                 # check node if they have json and their title
 

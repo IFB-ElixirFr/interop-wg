@@ -1,0 +1,100 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/genatlas> a schema:LaboratoryScience ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p><strong>GENATLAS, http//:<a href="http://www.genatlas.org%C2%A0%C2%A0%C2%A0">www.genatlas.org&nbsp;&nbsp;&nbsp;</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;</p>\r
+\r
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />\r
+GENATLAS est une base de données sur les gènes et les maladies, créée en 1986 et depuis&nbsp; constamment mise à jour&nbsp;; elle met à disposition de la communauté scientifique et médicale internationale des informations concernant la structure, l’expression et la fonction des gènes,&nbsp; leurs mutations&nbsp; et leurs conséquences&nbsp; phénotypiques.</p>\r
+\r
+<p>GENATLAS repose sur une architecture informatique originale&nbsp; et permet une interrogation facile de trois bases de données intriquées&nbsp;: «&nbsp;gene database&nbsp;», «&nbsp;phenotype database&nbsp;» et une base de références bibliographiques. Les données&nbsp; reposent sur une annotation des articles scientifiques qui est assurée par une veille bibliographique quotidienne (collections et bibliothèques&nbsp; des Université Paris Descartes, CNRS, INSERM). GENATLAS est hébergée à l’Université Paris Descartes.</p>\r
+\r
+<p>L’annotation des liens gènes- maladies mais également l’annotation des réarrangements chromosomiques et de leurs phénotypes associés donnent à GENATLAS sa spécificité et lui confère sa qualité de véritable compilation des maladies génétiques. GENATLAS s’attache aussi à développer des outils utiles aux chercheurs et aux médecins prenant en compte les&nbsp; nouveaux concepts&nbsp;: outils pour rechercher un gène dans un intervalle donné, prédiction d’ARN messager, utilisation de thésaurus commun élaborés conjointement avec plusieurs bases de données ayant&nbsp; pour intérêt commun les maladies génétiques (ORPHANET , CEMARA, GENATLAS) .<br />\r
+Enfin des liens réciproques sont établis avec différentes&nbsp; bases données&nbsp; internationales comme Swissprot, HGMD, IGMT, Genew, Genecards, et Orphanet confirmant une reconnaissance internationale&nbsp;&nbsp; (plus de 250&nbsp;000 visites sur <a href="http://www.genatlas.org">www.genatlas.org</a> sont enregistrées chaque année).</p>\r
+\r
+<p>&nbsp;</p>\r
+</div>\r
+\r
+<div>\r
+<p>&nbsp;</p>\r
+\r
+<p><strong>MiRiFixTM, <a href="http://www.mirifix.com">http://www.mirifix.com</a></strong></p>\r
+\r
+<p>MiRiFixTM est un outil bioinformatique voué à la recherche et à la clinique visant à (1) promouvoir la découverte de gènes de microARNs potentiellement causals dans les maladies génétiques, et (2) identifier les microARNs qui pourraient interférer avec une condition donnée en tant que gènes modificateurs. Ce logiciel est référencé à l’Agence pour la Protection des Programmes.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>MiRiFixTM est dédié à la communauté des généticiens, scientifiques et cliniciens, qui souhaitent faire face à la révolution de l’ARN non codant. Son positionnement unique lui confère le rôle de base de données intégrative, avec ses propres développements et un portail dynamique ouvert aux outils les plus fiables et reconnus du domaine. Par une interface facile d’utilisation, il est possible d’explorer en un-clic la localisation des microARNs par rapport aux annotations sur les gènes codant pour des protéines et le ciblage prédit d’un ARNm au niveau&nbsp;: (1) de SNPs, (2) du 3’UTR et (3) des exons. De plus, l’interface permet d’accéder aux méthodologies adaptées permettant de tester spécifiquement le ciblage microARN-ARNm avec une séquence normale ou mutée.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>MiRiFixTM est distinct des autres ressources en tant qu’outil&nbsp;:<br />\r
+- dédié à la génétique humaine,<br />\r
+- permettant une requête directe via la localisation, le gène ou la maladie,<br />\r
+- fournissant une dualité d’information concernant le microARN en tant que gène candidat d’une part et gène modificateur d’autre part,<br />\r
+- comprenant une base de données globale de littérature annotée manuellement avec une cartographie éprouvée des maladies génétiques,<br />\r
+- aggrégeant 18 outils computationnels dédiés aux microARNs avec une ontologie commune facilitant un flux continu entre différents algorithmes,<br />\r
+- portail de liens intégrés pour évaluer les ciblages microARN-ARNm et leur validité computationnelle.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<ul>\r
+	<li>Conception de puces pour la recherche des maladies mitochondriales MITOMAN</li>\r
+	<li>Conception de puces pour le diagnostique des retards mentaux de l’enfant.</li>\r
+	<li>Projet de recherche sur les malformations cardiaques congénitales HEARTGENOMICS</li>\r
+</ul>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-22T11:30:06+02:00" ;
+    dc:modified "2017-04-06T11:25:30+02:00" ;
+    schema:name "GenAtlas" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "450" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Paris" ;
+            schema:postOfficeBoxNumber "Institut Imagine Hôpital Necker-Enfants Malades" ;
+            schema:postalCode "75000" ;
+            schema:streetAddress "24 boulevard du Montparnasse" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "http://www.genatlas.org/" ;
+            schema:url "http://www.genatlas.org/" ] .
+

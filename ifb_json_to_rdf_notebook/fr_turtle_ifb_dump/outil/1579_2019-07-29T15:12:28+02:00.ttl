@@ -1,0 +1,40 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/goarrays> a schema:SoftwareApplication ;
+    edam:data_1190 "GoArrays" ;
+    dc:created "2016-03-01T21:44:27+01:00" ;
+    dc:description """<p>Microarray probe design application. It enables the design of specific probes of each gene in an entire genome, with an original approach. The use of specific microarray technology requires a very detailed attention for the design of specific probes spotted on the solid phase. These problems are far from being commonplace since they refer to complex physicochemical constraints. We propose a new approach to design oligonucleotides which combines good specificity with a potentially high sensitivity. This approach is original in the biological point of view as far as in the algorithmic point of view, and is particularly adapted when dealing with a complex target mixture (where it’s difficult to find specific sequences fo all genes).</p>\r
+\r
+<p><br />\r
+&nbsp;&nbsp; &nbsp;Publication :<br />\r
+&nbsp;&nbsp; &nbsp;Rimour, S., D. Hill, C. Militon, and P. Peyret (2005) GoArrays: highly dynamic and efficient microarray probe design. Bioinformatics (Oxford, England) 21:1094-1103.<br />\r
+&nbsp;</p>\r
+\r
+<p>&nbsp;</p>\r
+""" ;
+    dc:modified "2019-03-13T17:00:27+01:00" ;
+    schema:url "http://g2im.u-clermont1.fr/serimour/goarrays.html" .
+

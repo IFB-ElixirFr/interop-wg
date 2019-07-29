@@ -1,0 +1,92 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/INCa-SLC> a schema:LaboratoryScience ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "536" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "400.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "561" ] ;
+    dbpedia-owl:Infrastructure "Hébergée " ;
+    frapo:hasExpertise [ dc:description """<p>Cette structure a été créée à l'initiative de l'INCa dans le cadre de sa participation à l'"International&nbsp; Cancer&nbsp;Genome Consortium" (ICGC).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Elle a trois missions :<br />\r
+1 collecter ou préparer puis valider les acides nucléiques (ADN normal, ADN tumoral, ARN tumoral,...)&nbsp; qui&nbsp;&nbsp; seront&nbsp;&nbsp; examinés&nbsp;&nbsp; avec&nbsp;&nbsp; les&nbsp;&nbsp; techniques&nbsp;&nbsp; de&nbsp; la&nbsp; génomique:&nbsp;&nbsp; puce&nbsp;&nbsp; de&nbsp; génotypage,&nbsp;&nbsp; puce d'expression, RNA-­seq, DNA-­‐eq en génomes complets et en éxomes),<br />\r
+2 assurer la liaison avec les centres de génomique (académiques&nbsp; ou privés) réalisant le séquençage haut-­‐débit,<br />\r
+3 effectuer l'analyse des données de séquence transmises par ces centres de manière à en extraire l'information&nbsp; (variants&nbsp; somatiques&nbsp; et&nbsp; structuraux,&nbsp; nombre&nbsp; de&nbsp; copie,&nbsp; niveaux&nbsp; d'expression&nbsp; en RNA-­‐seq) utile aux équipes biomédicales.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Pour&nbsp; remplir&nbsp; sa&nbsp; mission,&nbsp; la&nbsp; plateforme&nbsp; a&nbsp; développé&nbsp; une&nbsp; application&nbsp; Internet&nbsp; permettant&nbsp; d'assurer&nbsp; la gestion&nbsp; de grands&nbsp; projets&nbsp; multicentriques&nbsp; en toute&nbsp; transparence&nbsp; pour&nbsp; les collaborateurs.&nbsp; Elle&nbsp; a mis en place&nbsp; des&nbsp; procédures&nbsp; de&nbsp; contrôle&nbsp; qualité&nbsp; des&nbsp; échantillons&nbsp; à&nbsp; analyser.&nbsp; Elle&nbsp; dessine&nbsp; et&nbsp; automatise&nbsp; des pipelines d'analyse pour les données de génomique qu'elle reçoit.</p>\r
+""" ] ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>Mode prestation de service (financement par le demandeur) ou collaboration&nbsp;scientifique (pas de financement).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>o ICGC Sein / Prostate / Carcinosarcome de l'endomètre<br />\r
+Projet international de séquençage de génome complets (tumeur +&nbsp;normal).<br />\r
+<a href="http://www.icgc.org">http://www.icgc.org</a> et <a href="http://dcc.icgc.org">http://dcc.icgc.org</a><br />\r
+o Basis Sein<br />\r
+Projet européen de séquençage de génome complets (tumeur + normal)&nbsp;de&nbsp; tumeurs du sein amplifiées sur HER.&nbsp;<a href="http://www.basisproject.eu">http://www.basisproject.eu</a><br />\r
+o Abs4NGS<br />\r
+Projet PIA de développement méthodologique bioinformatique pour le&nbsp;NGS. <a href="https://sites.google.com/site/abs4ngs/">https://sites.google.com/site/abs4ngs/</a><br />\r
+o Projet INCa NGS clinique.<br />\r
+Développements de pipelines dans le cadre du NGS clinique (ciblé) en&nbsp;cancérologie.<br />\r
+o Projets locaux dans le cadre du Lyric (<a href="http://www.cancer-">http://www.cancer-</a>­‐lyric.com/)<br />\r
+et/ou du Clara (<a href="http://www.canceropole-">http://www.canceropole-</a>­‐clara.com/)<br />\r
+Projet Profiler (NGS clinique); HNPACT (NGS cancer head and neck)</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-21T09:36:37+02:00" ;
+    dc:modified "2019-05-28T11:53:26+02:00" ;
+    geosp:hasProject [ ocds:valueAmount "10" ] ;
+    meb:User [ ocds:valueAmount "15" ] ;
+    schema:name "INCa-SLC" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "4148",
+                "4149",
+                "4150",
+                "4151" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Lyon" ;
+            schema:postOfficeBoxNumber "Fondation Synergie Lyon Cancer, Bât. Cheney D" ;
+            schema:postalCode "69008" ;
+            schema:streetAddress "28 rue Laënnec" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "synergielyoncancer.fr" ;
+            schema:url "http://www.synergielyoncancer.fr/" ] .
+

@@ -1,0 +1,41 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/sortmerna> a schema:SoftwareApplication ;
+    edam:data_1190 "SortMeRNA" ;
+    dc:created "2016-01-22T12:05:44+01:00" ;
+    dc:description """<p><strong>Objectif</strong></p>\r
+\r
+<p>SortMeRNA est un outil d'analyse de séquences biologiques pour le filtrage de données méta-transcriptomiques et méta-génomiques, le mapping et la sélection d'OTU (unité taxonomique opérationnelle). La principale application de SortMeRNA est le filtrage et le mapping d'ARN ribosomiques à partir de données NGS.</p>\r
+\r
+<p><strong>Description de l'outil</strong></p>\r
+\r
+<p>L'algorithme principal est basé sur des graines approchées, ainsi qu'une structure d'indexation de texte optimisée. Il permet des analyses rapides et sensibles de séquences nucléiques.</p>\r
+\r
+<p>SortMeRNA prend en entrée un fichier de reads (au format fasta ou fastq) et un ou plusieurs fichier(s) de base(s) de données d'ARNr. Il en extrait les ARNr et les reads refusésdans 2 fichiers. Sur demande, il peut fournir des alignements locaux de haute qualité des reads d'ARNr contre les ARNr des bases de données. SortMeRNA fonctionne avec des données Illumina, 454, Ion Torrent et PacBio et produit en sortie des alignements de type SAM ou Blast. Il est implémenté en C++.</p>\r
+""" ;
+    dc:modified "2018-12-14T11:28:02+01:00" ;
+    schema:url "http://bioinfo.lifl.fr/RNA/sortmerna/" .
+

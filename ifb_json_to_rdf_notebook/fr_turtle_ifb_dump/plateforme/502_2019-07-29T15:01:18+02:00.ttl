@@ -1,0 +1,115 @@
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix und: <http://adefinir/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/urgi> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>Infrastructure hébergée au Data center INRA Ile-De-France (Bruyère-Le-Chatel)</p>\r
+\r
+<p>1 cluster de calcul (HPC)</p>\r
+\r
+<p>1 serveur NFS pour la gestion des disques</p>\r
+\r
+<p>1 serveur dédié au site Web</p>\r
+\r
+<p>1 serveur dédié à la gestion des sauvegardes</p>\r
+\r
+<p>3 serveurs dédiés aux machines virtuelles (SGBD, Système d'information, application Web)</p>\r
+\r
+<p>1 Cloud</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+\r
+<h5>&nbsp;</h5>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "1206" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "358.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "2364",
+                "503",
+                "504" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>L’activité de recherche de l’URGI (intégration de données, annotation des répétitions, structure et dynamique des génomes) est étroitement liée aux 2 composantes de la plateforme (Système d’Information et analyse des génomes). D’une part, la plateforme bénéficie de l’expertise acquise coté recherche (analyse et développement d’outils), d’autre part elle offre un support solide à notre activité de recherche grâce aux ressources et aux compétences de son personnel (principalement des Ingénieurs).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Les domaines de compétence et d’expertise des agents de la plateforme sont axé principalement sur :</p>\r
+\r
+<ul>\r
+	<li>Le développement d’interface (Java J2EE)</li>\r
+	<li>Le développement de pipelines d’analyses (Python)</li>\r
+	<li>Les bases de données (PostgreSQL, MySQL)</li>\r
+	<li>Les technologies NoSQL (ElasticSearch, SolR)</li>\r
+	<li>L'intégration de données (ETL Talend) dans des domaines aussi variés que la génomique et la génétique (génome annotation, RNA-Seq, polymorphisme, génétique d’association, phénotype, ressources génétiques)</li>\r
+	<li>L'analyse des génomes (structure et dynamique)\r
+	<ul>\r
+		<li>&nbsp; &nbsp; Analyse du polymorphisme (SNP, variants structuraux)</li>\r
+		<li>&nbsp; &nbsp; RNA-Seq</li>\r
+		<li>&nbsp; &nbsp; Annotation de gènes (structurale et fonctionnelle)</li>\r
+		<li>&nbsp; &nbsp; Annotation des répétitions (spécifiquement les éléments transposables)</li>\r
+	</ul>\r
+	</li>\r
+</ul>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>La&nbsp; plateforme est partenaire ou coordinateur de projets en collaboration dans le cadre d’appels d’offre au niveau national et international (ANR, IBISA, Investissement d’avenir ou européen) ou de consortiums internationaux. Grâce au soutien de ces projets Elle réalise les développements de son Système d’Information GnpIS ainsi que ceux&nbsp; liés à son serveur Galaxy afin de mettre à disposition sur son infrastructure les données et outils.</p>\r
+\r
+<p>Les données de différentes espèces de plantes (blé, vigne, mais, colza, pois, betterave…), de champignons (<em>Botrytis&nbsp; cinerea,&nbsp; Leptosphaeria&nbsp; maculans</em>, …)&nbsp; et&nbsp; d’arbres (pin&nbsp; maritime,&nbsp;&nbsp; peuplier,&nbsp;&nbsp; chêne…) dans le cadre de consortium internationaux dont elle fait partie (IWGSC, WheatInitiative, Vigne, Botrytis ...) ainsi que toutes les collections patrimoniales de&nbsp; ressources&nbsp; génétiques&nbsp; Plantes&nbsp; de&nbsp; son département&nbsp; BAP&nbsp; (mission&nbsp; département) sont mises à disposition dans son SI GnpIS.</p>\r
+\r
+<p>La&nbsp; plateforme&nbsp; développe&nbsp; aussi&nbsp; des&nbsp; outils qu’elle met à disposition sur sa plateforme accessibles en téléchargement, sous unix ou sous son Serveur Galaxy. Elle en fournit le support et la formation.</p>\r
+\r
+<p>Elle propose en continu un appel à projets pour des&nbsp; services&nbsp; de&nbsp; mise&nbsp; à&nbsp; disposition&nbsp; de&nbsp; ressources&nbsp; de calcul et d’espace de stockage.</p>\r
+\r
+<p>&nbsp;CONDITIONS D'APPUI</p>\r
+\r
+<p>Les projets que la plateforme porte ou auxquels elle collabore sont en phase avec le périmètre de ses missions, de ses services et de son expertise et lui apportent le soutien financier nécessaire à son fonctionnement et au maintient de son infrastructure (matérielle et logicielle).. En tant que plateforme stratégique CNOC INRA, elle bénéficie d’une aide financière lui assurant une partie de son fonctionnement. L’accès à ses ressources de calcul et de stockage est gratuit pour ses partenaires (de projets ou dans le cadre de son AAP). Elle réalise aussi des analyses en mode collaboration. Les membres de la&nbsp; plateforme sont co-auteurs dans les publications associées.</p>\r
+""" ;
+            dc:title "Description des modalités d’appui aux projets " ] ;
+    dc:created "2015-09-04T15:11:24+02:00" ;
+    dc:modified "2019-03-06T14:15:28+01:00" ;
+    geosp:hasProject [ ocds:valueAmount "33" ] ;
+    meb:User [ ocds:valueAmount "103" ] ;
+    schema:name "URGI" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "2257",
+                "505",
+                "506" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "133" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Versailles" ;
+            schema:postOfficeBoxNumber "INRA Versailles" ;
+            schema:postalCode "78000" ;
+            schema:streetAddress "RD10 Route de Saint-Cyr" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "URGI PLATFORM" ;
+            schema:url "http://urgi.versailles.inra.fr/Platform" ] .
+
