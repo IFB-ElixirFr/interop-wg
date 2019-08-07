@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/gevara-genome-variant-analyser",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "10"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GeVarA (Genome Variant Analyser)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:28:28+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Ce logiciel, écrit en Java, est un outil graphique dédié à la visualisation et à l'analyse des résultats produits par le pipeline de recherche de variants mis en oeuvre sur la PF. GeVarA est basé sur la notion de projet regroupant un ensemble d'échantillons. Au sein d'un projet, l'utilisateur peut sélectionner les variants sur la base de leur absence ou de leur présence dans les échantillons, à l'état homo ou hétérozygote. Les variants obtenus sont ensuite filtrés en fonction de divers critères tels que la couverture, l'hétérozygosité, la présence dans dbSNP ou le déséquilibre de brin. Les alignements correspondant aux variants sélectionnés peuvent ensuite être visualisés, grâce à l'intégration du logiciel IGV dans GeVarA, afin de juger de leur qualité. Enfin, des liens vers dbSNP, Ensembl et UCSC Génome Browser sont proposés pour documenter les variants et les gènes impactés.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:00+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N58e58bad02dd479a8d86d55b894775ba"
+      }
+    ]
+  },
+  {
+    "@id": "_:N58e58bad02dd479a8d86d55b894775ba",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Tout client de la PF, dans le cadre d'une prestation de recherche de variants, peut utiliser GeVarA. Le logiciel est fourni, avec les données de séquençage, sur un support externe (clef ou disque dur USB).</p>\r\n"
+      }
+    ]
+  }
+]

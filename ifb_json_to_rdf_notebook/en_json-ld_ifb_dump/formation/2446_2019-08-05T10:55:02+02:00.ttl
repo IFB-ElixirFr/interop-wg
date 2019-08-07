@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-données-metabarcoding",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "ROSCOFF"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-02-16T11:11:36+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-11T10:06:12+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de données metabarcoding"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tiny.ifremer.fr/formation-metabarcoding-2018"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/master-sciences-numérique-pour-santé",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:57:58+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La spécialité BCD a pour objectif de former les étudiants issus des Sciences du vivant (agronomie, biologie moléculaire, cellulaire, physiologie animale et végétale, biochimie), des sciences médicales, de l'informatique ou des mathématiques aux besoins spécifiques de la bioinformatique, des systèmes d'informations, de l'extraction de connaissances et de la modélisation du vivant tout en renforçant les compétences de leur profil initial.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:42+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Master Sciences & Numérique pour la Santé"
+      }
+    ]
+  }
+]

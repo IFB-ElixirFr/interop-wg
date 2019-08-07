@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/cycle-« initiation-à-bioinformatique »-module-34 -prédiction-gènes-et-annotation",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université de Lille"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T14:54:10+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-04T11:17:18+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Cycle « Initiation à la bioinformatique » - Module 3/4 : Prédiction de gènes et annotation de protéines"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://wikis.univ-lille.fr/bilille/formation"
+      }
+    ]
+  }
+]

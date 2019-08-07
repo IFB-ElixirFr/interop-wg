@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/synteny-viewer",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "2982"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "1480"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Synteny Viewer"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T22:26:18+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "10"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/macsyfinder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "macsyfinder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T18:30:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-09T13:05:15+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "23"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/gem-pasteur/macsyfinder"
+      }
+    ]
+  }
+]

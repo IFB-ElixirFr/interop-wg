@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/data-omics-en-cancérologie-utilisation-des-bases-données-publiques",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:18:30+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:53:26+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Data-omics en cancérologie : utilisation des bases de données publiques"
+      }
+    ]
+  }
+]

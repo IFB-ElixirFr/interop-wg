@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/microscope",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "55000"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "11000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MicroScope"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T14:41:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-19T11:21:15+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "910"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.genoscope.cns.fr/agc/microscope"
+      }
+    ]
+  }
+]

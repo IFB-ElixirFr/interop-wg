@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/ecole-aviesan-itmo-eba",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-08T17:29:26+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T15:05:12+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Ecole AVIESAN ITMO EBA 2017"
+      }
+    ]
+  }
+]

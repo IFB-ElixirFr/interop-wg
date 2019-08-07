@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/introduction-bioinformatics-1st-year-master-integrative-plant-biology-strasbourg",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T12:05:00+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>2H / year of hands-on introduction to bioinformatics for 1st year Master in integrative Plant Biology, Strasbourg University</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:42+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction to bioinformatics for 1st year Master in integrative Plant Biology, Strasbourg University"
+      }
+    ]
+  }
+]

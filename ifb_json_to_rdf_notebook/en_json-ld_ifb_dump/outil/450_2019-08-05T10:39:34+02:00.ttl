@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/genatlas-et-mirifix",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "78000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GenAtlas et Mirifix "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T13:32:31+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-04-06T11:22:55+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/aterlier-bioinformatique-participation-à",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T17:06:24+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T15:00:05+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Aterlier de Bioinformatique (participation à)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/askomics",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Askomics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:17:58+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-10-01T14:34:51+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/askomics"
+      }
+    ]
+  }
+]

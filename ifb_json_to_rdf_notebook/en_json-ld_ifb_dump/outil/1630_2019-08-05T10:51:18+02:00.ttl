@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/phylofish-transcriptome-database",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhyloFish transcriptome database"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-17T09:01:24+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>http://phylofish.sigenae.org/index.html</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-08-29T16:21:53+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5017f189074b447cab9f188d4884da52"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5017f189074b447cab9f188d4884da52",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>public</p>\r\n"
+      }
+    ]
+  }
+]

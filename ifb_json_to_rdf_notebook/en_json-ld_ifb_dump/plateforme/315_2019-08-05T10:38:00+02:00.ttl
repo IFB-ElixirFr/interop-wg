@@ -1,0 +1,143 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/prabi-gerland",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Naf0dc09f69de46d0bca25b41f46def66"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:01:03+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-05T15:43:55+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Lyon-Gerland"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Na1e1ae3122a04fffa5154fa5d5f1a4a5"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N70db8580e92a4c03ac84113e7b7baf06"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Ne878f3014ffe4c1982bfc4870c3f0a5b"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N1aef08fdd4c844dd9241300012c1c2b3"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne878f3014ffe4c1982bfc4870c3f0a5b",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69367"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "7 Passage du Vercors"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naf0dc09f69de46d0bca25b41f46def66",
+    "http://schema.org/identifier": [
+      {
+        "@value": "587"
+      },
+      {
+        "@value": "588"
+      },
+      {
+        "@value": "585"
+      },
+      {
+        "@value": "586"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1e1ae3122a04fffa5154fa5d5f1a4a5",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "584"
+      },
+      {
+        "@value": "582"
+      },
+      {
+        "@value": "581"
+      },
+      {
+        "@value": "583"
+      }
+    ]
+  },
+  {
+    "@id": "_:N70db8580e92a4c03ac84113e7b7baf06",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1aef08fdd4c844dd9241300012c1c2b3",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://prabi.ibcp.fr/htm/index.php"
+      }
+    ]
+  }
+]

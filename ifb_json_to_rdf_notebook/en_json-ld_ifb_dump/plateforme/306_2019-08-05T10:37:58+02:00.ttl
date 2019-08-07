@@ -1,0 +1,283 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/rpbs",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N8b7f29cc6ed741a1b4ebe6771506ff8f"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N820a51816ab34101a7a456c9b5b79026"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N6473bcccd1c04a7f8d1ceb94f062051f"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N9c52cdd4d77541b3a569a90541f5b8b5"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nd73c9fc85b434e55a35821067ddd821f"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N9da2998c5908422abcfeb88aedf68eef"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:36:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:42:28+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N70ec52ab13574c47960ebc62c337cdf1"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N2a42acd94fc14248b6179e9569dd376d"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RPBS"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N08996aeeb7494dfe99891e9253e7ef50"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Ndb68fdb22d4b41c2994818d45757f484"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N1fc36c6bd48741fd958335c0e3fd064f"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nd9f029b12aee4485ace379ad768bc852"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6473bcccd1c04a7f8d1ceb94f062051f",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "70.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndb68fdb22d4b41c2994818d45757f484",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      },
+      {
+        "@value": "169"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd73c9fc85b434e55a35821067ddd821f",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Structural Bioinformatics: protein and peptide structure and function analysis, modeling. Protein-peptide complexes. <em>In silico</em> screening.</p>\r\n\r\n<p>Non exhaustively:</p>\r\n\r\n<ul>\r\n\t<li>Protein structure comparative modeling</li>\r\n\t<li>Structural similarity search</li>\r\n\t<li>Protein complex&nbsp;structure modeling</li>\r\n\t<li>Peptide structure <em>de novo</em> modeling</li>\r\n\t<li>Structure based <em>in silico</em> screening</li>\r\n\t<li>Point mutation structural impact</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2a42acd94fc14248b6179e9569dd376d",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "41"
+      }
+    ]
+  },
+  {
+    "@id": "_:N820a51816ab34101a7a456c9b5b79026",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "960"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8b7f29cc6ed741a1b4ebe6771506ff8f",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>40m² server room</li>\r\n\t<li>PAAS architecture (Platform As A Service)</li>\r\n\t<li>Heterogeneous computer cluster (12 CPU&nbsp;/ 48GB RAM nodes, 60 CPU / 512GB RAM node, GPU node (setup in progress)</li>\r\n\t<li>30TB of working storage under LustreFS</li>\r\n\t<li>2x 30TB of data storage (NFS)</li>\r\n\t<li>Configuration management with SaltStack</li>\r\n\t<li>Software encapsulation with Docker</li>\r\n\t<li>Ressource manager: Slurm</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N08996aeeb7494dfe99891e9253e7ef50",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2939"
+      },
+      {
+        "@value": "670"
+      },
+      {
+        "@value": "667"
+      },
+      {
+        "@value": "2206"
+      },
+      {
+        "@value": "673"
+      },
+      {
+        "@value": "665"
+      },
+      {
+        "@value": "1411"
+      },
+      {
+        "@value": "1410"
+      },
+      {
+        "@value": "1412"
+      },
+      {
+        "@value": "669"
+      },
+      {
+        "@value": "2940"
+      },
+      {
+        "@value": "672"
+      },
+      {
+        "@value": "2205"
+      },
+      {
+        "@value": "671"
+      },
+      {
+        "@value": "664"
+      },
+      {
+        "@value": "666"
+      }
+    ]
+  },
+  {
+    "@id": "_:N70ec52ab13574c47960ebc62c337cdf1",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "7"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9c52cdd4d77541b3a569a90541f5b8b5",
+    "http://schema.org/identifier": [
+      {
+        "@value": "663"
+      },
+      {
+        "@value": "662"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9da2998c5908422abcfeb88aedf68eef",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Service hosting : TEF, HHalign-Kbest, InterEvDock, MIR, Yakusa, SPROUTS &amp;&nbsp;SolyPep</li>\r\n\t<li>Hardware hosting : PAAS SDV</li>\r\n</ul>\r\n"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<ul>\r\n\t<li>Hardware hosting: applicant teams apply for hosting to&nbsp;the platform which&nbsp;will ensure the integration of the hardware in the computational ressource.</li>\r\n\t<li>Service deployment: applicant teams apply for service deployment to&nbsp;the platform which&nbsp;will ensure the service deployment on the computational ressource and, if asked, on the Web portal.</li>\r\n\t<li>Scientific project: applicant teams apply for a provision&nbsp;or a collaborative project to the platform.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd9f029b12aee4485ace379ad768bc852",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RPBS"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/index.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1fc36c6bd48741fd958335c0e3fd064f",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75013"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "35 rue Hélène Brion"
+      }
+    ]
+  }
+]

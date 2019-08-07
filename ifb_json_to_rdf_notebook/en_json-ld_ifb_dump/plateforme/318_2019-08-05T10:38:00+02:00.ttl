@@ -1,0 +1,138 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/isfinder",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Ncf487525657c45ff8f516732425d595e"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Ncdbc160ab39740849cad028e9c5a2d5e"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:21:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:15:21+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nbf98ef75f826424dbeadd54dfb4deae1"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ISfinder"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N85b63d7898cd41b5bdc9213d0f05e478"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N2beb2f9701d64c49ab45952fc81f426f"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Ne55620b942c74794aadc8c6e423fe258"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2beb2f9701d64c49ab45952fc81f426f",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Toulouse"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31062"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "118 Route de Narbonne"
+      }
+    ]
+  },
+  {
+    "@id": "_:N85b63d7898cd41b5bdc9213d0f05e478",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "628"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbf98ef75f826424dbeadd54dfb4deae1",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "14878"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncf487525657c45ff8f516732425d595e",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "1.20"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne55620b942c74794aadc8c6e423fe258",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IS BIOTOUL"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www-is.biotoul.fr//"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncdbc160ab39740849cad028e9c5a2d5e",
+    "http://schema.org/identifier": [
+      {
+        "@value": "629"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/xheinz",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "xHeinz"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-19T14:29:59+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>xHeinz&nbsp; is a tool&nbsp;that finds provably&nbsp;optimal conserved active modules&nbsp;between two species.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:21:54+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N9a48a7d2249e4a42a9bc6b29888550ad"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/ls-cwi/xheinz"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a48a7d2249e4a42a9bc6b29888550ad",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Software website:&nbsp;https://software.cwi.nl/software/xheinz&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

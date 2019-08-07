@@ -1,0 +1,231 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/atgc",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N606cd154477d47bab61bfdad6bfd8b74"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N21c0c5c72a3241a08a10a4dce55384cb"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nac8e9bf7c5d145d0894509dea7798ffb"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N45352d3ff2bc4e979ab1dd8715c7ec20"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nf9384d3ec7c9415cb538020e670b218e"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-21T10:41:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-08T15:37:56+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N8b883fe9ab9949c59eae5480f15458d4"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ATGC"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Ne1288d6e87234867bdf825b6cc01f5d4"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nceb8a58681354ede90ed9e4fefe040a6"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N8e985305e2f0448bbad900c24efb1f00"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N0990a5e1d0984279a087f50728295f96"
+      }
+    ]
+  },
+  {
+    "@id": "_:N606cd154477d47bab61bfdad6bfd8b74",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>2 redundant web servers behind a proxy.</li>\r\n\t<li>16 compute nodes.</li>\r\n\t<li>1 storage server with NFS.</li>\r\n\t<li>1 databases server with MySQL and PostGRESQL.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf9384d3ec7c9415cb538020e670b218e",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The research projects involving the Mehods and Algorithms for Bioinformatics team (MAB) from LIRMM take advantage of the ATGC platform. The software and tools developed within these projects are provided to the scientific community thanks to ATGC.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nceb8a58681354ede90ed9e4fefe040a6",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8e985305e2f0448bbad900c24efb1f00",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "CC 477"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "34090"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "161 Rue Ada"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac8e9bf7c5d145d0894509dea7798ffb",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "30.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8b883fe9ab9949c59eae5480f15458d4",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "12000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N45352d3ff2bc4e979ab1dd8715c7ec20",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Text and trees algorithmics, combinatorial optimization, statistical and probabilistic modeling, classification, phylogeny, high throughput sequencing, genomes, transcriptomes, proteomes, cancer, malaria, HIV.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne1288d6e87234867bdf825b6cc01f5d4",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "632"
+      },
+      {
+        "@value": "637"
+      },
+      {
+        "@value": "1415"
+      },
+      {
+        "@value": "633"
+      },
+      {
+        "@value": "2124"
+      },
+      {
+        "@value": "635"
+      },
+      {
+        "@value": "639"
+      },
+      {
+        "@value": "1416"
+      },
+      {
+        "@value": "636"
+      },
+      {
+        "@value": "638"
+      },
+      {
+        "@value": "634"
+      }
+    ]
+  },
+  {
+    "@id": "_:N21c0c5c72a3241a08a10a4dce55384cb",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "744"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0990a5e1d0984279a087f50728295f96",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ATGC Bioinformatics Platform"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.atgc-montpellier.fr/"
+      }
+    ]
+  }
+]

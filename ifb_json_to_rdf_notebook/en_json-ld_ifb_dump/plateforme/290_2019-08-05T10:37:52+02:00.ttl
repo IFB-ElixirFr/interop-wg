@@ -1,0 +1,203 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/ABiMS",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N4c1b7c14c83744848173cb324c6ebd9d"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N3cc6820a11844c5cbf5a58221f9c913e"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N9194e31655bd45d1aa7c7d04dee6e287"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Naf6524c283134bacae370ce22b3bda77"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:51:26+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-19T10:18:27+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N715d61a2bbf943e09a3e3fde2199e185"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ABiMS"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N34785acf13f046a68e884b8e68570ae8"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nef005cf9813a4d418d0c934001aeae1d"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Ne86cff5cd4c64b59b24db3dabf3294af"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N56c0af6b95094506b508ee207d8faf72"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56c0af6b95094506b508ee207d8faf72",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://abims.sb-roscoff.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4c1b7c14c83744848173cb324c6ebd9d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n\t<li>Database server : MysQL + PostreSQL</li>\r\n\t<li>Biotsta R server</li>\r\n\t<li>Web servers</li>\r\n\t<li>Galaxy production servers : NGS, Metabolomics et Public</li>\r\n\t<li>Galaxy development server</li>\r\n\t<li>56 cluster nodes</li>\r\n\t<li>&nbsp;master node</li>\r\n\t<li>4 NFS servers</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naf6524c283134bacae370ce22b3bda77",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>ABiMS proposes bioinformtics services :</p>\r\n\r\n<p>- infrastructure : cluster, sotrage, tools</p>\r\n\r\n<p>- training : Linux, R langage, Galaxy....</p>\r\n\r\n<p>- bio-analysis : NGS, génomic, transcriptomic, métagénomic, genome annotation...</p>\r\n\r\n<p>- development of databases and offers an infrastructure for the scientific calculation. The offer of bio-analysis is particularly developed.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3cc6820a11844c5cbf5a58221f9c913e",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N715d61a2bbf943e09a3e3fde2199e185",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:N34785acf13f046a68e884b8e68570ae8",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1626"
+      },
+      {
+        "@value": "540"
+      },
+      {
+        "@value": "1615"
+      },
+      {
+        "@value": "539"
+      },
+      {
+        "@value": "1614"
+      },
+      {
+        "@value": "1616"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nef005cf9813a4d418d0c934001aeae1d",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne86cff5cd4c64b59b24db3dabf3294af",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "29680"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Place Georges Teissier - Station Biologique de Roscoff"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9194e31655bd45d1aa7c7d04dee6e287",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2000.00"
+      }
+    ]
+  }
+]

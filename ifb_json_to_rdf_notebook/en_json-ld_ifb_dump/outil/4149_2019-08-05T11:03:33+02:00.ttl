@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/wginr",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "wginr"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:03:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:06:17+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/aviari/wginr"
+      }
+    ]
+  }
+]

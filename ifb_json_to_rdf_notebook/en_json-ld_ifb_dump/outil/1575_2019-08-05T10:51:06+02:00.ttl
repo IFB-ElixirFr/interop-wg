@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/kaspod",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "92"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "KASpOD "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:35:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T17:06:50+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://g2im.u-clermont1.fr/kaspod/"
+      }
+    ]
+  }
+]

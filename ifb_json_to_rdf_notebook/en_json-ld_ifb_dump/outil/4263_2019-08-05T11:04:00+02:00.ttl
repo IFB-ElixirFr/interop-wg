@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/mixkernel",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "mixkernel"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-07-09T16:35:52+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T11:22:06+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "14"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://mixomics.org/mixKernel/"
+      }
+    ]
+  }
+]

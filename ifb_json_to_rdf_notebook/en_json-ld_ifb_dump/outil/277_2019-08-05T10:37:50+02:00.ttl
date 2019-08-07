@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/varna",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1422"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "9219"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "VARNA"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-16T14:04:46+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>VARNA : Visualization Applet for RNA</p>\r\n\r\n<p>A Java lightweight component and applet for drawing the RNA secondary structure</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T19:55:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N482a093f40944bb4835985bbb33c4741"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "432"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://varna.lri.fr/"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1392"
+      }
+    ]
+  },
+  {
+    "@id": "_:N482a093f40944bb4835985bbb33c4741",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>.jar</p>\r\n"
+      }
+    ]
+  }
+]

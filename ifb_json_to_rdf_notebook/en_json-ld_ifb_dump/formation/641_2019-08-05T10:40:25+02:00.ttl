@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/bioinformatique-pour-traitement-données-séquençage-ngs",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:56:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<p>Les objectifs sont :</p>\r\n\r\n<p>- Savoir choisir les outils d'analyse<br />\r\n- Etre autonome pour effectuer un pipeline d'analyse<br />\r\n- Comprendre les principes des méthodes d'analyse<br />\r\n- Savoir manipuler les fichiers de séquences : préparation et filtration<br />\r\n- Etre capable d'évaluer la qualité des données<br />\r\n- Savoir analyser avec ou sans génome de référence</p>\r\n\r\n<p><a href=\"https://cnrsformation.cnrs.fr/\">https://cnrsformation.cnrs.fr/</a></p>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T10:34:28+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Bioinformatique pour le traitement de données de séquençage (NGS)"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://cnrsformation.cnrs.fr/stage-17010-Bioinformatique-pour-le-traitement-de-donnees-de-sequencage-%28NGS%29.html?axe=65"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/go-docker",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GO-Docker"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T14:57:21+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://godocker.genouest.org"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/metabarcode",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T16:43:13+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T16:43:13+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Metabarcode"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tiny.ifremer.fr/formation-metabarcoding-2019"
+      }
+    ]
+  }
+]

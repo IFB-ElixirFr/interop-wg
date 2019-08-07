@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/module-2-rnaseq-bioinformatic-sequence-expression-level-smallrna-isoform-eukaryote",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Gif sur Yvette"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T10:52:34+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T15:00:05+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Module 2 : RNAseq bioinformatic from sequence to expression level smallRNA & isoform (eukaryote)"
+      }
+    ]
+  }
+]

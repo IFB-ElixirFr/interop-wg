@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formation-chercheurs",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:43:46+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:38+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formation de chercheurs"
+      }
+    ]
+  }
+]

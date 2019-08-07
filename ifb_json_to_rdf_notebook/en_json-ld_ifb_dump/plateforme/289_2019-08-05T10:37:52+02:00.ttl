@@ -1,0 +1,193 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/bilille",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N1177b981f0ab465f84593334dd20f9d0"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N06b3366558114c8b85ccd3a562a51968"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N61f4b96809ae4c25a1ccd5eaf8e0c862"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Ne2caef8e681f46afb333a4138432bfa2"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:41:10+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-19T15:08:45+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "bilille"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N7e9b313ba0b745e0a88faa69686fd6f3"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N9d09687fcb2c48fd9d3199b2f2fdfd91"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N21cd12f0c10b4aff97d7e2853b917487"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N4c2f3aacca1e46a6835dd0dbb6d483eb"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1177b981f0ab465f84593334dd20f9d0",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>bilille acquire a server that is administrated by the Center for computational resources of Lille 1 University</p>\r\n\r\n<p>- 3 nodes with 2*12 cores and RAM: 256 Go - Dell FC630 (2015)<br />\r\n- 1 node with 2*12 cores and RAM: 512 Go - Dell FC630 (2015)<br />\r\n- 6 nodes with 2*4 cores et RAM: 96 Go - Dell R610 (2011)<br />\r\n- Network connexion at 10 Gb/s (2015)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne2caef8e681f46afb333a4138432bfa2",
+    "http://schema.org/identifier": [
+      {
+        "@value": "515"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9d09687fcb2c48fd9d3199b2f2fdfd91",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61f4b96809ae4c25a1ccd5eaf8e0c862",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "76.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7e9b313ba0b745e0a88faa69686fd6f3",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "514"
+      },
+      {
+        "@value": "1518"
+      },
+      {
+        "@value": "1450"
+      },
+      {
+        "@value": "1449"
+      },
+      {
+        "@value": "512"
+      },
+      {
+        "@value": "1444"
+      },
+      {
+        "@value": "3524"
+      }
+    ]
+  },
+  {
+    "@id": "_:N21cd12f0c10b4aff97d7e2853b917487",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Batiment M3, Faculté des Sciences et Technologies, Université de Lille"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "59000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Pôle recherche de la faculté de médecine, Université de Lille"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4c2f3aacca1e46a6835dd0dbb6d483eb",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Bilille"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://wikis.univ-lille1.fr/bilille/accueil"
+      }
+    ]
+  },
+  {
+    "@id": "_:N06b3366558114c8b85ccd3a562a51968",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "144"
+      }
+    ]
+  }
+]

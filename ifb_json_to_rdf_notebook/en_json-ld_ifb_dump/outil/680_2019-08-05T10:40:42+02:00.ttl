@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/ocg",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "OCG"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:13:17+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>OCG est un algorithme d'analyse de grapghe qui identifie des classes chevauchantes de sommlets par optimisation de la modularité de l'ensemble des classes.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T10:57:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N803e93e44620491eae75443f53cb710b"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "79"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tagc.univ-mrs.fr/tagc/index.php/software/ocg"
+      }
+    ]
+  },
+  {
+    "@id": "_:N803e93e44620491eae75443f53cb710b",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Téléchargement du code source à partir de http://tagc.univ-mrs.fr/tagc/index.php/research/network-bioinformatics/cbrun/ocg</p>\r\n"
+      }
+    ]
+  }
+]

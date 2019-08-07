@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/master-génétique-physiologie-bioinformatique-–-spécialité-analyse-et-modélisation-des",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Campus des Cézeaux, Aubière / site Dunant"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T12:32:22+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T15:01:57+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Master Bio-informatique"
+      }
+    ]
+  }
+]

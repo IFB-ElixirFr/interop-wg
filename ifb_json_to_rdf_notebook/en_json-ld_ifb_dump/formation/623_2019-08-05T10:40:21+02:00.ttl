@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/galaxy-reads-alignment-and-snp-calling",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:09:44+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>As the command line training but with Galaxy. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-03T09:26:38+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Galaxy : Reads alignment and SNP calling"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/reads-alignment-and-small-size-variants-calling-with-galaxy/"
+      }
+    ]
+  }
+]

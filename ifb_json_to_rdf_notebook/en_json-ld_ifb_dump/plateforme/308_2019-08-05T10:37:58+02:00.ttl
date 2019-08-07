@@ -1,0 +1,237 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/bistro",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N64028b98a6664128b0d6217dd1f83380"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nd13278edc16c41e49c71bc28801d5dc4"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N0ce4d12045a24cc8a1f1a717062da232"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N473019ab40124b94af0a2447a068d9fb"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N68fa0dfa00b045d69e5a5f009b9809d3"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Na9d09f7d17df43f4a7800be01e0b0d79"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T11:08:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-12T17:03:49+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "BIstrO"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Naca6d839f25e452583297ddd647a99ce"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nfb4a7bdd25a94b369eade3c85d44395c"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N098c8dd795f0410081ea8373558814d7"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfb4a7bdd25a94b369eade3c85d44395c",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N64028b98a6664128b0d6217dd1f83380",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>The platform’s infrastructure (funded by the IFB to the tune of 60 MEuro) will be hosted by the TIER-2 grid of the IPHC: 1 Linux computing cluster with free public access after user identification.<br />\r\nThe platform also has access to part of the IT infrastructure distributed in the partner institutes of the platform:<br />\r\n• IBMP (Federated IT between IBMP, GMGM, IBMC (ARN, RIDI), Herbier de Strasbourg)<br />\r\no Infrastructure : platform<br />\r\no 1 Mac Os X computing cluster with 20 cores (16 to 32 GB RAM) :<br />\r\n• 12 To effective storage for computing + 16 To of passive storage dedicated to bioinformatics.<br />\r\n• 50 sequence analysis tools (Alignment, phylogeny, NGS, smallRNAs, EMBOSS, …).<br />\r\n• About 12 users, including 5 very active). CPU/year unquantified. Access reserved for partner institutes.<br />\r\no 6 web servers<br />\r\n• public : PlantRNA - Cypedia – ANTHoS<br />\r\n• free access for partners : Omero - GBrowse – ncPRO-seq&nbsp; and Intranet (SGDB : MySQL)</p>\r\n\r\n<p>• ICube : BFO, LBGI<br />\r\no Infrastructure : platform<br />\r\no Web server (KVM) : 24 cores (128 GB RAM)<br />\r\no Total effective storage: 7 To<br />\r\no Bioinformatics tools and databases available : 10<br />\r\no Free access</p>\r\n\r\n<p>• IGBMC : GalaxEast<br />\r\no Infrastructure : platform<br />\r\no Number and type of servers :<br />\r\n• nginx web servers (VM) : 2<br />\r\n• posgreSQL server (VM) : 1<br />\r\n• FTP servers (VM) : 2<br />\r\no Computing farm : 16 nodes : 256 cores<br />\r\no Total effective storage: 2,5 To<br />\r\no Bioinformatics tools available: 119<br />\r\no File manager : GridEngine<br />\r\no Free access for GalaxEast users</p>\r\n\r\n<p>• IGBMC : NGS-QC<br />\r\no Infrastructure : platform (financed by Gronemeyer team and a maturation project supported by SATT Conectus Alsace.<br />\r\no Number of servers : 2 servers ; 2 x 40 cores ; 256 GB RAM<br />\r\no Total effective storage: &gt; 20 To<br />\r\no Data sets available : 1.<br />\r\no Bioinformatics tools available: 1<br />\r\no Free access</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N68fa0dfa00b045d69e5a5f009b9809d3",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>• Integrative Plant Biology (silencing, epigenetics, pathogen-host interactions, cell cycle,...)&nbsp;<br />\r\n• Rare genetic diseases (ciliopathies, retinopathies, myopathies,...) structural, functional, comparative genomics<br />\r\n• Development of quantitative methods based on mass spectrometry and their application to biological systems<br />\r\n• Non-coding RNA: architecture, mechanisms of evolution, and roles in pathogenicity<br />\r\n• Study of micro-organisms adapted to extreme environmental conditions<br />\r\n• Trans-disciplinary research at the interface of biology, biochemistry, physics, and medicine</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The BISTRO platform regroups several bioinformatics platforms/services in various research institutes in Strasbourg:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Molecular Genetics, Genomics, Microbiology (GMGM)</h5>\r\n\r\n<p>The study of microorganisms adapted to extreme environmental conditions can reveal unsuspected microbial capabilities. Their understanding, including metabolic functions and biofilm formation involved in the adaptation to specific conditions is a major objective of environmental microbiology. We study these microbial adaptation mechanisms in ecosystems contaminated by toxic elements at 3 levels: (i) isolation of new strains and characterization of their metabolic properties, (ii) study of the adaptive response to toxic metals in laboratory conditions, (iii) study of environments contaminated to understand the functioning of the in-situ microbial communities.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institute of Molecular and Cellular Biology (IBMC)</h5>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The \"evolution of yeast non-coding RNA\" team focuses on the role and evolution of ncRNA in biological mechanisms. These RNA have been known for a long time, but it was thought they were only \"infrastructural components\" of the translational machinery, leftovers of an ancestral \"all RNA\" world: ribosomal RNA, transfer RNA, intron RNA, as well as small nucleolar RNA. Through experimental and bioinformatics approaches, we are particularly interested in: (i) the study of structure-function relationships in certain families of ncRNA (ribosomes, riboswitches,...), (ii) the identification and the study of new ncRNA involved in pathogenicity mechanisms in certain yeast species.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institute of Plant Molecular Biology (IBMP)</h5>\r\n\r\n<p>The research activity is dedicated to the study of the fundamental mechanisms of plant life, with applications including notably in the biotechnology or medical research fields. The studied areas are very diverse: (i) biosynthesis of bioactive molecules (involved in the development of materials, cosmetics, aromas or drugs) and their regulation, (ii) plant viruses, (iii) large regulatory pathways enabling the development and reproduction of plants and adaptation to their environment, (iv) the biogenesis of organelles, chloroplasts, and mitochondria, essential for the cells’ energy production and whose malfunction can cause highly deleterious effects with respect to cellular life.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Laboratory of engineering science, computer science and imaging (ICube)</h5>\r\n\r\n<p>The Complex systems and Translational Bioinformatics (CSTB), covers a broad spectrum of research in computer science: integrative bioinformatics and genomics, theoretical bioinformatics, data mining, knowledge engineering, and stochastic optimization. In the bioinformatics field, we focus primarily on the field of health, notably the study of rare genetic diseases, and the understanding of patho-physiological mechanisms involved in these diseases. These mechanisms often have a potential interest for the understanding of biological processes altered in more common diseases, such as obesity, diabetes or cancer.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institute of Genetics and Molecular and Cellular Biology (IGBMC)</h5>\r\n\r\n<p>The objective of the Institute is to develop interdisciplinary research at the interface of biology, biochemistry, physics and medicine. We explore very diverse themes, combining basic and applied research in the field of health. The research work also concerns very diverse topics, ranging from structural analysis of proteins in human genetics, stem cells, biophysics and epigenetics. The scientific results have already allowed significant progress, notably in the understanding of many human diseases such as certain cancers or rare genetic diseases.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Mouse Clinic Institute (ICS - IGBMC)</h5>\r\n\r\n<p>The ICS IT service has strong computer expertise in the development of data processing protocols related to genetically modified mice: development of tools for phenotyping data capture, appropriate statistical analyses, procedures for interfacing with external resources. They are also developing integrative analyses of these data by cross-referencing them with available public resources (MGI, EMMA...).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut Pluridisciplinaire Hubert Curien (IPHC)</h5>\r\n\r\n<p>The goal of the “bioorganic mass spectrometry laboratory” (LSMBO) is the structural determination of macromolecules, mainly proteins, without any structural ambiguity at the atomic level. In proteomics, we focus on improving the description of structures (from identification to complete characterization), including post-translational modifications. Specific objectives include the description of non-covalent complexes and we are developing supra-molecular MS. We have applied this very innovative methodology to the analysis of biological complexes measuring several millions of Daltons, paving the way for a ‘complexomics’ that can be used in biology in the same way as proteomics.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N098c8dd795f0410081ea8373558814d7",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Illkirch"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "67412"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "300 boulevard Sébastien Brant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N473019ab40124b94af0a2447a068d9fb",
+    "http://schema.org/identifier": [
+      {
+        "@value": "521"
+      },
+      {
+        "@value": "519"
+      },
+      {
+        "@value": "520"
+      },
+      {
+        "@value": "523"
+      },
+      {
+        "@value": "517"
+      },
+      {
+        "@value": "1387"
+      },
+      {
+        "@value": "524"
+      },
+      {
+        "@value": "1429"
+      },
+      {
+        "@value": "522"
+      },
+      {
+        "@value": "516"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd13278edc16c41e49c71bc28801d5dc4",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "380"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0ce4d12045a24cc8a1f1a717062da232",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "60.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na9d09f7d17df43f4a7800be01e0b0d79",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>1. BioImage<br />\r\n• Mode : BioImage partner<br />\r\n• Hosting of MitoCross labex (storage infrastructure hosted /configured/maintained by the platform)<br />\r\n• Support for project “Variation intra-spécifique et évolution des genomes” led by Joseph SCHACHERER (computing and data storage via the platform)<br />\r\n2. Structural biology<br />\r\n• Mode : Instruct project partner<br />\r\n• Support for Instruct project: European Research Infrastructure in Integrative Structural Biology<br />\r\n• Support for FRISBI&nbsp; project : French Infrastructure For Integrated Structural Biology<br />\r\n3. Proteomics<br />\r\n• Participation in project: Infrastructure Nationale en Biologie et Santé (ProFI : Proteomic French Infrastructure)<br />\r\n4. Participation in project: NOTOX project : Predicting long-term toxic effects using computer models based on systems characterization of organotypic cultures.&nbsp;<br />\r\n5. Mouse clinic (ICS)<br />\r\n• Mordor “Distribution of the fluorescent mu (MOR-mcherry) and delta (DOR-eGFP) opioid receptors in the brain and spinal cord”. Development and hosting of a “zoomable” image database in support of publication (<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24623156\">www.ncbi.nlm.nih.gov/pubmed/24623156</a>)<br />\r\n• Gencodys: Development and hosting of an intranet for progress monitoring of lines generated in the context of the GENCODYS consortium (<a href=\"http://www.gencodys.eu\">www.gencodys.eu</a>)<br />\r\n6. NGS quality control<br />\r\n•&nbsp; “Systems Biology of Cell Fate Decisions” project led by MA Mendoza Parra.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naca6d839f25e452583297ddd647a99ce",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "529"
+      },
+      {
+        "@value": "1424"
+      },
+      {
+        "@value": "1426"
+      },
+      {
+        "@value": "530"
+      },
+      {
+        "@value": "1423"
+      },
+      {
+        "@value": "1427"
+      },
+      {
+        "@value": "526"
+      },
+      {
+        "@value": "527"
+      },
+      {
+        "@value": "528"
+      },
+      {
+        "@value": "1425"
+      },
+      {
+        "@value": "531"
+      }
+    ]
+  }
+]

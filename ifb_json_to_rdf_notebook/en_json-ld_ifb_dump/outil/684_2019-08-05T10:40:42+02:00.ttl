@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/tbrower-transcriptomebrowser",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1600"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "TBrower (TranscriptomeBrowser)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T13:13:03+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Ce logiciel, écrit en Java, est un outil graphique dédié à la fouille de données biopuces. Il permet de rechercher les contextes biologiques dans lesquels un ensemble de gène est co-régulé. La recherche s'appuie sur une base de données contenant des signatures transcriptionnelles (environ 31000) isolées par l'algorithme DBF-MCL dans environ 3000 jeux de données de biopuces. TBrowser dispose d'un moteur de recherche évolué permettant d'effectuer des recherches booléennes complexes avec en entrée un ensemble d'identifiants de gènes (symbole, Entrez ID, sondes affymetrix, ...) ou de termes d'annotation (GO, KEGG, ...).</p>\r\n\r\n<p>TBrowser est un outil extensible via une architecture de plugins. L'un des pluings, InteractomeBrowser, permet de contextualiser un ensemble de gènes en générant une treemap reflétant l'arborescence de l'ontologie GO 'cellular components'. Il permet par ailleurs de recherche des intéractions prédites ou validées expérimentalement dans une base de données contenant plus de 1,5*10<sup>6</sup> intéractions.<br />\r\n&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:58+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1c3d9d40ece3460baf162de64a54e910"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "42"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1c3d9d40ece3460baf162de64a54e910",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Logiciel libre d'accès sur http://tagc.univ-mrs.fr/tbrowser</p>\r\n"
+      }
+    ]
+  }
+]

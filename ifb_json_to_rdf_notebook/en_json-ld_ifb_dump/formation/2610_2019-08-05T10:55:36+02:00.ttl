@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/guide-survie-à-perl-pour-bioinformatique",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "ISRA, Dakar (Sénégal)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-15T18:03:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T22:40:25+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Guide de survie à Perl pour la bioinformatique"
+      }
+    ]
+  }
+]

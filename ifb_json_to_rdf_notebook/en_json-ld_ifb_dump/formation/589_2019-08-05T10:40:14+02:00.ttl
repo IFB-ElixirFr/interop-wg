@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/fc3-bio",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:07:21+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T10:48:11+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Fc3-Bio"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.fc3bio.fr/"
+      }
+    ]
+  }
+]

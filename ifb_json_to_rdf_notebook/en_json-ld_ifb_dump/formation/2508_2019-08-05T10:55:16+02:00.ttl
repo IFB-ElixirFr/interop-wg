@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/introduction-à-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-07T17:32:52+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-08T10:50:23+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à R"
+      }
+    ]
+  }
+]

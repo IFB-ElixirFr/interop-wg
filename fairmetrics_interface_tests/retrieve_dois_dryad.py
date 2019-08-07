@@ -16,7 +16,7 @@ import requests
 
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
-NB = '500'
+NB = '5000'
 OUTPUT_DIR = "input"
 
 def dryadRequest():
@@ -28,8 +28,10 @@ def dryadRequest():
             response = requests.get(url, timeout=TIMEOUT)
             break
         except SSLError:
+            print("Error, retrying...")
             time.sleep(5)
         except requests.exceptions.Timeout:
+            print("Timeout error, retrying...")
             time.sleep(5)
 
     return response.text

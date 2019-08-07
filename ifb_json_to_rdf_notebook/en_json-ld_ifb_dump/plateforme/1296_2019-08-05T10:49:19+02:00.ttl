@@ -1,0 +1,141 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/orphanet",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N75c6b8d1ee2f496ea719050a231d0968"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N7c04787f77bd42deb19be6e02af9c8ce"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-11-17T10:49:52+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:25:45+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Orphanet"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Ne7e2b28a7361488691f9b3806fd7737b"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N38567f71513349ef9fdf6657e81c74b6"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N246e3839763e4c9ab4b8f12a6529442d"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N6d762f87840b4771906a95204088d9a5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N75c6b8d1ee2f496ea719050a231d0968",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1298"
+      },
+      {
+        "@value": "1297"
+      }
+    ]
+  },
+  {
+    "@id": "_:N246e3839763e4c9ab4b8f12a6529442d",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75014"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "96 rue Didot"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6d762f87840b4771906a95204088d9a5",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Orphanet"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.orpha.net"
+      }
+    ]
+  },
+  {
+    "@id": "_:N38567f71513349ef9fdf6657e81c74b6",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne7e2b28a7361488691f9b3806fd7737b",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1299"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c04787f77bd42deb19be6e02af9c8ce",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Orphanet has particular expertise in the field of rare diseases, in particular the clinical and medical aspects of these diseases (natural history, diagnosis and care), their epidemiology (prevalence, incidence, prevalence at birth, geographical distribution, and age of onset and death), their genetic basis (genetic determinants of causalité/susceptibility), their phenotypic aspect (frequence of the occurance of different phenotypic traits), their nosology (via a multi-dimensional classification), and terminologies of these diseases (for semantic interoperability). Orphanet's coverage of the domain is also geographical, as Orphanet gives access to information concerning the expertise associated with rare diseases, the diagnostic offer, and the state of the art of research in around 37 countries.</p>\r\n\r\n<p>Orphanet provides data and services with a high level of added-value as the data presented are integrated with other data and databases, qualified, expert-validated and quality controlled.<br />\r\n&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

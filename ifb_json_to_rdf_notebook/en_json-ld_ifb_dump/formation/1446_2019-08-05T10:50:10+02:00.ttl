@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-gènes-différentiellement-à-partir-données-rnaseq-et-sous-lenvironnement-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T11:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La formation s’adresse à un public de biologistes et de bio-informaticiens désireux de faire leur premiers pas sous Galaxy et de maîtriser l’analyse d’expression différentielle de gènes à partir de données RNAseq.</p>\r\n\r\n<p>L'analyse d’expression différentielle des gènes entre deux conditions expérimentales est réalisée avec la suite d’outils DESeq que nous avons interfacé pour l’environnement Galaxy. &nbsp;Cette formation alterne des présentations des méthodes, concepts et outils du RNAseq avec des tutoriels pratiques durant lesquels vous utiliserez les outils bio-informatiques du serveur Galaxy de la plate-forme eBio.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:24+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de gènes différentiellement à partir de données RNAseq et sous l'environnement Galaxy"
+      }
+    ]
+  }
+]

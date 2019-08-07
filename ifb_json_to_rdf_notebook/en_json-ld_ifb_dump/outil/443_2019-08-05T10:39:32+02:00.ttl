@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxy-public",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "208752"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "136"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy-public"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T12:34:07+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:03+01:00"
+      }
+    ]
+  }
+]

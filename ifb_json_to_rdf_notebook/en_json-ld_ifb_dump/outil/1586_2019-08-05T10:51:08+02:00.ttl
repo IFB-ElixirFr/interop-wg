@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/panam",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "70"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "40"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PANAM"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:51:19+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "14"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "15"
+      }
+    ]
+  }
+]

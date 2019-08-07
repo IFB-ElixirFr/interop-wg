@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/frog2",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "6400"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "960"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Frog2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T10:56:00+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Frog</strong>&nbsp;is intended to generate 3D for drugs, usually described using a 1D or 2D representation. Frog performs isomer identification from ambiguous compound description. Frog is able to generate multi-conformations per isomer.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T15:51:04+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Naefe9b2b41054107ac6d1875116fe469"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "64"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/Frog2/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naefe9b2b41054107ac6d1875116fe469",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Online free access</p>\r\n"
+      }
+    ]
+  }
+]

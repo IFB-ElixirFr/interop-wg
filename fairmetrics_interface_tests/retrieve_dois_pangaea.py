@@ -22,7 +22,7 @@ import requests
 
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
-NB = '500'
+NB = '5000'
 OUTPUT_DIR = "input"
 
 def pangaeaRestRequest():

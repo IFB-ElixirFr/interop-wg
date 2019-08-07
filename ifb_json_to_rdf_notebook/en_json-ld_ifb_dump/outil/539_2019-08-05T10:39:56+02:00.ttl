@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxy",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "400"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T13:02:36+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:00+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N608e61dc217f4b80933f5ecae020974a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N608e61dc217f4b80933f5ecae020974a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>http://galaxy.sb-roscoff.fr/</p>\r\n"
+      }
+    ]
+  }
+]

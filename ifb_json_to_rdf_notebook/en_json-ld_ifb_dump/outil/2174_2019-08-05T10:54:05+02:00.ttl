@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/mobyle",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "209734"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "20399"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Mobyle"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-17T16:34:02+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T17:10:20+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "239"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://projets.pasteur.fr/projects/mobyle/wiki"
+      }
+    ]
+  }
+]

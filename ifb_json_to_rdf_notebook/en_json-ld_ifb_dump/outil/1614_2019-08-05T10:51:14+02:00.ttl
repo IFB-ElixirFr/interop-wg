@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/micrhode-workflow",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MicRhoDE workflow"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T22:54:57+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ]
+  }
+]

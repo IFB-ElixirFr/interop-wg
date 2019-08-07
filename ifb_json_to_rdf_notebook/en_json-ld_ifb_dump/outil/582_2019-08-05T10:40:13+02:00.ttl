@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/geno3d",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "16419"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "5837"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Geno3D@ "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:03:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-27T16:30:38+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "304"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://geno3d-prabi.ibcp.fr"
+      }
+    ]
+  }
+]

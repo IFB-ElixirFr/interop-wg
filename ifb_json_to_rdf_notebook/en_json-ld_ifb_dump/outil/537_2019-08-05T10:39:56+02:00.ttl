@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/kpax",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "400"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "50"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Kpax"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T12:44:17+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T19:31:36+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "15"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://kpax.loria.fr"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "200"
+      }
+    ]
+  }
+]

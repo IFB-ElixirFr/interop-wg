@@ -1,0 +1,237 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/migale",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N3c52f771d9484879a10718b1ac9ff2f4"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N18e80422dd324a14bff96102c8291e56"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Ne07371863887493eb1401863851ed59f"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N231df9252668429aa0b2289eaff36a5c"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:32:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-14T12:02:40+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf87c09712d73483f81b2c9ced13d834b"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MIGALE"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N88b5d12d3d2b4e03bee213fdfe23cc86"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N005c6207ae004fef8b2ee4c0b276bdfc"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Na6545223ad8d4c05a2b57d6dcbc11928"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N7c8fd537eebc4c73a8f44b788dc76d12"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c8fd537eebc4c73a8f44b788dc76d12",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "http://migale.jouy.inra.fr/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N231df9252668429aa0b2289eaff36a5c",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Les utilisateurs font une demande d’hébergement à la plate-forme et de collaboration avec l’équipe de l’unité qui assure le traitement et l’analyse des données bioinformatiques.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3c52f771d9484879a10718b1ac9ff2f4",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1082"
+      }
+    ]
+  },
+  {
+    "@id": "_:N18e80422dd324a14bff96102c8291e56",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "300.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na6545223ad8d4c05a2b57d6dcbc11928",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Jouy-en-Josas"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Unité MaIAGE"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "78350"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Domaine de Vilvert"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf87c09712d73483f81b2c9ced13d834b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "451"
+      }
+    ]
+  },
+  {
+    "@id": "_:N88b5d12d3d2b4e03bee213fdfe23cc86",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "495"
+      },
+      {
+        "@value": "491"
+      },
+      {
+        "@value": "494"
+      },
+      {
+        "@value": "488"
+      },
+      {
+        "@value": "489"
+      },
+      {
+        "@value": "493"
+      },
+      {
+        "@value": "487"
+      },
+      {
+        "@value": "464"
+      },
+      {
+        "@value": "466"
+      },
+      {
+        "@value": "499"
+      },
+      {
+        "@value": "486"
+      },
+      {
+        "@value": "496"
+      },
+      {
+        "@value": "465"
+      },
+      {
+        "@value": "490"
+      },
+      {
+        "@value": "492"
+      },
+      {
+        "@value": "498"
+      },
+      {
+        "@value": "485"
+      },
+      {
+        "@value": "497"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne07371863887493eb1401863851ed59f",
+    "http://schema.org/identifier": [
+      {
+        "@value": "468"
+      },
+      {
+        "@value": "467"
+      }
+    ]
+  },
+  {
+    "@id": "_:N005c6207ae004fef8b2ee4c0b276bdfc",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  }
+]

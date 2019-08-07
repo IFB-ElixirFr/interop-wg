@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/intégration-doutils-dans-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Clermont-Ferrand - Université d'Auvergne"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-05-31T14:51:06+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:32+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Intégration d'outils dans Galaxy"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://brnice.typeform.com/to/vCq4AV"
+      }
+    ]
+  }
+]

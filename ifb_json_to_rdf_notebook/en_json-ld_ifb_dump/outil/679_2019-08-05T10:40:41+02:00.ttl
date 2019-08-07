@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/rsat-neat",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "180000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Regulatory Sequence Analysis Tools (RSAT)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:09:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Regulatory Sequence Analysis Tools (RSAT), a software suite dedicated to the detection of cis-regulatory elements in genomic sequences.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-05-11T18:23:04+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nfd5706c84b284634b6dde28d3ee08652"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2819"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rsat.eu/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfd5706c84b284634b6dde28d3ee08652",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre sous cinq modalités:</p>\r\n\r\n<ul>\r\n\t<li>Interface Web RSAT (http://www.rsat.eu) et&nbsp;NeAt (htpp://neat.rsat.eu)</li>\r\n\t<li>En ligne de commandes (suite téléchargeable localement)</li>\r\n\t<li>Services Web (SOAP/WSDL)</li>\r\n\t<li>Machines virtuelles accessibles à partir du cloud IFB (Web + ligne de commande + web service)</li>\r\n\t<li>En développement interface Galaxy pour certains outils spécialisés dans l'analyse des données ChIP-Seq</li>\r\n</ul>\r\n"
+      }
+    ]
+  }
+]

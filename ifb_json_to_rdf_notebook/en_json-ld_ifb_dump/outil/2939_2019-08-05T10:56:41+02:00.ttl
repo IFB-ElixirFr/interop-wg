@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/ammos2",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "AMMOS2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-06-11T11:38:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-06-11T11:38:31+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://drugmod.rpbs.univ-paris-diderot.fr/ammosHome.php"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formation-au-package-r-shiny",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "I. Pasteur, Paris"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-21T08:51:01+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-21T08:51:47+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formation au package R-Shiny"
+      }
+    ]
+  }
+]

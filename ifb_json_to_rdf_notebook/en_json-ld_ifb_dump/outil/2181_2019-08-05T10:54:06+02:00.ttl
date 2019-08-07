@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/cesgo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "CesGO"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T11:42:53+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T11:43:06+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.cesgo.org"
+      }
+    ]
+  }
+]

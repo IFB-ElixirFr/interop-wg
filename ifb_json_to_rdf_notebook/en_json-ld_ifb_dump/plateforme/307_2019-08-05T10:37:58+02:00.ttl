@@ -1,0 +1,179 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/mbi",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N7816824225d54844bccfe31d8c775fd4"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nefdb0395d89149bdb0409b81f965db06"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N597ee40432f04076aadce25a893a637b"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:38:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-14T15:26:10+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N6e04558bc7084bcca2023670fc9875be"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MBI"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N449199f006e642d2964ce8e1e7ed0656"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N734176dcb49845878b6c9e2b475edddf"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N0cf58f436ad94a909dc2d57e3c1be6bb"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N59b0d926d69742ffbe84c9b526d4d245"
+      }
+    ]
+  },
+  {
+    "@id": "_:N449199f006e642d2964ce8e1e7ed0656",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "535"
+      },
+      {
+        "@value": "2183"
+      },
+      {
+        "@value": "537"
+      },
+      {
+        "@value": "536"
+      }
+    ]
+  },
+  {
+    "@id": "_:N734176dcb49845878b6c9e2b475edddf",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "134"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6e04558bc7084bcca2023670fc9875be",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "25"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7816824225d54844bccfe31d8c775fd4",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "300"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nefdb0395d89149bdb0409b81f965db06",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "80.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N59b0d926d69742ffbe84c9b526d4d245",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "LORIA"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.loria.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N597ee40432f04076aadce25a893a637b",
+    "http://schema.org/identifier": [
+      {
+        "@value": "538"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0cf58f436ad94a909dc2d57e3c1be6bb",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villers-lès-Nancy"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "54600"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "615 Rue du Jardin Botanique"
+      }
+    ]
+  }
+]

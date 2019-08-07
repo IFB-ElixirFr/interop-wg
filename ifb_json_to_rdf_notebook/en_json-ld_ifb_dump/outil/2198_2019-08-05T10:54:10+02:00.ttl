@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/jvenn",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Jvenn"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-19T15:05:22+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://jvenn.toulouse.inra.fr/app/index.html"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1124"
+      }
+    ]
+  }
+]

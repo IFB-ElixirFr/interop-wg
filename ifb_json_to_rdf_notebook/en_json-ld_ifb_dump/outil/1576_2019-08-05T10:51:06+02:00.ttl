@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/hispod",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "55"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "HiSpOD"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:35:38+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T17:04:02+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://g2im.u-clermont1.fr/hispod/index.php"
+      }
+    ]
+  }
+]

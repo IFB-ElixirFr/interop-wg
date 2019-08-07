@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/intiation-aux-analyses-données-ngs-2",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T16:38:14+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T16:38:14+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Intiation aux analyses de données NGS - 2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://sns.edu.umontpellier.fr/fr/master-sciences-numerique-pour-la-sante-montpellier/bcd/"
+      }
+    ]
+  }
+]

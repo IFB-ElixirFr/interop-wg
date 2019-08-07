@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/memhdx",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1524"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "833"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MEMHDX"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-19T15:25:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>MEMHDX allows users to perfom an automated workflow to analyze, validate and visualize large HDX-MS datasets. The input file is the output of DynamX software from Waters. Output files provide a plot of the data, the fitted model for each peptide, a plot of the calculated p -values, and a global visualization of the experiment. User could also obtain an overview of all peptides on the 3D structure.</p>\r\n\r\n<p>ref:</p>\r\n\r\n<p>Véronique Hourdel, Stevenn Volant, Darragh P. O’Brien, Alexandre Chenal, Julia Chamot-Rooke, Marie-Agnès Dillies, Sébastien Brier; <a href=\"https://academic.oup.com/bioinformatics/article/32/22/3413/2562706/MEMHDX-an-interactive-tool-to-expedite-the\">MEMHDX: an interactive tool to expedite the statistical validation and visualization of large HDX-MS datasets</a>. Bioinformatics 2016; 32 (22): 3413-3419. doi: 10.1093/bioinformatics/btw420</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T15:26:02+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N69094cd198a348259d0d07d8415f6621"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://memhdx.c3bi.pasteur.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N69094cd198a348259d0d07d8415f6621",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>MEMHDX is freely available as a web tool at http://memhdx.c3bi.pasteur.fr/</p>\r\n"
+      }
+    ]
+  }
+]

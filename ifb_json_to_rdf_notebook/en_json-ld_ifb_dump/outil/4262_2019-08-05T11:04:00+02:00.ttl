@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/dgenies",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "11561"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "8952"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Dgenies"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-07-09T15:52:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T11:22:06+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "14"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://dgenies.toulouse.inra.fr/"
+      }
+    ]
+  }
+]

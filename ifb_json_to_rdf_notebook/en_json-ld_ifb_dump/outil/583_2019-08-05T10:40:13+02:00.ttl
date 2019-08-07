@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/nps",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "480414"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "NPS@ "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:04:06+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-27T16:15:41+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1079"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://npsa-prabi.ibcp.fr"
+      }
+    ]
+  }
+]

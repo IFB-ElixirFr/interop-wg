@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-données-génomiques-et-post-­‐génomiques",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:12:43+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-01-25T13:55:42+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": " Analyse de données génomiques et post-­‐génomiques"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  }
+]

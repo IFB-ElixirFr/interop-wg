@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/pipealign",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PipeAlign"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T09:59:46+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>An online workflow for Multiple Sequence Alignment.</p>\r\n\r\n<div>\r\n<p>Plewniak F, et al. PipeAlign: A new toolkit for protein family analysis. Nucleic Acids Res. 2003 Jul 1;31(13):3829-32.</p>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5ef8233543d747fb9c572b7dda0cf78c"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://galaxy.bioinfo-bistro.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5ef8233543d747fb9c572b7dda0cf78c",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://galaxy.bioinfo-bistro.fr/galaxy/\">http://galaxy.bioinfo-bistro.fr/galaxy/</a></p>\r\n"
+      }
+    ]
+  }
+]

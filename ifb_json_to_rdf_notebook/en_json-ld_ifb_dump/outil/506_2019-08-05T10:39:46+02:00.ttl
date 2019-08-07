@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/s-mart",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "474"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "267"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "S-MART"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T15:14:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<h5>Analysis of the data NGS - Analysis of transcripts (RNA-seq)</h5>\r\n\r\n<p>S-MART is a toolbox which handles mapped RNA-Seq and ChIP-Seq data. it is is an intuitive and lightweight tool, performing several tasks that are usually required during the analysis of mapped RNA-Seq and ChIP-Seq reads, including data selection and data visualization.</p>\r\n\r\n<p>It includes the selection (or the exclusion) of the data that overlaps with a reference set, clustering and comparative analysis (between two conditions, for instance). S-MART also provides many ways to visualize your data: size of the reads, density on the genome, distance with respect to a reference set, and the correlation of two data sets (with cloud plots).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Zytnicki M, Quesneville H (2011) S-MART, A Software Toolbox to Aid RNA-seq Data Analysis. PLoS ONE 6(10): e25988. doi:10.1371/journal.pone.0025988</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-12T16:07:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N52b293c208b045e3aeb816b2b4b80af9"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "18"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Tools/S-Mart"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "152"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52b293c208b045e3aeb816b2b4b80af9",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Dowload at: https://urgi.versailles.inra.fr/Tools/S-Mart</p>\r\n"
+      }
+    ]
+  }
+]

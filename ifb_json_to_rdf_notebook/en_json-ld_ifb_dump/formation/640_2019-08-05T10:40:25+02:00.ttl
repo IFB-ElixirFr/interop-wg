@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/phylogénie-moléculaire",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:51:00+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<p>Les objectifs sont :<br />\r\n1. Acquérir des connaissances théoriques et pratiques en phylogénie moléculaire.<br />\r\n2. Être autonome dans la conduite d'une analyse phylogénétique.<br />\r\n3. Maîtriser le choix, le paramétrage et l'exploitation des résultats des programmes de phylogénie.</p>\r\n\r\n<p><a href=\"https://cnrsformation.cnrs.fr/\">https://cnrsformation.cnrs.fr/</a></p>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T10:33:27+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Phylogénie moléculaire"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://cnrsformation.cnrs.fr/stage-17007-Phylogenie-moleculaire-%28Montpellier%29.html?axe=65"
+      }
+    ]
+  }
+]

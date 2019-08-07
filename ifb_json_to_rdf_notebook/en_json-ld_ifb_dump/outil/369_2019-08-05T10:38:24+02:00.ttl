@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/fitbar",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "364"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "299"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "FITBAR "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:38:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>FITBAR permits a fast, accurate and statistically significant prediction of specific protein DNA binding sites on completely sequenced prokaryotic genomes.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T15:10:18+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N0429b215ac4a43f3bff9e977a3b11140"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "22"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://archaea.u-psud.fr/fitbar/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0429b215ac4a43f3bff9e977a3b11140",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Web server</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/functional-analysis-and-interpretation-proteomic-data-proteore",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Campus de Beaulieu, IFSIC, Rennes, FR. Bâtiment/Building 12D, room 102"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T16:08:14+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T16:08:14+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Functional analysis and interpretation of proteomic data with ProteoRE"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.biogenouest.org/actualites/article/10-1107-%C2%AB-analyse-fonctionnelle-et-interpretation-de-donnees-de-proteomique-avec-"
+      }
+    ]
+  }
+]

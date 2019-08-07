@@ -1,0 +1,232 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/PRABI-Doua",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nbbb66272dd674bd3af4deede7b0bcda6"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nc78eebc8ff80452e8b5d37bf56867aa5"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N032376abd3374dadb258bffed4344e87"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nfe48243bd4224ee9a9687be83600dcf4"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nc3e481b838d14e5780c7e4664e152702"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N75baf441b9c34a1494668536bea39c4e"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:59:50+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-03T18:02:15+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N652e7c57581c475bac2398272d3d609b"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Lyon-Grenoble"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N74d9fad088a046ee896bb1399274141a"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nf7c261250b64408fad4d4e7d13470773"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nff68fe9f3aa445b4814e6431b1bb8793"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N4322f268b5eb42b6bf76f0d2de782e47"
+      }
+    ]
+  },
+  {
+    "@id": "_:N74d9fad088a046ee896bb1399274141a",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1499"
+      },
+      {
+        "@value": "1465"
+      },
+      {
+        "@value": "1466"
+      },
+      {
+        "@value": "1500"
+      },
+      {
+        "@value": "1501"
+      }
+    ]
+  },
+  {
+    "@id": "_:N652e7c57581c475bac2398272d3d609b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "150"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nff68fe9f3aa445b4814e6431b1bb8793",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "43 boulevard du 11 Novembre 1918"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69622"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Université Claude Bernard – Lyon 1"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfe48243bd4224ee9a9687be83600dcf4",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1504"
+      },
+      {
+        "@value": "1461"
+      },
+      {
+        "@value": "1462"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbbb66272dd674bd3af4deede7b0bcda6",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>One task submission server: Dell PowerEdge R630, 2 Intel Xeon E5-2650 v3 (10 cores/20 threads), 96 Gb RAM.</p>\r\n\r\n<p>One scheduling server: VM Intel 5430 with 3 CPUs and 8 Gb RAM.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N032376abd3374dadb258bffed4344e87",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "515.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc78eebc8ff80452e8b5d37bf56867aa5",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1032"
+      }
+    ]
+  },
+  {
+    "@id": "_:N75baf441b9c34a1494668536bea39c4e",
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>Scientific collaboration with PRABI-Doua or LBBE</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf7c261250b64408fad4d4e7d13470773",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc3e481b838d14e5780c7e4664e152702",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p class=\"rtejustify\">Les thématiques de recherche du PRABI-Doua s’organisent autour d’un point de vue méthodologique, qui affirme l’importance de la modélisation tant mathématique qu’informatique et d’une perspective évolutive qui organise les recherches indépendamment du niveau d’organisation biologique. C’est dans la synergie entre des problématiques biologiques propres et des développements méthodologiques que naît la plus grande part des résultats scientifiques de cette composante. Parmi les thématiques abordées figurent en particulier:</p>\r\n\r\n<ul>\r\n\t<li>Phylogénie et évolution moléculaire.</li>\r\n\t<li>Génomique comparative (organismes eucaryotes et procaryotes).</li>\r\n\t<li>Eléments transposables.</li>\r\n\t<li>Intreractions hôtes-parasites.</li>\r\n\t<li>Statistiques appliquées à l'écologie et l'évolution.</li>\r\n\t<li>Analyse statistique de données en grandes dimensions pour la génomique.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4322f268b5eb42b6bf76f0d2de782e47",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Doua"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://doua.prabi.fr/main/index"
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/mpscan",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "100"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MPscan"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:30:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Méthode de mapping de reads sur un génome sans index.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:43+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5360f16566da40f6a332fba93b1429da"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "8"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.atgc-montpellier.fr/mpscan/"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "110"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5360f16566da40f6a332fba93b1429da",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit via le site web de la plateforme.</p>\r\n"
+      }
+    ]
+  }
+]

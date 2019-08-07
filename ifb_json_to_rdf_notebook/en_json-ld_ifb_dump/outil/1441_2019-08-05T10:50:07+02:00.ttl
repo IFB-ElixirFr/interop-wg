@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/peppsy",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PepPSY"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T16:13:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T10:55:26+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://peppsy.genouest.org/"
+      }
+    ]
+  }
+]

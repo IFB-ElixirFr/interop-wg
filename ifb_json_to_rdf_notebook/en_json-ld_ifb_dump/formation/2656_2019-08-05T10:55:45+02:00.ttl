@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/data-collection-and-registration-patient-organisations-orphanet-information-scientists",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Paris (à distance"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T11:25:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:02+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Data collection and registration of Patient organisations for Orphanet information scientists"
+      }
+    ]
+  }
+]

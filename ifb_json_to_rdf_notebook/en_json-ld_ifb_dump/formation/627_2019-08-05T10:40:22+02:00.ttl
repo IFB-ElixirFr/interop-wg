@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/master-bioinfo-toulouse",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:11:58+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Organized by Sigenae and Bioinfo Genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:42+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Master Bioinfo Toulouse "
+      }
+    ]
+  }
+]

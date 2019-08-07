@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/gbrowse-virus-géants",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Gbrowse virus géants"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-02-12T18:14:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-12T18:15:08+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.igs.cnrs-mrs.fr/cgi-bin/gb2/gbrowse/Mollivirus/"
+      }
+    ]
+  }
+]

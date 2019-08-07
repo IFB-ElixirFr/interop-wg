@@ -5,6 +5,7 @@
 import requests
 import json
 import simplejson
+from tqdm import tqdm
 
 import ifb_logs
 import time
@@ -27,12 +28,22 @@ import logging
 import logging.handlers
 
 TIMEOUT = (10, 300)
+# fr or en
 LANGUAGE = "en"
+# turtle or json-ld
 RDF_FORMAT = "turtle"
-OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump"
+OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump_test"
 
 def requestsIFB(url, s, node_id):
+    """
+    Request a node on IFB website (node export to json).
 
+    @param url String The url to request a node in json format
+    @param s requests.Session Object corresponding to the connection session
+    @param node_id String The node number
+
+    @return json The result of the requested node as JSON format/object
+    """
     while True:
         try:
             logger.info('[' + node_id + ']' + " Requesting: [" + url + "]")
@@ -40,20 +51,20 @@ def requestsIFB(url, s, node_id):
             r = s.get(url, timeout=TIMEOUT).json()
             # print(s.get(url).status_code)
                 # etc...
-            print("Done")
+            # print("Done")
             logger.info('[' + node_id + ']' + " JSON retrieved")
             break
         except simplejson.errors.JSONDecodeError:
             logger.warning('[' + node_id + ']' + " No JSON found...")
-            print("No JSON found...")
+            # print("No JSON found...")
             return False
         except requests.exceptions.ConnectionError as e:
             logger.error('[' + node_id + ']' + " ConnectionError, retrying: " + str(e))
-            print(str(e) + "\nRetrying...")
+            # print(str(e) + "\nRetrying...")
             time.sleep(10)
         except requests.exceptions.ReadTimeout as e:
             logger.error('[' + node_id + ']' + " ReadTimeout, retrying: " + str(e))
-            print(str(e) + "\nRetrying...")
+            # print(str(e) + "\nRetrying...")
             time.sleep(10)
 
 
@@ -71,7 +82,11 @@ def requestsIFB(url, s, node_id):
 
 
 def createContext():
+    """
+    Create and return the context for a RDFlib object (json-ld format).
 
+    @return dict Contains the context for a rdflib json-ld object
+    """
     ctx = {
         "@context": {
             "edam": "http://edamontology.org/",
@@ -93,8 +108,11 @@ def createContext():
             "geosp": "http://rdf.geospecies.org/ont/geospecies#",
             "meb": "http://rdf.myexperiment.org/ontologies/base/",
             "wl": "http://www.wsmo.org/ns/wsmo-lite#",
+            "nno": "https://w3id.org/nno/ontology#",
+            "c4o": "http://purl.org/spar/c4o/",
+            "dqm": "http://purl.org/dqm-vocabulary/v1/dqm#",
 
-            "und": "http://adefinir/",
+            # "und": "http://adefinir/",
 
             "toolName": "edam:data_1190",
             "trainingMaterial": "edam:data_3669",
@@ -104,7 +122,15 @@ def createContext():
     return ctx
 
 def rdfize(json_result):
+    """
+    Parse the node json object from the requested node, and then, select the keys
+    of interest to add them to another json object as well as RDF (json-ld - uri -markup)
+    to allow the json object to be converted to a rdflib json-ld object.
 
+    @param json_result json The result of the requested node export to json
+
+    @return String The raw json-ld as string
+    """
     jld = json.loads("{}")
     jld.update(createContext())
     # jld['@id'] = str("ifbn:" + json_result['nid'])
@@ -155,7 +181,14 @@ def rdfize(json_result):
 
 
 def formationRDF(key, json_result, jld):
+    """
+    Add the values from the json export node to a new json object (jld) whose
+    are specific from a formation.
 
+    @param key String A key from the json export node object
+    @param json_result json The json export node object
+    @param jld json The new json object which contains json-ld markups
+    """
     jld['@type'] = "trainingMaterial"
     language = "en"
 
@@ -204,7 +237,14 @@ def formationRDF(key, json_result, jld):
 
 
 def platformRdf(key, json_result, jld):
+    """
+    Add the values from the json export node to a new json object (jld) whose
+    are specific from a platform.
 
+    @param key String A key from the json export node object
+    @param json_result json The json export node object
+    @param jld json The new json object which contains json-ld markups
+    """
 
     jld['@type'] = "schema:LaboratoryScience"
     language = LANGUAGE
@@ -404,7 +444,14 @@ def platformRdf(key, json_result, jld):
 
 
 def toolRdf(key, json_result, jld):
+    """
+    Add the values from the json export node to a new json object (jld) whose
+    are specific from a tool.
 
+    @param key String A key from the json export node object
+    @param json_result json The json export node object
+    @param jld json The new json object which contains json-ld markups
+    """
     # ajouter la bonne ref
     jld['@type'] = "schema:SoftwareApplication"
     language = LANGUAGE
@@ -432,16 +479,102 @@ def toolRdf(key, json_result, jld):
             else :
                 jld['schema:url'].append(elem['url'])
 
+    # citation
+    if key == 'field_outils_citations':
+        for i, elem in enumerate(json_result['field_outils_citations']['und']):
+            if not "c4o:GlobalCitationCount" in jld.keys():
+                jld["c4o:GlobalCitationCount"] = [elem['value']]
 
+            else:
+                jld["c4o:GlobalCitationCount"].append(elem['value'])
+
+    # visites annuelles
+    if key == 'field_outils_visites_anuelles':
+        for i, elem in enumerate(json_result['field_outils_visites_anuelles']['und']):
+            if not "dbpedia-owl:visitorsPerYear" in jld.keys():
+                jld["dbpedia-owl:visitorsPerYear"] = [elem['value']]
+            else:
+                jld["dbpedia-owl:visitorsPerYear"].append(elem['value'])
+
+    # visites uniques /!\ à completer !!!!
+    if key == 'field_outils_visites_uniques':
+        for i, elem in enumerate(json_result['field_outils_visites_uniques']['und']):
+            if not "dbpedia-owl:visitorsTotal" in jld.keys():
+                jld["dbpedia-owl:visitorsTotal"] = [elem['value']]
+            else:
+                jld["dbpedia-owl:visitorsTotal"].append(elem['value'])
+
+    # downloads
+    if key == 'field_outils_telechargements':
+        for i, elem in enumerate(json_result['field_outils_telechargements']['und']):
+            if not "nno:hasDownloadCount" in jld.keys():
+                jld["nno:hasDownloadCount"] = [elem['value']]
+            else:
+                jld["nno:hasDownloadCount"].append(elem['value'])
+
+    # conditions
+    if key == 'field_outils_conditions' and language in json_result['field_outils_conditions'].keys():
+        for i, elem in enumerate(json_result['field_outils_conditions'][language]):
+            if not 'dqm:hasCondition' in jld.keys():
+                jld['dqm:hasCondition'] = {
+                    "dqm:Condition": [elem['value']]
+                }
+            else :
+                jld['dqm:hasCondition']["dqm:Condition"].append(elem['value'])
+
+    # !!!!! following keys have almost never a value associated !!!!
+    # OS
+    if key == 'field_syst_me_d_exploitation':
+        print("field_syst_me_d_exploitation")
+        print(json_result['field_syst_me_d_exploitation'])
+        # for i, elem in enumerate(json_result['field_syst_me_d_exploitation']['und']):
+        #     if not "nno:hasDownloadCount" in jld.keys():
+        #         jld["nno:hasDownloadCount"] = [elem['value']]
+        #     else:
+        #         jld["nno:hasDownloadCount"].append(elem['value'])
+    # prerequis
+    if key == 'field_pr_requis_d_utilisation':
+        print("field_pr_requis_d_utilisation")
+        print(json_result['field_pr_requis_d_utilisation'])
+
+    # version logiciel
+    if key == 'field_version_du_logiciel':
+        print("field_version_du_logiciel")
+        print(json_result['field_version_du_logiciel'])
+
+    # type logiciel
+    if key == 'field_type_de_logiciel':
+        print("field_type_de_logiciel")
+        print(json_result['field_type_de_logiciel'])
+
+    # licence
+    if key == 'field_license':
+        print("field_license")
+        print(json_result['field_license'])
+
+
+    # contact support
+    if key == 'field_contact_du_support_de_l_ou':
+        print("field_contact_du_support_de_l_ou")
+        print(json_result['field_contact_du_support_de_l_ou'])
 
 def timestampToIso(timestamp):
+    """
+    Convert a time stamp date to a ISO formated date.
+
+    @param timestamp int A date timestamp
+
+    @return String A date ISO formated
+    """
     tz = pytz.timezone(time.tzname[0])
 
     return datetime.fromtimestamp(int(timestamp), tz).isoformat()
 
 def readRDF(raw_jld):
     """
-    Open and parse RDF document.
+    Read a rdf string (json-ld there) and convert it to a specific RDF format to display it.
+
+    @param raw_jld String A string in json-ld format
     """
 
     g = rdflib.Graph()
@@ -453,7 +586,12 @@ def readRDF(raw_jld):
 
 def writeRDF(raw_jld, type, node_id):
     """
-    Write a RDF document
+    Read a rdf string (json-ld there) and convert it to a specific RDF format to
+    write it to a file.
+
+    @param raw_jld String A string in json-ld format
+    @param type String The type of the IFB ressource (formation, tool, platform, etc)
+    @param node_id String The node id corresponding to the ressource (from IFB website)
     """
     g = rdflib.Graph()
     result = g.parse(data=raw_jld, format='json-ld')
@@ -477,12 +615,26 @@ def writeRDF(raw_jld, type, node_id):
 
 
 def verifyGraph(g):
+    """
+    Validate the rdflib graph with shacl.
+
+    @param g rdflib.Graph The graph of the new json-ld
+
+    @return bool Is the json-ld valid or not
+    """
     r = pyshacl.validate(g)
     conforms, results_graph, results_text = r
     return conforms
 
 def getPageTitle(node_url, s):
+    """
+    Retrieve the title (from html) of a IFB node page.
 
+    @param node_url String The url of the node
+    @param s requests.Session Object corresponding to the connection session
+
+    @return String The title of the web page
+    """
     while True:
         try:
             # An authorised request.
@@ -491,10 +643,10 @@ def getPageTitle(node_url, s):
                 # etc...
             break
         except requests.exceptions.ConnectionError as e:
-            print(str(e) + "\nRetrying...")
+            # print(str(e) + "\nRetrying...")
             time.sleep(10)
         except requests.exceptions.ReadTimeout as e:
-            print(str(e) + "\nRetrying...")
+            # print(str(e) + "\nRetrying...")
             time.sleep(10)
 
     soup = BeautifulSoup(r.text, 'html.parser')
@@ -534,6 +686,12 @@ def parallelIfbRequest(tuple):
     return (i, json_type, title)
 
 def ifbAuthenticate(payload):
+    """
+    Connect and open a session on IFB website using payload connection informations.
+    keys: name, pass, form_id, op.
+
+    @param payload dict The necessaries informations to open a session on IFB website
+    """
     while True:
         try:
             logger.info('Connecting to IFB website...')
@@ -603,26 +761,30 @@ if __name__ == "__main__":
 
             #not parallelized
             # for node_id in range(0, 400):
-            for node_id in range(0, 5000):
+            nodes_list = range(0, 5000)
+            nodes_pbar = tqdm(nodes_list, position=1)
+            for node_id in nodes_pbar:
                 # 324, 326
+                node_id = str(node_id)
+                nodes_pbar.set_description('Processing node [' + node_id + ']')
 
-                print("Requesting node " + str(node_id) + " ...")
-                json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + str(node_id) + '/node_export/json', s, str(node_id))
+                # print("Requesting node " + str(node_id) + " ...")
+                json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + node_id + '/node_export/json', s, node_id)
 
                 # if their is a json, rdfize it
                 if not json_result:
                     continue
-                print("################## " + json_result['type'])
+                # print("################## " + json_result['type'])
                 type_to_rdfize = ['outil', 'plateforme', 'formation']
                 # type_to_rdfize = ['plateforme']
                 if json_result['type'] in type_to_rdfize:
-                    logger.info('[' + str(node_id) + ']' + " Type: [" + json_result['type'] + "], rdfize: [True]")
+                    logger.info('[' + node_id + ']' + " Type: [" + json_result['type'] + "], rdfize: [True]")
                     raw_jld = rdfize(json_result)
                     # readRDF(raw_jld)
                     writeRDF(raw_jld, json_result['type'], node_id)
                 else:
-                    logger.warning('[' + str(node_id) + ']' + " Type: [" + json_result['type'] + "], rdfize: [False]")
-
+                    logger.warning('[' + node_id + ']' + " Type: [" + json_result['type'] + "], rdfize: [False]")
+    print("\n\n\nDump done !")
                 # check node if they have json and their title
 
     #             title = getPageTitle("https://www.france-bioinformatique.fr/fr/node/" + str(node_id), s)

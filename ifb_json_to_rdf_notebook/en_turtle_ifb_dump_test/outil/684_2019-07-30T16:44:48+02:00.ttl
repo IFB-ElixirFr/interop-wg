@@ -1,0 +1,41 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/services/outils/tbrower-transcriptomebrowser> a schema:SoftwareApplication ;
+    dbpedia-owl:visitorsPerYear "1600" ;
+    edam:data_1190 "TBrower (TranscriptomeBrowser)" ;
+    dc:created "2015-09-22T13:13:03+02:00" ;
+    dc:description """<p>Ce logiciel, écrit en Java, est un outil graphique dédié à la fouille de données biopuces. Il permet de rechercher les contextes biologiques dans lesquels un ensemble de gène est co-régulé. La recherche s'appuie sur une base de données contenant des signatures transcriptionnelles (environ 31000) isolées par l'algorithme DBF-MCL dans environ 3000 jeux de données de biopuces. TBrowser dispose d'un moteur de recherche évolué permettant d'effectuer des recherches booléennes complexes avec en entrée un ensemble d'identifiants de gènes (symbole, Entrez ID, sondes affymetrix, ...) ou de termes d'annotation (GO, KEGG, ...).</p>\r
+\r
+<p>TBrowser est un outil extensible via une architecture de plugins. L'un des pluings, InteractomeBrowser, permet de contextualiser un ensemble de gènes en générant une treemap reflétant l'arborescence de l'ontologie GO 'cellular components'. Il permet par ailleurs de recherche des intéractions prédites ou validées expérimentalement dans une base de données contenant plus de 1,5*10<sup>6</sup> intéractions.<br />\r
+&nbsp;</p>\r
+""" ;
+    dc:modified "2017-01-10T15:52:58+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>Logiciel libre d'accès sur http://tagc.univ-mrs.fr/tbrowser</p>\r
+""" ] ;
+    c4o:GlobalCitationCount "42" .
+

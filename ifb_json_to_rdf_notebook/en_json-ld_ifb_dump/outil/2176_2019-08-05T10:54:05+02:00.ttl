@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/caspo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Caspo"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:22:36+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T10:20:13+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioasp.github.io/caspo/"
+      }
+    ]
+  }
+]

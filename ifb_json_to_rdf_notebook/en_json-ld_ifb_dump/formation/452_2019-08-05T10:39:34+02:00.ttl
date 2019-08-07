@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formations-universitaire",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T13:33:51+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formations Universitaire"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  }
+]

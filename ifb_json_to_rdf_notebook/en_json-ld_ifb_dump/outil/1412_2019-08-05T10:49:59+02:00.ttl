@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/hhalign-kbest",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "260"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "70"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "HHalign-Kbest"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-14T16:06:41+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>HHalign-Kbest</strong>&nbsp;is useful to automatically obtain optimized alignments and models in case of low sequence identity (&lt;35%) between a query and a template protein. It can generate k suboptimal (e.g. top-k scoring) alignments rather than only the optimal one which may contain small to large errors.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T15:40:42+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N78f983e8002842d3a14222859b9a21bc"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/HHalign-Kbest/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N78f983e8002842d3a14222859b9a21bc",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Online free access</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/easea-cloud",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "EASEA Cloud"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T10:03:54+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>EASEA (EAsy Specification of Evolutionary Algorithms) is an Artificial Evolution platform to implement evolutionary algorithms.</p>\r\n\r\n<p>Collet P, et al. EASEA : un langage de spécification pour les algorithmes évolutionnaires. [Rapport de recherche] RR-4218, INRIA. 2001.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:54+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N72fd9d3edf5d4e5c91ece8288b7e21c5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N72fd9d3edf5d4e5c91ece8288b7e21c5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Available at <a href=\"http://easea.unistra.fr/easea/index.php/EASEA_platform\">http://easea.unistra.fr/easea/index.php/EASEA_platform</a></p>\r\n"
+      }
+    ]
+  }
+]

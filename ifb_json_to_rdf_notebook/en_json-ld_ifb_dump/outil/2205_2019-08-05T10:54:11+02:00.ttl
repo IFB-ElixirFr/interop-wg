@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/prophet",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ProPHet"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-20T11:36:40+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T16:15:37+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/ProPHet/"
+      }
+    ]
+  }
+]

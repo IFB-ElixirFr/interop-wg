@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/bioinformatique-et-analyses-mutationnelles",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-04-11T11:58:44+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Module de formation à la bioinformatique appliquée à l'analyse des données génétiques dans le cadre des maladies génétiques humaines. Cet enseignement fait partie du Master 2 de Pathologie Humaine dispensé à la faculté de Médecine de la Timone à Marseille.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T09:53:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Bioinformatique et Analyses Mutationnelles"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://formations.univ-amu.fr/ME5APH-ENAPHCU41.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/introduction-à-unixlinux-pour-les-biologistes",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-08T11:56:54+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-08T14:16:50+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à Unix/Linux pour les biologistes"
+      }
+    ]
+  }
+]

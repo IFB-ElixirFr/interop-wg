@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/phylogénie-moléculaire-1",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T16:12:13+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T16:12:13+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Phylogénie moléculaire"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/stage-19015-Phylogenie-moleculaire---Montpellier.html?axe=98"
+      }
+    ]
+  }
+]

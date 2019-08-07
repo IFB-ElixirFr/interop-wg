@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/rnabrowse-nouvelle-version",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "4720"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "2250"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "RNAbrowse nouvelle version "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:54:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "17"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://forgemia.inra.fr/genotoul-bioinfo/ngspipelines"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1982"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/administration-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Mésocentre Clermont Auvergne"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-04-24T11:37:32+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-04-24T11:38:12+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Administration Galaxy"
+      }
+    ]
+  }
+]

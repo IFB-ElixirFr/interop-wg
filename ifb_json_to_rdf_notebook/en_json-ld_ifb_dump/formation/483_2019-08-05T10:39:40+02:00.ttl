@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/traitements-bioinfo-rna-seq-sous-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "jouy en josas"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:24:37+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T10:46:21+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Traitements bioinfo RNA-seq "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/?q=fr/formations"
+      }
+    ]
+  }
+]

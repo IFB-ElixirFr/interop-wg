@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/annotation-transposable-elements-frame-genome-assembly-and-annotation-course-0",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lisbonne (Portugal)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T16:34:57+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:02+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Annotation of transposable elements (in the frame of Genome assembly and annotation course"
+      }
+    ]
+  }
+]

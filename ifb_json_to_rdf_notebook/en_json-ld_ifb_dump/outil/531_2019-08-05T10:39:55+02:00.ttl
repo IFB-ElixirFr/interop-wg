@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxeast",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "280"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GalaxEast"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T11:13:13+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The objective of GalaxEast (http://www.galaxeast.fr) is to provide a reliable public Galaxy instance, with guaranteed availability and accessibility. GalaxEast offers a catalogue of about a hundred tools, mainly for handling of sequencing data (ChIP-seq, RNA-seq and DNAseq) high speed. The addition of proteomic and spectroscopy data analysis tools is planned for 2014. The tools come from both the official Galaxy toolshed and the developments of bioinformaticians from the local community. The new tools will be made available in the platform toolshed. The platform has a wiki that allows users to find documentation and request the addition of new tools and genomes.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nb3104635641341dc8b777ecb015596eb"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.galaxeast.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb3104635641341dc8b777ecb015596eb",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Open access for the French academic research community.<br />\r\nAccess facilitated via rapid connexions (eg : Osiris, Renater)</p>\r\n"
+      }
+    ]
+  }
+]

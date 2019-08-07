@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/détection-variants-à-partir-données-ngs",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université Montpellier 1"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T14:22:54+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:02+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Détection  de  variants à partir de données NGS"
+      }
+    ]
+  }
+]

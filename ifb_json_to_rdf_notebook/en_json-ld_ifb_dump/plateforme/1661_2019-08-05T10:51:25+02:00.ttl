@@ -1,0 +1,144 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/gmgf-gbit",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nd3e310a097e1403cba76666dc88173a3"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nbd934da6c15f462e92b2f34f50fbe9f5"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-04-08T12:14:11+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:03:56+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MMG-GBIT"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Ne0738f7f5d91422690778d23e0531885"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N243fdd26ad274572ab445ddca0ff3cf1"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Ndde7980d9633480eb214da4fce7a9978"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Na7caecec9d984c5ba51b1c21fdc9638b"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na7caecec9d984c5ba51b1c21fdc9638b",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "INSERM UMR_S910"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://umr910.timone.univ-mrs.fr/team_description.php?lang=fr&team_id=17"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne0738f7f5d91422690778d23e0531885",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1804"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd3e310a097e1403cba76666dc88173a3",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1805"
+      },
+      {
+        "@value": "1803"
+      },
+      {
+        "@value": "1802"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndde7980d9633480eb214da4fce7a9978",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13005"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Faculté de Médecine de la Timone, 27 Bd Jean Moulin"
+      }
+    ]
+  },
+  {
+    "@id": "_:N243fdd26ad274572ab445ddca0ff3cf1",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbd934da6c15f462e92b2f34f50fbe9f5",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Expertise dans le domaine des maladies rares de la recherche au traitement :</p>\r\n\r\n<ul>\r\n\t<li>Design et analyse des expériences de séquençage (WES, WGS, RNAseq, CHIPseq)</li>\r\n\t<li>Recherche de nouveaux gènes par analyses familiales</li>\r\n\t<li>Analyse des données</li>\r\n\t<li>Création et hébergement de bases de données de patients et de mutations</li>\r\n</ul>\r\n\r\n<p>Expertise dans le domaine des biotechnologies</p>\r\n\r\n<ul>\r\n\t<li>Toutes les technologies principales de biologie moléculaire</li>\r\n\t<li>Développement d'outils spécifiques : validation d'hypothèses thérapeutiques</li>\r\n\t<li>Développement d'outils d'analyse des données issues des technologies à haut débit (Array CGH, NGS, Génotypage à haut débit ...)</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/prabi-hcl",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N4deda93e2014409aa0e57e1766745a1c"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:45:31+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-11T16:40:17+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-HCL"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N1b8ccc5832d94610b038f83fc221ee71"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4deda93e2014409aa0e57e1766745a1c",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Le Service de Biostatistique des Hospices Civils de Lyon / Equipe Biostatistique Santé (ESB/SB-­HCL) fournit un appui à la recherche<br />\r\n-­ Lors&nbsp; de&nbsp; la&nbsp; conception&nbsp; de&nbsp; l'étude : en&nbsp; participant&nbsp; à&nbsp; l'élaboration&nbsp; du&nbsp; protocole (discussion du critère principal, étude de faisabilité, choix du schéma d’étude, taille d'échantillons, validation des aspects statistiques du protocole, randomisation),<br />\r\n-­ Pendant la réalisation de l'étude : en réalisant des analyses intermédiaires,<br />\r\n-­ Après&nbsp; le&nbsp; recueil&nbsp; des&nbsp; données : en&nbsp; effectuant&nbsp; des&nbsp; analyses&nbsp; statistiques&nbsp; (statistique<br />\r\ninférentielle, modélisations et simulations),<br />\r\n-­ Lors de la valorisation du projet : en aidant à la rédaction d'articles, la création&nbsp; de<br />\r\ntableaux et de graphiques, la réalisation de présentations scientifiques.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Deux des axes de recherche de l’équipe sont associés à l’utilisation de données de grande dimension. L’axe «Identification de biomarqueurs /Omique /Génétique » animé par le Pr Pascal Roy, et l’axe « Modèles prédictifs / Médecine personnalisée » animé par le Dr Delphine Maucort-­Boulch.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1b8ccc5832d94610b038f83fc221ee71",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Pierre Bénite"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Faculté de Médecine Lyon Sud"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69310"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "165 chemin du Grand Revoyet"
+      }
+    ]
+  }
+]

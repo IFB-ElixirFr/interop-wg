@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/training-gnpis-breedwheat-data",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Webinar"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T15:31:45+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-26T10:47:17+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Training on GnpIS for BreedWheat data"
+      }
+    ]
+  }
+]

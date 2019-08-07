@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/python-avancé",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "jouy en josas"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:24:13+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T12:09:56+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Python avancé"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/?q=fr/formations"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/sartools",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SARTools"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-09T16:54:57+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SARTools is a R package dedicated to the differential analysis of RNA-seq data. It provides tools to generate descriptive and diagnostic graphs, to run the differential analysis with one of the well known DESeq2 or edgeR packages and to export the results into easily readable tab-delimited files. It also facilitates the generation of a HTML report which displays all the figures produced, explains the statistical methods and gives the results of the differential analysis.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:43+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nde99818e2574471485b0e055b16631f5"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/PF2-pasteur-fr/SARTools"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nde99818e2574471485b0e055b16631f5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"https://github.com/PF2-pasteur-fr/SARTools\">https://github.com/PF2-pasteur-fr/SARTools</a></p>\r\n"
+      }
+    ]
+  }
+]

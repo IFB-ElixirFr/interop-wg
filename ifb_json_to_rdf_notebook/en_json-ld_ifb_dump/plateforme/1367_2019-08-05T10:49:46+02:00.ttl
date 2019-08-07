@@ -1,0 +1,87 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/ifb-core",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-05T13:25:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-20T23:06:56+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IFB Core"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N58670f3e719b4ba7abb32035f2afae14"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Ne2e00d6d59084a8a9a4e4f8901bef8bd"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne2e00d6d59084a8a9a4e4f8901bef8bd",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Evry"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "2 rue Gaston Crémieux"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91057"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Génoscope"
+      }
+    ]
+  },
+  {
+    "@id": "_:N58670f3e719b4ba7abb32035f2afae14",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "129"
+      },
+      {
+        "@value": "130"
+      },
+      {
+        "@value": "134"
+      },
+      {
+        "@value": "133"
+      }
+    ]
+  }
+]

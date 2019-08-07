@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/phrogs",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhROGS"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-13T16:42:16+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Ph</strong>age <strong>R</strong>emote <strong>O</strong>rthologous <strong>G</strong>roups database (aka. PhROGS)&nbsp;</p>\r\n\r\n<p>This database contains 38,880 PhROGs (protein orthologous groups) containing 868,340 proteins from complete genomes of viruses infecting bacteria or archaea (2,318 from RefSeq and 2,669 from GenBank, april 2018), in addition to 12,498 curated prophages derived from cultivated microbial isolates (Roux et al., 2015).<br />\r\nThis website provides access to :</p>\r\n\r\n<ul>\r\n\t<li>all prokaryotic virus genomes from the <a href=\"http://phrogs.lmge.uca.fr/virus_index.php\"><strong>viruses table</strong></a> and select one to see its taxonomy, list of proteins, genomic map, etc...</li>\r\n\t<li>all PhROGs from the <a href=\"http://phrogs.lmge.uca.fr/phrog_index.php\"><strong>PhROGs table</strong></a> and select one to see its annotation, list of proteins, multiple alignment, comparison results to Pfam, Uniprot, KEGG, etc...</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T16:48:55+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ncc91a6e966aa4645b20af2a9ea4dab07"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://phrogs.lmge.uca.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncc91a6e966aa4645b20af2a9ea4dab07",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur&nbsp;http://phrogs.lmge.uca.fr</p>\r\n"
+      }
+    ]
+  }
+]

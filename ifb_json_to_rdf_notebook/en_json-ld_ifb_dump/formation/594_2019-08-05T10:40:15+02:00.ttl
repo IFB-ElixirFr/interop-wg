@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/introduction-à-l’analyse-des-données-grande-dimension",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:13:29+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-01-25T13:57:50+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à l’analyse des données de grande dimension"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  }
+]

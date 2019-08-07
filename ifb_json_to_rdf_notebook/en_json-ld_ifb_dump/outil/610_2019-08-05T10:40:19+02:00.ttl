@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxy-piloté-sigenae",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "9963"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "4112"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy (piloté par Sigenae) "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:55:50+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://sigenae-workbench.toulouse.inra.fr/galaxy/"
+      }
+    ]
+  }
+]

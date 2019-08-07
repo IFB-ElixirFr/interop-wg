@@ -1,0 +1,136 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/plateformes/plateforme-de-présentation",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N2edde740bde444888016d8f6377d5345"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nf00b3fad629e405498a0e0ea64b16437"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N36c9c5b0f28e4a1cbdca2ae9d90eade4"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-11-10T11:24:33+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-12T13:12:04+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N9d031846ecdd453ab54ca8b5ec5eaad1"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Plateforme de présentation"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N83a74c168b454e76bed4aefa16d5280c"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N4aa54bc45b1e47c187d2f618e4bc620f"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4aa54bc45b1e47c187d2f618e4bc620f",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Gif-sur-Yvette"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91190"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "1 rue de la terrace"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9d031846ecdd453ab54ca8b5ec5eaad1",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "78"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf00b3fad629e405498a0e0ea64b16437",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "500.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2edde740bde444888016d8f6377d5345",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "150"
+      }
+    ]
+  },
+  {
+    "@id": "_:N36c9c5b0f28e4a1cbdca2ae9d90eade4",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1653"
+      }
+    ]
+  },
+  {
+    "@id": "_:N83a74c168b454e76bed4aefa16d5280c",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "133"
+      }
+    ]
+  }
+]

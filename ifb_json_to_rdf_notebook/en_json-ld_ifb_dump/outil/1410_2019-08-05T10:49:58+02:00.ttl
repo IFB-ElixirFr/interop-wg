@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/bcsearch",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "140"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "60"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "BCSearch"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-14T14:28:33+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>BCSearch</strong>&nbsp;is a fast and flexible approach to identify linear fragments similar to a query in large collections of structures. It addresses two basic questions:</p>\r\n\r\n<ul>\r\n\t<li>Among a subset of structures, what sequences are compatible with the conformation of my query ?</li>\r\n\t<li>Are there conformations similar to my query in other proteins ? Is it observed elsewhere ?</li>\r\n</ul>\r\n\r\n<p>BCSearch is based on a new similarity approach, based on a Binet Cauchy (BC) kernel. The approach measures the correlation between the volumes of all the tetraedron of the query and that of a target. The similarity (BCscore) is scored between -1 and 1, where a value of 1 corresponds to the exact same conformation than the query, and -1 to the mirror conformation. Values close to 0 correspond to unrelated fragments. The BCscore is more stringent than other criteria such as the alpha carbon RMS deviation. Particularly, fragments with partly dissimilar shapes are poorly scored and consequently collections of matches are usually less noisy, which makes them better suited for the analysis of the local structure-sequence relationship. In addition, since no superimposition is required, the similarity search is very fast, making possible to mine large collections of structures.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T16:15:37+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N26fbc444d74e4d7f835f6d3730ed5081"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/BCSearch/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N26fbc444d74e4d7f835f6d3730ed5081",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Online free access</p>\r\n"
+      }
+    ]
+  }
+]

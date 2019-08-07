@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/linux",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "-"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:21:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T13:57:31+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Linux"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/?q=fr/Formations-2016"
+      }
+    ]
+  }
+]

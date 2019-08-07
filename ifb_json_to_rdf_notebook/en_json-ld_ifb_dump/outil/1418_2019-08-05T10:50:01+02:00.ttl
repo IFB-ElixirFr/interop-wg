@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/pepteam",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PepTeam"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-19T14:31:33+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>PepTeam is a tool for biomarker discovery from the analysis of in-vivo screened repertoire of phage displayed libraries that has been sequenced by NGS.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:24:11+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6511109962924a6e903cc576cb22a6ca"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/cbib/pepteam"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6511109962924a6e903cc576cb22a6ca",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Through CBiB Galaxy interface.</p>\r\n"
+      }
+    ]
+  }
+]

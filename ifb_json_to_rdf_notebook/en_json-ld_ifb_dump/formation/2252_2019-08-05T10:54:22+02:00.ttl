@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/cycle-« initiation-à-bioinformatique »-module-44 -initiation-à-reconstruction",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université de Lille"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T15:03:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-04T11:16:48+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Cycle « Initiation à la bioinformatique » - Module 4/4 : Initiation à la reconstruction phylogénétique en biologie moléculaire"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://wikis.univ-lille.fr/bilille/formation"
+      }
+    ]
+  }
+]

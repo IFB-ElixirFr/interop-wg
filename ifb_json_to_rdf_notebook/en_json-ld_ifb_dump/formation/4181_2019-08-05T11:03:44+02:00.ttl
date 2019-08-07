@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-avancée-séquences-0",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Centre de bioinformatique de Bordeaux (CGFB)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T15:36:45+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T15:36:45+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse avancée de séquences"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/stage-19019-Analyse-avancee-de-sequences.html?axe=98"
+      }
+    ]
+  }
+]

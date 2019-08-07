@@ -1,0 +1,165 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/curie",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N2ea3ac09c7ce4e67aaf74de7f6d0db97"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N4eabf6f99b1041ebb23e1bf330280d39"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:35:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-05T18:45:24+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N6f4e77ee868e493984434b14df4fe566"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Institut Curie"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nccd608782dc740d5b4f1a180568823a2"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nc9c7baf6b8fc4a6982552fde72a3ce99"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N54d073c87bcf468485208e146752d955"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nc5c80e5f5a3b411b88430fcac6aecddc"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2ea3ac09c7ce4e67aaf74de7f6d0db97",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4eabf6f99b1041ebb23e1bf330280d39",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2000.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N54d073c87bcf468485208e146752d955",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75015"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "26 rue d’Ulm"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nccd608782dc740d5b4f1a180568823a2",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "443"
+      },
+      {
+        "@value": "442"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc5c80e5f5a3b411b88430fcac6aecddc",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Curie "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://u900.curie.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc9c7baf6b8fc4a6982552fde72a3ce99",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f4e77ee868e493984434b14df4fe566",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1656"
+      }
+    ]
+  }
+]

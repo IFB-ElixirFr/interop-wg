@@ -1,0 +1,230 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/bird",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N2ebae3017c7b46afbd697181b7f62a3a"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nbf8c658ce3b34eed8131c4f7332aab4a"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N3d06ee3d64f943ffa1def7a4d3cedf04"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nac779cdf5da0433cb1d3d96f9d081867"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nc0088aae126642c3b9b44f0a08d20bc8"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:15:58+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-29T14:28:42+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N25ac5208911f47788264cc3018f3632a"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf122c77ef17a40998b55ba5533e4fc5f"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "BiRD"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N15397a748f214a6b87d05c7a8c1e3ed6"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nca94d536ad2542af91eee9669b6244a2"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Naa4f53b799cc48af918b7e44ed465e9d"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N573e3c2618cf4a4fa5a7d3bb3aef49c0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nca94d536ad2542af91eee9669b6244a2",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac779cdf5da0433cb1d3d96f9d081867",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<pre>\r\nBiRD has initially developed its expertise in the field of transcriptome data analysis from microarray. Since 2012, BiRD has completed its know-how with the development and/or implementation of methods and tools for NGS data analysis.\r\n\r\nA wide range of applications are supported, in particular in the fields of genetics (whole genome, full exome, targeted sequencing) and gene expression analysis (RNASeq). \r\n\r\nThe development of NGS pipelines is mainly based on the \"make\" tool, which is used in a distributed job management environment, allowing parallel computing tasks.\r\n\r\nby these developments, BiRD has become - in connection with the Genomics Platform of Nantes (Biogenouest Genomics) - a service provider for the 'Fondation Maladies Rares' in the context of its calls for whole exome sequencing project. Seven projects have been supported since mid-2013, corresponding to the analysis of 86 full exome sequences.\r\n&nbsp;\r\nOn one side, BiRD is member of l'institut du thorax (Inserm UMR 1087 / CNRS UMR 6291) and develops its research in close connection with two teams working on cardiovascular genetics. On the other side, the core facility is part of the \r\nLINA (Laboratoire Informatique Nantes Atlantique) and collaborates with the team Combi, whose main objective is the development of mathematical methods in comparative genomics and systems biology.\r\n\r\nTogether, the geneticists of l'institut du thorax and the computer scientists of the LINA define the strategic orientations of BiRd, and manage its human resources and IT investments.\r\n\r\nIn addition to its core activities, BiRD works regularly with particular users who wish to develop dedicated NGS-based methods. As an example, the platform has contributed to the development of novel tools for characterizing viral integration patterns in muscle cell genomes in the context of gene therapy (see Cogné et al, Nat Med 2014; 20: 577-8).\r\n</pre>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2ebae3017c7b46afbd697181b7f62a3a",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li><strong>HPC cluster dedicated to NGS data analysis </strong>and pipeline developpement:\r\n\t<ul>\r\n\t\t<li>8 nodes = 512 cores and 2.1 To RAM.</li>\r\n\t\t<li>138 To of effective storage (RAID 5)</li>\r\n\t\t<li>HPC Storage : Parallel file system (BeeGFS)</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li><strong>HPC cluster open to the scientific community (</strong>hosted in the datacenter<strong> of the university of Nantes) :</strong>\r\n\t<ul>\r\n\t\t<li>5 nodes = 320 cores and 1.3 To RAM</li>\r\n\t\t<li>150 To of effective storage (RAID 5)</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>2&nbsp; Galaxy servers (production &amp; development)\r\n\t<ul>\r\n\t\t<li><a href=\"http://galaxy-bird.univ-nantes.fr\" rel=\"nofollow\">http://galaxy-bird.univ-nantes.fr</a></li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>3 servers (web, files &amp; development)</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf122c77ef17a40998b55ba5533e4fc5f",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "206"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbf8c658ce3b34eed8131c4f7332aab4a",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "560"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc0088aae126642c3b9b44f0a08d20bc8",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>o Expression analysis (RNAseq, Affymetrix &amp; Agilent microarrays) : QC, primary analysis (alignment, normalisation, filtering, DEG detection, clustering, functional annotation)</p>\r\n\r\n<p>o Detection of genetic variations from NGS reads : QC, alignment, variant calling.</p>\r\n\r\n<p>o Genotyping (Axiom array plates) : GWAS (primary analysis)</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": " Project data analysis  management"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>For each submitted project, a preliminary meeting is organised between the principal investigator and platform members, in order to agree on its feasability, the working plan and the objectives of the study.</p>\r\n\r\n<p>Once the project is supported, the core facility commit to perform the primary analysis and to provide the PI with a full report of the results as well as every file produced during the analytical process (raw data, standardized data, hierarchical clustering , DEG detection, fastq format files, bam files, vcf files...)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N15397a748f214a6b87d05c7a8c1e3ed6",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2258"
+      },
+      {
+        "@value": "2256"
+      },
+      {
+        "@value": "2259"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naa4f53b799cc48af918b7e44ed465e9d",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Nantes"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "44000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "IRS UN, 8 Quai Moncousu"
+      }
+    ]
+  },
+  {
+    "@id": "_:N573e3c2618cf4a4fa5a7d3bb3aef49c0",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "bird.univ-nantes"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.pf-bird.univ-nantes.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3d06ee3d64f943ffa1def7a4d3cedf04",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "400.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N25ac5208911f47788264cc3018f3632a",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2"
+      }
+    ]
+  }
+]

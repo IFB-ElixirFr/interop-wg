@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/biostatistique-avec-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-12-08T14:30:27+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-25T18:39:05+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Biostatistique avec R"
+      }
+    ]
+  }
+]

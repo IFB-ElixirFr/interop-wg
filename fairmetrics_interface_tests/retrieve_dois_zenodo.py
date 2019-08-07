@@ -22,7 +22,7 @@ import requests
 
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
-NB = '5000'
+NB = '7000'
 OUTPUT_DIR = "input"
 
 def zenodoRestRequest():

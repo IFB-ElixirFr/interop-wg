@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/rendre-ses-outils-disponibles-sur-cloud-openstack",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "IBMP - Strasbourg"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-16T13:43:03+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:03+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Rendre ses outils disponibles sur un cloud OpenStack"
+      }
+    ]
+  }
+]

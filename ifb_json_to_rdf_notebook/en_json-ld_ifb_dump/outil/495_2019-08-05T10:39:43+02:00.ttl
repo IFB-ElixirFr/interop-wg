@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/island",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ISLAND"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:46:33+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ]
+  }
+]

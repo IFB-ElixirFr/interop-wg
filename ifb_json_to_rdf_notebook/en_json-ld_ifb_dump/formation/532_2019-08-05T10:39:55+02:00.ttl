@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/clinique-souris",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T12:04:24+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>CNRS on-going training courses: participation in a general training course on mouse models, with 2 x 1 hour modules: Current phenotyping databases and tools; Statistical analyses of phenotyping.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:23+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Clinique de la souris"
+      }
+    ]
+  }
+]

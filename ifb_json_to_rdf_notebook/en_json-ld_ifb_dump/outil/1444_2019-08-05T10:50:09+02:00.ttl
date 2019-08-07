@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/vidjil",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Vidjil"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T11:37:49+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Vidjil is an open-source platform for the analysis of high-throughput sequencing data from lymphocytes. V(D)J recombinations in lymphocytes are essential for immunological diversity. They are also useful markers of pathologies, and in leukemia, are used to quantify the minimal residual disease during patient follow-up. High-throughput sequencing (NGS/HTS) now enables the deep sequencing of a lymphoid population with dedicated Rep-Seq methods and software.</p>\r\n\r\n<p>Vidjil contains a high-throughput algorithm extracting V(D)J junctions and gather them into clones. This analysis is based on a seed heuristics and is fast and scalable, as, in the first phase, no alignment is performed with database germline sequences. Vidjil also contains a dynamic browser and a patient database for visualization and analysis of clones and their tracking along the time in a MRD setup or in a immunological study.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-14T11:27:45+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nb25bddf2abac44cda94c9245a3aeade4"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "25"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.vidjil.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb25bddf2abac44cda94c9245a3aeade4",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://bioinfo.lifl.fr/vidjil/\">Vidjil</a> is open-source, released under GNU GPLv3 license. You are welcome to redistribute it under certain conditions. This software is for research use only and comes with no warranty.</p>\r\n\r\n<p>The browser can be accessed at<a href=\"http://rbx.vidjil.org/browser/\"> rbx.vidjil.org/browser</a>. The development code of Vidjil is available on <a href=\"https://github.com/vidjil/vidjil\">GitHub</a>, and the command-line version of Vidjil can also be downloaded below.</p>\r\n"
+      }
+    ]
+  }
+]

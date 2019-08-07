@@ -1,0 +1,115 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/sigenae",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:23:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-08-29T16:22:22+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "SIGENAE"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Ndd1ec75c98b845d6a3fbbe3fc4df1484"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N843b7138a248478aa9663bd677d9470b"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nb443f512b79243f4b5c401bfbd5edd43"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nfbd0593b02ea4b8c9ff598a0fdd8dd66"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfbd0593b02ea4b8c9ff598a0fdd8dd66",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.sigenae.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb443f512b79243f4b5c401bfbd5edd43",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Castanet Tolosan"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31320"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Chemin de Borderouge - Auzeville"
+      }
+    ]
+  },
+  {
+    "@id": "_:N843b7138a248478aa9663bd677d9470b",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndd1ec75c98b845d6a3fbbe3fc4df1484",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1631"
+      },
+      {
+        "@value": "1630"
+      }
+    ]
+  }
+]

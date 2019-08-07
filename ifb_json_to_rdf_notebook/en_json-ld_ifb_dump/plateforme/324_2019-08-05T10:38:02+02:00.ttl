@@ -1,0 +1,174 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/tagc-bcf",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N91f8f4315bd64e3f8f8ee28d0c2805e1"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N6632273b4181425fb07a36e1728b3c44"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nf60888dafb1848958269baa71d8c74c9"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:09:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-05T16:22:26+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "TAGC-BCF"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N92908647b23344faa5a75117d21c4692"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Naacc865cb06b4339a70f23991c40f9fb"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N8c862262be7940a7a64745f84a0addd6"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N2b6c75893b304791a5b927e3f1565465"
+      }
+    ]
+  },
+  {
+    "@id": "_:N92908647b23344faa5a75117d21c4692",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "683"
+      },
+      {
+        "@value": "679"
+      },
+      {
+        "@value": "681"
+      },
+      {
+        "@value": "682"
+      },
+      {
+        "@value": "684"
+      },
+      {
+        "@value": "680"
+      }
+    ]
+  },
+  {
+    "@id": "_:N91f8f4315bd64e3f8f8ee28d0c2805e1",
+    "http://schema.org/identifier": [
+      {
+        "@value": "678"
+      },
+      {
+        "@value": "2268"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf60888dafb1848958269baa71d8c74c9",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6632273b4181425fb07a36e1728b3c44",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The expertise of the&nbsp;TAGC-BCF s'articulent autour de la génomique et la bioinformatique appliquées à l'étude des pathologies. Notre approche est multidisciplinaire et s'appuie sur la biologie des systèmes.</p>\r\n\r\n<p>Nos domaines d'expertise sont notamment:</p>\r\n\r\n<ul>\r\n\t<li>l'analyse de données de séquencage haut débit:\r\n\t<ul>\r\n\t\t<li>recherche et analyse de régions régulatrices</li>\r\n\t\t<li>recherche de variants génétiques et régulateurs</li>\r\n\t\t<li>analyse du transcriptome</li>\r\n\t\t<li>épigénétique</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>analyse et modélisation de réseaux d'intéractions</li>\r\n\t<li>analyse statistique de données génomiques</li>\r\n\t<li>intégration de données publiques</li>\r\n\t<li>fouille de données</li>\r\n\t<li>génétique humaine</li>\r\n\t<li>génétique des organismes modèles eucaryotes</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2b6c75893b304791a5b927e3f1565465",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "TAGC"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tagc.univ-amu.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naacc865cb06b4339a70f23991c40f9fb",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8c862262be7940a7a64745f84a0addd6",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Parc Scientifique de Luminy case 928"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13288"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 avenue de Luminy"
+      }
+    ]
+  }
+]

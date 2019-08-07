@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/protomata",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Protomata "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:26:14+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T10:26:42+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tools.genouest.org/tools/protomata/learn/"
+      }
+    ]
+  }
+]

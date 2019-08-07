@@ -1,0 +1,167 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/prabi-amsb",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N4f16b916dfc145e2a405c29750272093"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N2e81eb5944454725916131017547c6d8"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N40968dcef1364bee8c6e3ba654f43daf"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:46:44+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-20T09:59:59+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Ne094b0a82c3b4166a83dee05645b419b"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N397d1f7f06204d57bd1a068b63c15694"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-AMSB"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N13aa6974f29e42c69edf45d67b706209"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Na13ac88b9f2f45de96c61fdcf9b811d0"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N95463993536a4e73ae5e97253ef2c779"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na13ac88b9f2f45de96c61fdcf9b811d0",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Université Claude Bernard – Lyon 1"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69622"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "43 boulevard du 11 Novembre 1918"
+      }
+    ]
+  },
+  {
+    "@id": "_:N397d1f7f06204d57bd1a068b63c15694",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "190000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N13aa6974f29e42c69edf45d67b706209",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e81eb5944454725916131017547c6d8",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "215.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N95463993536a4e73ae5e97253ef2c779",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-AMSB"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.prabi.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne094b0a82c3b4166a83dee05645b419b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4f16b916dfc145e2a405c29750272093",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1032"
+      }
+    ]
+  },
+  {
+    "@id": "_:N40968dcef1364bee8c6e3ba654f43daf",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Prestations de services facturées en termes de mois ingénieur. La tarification est validée chaque année par le Conseil d’Administration de l’UCBL. Pour 2014, les tarifs étaient de 300 €/jour pour les académiques et 600 €/jour pour un partenaire privé</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

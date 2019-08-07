@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/lebibi",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "154145"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "leBiBI"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-27T16:08:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T16:37:18+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "94"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://umr5558-bibiserv.univ-lyon1.fr/lebibi/lebibi.cgi"
+      }
+    ]
+  }
+]

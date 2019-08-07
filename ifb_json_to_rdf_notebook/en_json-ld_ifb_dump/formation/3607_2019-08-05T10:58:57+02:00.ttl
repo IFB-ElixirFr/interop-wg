@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/linking-gene-and-function-comparative-genomics-tools-biologists",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Institut Pasteur"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-21T11:25:20+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-21T14:43:06+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Linking gene and function, comparative genomics tools for biologists"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://c3bi.pasteur.fr/training-linking-gene-and-function-comparative-genomics-tools-for-biologists/"
+      }
+    ]
+  }
+]

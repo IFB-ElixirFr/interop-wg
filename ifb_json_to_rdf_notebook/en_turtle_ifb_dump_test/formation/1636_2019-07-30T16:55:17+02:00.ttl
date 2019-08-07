@@ -1,0 +1,39 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/formations/cours-pasteur-analyse-des-génomes> a edam:data_3669 ;
+    dc:created "2016-03-21T11:33:34+01:00" ;
+    dc:description """<pre>\r
+Chaque année, ce cours théorique et pratique d’une durée de sept semaines fait le tour\r
+des concepts, techniques et outils nécessaires à l'étude des génomes, des étapes expérimentales à l’analyse des résultats. Il illustre les différents aspects de la génomique et de ses applications en se basant sur les résultats les plus récents de la recherche - <a href="http://www.pasteur.fr/fr/enseignement/cours-pasteur/pole-mecanismes-du-vivant/analyse-genomes">voir plus</a>\r
+</pre>\r
+""" ;
+    dc:educationLevel "Formation universitaire " ;
+    dc:modified "2018-12-21T10:18:59+01:00" ;
+    schema:name "Cours Pasteur Analyse des Génomes" ;
+    schema:url "http://www.pasteur.fr/fr/enseignement/cours-pasteur/pole-mecanismes-du-vivant/analyse-genomes" .
+

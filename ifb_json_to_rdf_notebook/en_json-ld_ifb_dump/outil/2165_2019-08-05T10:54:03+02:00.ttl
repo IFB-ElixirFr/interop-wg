@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/shaman-shiny-application-metagenomic-analysis",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1855"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "742"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SHAMAN: a Shiny Application for Metagenomic ANalysis"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-11T14:30:45+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-11T15:01:28+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://shaman.c3bi.pasteur.fr/"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "127"
+      }
+    ]
+  }
+]

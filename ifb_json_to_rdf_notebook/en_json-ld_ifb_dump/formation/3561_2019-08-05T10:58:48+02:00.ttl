@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-données-ngs-dédiée-à-génomique-végétale-en-afrique-louest",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "CERAAS, Thiès (Sénégal)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-17T23:33:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-18T10:32:09+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de données NGS dédiée à la génomique végétale en Afrique de l'Ouest"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://southgreenplatform.github.io/trainings//ngsTrainings/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/micado",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MICADo"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T14:13:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Mutation discovery in target PacBio cancer data with an alignment free method.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:28:07+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N77fcacf90f03453cb3b7c7066eda99d7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/cbib/MICADo"
+      }
+    ]
+  },
+  {
+    "@id": "_:N77fcacf90f03453cb3b7c7066eda99d7",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Public.</p>\r\n"
+      }
+    ]
+  }
+]

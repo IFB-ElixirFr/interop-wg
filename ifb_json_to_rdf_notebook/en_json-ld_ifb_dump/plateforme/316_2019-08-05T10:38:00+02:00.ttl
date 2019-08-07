@@ -1,0 +1,119 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/PRABI-G",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N14e731154a974eefa383fd215dcaeaae"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:16:35+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-11T16:40:52+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-G"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N792121665bec4485a5844df23af0f16b"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Neadd845bd3234c7cb4a38181d3ff1689"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N62d9255d27054500be96252798afd1ea"
+      }
+    ]
+  },
+  {
+    "@id": "_:N792121665bec4485a5844df23af0f16b",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "577"
+      }
+    ]
+  },
+  {
+    "@id": "_:N14e731154a974eefa383fd215dcaeaae",
+    "http://schema.org/identifier": [
+      {
+        "@value": "578"
+      },
+      {
+        "@value": "2382"
+      },
+      {
+        "@value": "579"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neadd845bd3234c7cb4a38181d3ff1689",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "130"
+      },
+      {
+        "@value": "129"
+      },
+      {
+        "@value": "134"
+      }
+    ]
+  },
+  {
+    "@id": "_:N62d9255d27054500be96252798afd1ea",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "GRENOBLE Cedex 9"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "38054"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "17 avenue des Martyrs"
+      }
+    ]
+  }
+]

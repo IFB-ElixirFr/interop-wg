@@ -1,0 +1,114 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/genatlas",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nc94ae97e781f47a89354f27aa2011766"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-22T11:30:06+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-04-06T11:25:30+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "GenAtlas"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N6ed5238fb98a44b794ea7c6daa1280c1"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N566f34a21a4a405ebaa689118f96a223"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N54ffb5abed5a4a56bd80e7956a677f6c"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6ed5238fb98a44b794ea7c6daa1280c1",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "450"
+      }
+    ]
+  },
+  {
+    "@id": "_:N54ffb5abed5a4a56bd80e7956a677f6c",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "http://www.genatlas.org/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.genatlas.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N566f34a21a4a405ebaa689118f96a223",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Institut Imagine Hôpital Necker-Enfants Malades"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "24 boulevard du Montparnasse"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc94ae97e781f47a89354f27aa2011766",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n\t<li>Conception de puces pour la recherche des maladies mitochondriales MITOMAN</li>\r\n\t<li>Conception de puces pour le diagnostique des retards mentaux de l’enfant.</li>\r\n\t<li>Projet de recherche sur les malformations cardiaques congénitales HEARTGENOMICS</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

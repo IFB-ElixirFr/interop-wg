@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/utilisation-des-outils-dinterprétation-des-données-protéomique-msda-et-proline",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "IPHC - Strasbourg"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-16T15:57:16+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:03+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Utilisation des outils d'interprétation des données de protéomique MSDA et Proline"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/go2pub",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GO2Pub"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-16T17:13:53+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://go2pub.genouest.org"
+      }
+    ]
+  }
+]

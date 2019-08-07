@@ -1,0 +1,96 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/imgt",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:05:28+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-04-06T11:27:42+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IMGT"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nc02555e57fa94784ba7c141341869cf6"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nb5381c92a12b443495d718b4ae46e987"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Ndca7292efdc144b4a2a9a19b3566c531"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndca7292efdc144b4a2a9a19b3566c531",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IMGT®, the international ImMunoGeneTics information system®"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.imgt.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc02555e57fa94784ba7c141341869cf6",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb5381c92a12b443495d718b4ae46e987",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "34396"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "141 rue de la Cardonille"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/seaview",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SeaView"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-27T16:13:33+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SeaView is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny. Full description available from the software home page.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T16:41:17+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N4d124e0ed9fb4f8f8d25d053ce1123ff"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "3066"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://doua.prabi.fr/software/seaview"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "21450"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d124e0ed9fb4f8f8d25d053ce1123ff",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Freely downloadable software licensed under the GNU General Public Licence.</p>\r\n"
+      }
+    ]
+  }
+]

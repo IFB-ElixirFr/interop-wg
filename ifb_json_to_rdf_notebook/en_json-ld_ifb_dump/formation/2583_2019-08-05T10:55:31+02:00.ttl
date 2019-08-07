@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/6ème-école-bioinformatique-aviesan-ifb",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-14T12:53:24+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "6ème école de bioinformatique AVIESAN-IFB"
+      }
+    ]
+  }
+]

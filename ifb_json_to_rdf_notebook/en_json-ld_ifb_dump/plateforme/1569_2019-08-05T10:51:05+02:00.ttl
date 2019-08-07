@@ -1,0 +1,282 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/AUBI",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nea938430fdf745fbb6e630fbbc88f67d"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nfb635d52a0bc4091a231230a484043c8"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N4037923cc7f94d5aa122d66af0a0f9f1"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nb7b78217ce97444ab3620b059a30d2f0"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N58e2453318b94957864933869da1b514"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T14:55:49+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-04-09T16:43:46+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N579fa599568741c6be7a7ac4b08d9093"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "AuBi"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Ndc81222bb5e3448a8b48a105385efc1b"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nd8c029fc211e47edbc31c179be243cdc"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nb14949ff5b6b44d79aabfef7a74510f4"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N7213889579cd4d55a4cc06ee0419fd22"
+      }
+    ]
+  },
+  {
+    "@id": "_:N58e2453318b94957864933869da1b514",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plateforme fait apparaître une forte expertise en génomique, épigénomique et métagénomique. Les modèles biologiques sont variés (micro-organismes, plantes, animaux) donnant un caractère généraliste à de nombreux outils.<br />\r\nCette plate-forme fait suite à une structuration des laboratoires des deux Universités de Clermont-Fd (Université d’Auvergne et l’Université Blaise Pascal)&nbsp; faisant de la recherche dans ce domaine&nbsp;:</p>\r\n\r\n<ul>\r\n\t<li>GDEC (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/labortoire-de-genetique-diversite-ecophysiologie-des-cereales-gdec-/) UMR 1095 INRA, Université Clermont Auvergne ;</li>\r\n\t<li>GReD (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/genetique-reproduction-et-developpement-gred-/) UMR 6293 CNRS, U1103 INSERM, Université Clermont Auvergne ;&nbsp;&nbsp;</li>\r\n\t<li>LMGE (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/laboratoire-microorganismes-genome-environnement-lmge-/) UMR 6023 CNRS, Université Clermont Auvergne&nbsp;;&nbsp;&nbsp;</li>\r\n\t<li>M2ISH (https://m2ish.uca.fr/) UMR 1071, Université d’Auvergne, LIMOS (http://limos.isima.fr/) UMR 6158 CNRS, Université Clermont&nbsp;Auvergne ;</li>\r\n\t<li>MEDIS https://www.uca.fr/recherche/structures-de-recherche/laboratoires/microbiologie-environnement-digestif-sante-1069.kjsp?RH=1476353258007) EA4678, Université Clermont Auvergne&nbsp;; &nbsp;</li>\r\n\t<li>NEURO-DOL (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/neuro-dol-neuro-dol-/), UMR1107 INSERM, Université Clermont Auvergne ;</li>\r\n\t<li>PIAF (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/laboratoire-de-physique-et-physiologie-integratives-de-l-arbre-fruitier-et-forestier-piaf-/) UMR A547 INRA, Université Clermont Auvergne&nbsp;;</li>\r\n\t<li>UMRH (http://umrh-bioinfo.clermont.inra.fr/Intranet/web/UMRH), INRA, VetAgro Sup</li>\r\n\t<li>UNH (https://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/unite-de-nutrition-humaine-unh-/), UMR 1019 INRA, Université Clermont Auvergne</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb14949ff5b6b44d79aabfef7a74510f4",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Saint-Genes-Champanelle"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "CBRV Facultés Médecine & Pharmacie 28 Place Henri Dunant 63001 Clermont-Ferrand"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "63122"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "INRA Theix"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nea938430fdf745fbb6e630fbbc88f67d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Hébergée au mésocentre CRRI (Centre Régional de Ressources Informatiques)</p>\r\n\r\n<p>Serveurs : une dizaine (NFS, serveurs web, mysql, hors ressources de calcul)</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndc81222bb5e3448a8b48a105385efc1b",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1586"
+      },
+      {
+        "@value": "1576"
+      },
+      {
+        "@value": "1592"
+      },
+      {
+        "@value": "1593"
+      },
+      {
+        "@value": "3992"
+      },
+      {
+        "@value": "1581"
+      },
+      {
+        "@value": "1587"
+      },
+      {
+        "@value": "1585"
+      },
+      {
+        "@value": "1597"
+      },
+      {
+        "@value": "1579"
+      },
+      {
+        "@value": "1589"
+      },
+      {
+        "@value": "1594"
+      },
+      {
+        "@value": "1582"
+      },
+      {
+        "@value": "1580"
+      },
+      {
+        "@value": "1588"
+      },
+      {
+        "@value": "1584"
+      },
+      {
+        "@value": "1590"
+      },
+      {
+        "@value": "1577"
+      },
+      {
+        "@value": "3995"
+      },
+      {
+        "@value": "1595"
+      },
+      {
+        "@value": "1578"
+      },
+      {
+        "@value": "1583"
+      },
+      {
+        "@value": "1596"
+      },
+      {
+        "@value": "1575"
+      },
+      {
+        "@value": "1591"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb7b78217ce97444ab3620b059a30d2f0",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1573"
+      },
+      {
+        "@value": "1572"
+      },
+      {
+        "@value": "1571"
+      },
+      {
+        "@value": "1574"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd8c029fc211e47edbc31c179be243cdc",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4037923cc7f94d5aa122d66af0a0f9f1",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "520.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfb635d52a0bc4091a231230a484043c8",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1088"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7213889579cd4d55a4cc06ee0419fd22",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "AuBI - Université de Clermont"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://aubi.clermont-universite.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N579fa599568741c6be7a7ac4b08d9093",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "143"
+      }
+    ]
+  }
+]

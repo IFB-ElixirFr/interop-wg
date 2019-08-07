@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/galaxy-first-step-0",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-02-01T15:08:13+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Galaxy : first step"
+      }
+    ]
+  }
+]

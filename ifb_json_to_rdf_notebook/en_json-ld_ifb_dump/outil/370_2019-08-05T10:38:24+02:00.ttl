@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/synteview",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "684"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "396"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SynteView "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:39:28+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>synteny of 600 completely sequenced genomes and compared between them.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T19:55:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne193b91476c940e6869962859b69df2a"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "10"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.synteview.u-psud.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne193b91476c940e6869962859b69df2a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Java web start + tar.gz</p>\r\n"
+      }
+    ]
+  }
+]

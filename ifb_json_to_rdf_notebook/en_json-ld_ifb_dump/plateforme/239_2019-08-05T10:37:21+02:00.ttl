@@ -1,0 +1,269 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/ebio",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N49a0fbd0bd3845cba9eb41b38229b211"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N7444e7c1de9d4338bbf2c4b2ca12c806"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N3fc4f0f210f344a1b8a2688ff59c069d"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nee6c744e9935453b8f5baa1a1031284f"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N592fc102cecc4271b7ffe145d2555255"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nda10219955ef4203a1b10da616d30877"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-13T15:36:56+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:59:18+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N77c37e596cde4cc1bfbdf20d86a1c825"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "EBIO"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N61f02cf7e8884f0c8d7ef39ec9e9a5a7"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N121176ed08c9454a8f09bc275f10328b"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nf0a339c571b14e1fbb6ca45a7e450de2"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N8dda9151b9b94fe387f17be6e1a7367b"
+      }
+    ]
+  },
+  {
+    "@id": "_:N49a0fbd0bd3845cba9eb41b38229b211",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Technologie ZFS, NFS.</li>\r\n\t<li>Samba 2 hôtes de virtualisation KVM.</li>\r\n\t<li>DB : PosgreSQL, MySQL, ZODB Galaxy.</li>\r\n\t<li>Autres : LDAP, Salt, subvesion, trac, dhcp, FAI, tftp, ftp, zenoss, varnish.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8dda9151b9b94fe387f17be6e1a7367b",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "EBIO"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ebio.u-psud.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nda10219955ef4203a1b10da616d30877",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La modalité « service » consiste en une prise en charge totale par la plate-forme de la réalisation de l'analyse bio-informatique. Au minimum deux rencontres sont prévues avec le demandeur, la première afin d'appréhender la question posée et les données pour lesquelles il demande une expertise, et la dernière pour un rendu du travail réalisé par la plate-forme (après remise d'un document explicatif de la démarche suivie et des résultats obtenus). Si le demandeur ne fait pas partie d'une unité mixte avec l'Université Paris-Sud, les analyses sont payées selon un forfait jour/homme.</p>\r\n\r\n<p>Les projets réalisés « en collaboration » nécessitent soit une participation active à l'analyse des données du biologiste soit la mise à disposition d'un CDD ou d'un stagiaire au sein de la plate-forme et co-encadré par le personnel de la plate-forme.</p>\r\n\r\n<p>La modalité « accès aux ressources » implique que les biologistes lancent eux-mêmes leur analyses sur le cluster de calcul, moyennant éventuellement formation et/ou accompagnements ponctuels assurés par le personnel de la plate-forme.</p>\r\n\r\n<p>Une réflexion est en cours concernant les accès moyennant finances de personnes sans rattachement à l'université Paris-Sud afin de leur proposer une offre contrainte en ressources et dans le temps.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "3 types d'appui : service, en collaboration et accès aux ressources de calcul"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>Dépôt de demande sur <a href=\"http://ebio.u-psud.fr/eBIO_services.php\">http://ebio.u-psud.fr/eBIO_services.php</a> Ouverture nationale</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7444e7c1de9d4338bbf2c4b2ca12c806",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "220"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61f02cf7e8884f0c8d7ef39ec9e9a5a7",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "368"
+      },
+      {
+        "@value": "277"
+      },
+      {
+        "@value": "364"
+      },
+      {
+        "@value": "366"
+      },
+      {
+        "@value": "370"
+      },
+      {
+        "@value": "369"
+      },
+      {
+        "@value": "367"
+      },
+      {
+        "@value": "365"
+      },
+      {
+        "@value": "363"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nee6c744e9935453b8f5baa1a1031284f",
+    "http://schema.org/identifier": [
+      {
+        "@value": "275"
+      },
+      {
+        "@value": "360"
+      },
+      {
+        "@value": "2692"
+      },
+      {
+        "@value": "300"
+      },
+      {
+        "@value": "1445"
+      },
+      {
+        "@value": "301"
+      },
+      {
+        "@value": "358"
+      },
+      {
+        "@value": "359"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf0a339c571b14e1fbb6ca45a7e450de2",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Orsay"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "15 rue George Clémenceau"
+      }
+    ]
+  },
+  {
+    "@id": "_:N592fc102cecc4271b7ffe145d2555255",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plateforme Bioinformatique eBio (<a href=\"http://ebio.u-psud.fr/\">http://ebio.u-psud.fr/</a>), créée en décembre 2009, est au centre du dispositif de bioinformatique de l’Université Paris-Sud. Elle est associée aux services de bioinformatiques de l’INRA Moulon, de l’hôpital Paul Brousse et de Gustave Roussy. eBio est labellisée par IBISA/Reseau National des Plateformes Bioinformatiques (RENABI) et membre de l’Alliance des Plateformes Bioinformatiques d’Ile de France (APLIBIO).&nbsp; Le site principal de eBio est localisé à l’IGM (UMR 8621 CNRS-Université Paris–Sud), bat 400. A partir de 2015, la plateforme intégrera le futur institut I2BC en cours de création à Gif sur Yvette.</p>\r\n\r\n<p>Les missions d’eBio comprennent : (1) le soutien bioinformatique aux projets de recherche, (2) la mise à disposition de moyens de calcul et stockage, (3) le développement et la maintenance de serveurs web de bioinformatique et bases de données de génomique. La plateforme a accompagné ou hébergé plus de 50 projets de recherche depuis début 2010, (dont 25 sur la période 2012-13).</p>\r\n\r\n<p>Les principaux domaines d’expertise de la plateforme sont les suivants :</p>\r\n\r\n<p>-&nbsp;&nbsp; &nbsp;L’analyse de données RNA-seq, notamment la detection de transcrits non codants, transcrits alternatifs, l’analyse d’expression différentielle, le ribosome profiling<br />\r\n-&nbsp;&nbsp; &nbsp;L’analyse des structures d’ARN (alignement, structure secondaire)<br />\r\n-&nbsp;&nbsp; &nbsp;L’intégration de logiciels et de workflows d’analyse sous Galaxy<br />\r\n-&nbsp;&nbsp; &nbsp;L’assemblage des génomes de bactéries/champignons, la détection de variants<br />\r\n-&nbsp;&nbsp; &nbsp;La phylogénie moléculaire et l’analyse fonctionnelle par profil phylogénétique<br />\r\n-&nbsp;&nbsp; &nbsp;L’annotation des génomes de bactéries, archées et champignons (séquences CRISPR, terminateurs de transcription, ARN régulateurs, minisatellites)<br />\r\n-&nbsp;&nbsp; &nbsp;Le calcul distribué et sur cloud (déploiement de services d’analyse sur cluster et cloud académique)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3fc4f0f210f344a1b8a2688ff59c069d",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "87.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N121176ed08c9454a8f09bc275f10328b",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N77c37e596cde4cc1bfbdf20d86a1c825",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "50"
+      }
+    ]
+  }
+]

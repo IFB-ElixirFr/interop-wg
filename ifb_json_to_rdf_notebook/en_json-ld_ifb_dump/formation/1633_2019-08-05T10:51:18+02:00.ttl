@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/initiation-à-lanalyse-données-avec-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Institut Pasteur"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-21T11:20:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Le cours s’adresse à des personnes qui veulent apprendre ou ré-apprendre à utiliser les statistiques à bon escient pour leurs propres projets. L’objectif est de présenter et expliquer les principales notions de statistiques utiles pour décrire un jeu de données, en explorer les propriétés afin d’en tirer des conclusions robustes, utiliser à bon escient les méthodes les plus courantes (tests d’hypothèse, ACP, …) et savoir lire, interpréter (et éventuellement aborder d’un œil critique) les résultats présentés dans les publications. Nous utiliserons le moins possible le formalisme mathématique mais insisterons sur les propriétés des méthodes, leurs pré-requis, l’interprétation des résultats. Nous aborderons les notions d’analyse exploratoire, ACP, clustering, estimation, échantillonnage, régression, tests d’hypothèse, planification d’expérience</p>\r\n\r\n<p>Ce cours est une initiation à l’analyse de données. Il est préférable d’avoir une connaissance minimale de R. Dans le cas contraire, un tutoriel d’initiation est disponible sur la page web du cours et les notions de base de R seront rappelées pendant la pratique. Pour les personnes n’ayant jamais utilisé R, il peut être utile d’avoir des connaissances de base en programmation, quel que soit le langage.</p>\r\n\r\n<p>Les cours seront donnés en Français et alterneront théorie et pratique avec RStudio. Il est demandé à chaque participant de venir avec un ordinateur portable chargé sur lequel il aura préalablement installé les éléments nécessaires (R, Rstudio et les fichiers de données sur lesquels nous travaillerons). La liste complète des fichiers et logiciels nécessaires sera disponible sur la page web du cours une dizaine de jours avant le début de la session.</p>\r\n\r\n<p>derniere session: Mar 2016</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T16:26:25+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Initiation à l'analyse de données avec R"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://c3bi.pasteur.fr"
+      }
+    ]
+  }
+]

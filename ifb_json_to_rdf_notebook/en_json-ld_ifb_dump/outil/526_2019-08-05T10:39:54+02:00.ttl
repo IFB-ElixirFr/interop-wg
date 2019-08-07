@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/assemble2",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Assemble2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T11:10:16+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Assemble2 allows the design of RNA 2D structures interactively, creation and assembly of the corresponding RNA 3D modules directly in UCSF Chimera. The available services include 2D prediction, a database of structural motifs, 3D alignment of RNA sequences and annotation of 3D structures.<br />\r\nJossinet et al. Bioinformatics. 2010 26:2057-9</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:58+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N2dc3761bc4a849e3987851dc3addd2bc"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "21"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2dc3761bc4a849e3987851dc3addd2bc",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free Web access</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-données-d’expression-gènes-sur-cohorte-en-r-pour-cancérologie",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:19:11+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:53:26+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de données d’expression de gènes sur cohorte en R pour la cancérologie"
+      }
+    ]
+  }
+]

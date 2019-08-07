@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/arnold",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "8011"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "5792"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ARNold "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:36:17+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Easy identification of Rho–independent transcription terminators.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T15:52:06+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N52aac3b2ad814747be43ae260a36b736"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "64"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rssf.i2bc.paris-saclay.fr/toolbox/arnold/index.php"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52aac3b2ad814747be43ae260a36b736",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>web server</p>\r\n"
+      }
+    ]
+  }
+]

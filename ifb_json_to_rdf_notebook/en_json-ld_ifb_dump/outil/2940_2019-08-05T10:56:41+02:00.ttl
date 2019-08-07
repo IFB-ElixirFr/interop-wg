@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/faf-drugs4",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "8400"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "780"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "FAF-Drugs4"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-06-11T11:47:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-06-11T11:47:35+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "35"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://fafdrugs4.mti.univ-paris-diderot.fr/"
+      }
+    ]
+  }
+]

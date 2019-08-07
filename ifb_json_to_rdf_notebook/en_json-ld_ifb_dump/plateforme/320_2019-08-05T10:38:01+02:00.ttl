@@ -1,0 +1,109 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/CAZy",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N128577a8c623489cb737f0e5c2e0891f"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:25:01+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-03-03T14:32:40+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "CAZy"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N4eb01625c56e436b8facd8ee0bfe3d5d"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nce94555954ea4408a544ed60b74c2b69"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N43bc5c690c5a4b049f75ee9aea1e5023"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nce94555954ea4408a544ed60b74c2b69",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Case 932"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13009"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 Avenue de Luminy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N43bc5c690c5a4b049f75ee9aea1e5023",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "http://www.cazy.org/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.cazy.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4eb01625c56e436b8facd8ee0bfe3d5d",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N128577a8c623489cb737f0e5c2e0891f",
+    "http://schema.org/identifier": [
+      {
+        "@value": "644"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formation-détection-et-annotation-des-éléments-transposables-dans-les-génomes-eucaryotes",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "INRA-URGI, Centre de Versailles"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-06-24T15:50:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-11T09:16:45+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Training on annotation of transposable elements"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Platform/Training/Training-on-annotation-of-transposable-elements"
+      }
+    ]
+  }
+]

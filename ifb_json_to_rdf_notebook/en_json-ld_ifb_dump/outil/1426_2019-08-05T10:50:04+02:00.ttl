@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/varank",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "VaRank"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T10:02:41+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Comprehensive workflow for annotating and ranking SNVs and indels from next generation sequencing data.</p>\r\n\r\n<p>Geoffroy V, et al. VaRank: a simple and powerful tool for ranking genetic variants. PeerJ 2015 3:e796</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd10126a304c2483b8afcd77b39966685"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.lbgi.fr/VaRank/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd10126a304c2483b8afcd77b39966685",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Source code avaiilable : <a href=\"http://www.lbgi.fr/VaRank/\">http://www.lbgi.fr/VaRank/</a></p>\r\n"
+      }
+    ]
+  }
+]

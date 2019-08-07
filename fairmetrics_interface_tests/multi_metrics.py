@@ -21,7 +21,8 @@ import multi_progress
 
 PRINT_DETAILS = False
 FILENAME = ""
-OUTPUT_DIR = "output"
+OUTPUT_DIR = "output_12"
+NUMBER_DOIS = 12
 
 # GLOBAL_PBAR = tqdm()
 
@@ -38,6 +39,11 @@ def readDOIsFile(filename):
     return data
 
 def multiTestMetrics(tuple_GUID):
+    """
+    Call multiples time "testMetric" to test each metric against one GUID.
+
+    @param GUID Tuplue The GUID to be tested plus other related informations
+    """
     # COUNT=0
     # COUNT += 1
     # dois_num = COUNT
@@ -46,7 +52,7 @@ def multiTestMetrics(tuple_GUID):
     position_holders = tuple_GUID[1][4]
     position = multi_progress.get_position(position_holders)
     total = tuple_GUID[1][3]
-    metrics_info = tuple_GUID[1][2]10 * offset, offset
+    metrics_info = tuple_GUID[1][2]
     text = tuple_GUID[1][1]
     GUID = tuple_GUID[1][0]
 
@@ -56,8 +62,10 @@ def multiTestMetrics(tuple_GUID):
 
     # metrics = test_metric.getMetrics()
 
+    comments_list = ['"' + GUID + '"']
     test_line_list = [GUID]
     headers_list = ["GUID"]
+    descriptions_list = ["Description"]
 
     # print(count)
 
@@ -72,10 +80,12 @@ def multiTestMetrics(tuple_GUID):
         # metric_info = test_metric.processFunction(test_metric.getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
         # metric_info = getMetricInfo(metric["@id"])
         principle = metric_info["principle"].rsplit('/', 1)[-1]
+        description = metric_info["description"]
 
         pbar.set_description('[' + str(count) + '/' + str(total) + ']' + ' Test [' + principle + '] for [' + GUID + ']')
 
-        if principle[0] == 'I':
+        if True:
+        # if principle[0] == 'I':
             if PRINT_DETAILS:
                 # print informations related to the metric
                 printMetricInfo(metric_info)
@@ -92,10 +102,16 @@ def multiTestMetrics(tuple_GUID):
             score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
             score = str(int(float(score)))
 
+            # get and write comment
+            comment = '"' + metric_evaluation_result[0]['http://schema.org/comment'][0]['@value'] + '"'
+            comments_list.append(comment)
+
             test_line_list.append(score)
             headers_list.append(principle)
+            descriptions_list.append(description)
 
         # GLOBAL_PBAR.refresh()
+
 
     time.sleep(0.5)
     multi_progress.release_position(position_holders, position)
@@ -106,6 +122,31 @@ def multiTestMetrics(tuple_GUID):
         os.mkdir(OUTPUT_DIR)
     output = OUTPUT_DIR + "/" + os.path.basename(FILENAME).replace(".txt", ".tsv")
     test_metric.writeLineToFile("\t".join(test_line_list), "\t".join(headers_list), dirpath + "/" + output)
+
+    # write comments
+    comments_filename = os.path.basename(FILENAME).split("_")[0] + "_comments.tsv"
+    test_metric.writeLineToFile("\t".join(comments_list), "\t".join(headers_list), "\t".join(descriptions_list), OUTPUT_DIR + "/" + comments_filename)
+
+
+
+# def writeComments(comments_dict, GUID):
+#     comments_filename = os.path.basename(FILENAME).split("_")[0] + "_comments"
+#     if not os.path.isdir(OUTPUT_DIR):
+#         os.makedirs(OUTPUT_DIR)
+#     with open(OUTPUT_DIR + "/" + comments_filename, "w") as file:
+#         for key in comments_dict.keys():
+#             file.write(">" + key + "\n")
+#             file.write(comments_dict[key])
+
+def subsetDOIs(dois_list, nb_dois_to_select):
+    new_dois_list = []
+    total_nb_dois = len(dois_list)
+    for i, dois in enumerate(dois_list):
+        if i % int(total_nb_dois/nb_dois_to_select) == 0 and i != 0:
+            new_dois_list.append(dois)
+    return new_dois_list
+
+
 
 if __name__ == "__main__":
     # print("start the output")
@@ -121,6 +162,7 @@ if __name__ == "__main__":
     data = readDOIsFile(FILENAME)
 
     dois_list = data.split("\n")
+    dois_list = subsetDOIs(dois_list, NUMBER_DOIS)
 
     num_cores = multiprocessing.cpu_count()
     # num_cores = 12
@@ -176,3 +218,4 @@ if __name__ == "__main__":
 
     # for doi in data.split("\n"):
     #     TM.testMetrics(doi)
+    print("\n")

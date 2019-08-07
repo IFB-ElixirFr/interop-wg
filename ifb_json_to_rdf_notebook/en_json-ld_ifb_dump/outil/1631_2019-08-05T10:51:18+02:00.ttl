@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/gigaton-oyster-transcriptome-database",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Gigaton oyster transcriptome database"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-17T09:03:24+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>http://gigaton.sigenae.org/</p>\r\n\r\n<p>http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-015-0833-4</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-08-29T16:22:05+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N101fed4448ed4481824eedb46e82bfcd"
+      }
+    ]
+  },
+  {
+    "@id": "_:N101fed4448ed4481824eedb46e82bfcd",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>public</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/migale> a schema:LaboratoryScience ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "1082" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "300.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "467",
+                "468" ] ;
+    frapo:supports [ dc:description """<p>Les utilisateurs font une demande d’hébergement à la plate-forme et de collaboration avec l’équipe de l’unité qui assure le traitement et l’analyse des données bioinformatiques.</p>\r
+""" ] ;
+    dc:created "2015-07-23T10:32:23+02:00" ;
+    dc:modified "2019-03-14T12:02:40+01:00" ;
+    meb:User [ ocds:valueAmount "451" ] ;
+    schema:name "MIGALE" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "464",
+                "465",
+                "466",
+                "485",
+                "486",
+                "487",
+                "488",
+                "489",
+                "490",
+                "491",
+                "492",
+                "493",
+                "494",
+                "495",
+                "496",
+                "497",
+                "498",
+                "499" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "133" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Jouy-en-Josas" ;
+            schema:postOfficeBoxNumber "Unité MaIAGE" ;
+            schema:postalCode "78350" ;
+            schema:streetAddress "Domaine de Vilvert" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "http://migale.jouy.inra.fr/" ;
+            schema:url "http://migale.jouy.inra.fr/" ] .
+

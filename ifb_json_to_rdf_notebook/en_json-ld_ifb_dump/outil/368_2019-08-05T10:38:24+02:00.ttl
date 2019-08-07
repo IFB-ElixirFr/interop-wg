@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/syntax",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "3829"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "1707"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SyntTax "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:37:53+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Web server linking synteny to prokaryotic taxonomy.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T15:10:18+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N7a51ed718c9a4706afb2aa2ff0d1bccf"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "37"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://archaea.u-psud.fr/synttax/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7a51ed718c9a4706afb2aa2ff0d1bccf",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Web server</p>\r\n"
+      }
+    ]
+  }
+]

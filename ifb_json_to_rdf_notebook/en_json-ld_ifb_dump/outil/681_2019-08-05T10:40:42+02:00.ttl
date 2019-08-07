@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/clustsee",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Clust&See"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:16:25+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Clust&amp;See est un plug-in Cytoscape dans lequel plusieurs algorithmes de partitionnement de graphes et OCG sont implémentés. Il permet d'identifier, de visualier et d'analyser les classes de sommets obtenus. La partition obtenue est visualisée sour la forme d'un graphe quotient. Cet outil permet d'étudier en détail les liens entre sommlets, arêtes, classes et partitions.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T11:00:08+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5725d0f1544045e99a4d6c4f6f83cecf"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "28"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://apps.cytoscape.org/apps/clustnsee"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1284"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5725d0f1544045e99a4d6c4f6f83cecf",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Libre sur http://tagc.univ-mrs.fr/tagc/index.php/clustnsee et sur l'App store.</p>\r\n"
+      }
+    ]
+  }
+]

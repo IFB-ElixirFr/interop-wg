@@ -1,0 +1,244 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/urgi",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N60db75168ed24088b85c8a65c39cbd44"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N6f8ef71c0ffe40ccb558153ab8af92e3"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N9104992b81ea4dfb9a4a500fd74e1810"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N04babe1e7ef4434cab70af23e0430860"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nd28dbc5e4e614884a44bde8f8a0396fe"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N6ea51c9c07fb48c38a116352f9951885"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T15:11:24+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T14:15:28+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Nb520056f98574fef8d27948e111ecc8a"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nfc04f259883b4da6994a10e30064f7a3"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "URGI"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N4a6645e40ea8498fbabc013d1430e707"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N9497b331e2fe4e97b0267b6ddfabfbe3"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nb78b556410b5433fb9470aa776a82d05"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N169672bf183044e495a243fe9f711de9"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb78b556410b5433fb9470aa776a82d05",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Versailles"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "INRA Versailles"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "78000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "RD10 Route de Saint-Cyr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfc04f259883b4da6994a10e30064f7a3",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "103"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd28dbc5e4e614884a44bde8f8a0396fe",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>URGI research activity (data integration, repeat annotation, genome structure and dynamics) is closely related the platform activity (Information System and genome analyses). On the one hand, the platform benefits from the research expertise (analysis and tools development) on the other hand it offers a strong support to our research activity with the resources and expertise of its staff (mainly engineers).</p>\r\n\r\n<p>The areas of competence and expertise of the platform members are mainly focused on:</p>\r\n\r\n<ul>\r\n\t<li>Interface development (Java J2EE)</li>\r\n\t<li>Development of analysis pipelines (Python)</li>\r\n\t<li>Databases (PostgreSQL, MySQL)</li>\r\n\t<li>NoSQL technologies (ElasticSearch, Solr)</li>\r\n\t<li>Data integration (ETL Talend) of genomics and genetic data (genome annotation, RNA-Seq, polymorphism, Genome wide association studies, phenotype, genetic resources)</li>\r\n\t<li>Genome analysis (structure and dynamics)\r\n\t<ul>\r\n\t\t<li>Polymorphism analysis (SNP, structural variants)</li>\r\n\t\t<li>RNA-Seq</li>\r\n\t\t<li>Gene Annotation (structural and functional)</li>\r\n\t\t<li>Repeat annotation (specifically transposable elements)</li>\r\n\t</ul>\r\n\t</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9497b331e2fe4e97b0267b6ddfabfbe3",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f8ef71c0ffe40ccb558153ab8af92e3",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1206"
+      }
+    ]
+  },
+  {
+    "@id": "_:N04babe1e7ef4434cab70af23e0430860",
+    "http://schema.org/identifier": [
+      {
+        "@value": "2364"
+      },
+      {
+        "@value": "504"
+      },
+      {
+        "@value": "503"
+      }
+    ]
+  },
+  {
+    "@id": "_:N60db75168ed24088b85c8a65c39cbd44",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>An infrastructure dedicated to bioinformatics: data storage, web site and high-throughput computing in a secure environment. They are hosted in the INRA DataCenter in Ile-de-France <u>(</u>Bruyère-Le-Chatel<u>)</u></p>\r\n\r\n<ul style=\"list-style-type:circle\">\r\n\t<li>High Performance Computer (HPC)</li>\r\n\t<li>High-performance NAS storage for unix , databases &amp; cluster (200 To)</li>\r\n\t<li>server dedicated to the web site</li>\r\n\t<li>server dedicated to the back-ups management</li>\r\n\t<li>3 servers dedicated to virtualization (DBMS, Information System, Wevb applications)</li>\r\n\t<li>1 cloud</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N169672bf183044e495a243fe9f711de9",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "URGI PLATFORM"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://urgi.versailles.inra.fr/Platform"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6ea51c9c07fb48c38a116352f9951885",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The platform is a partner or project coordinator in the framework of call for proposals at national and international level (ANR, IBISA, investments for the future) or international consortia. With the support of these projects it carries out developments of GnpIS information system as well as those related to its Galaxy server to give access to data and tools.<br />\r\nData from different plant species (wheat, grape, maize, rape, beet ...), fungi (Botrytis cinerea, Leptosphaeria maculans, ...) and trees (maritime pine, poplar, oak ...) provided or analyzed in the context of International consortia (IWGSC, Wheat Initiative, Vine, Botrytis ...) and all collections of genetic resources of INRA-BAP Department are made available through GnpIS Information system.<br />\r\nThe platform also develops tools available on its platform through ssh connection, for download or on the Galaxy server. She also provides support and training.<br />\r\nIt provides a call for proposals for computational resources and storage space.<br />\r\n&nbsp;<br />\r\nThe projects where the platform is involved are in line with the scope of priorities, services and expertise and bring financial support required to operate and maintain its infrastructure (hardware and software). As a strategic INRA platform (CNOC label), it is supported by a financial aid to ensure a part of its operations. Access to computational and storage resources is free of charge for partners (projects or as part of its Call for proposals). The platform also carries out analyzes in the frame of collaborative projects. The platform members are co-author in associated publications.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Description des modalités d’appui aux projets "
+      }
+    ]
+  },
+  {
+    "@id": "_:N9104992b81ea4dfb9a4a500fd74e1810",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "358.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4a6645e40ea8498fbabc013d1430e707",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "506"
+      },
+      {
+        "@value": "2257"
+      },
+      {
+        "@value": "505"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb520056f98574fef8d27948e111ecc8a",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "33"
+      }
+    ]
+  }
+]

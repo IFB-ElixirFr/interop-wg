@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/participation-à-latelier-bioinformatique-roscoff",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T11:42:04+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>RNA-seq isoformes session ( http://www.france-bioinformatique.fr/sites/default/files/R04_EBA2016_RNAseq_Isoforms.pdf )</p>\r\n\r\n<p>Tutoring for 1 person</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T20:30:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Participation à l'atelier de Bioinformatique de Roscoff"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.france-bioinformatique.fr/en/evenements/EBA2016"
+      }
+    ]
+  }
+]

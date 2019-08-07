@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/ng6",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "33094"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "18359"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "NG6"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:55:27+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:35:52+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "40"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ng6.toulouse.inra.fr/index.php?id=3"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1543"
+      }
+    ]
+  }
+]

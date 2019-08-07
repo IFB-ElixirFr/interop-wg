@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/«-statimage»-statistiques-pour-l’imagerie-microscopie",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "CIEP, Sèvres"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-21T11:15:51+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-21T14:43:06+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "« STATIMAGE», Statistiques pour l’imagerie de microscopie"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://france-bioimaging.org/fr/events/statimage-statistiques-pour-limagerie-de-microscopie-19-21-juin-2017/"
+      }
+    ]
+  }
+]

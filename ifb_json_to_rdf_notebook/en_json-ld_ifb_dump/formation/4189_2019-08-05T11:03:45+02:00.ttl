@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyses-ngs-avec-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Centre de bioinformatique de Bordeaux (CGFB)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T15:55:21+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T15:55:21+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyses NGS avec R"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/stage-19025-Analyses-NGS-avec-R.html?axe=98"
+      }
+    ]
+  }
+]

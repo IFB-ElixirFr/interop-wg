@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/galaxy-metagenomic-sequence-analysis-amplicons-miseq-and-454-sequencing-frogs-galaxy-0",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-07-04T13:48:55+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session, organized by Bioinfo Genotoul, Sigenae, NED (GenPhySE) and TWB, is designed to help you to deal with NGS data of 16S, 18S ... DNA produced with MiSeq from Illumina and Roche 454 technologies in the Galaxy workbench.</p>\r\n\r\n<p>You will discover how to use our Galaxy instance, clean reads, clusterize them, do the taxonomic affiliation and perform statistics to interpret your results.</p>\r\n\r\n<p><strong>Prerequisites: knowledge of R or in another programming language</strong></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-27T10:51:39+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "FROGS formation : tools for bioinformatics and statistics analyses with amplicon metagenomics data"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/metagenomic-amplicons-and-stats-with-frogs/"
+      }
+    ]
+  }
+]

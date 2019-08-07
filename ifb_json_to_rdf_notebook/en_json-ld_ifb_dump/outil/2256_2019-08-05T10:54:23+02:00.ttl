@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxybird",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "26"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy@BiRD"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T17:30:17+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T18:58:10+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://galaxy-bird.univ-nantes.fr/galaxy/"
+      }
+    ]
+  }
+]

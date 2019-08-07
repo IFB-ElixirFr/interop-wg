@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/linuxunix",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:01:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training presents the following points: how to access the platform, how to use a Unix environment, how to create and manipulate and transfer files with command line from your computer toward our cluster and vice versa. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T10:58:25+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Linux/Unix"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/linux-2/"
+      }
+    ]
+  }
+]

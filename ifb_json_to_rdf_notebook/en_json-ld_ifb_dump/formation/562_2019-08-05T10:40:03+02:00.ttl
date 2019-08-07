@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formation-fc3-­‐bio-prabi",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-08T15:35:13+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:53:26+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction Unix pour les biologistes"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/spectrométrie-masse-analyse-protéomique-et-interprétation-des-données",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-02-22T15:32:21+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:27+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Spectrométrie de masse, analyse protéomique et interprétation des données"
+      }
+    ]
+  }
+]

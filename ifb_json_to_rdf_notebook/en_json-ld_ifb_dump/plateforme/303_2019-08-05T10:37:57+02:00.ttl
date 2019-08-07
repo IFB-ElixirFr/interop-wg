@@ -1,0 +1,188 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/microscope",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nffd965640d5446f4b83bcd238d0ba814"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nb7ca35d6e5434420848b12ce1b551e6c"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N8b48859322ab483d89bc7d0f6bb81b62"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:30:40+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T12:23:45+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N746dedf7c43c48de8e76aa9a22f83361"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf8beb6430d57458fada047f96e3ac1ca"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MicroScope"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N14498a51f38a44769be56dfb37ae3a45"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Ne4c75aaebe9c4a7b8cb9ed57b61d2a7a"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N963a4feb1d2b4552a98ab12e7a5d4ed6"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nad1f8a94d2724cf585ad954f3158e11f"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nffd965640d5446f4b83bcd238d0ba814",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "370"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf8beb6430d57458fada047f96e3ac1ca",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "984"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8b48859322ab483d89bc7d0f6bb81b62",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Tools and databases for bacterial genome annotation and comparative genomics</li>\r\n\t<li>Metabolic network reconstruction</li>\r\n\t<li>Curation of metabolic data</li>\r\n\t<li>Discovery of new enzymatic activities</li>\r\n\t<li>Quantitative transcriptomics via RNA-seq</li>\r\n\t<li>Variant analysis</li>\r\n\t<li>Pangenomics and (meta)genomics analyses</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N746dedf7c43c48de8e76aa9a22f83361",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "262"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb7ca35d6e5434420848b12ce1b551e6c",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "40.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne4c75aaebe9c4a7b8cb9ed57b61d2a7a",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "130"
+      }
+    ]
+  },
+  {
+    "@id": "_:N963a4feb1d2b4552a98ab12e7a5d4ed6",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Evry"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91057"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "2, rue Gaston Crémieux, CP 5706"
+      }
+    ]
+  },
+  {
+    "@id": "_:N14498a51f38a44769be56dfb37ae3a45",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "461"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nad1f8a94d2724cf585ad954f3158e11f",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Genoscope"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.genoscope.cns.fr/agc/microscope"
+      }
+    ]
+  }
+]

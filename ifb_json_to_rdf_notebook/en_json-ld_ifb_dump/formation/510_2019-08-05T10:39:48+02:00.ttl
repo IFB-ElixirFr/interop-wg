@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/repet-detection-and-annotation-repeats",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T15:26:11+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Training and accompanying at URGI (one week) on data provided by the trainee: use of the 2 main pipelines (TEdenovo et TEannot) + post analysis of results</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-05T11:58:55+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "REPET: detection and annotation of repeats"
+      }
+    ]
+  }
+]

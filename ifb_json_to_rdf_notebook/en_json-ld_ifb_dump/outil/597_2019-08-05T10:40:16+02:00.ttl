@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/galaxycbib",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "150"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy@CBiB "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:32:25+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Galaxy analysis server.&nbsp;Bioinformatics tools made available on the Toolshed: 400 tested bricks.&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:14:35+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nf29d789a3152440b9803ed7ad35beebb"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://services.cbib.u-bordeaux.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf29d789a3152440b9803ed7ad35beebb",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free web access, possibility of access to supplementary storage</p>\r\n"
+      }
+    ]
+  }
+]

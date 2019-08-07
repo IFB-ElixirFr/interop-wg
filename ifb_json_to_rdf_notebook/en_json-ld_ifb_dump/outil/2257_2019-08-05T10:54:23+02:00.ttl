@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/tedna",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1872"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "557"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Tedna"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T17:35:17+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Tedna is a lightweight&nbsp;<em>de novo</em>&nbsp;transposable element assembler. It assembles the transposable elements directly from the raw reads.</p>\r\n\r\n<p>&nbsp;Zytnicki M, Akhunov E, Quesneville H:&nbsp;<strong>Tedna: a transposable element de novo assembler</strong>.&nbsp;<em>Bioinformatics</em>&nbsp;0,&nbsp;<strong>30</strong>:2656–8.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-12T16:07:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N8dadad496533411bbff89b860777a00b"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "11"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Tools/Tedna"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "148"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8dadad496533411bbff89b860777a00b",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"https://urgi.versailles.inra.fr/Tools/Tedna\">D</a><a href=\"http://urgi.versailles.inra.fr/Tools/Tedna\">ownload</a></p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

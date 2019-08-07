@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/data-mining-and-analysis-ngs-data-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "CBiB"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:35:57+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-18T10:47:11+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analysis of NGS data with R"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/pdf/16147.pdf"
+      }
+    ]
+  }
+]

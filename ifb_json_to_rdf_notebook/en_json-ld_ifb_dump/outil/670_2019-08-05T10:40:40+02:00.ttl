@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/sabbac",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "640"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "130"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SABBAC"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T10:56:57+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>SABBAC</strong>&nbsp;is an on-line service devoted to protein backbone reconstruction from alpha-carbon trace. It is based on the assembly of fragments issued from library of reduced size, resulting from the encoding of the protein trace in an HMM-derived structural alphabet.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T16:01:02+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne232d19c3fe6421aad656ce8d52fa38d"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "67"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/SABBAC/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne232d19c3fe6421aad656ce8d52fa38d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Online free access</p>\r\n"
+      }
+    ]
+  }
+]

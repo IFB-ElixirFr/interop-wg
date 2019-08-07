@@ -1,0 +1,171 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/igs",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nc91102c85be04b6f9869013ebe263a99"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Ne463c5ee310146fe861d94c82b7197f1"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nf91342ec421c4e4abc13cbd86d1a9a5f"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N9a2fe60d5a274355ac32450233fe66bd"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:03:01+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:21:55+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N3723b8cdbf2644edbb5dabe5d3d9c612"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PACA-Bioinfo"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nc6a102784ec14233afcae3bf72b5f74e"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N79c30d40c4b64a59b7e2b77e9fa95072"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nfdae7ffce9cd4910b914344e2423f8a4"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfdae7ffce9cd4910b914344e2423f8a4",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Case 934"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13009"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 Avenue de Luminy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N79c30d40c4b64a59b7e2b77e9fa95072",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf91342ec421c4e4abc13cbd86d1a9a5f",
+    "http://schema.org/identifier": [
+      {
+        "@value": "650"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a2fe60d5a274355ac32450233fe66bd",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Mise en place de site web et de listes de diffusions dédiés, d’espaces de stockage, de server ftp. Développement d’outils en ligne spécifiques. Accès aux données traitées.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc91102c85be04b6f9869013ebe263a99",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "624"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc6a102784ec14233afcae3bf72b5f74e",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "647"
+      },
+      {
+        "@value": "3831"
+      },
+      {
+        "@value": "646"
+      },
+      {
+        "@value": "649"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3723b8cdbf2644edbb5dabe5d3d9c612",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "212439"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne463c5ee310146fe861d94c82b7197f1",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "100.00"
+      }
+    ]
+  }
+]

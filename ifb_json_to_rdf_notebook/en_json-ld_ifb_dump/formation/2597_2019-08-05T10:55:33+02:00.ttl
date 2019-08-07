@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/bioinformatique-pour-traitement-données-séquençage-ngs-0",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-15T14:02:07+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Bioinformatique pour le traitement de données de séquençage (NGS) "
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/gestion-données-en-python-avancé",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-17T11:42:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T11:42:44+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Gestion de données en Python - Avancé   "
+      }
+    ]
+  }
+]

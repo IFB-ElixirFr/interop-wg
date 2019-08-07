@@ -1,0 +1,308 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/genouest",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Ndbe44aaa983042dbbc7d588232a6e6e7"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N911dc30107a84b3e97c21d36091139c2"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nb380ffa139a8450a8417d843e96bddbc"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N5149210a9d7d4149b2aa08013806dc86"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Ne4e96ff898004e77b04443869fb7f4b6"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nff5012965c6c40f0afe20b6b745ec60a"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:17:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T11:34:26+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Nd9a0d38f16aa46f5885b9099dd216c3b"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N38bc5b67279c48a9a14d49a12f4593a5"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "GenOuest "
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N4e452ef2054b475f81829c3e1daa745a"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N597bc4d553c84fa4a23a3a0ccbc1e0f8"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nd016fa62924745d8b420c94819bea075"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N18bee12720424b809293eb33a32edcbe"
+      }
+    ]
+  },
+  {
+    "@id": "_:N38bc5b67279c48a9a14d49a12f4593a5",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndbe44aaa983042dbbc7d588232a6e6e7",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Compute cluster</strong></p>\r\n\r\n<p>The computing resources can be accessed anonymously for certain tools or after authentication (command line or Galaxy portal).</p>\r\n\r\n<p>The cluster is based on a forty servers using the SGE task scheduler.&nbsp;</p>\r\n\r\n<p>This computing ensemble is associated with two storage areas: a high performance space of 110 To and a NFS conventional space of 120 terabytes.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Cloud</strong></p>\r\n\r\n<p>The Genocloud infrastructure consists of 8 servers with 224 cores to 650 GB of memory. This set is associated with 8 TB of stockage.Several preconfigured images are made ​​available to users.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd9a0d38f16aa46f5885b9099dd216c3b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "21"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne4e96ff898004e77b04443869fb7f4b6",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>GenOuest offers many services: 1) a bioinformatics infrastructure: a complete environment for users with or without the support of the core facility members. 2) bioinformatics application development&nbsp;: for the projects requiring software development the coders of the facility bring their expertise to build specific environments or interface of databases. 3) expertise and consulting : GenOuest members can provide help for scientific projects (data analysis, data management plans, etc.) &nbsp;&nbsp;4) Technological transfer: since the GenOuest core facility is hosted by a computer science institute many tools originating from computer science research can be transferred.&nbsp; 5) Training: many training sessions on tools, environments or methodologies are provided by GenOuest engineers.&nbsp; 6) Scientific hosting : in partnership with GenOuest, users can install or setup new resources to disseminate their research activities.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Besides, GenOuest carries out research and developments in several fields&nbsp;:</p>\r\n\r\n<p>&nbsp;Developments focusing on sequence analysis (Logol, DrMotifs), biological data integration (BioMAJ, SeqCrawler, Danaïdes), and also metadata in Biology (EMME).</p>\r\n\r\n<p>Technological developments of tools and environments to ease the administration and usage of bioinformatics applications (BioMAJ, MobyleNet, Galaxy) or technological developments on new computation paradigms for bioinformatics (cloud computing&nbsp;: genocloud, grod computing&nbsp;: Grisbi).</p>\r\n\r\n<p>These two main fields are federated in a E-science project centered on Virtual Research Environments.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The platform is in close interaction with two local bioinformatics teams, Dyliss and GenScale. The Dyliss team specializes on sequence analysis and systems biology using formal systems to characterize the genetic factors controlling phenotypic responses depending on the environment. The GenScale team focuses on analysis of genomic data on a large scale in developing optimized algorithms (CPU and memory), and which can also be run in parallel environments.&nbsp; The areas of expertise of these two teams contribute to reinforce the expertise of the GenOuest platform and offer innovative tools.</p>\r\n\r\n<p>The GenOuest platform is also associated very closely with INRA Bipaa platform which offers resources bioinformatics for Genomics and post-Genomics of insects.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>From a thematic point of view, the tools and methodologies developed within this group of fifty people are used in the traditional scientific domains of Biogenouest: sea, agriculture, health and environment.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd016fa62924745d8b420c94819bea075",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Rennes"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "263 avenue du Général Leclerc"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "35000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Campus de Beaulieu"
+      }
+    ]
+  },
+  {
+    "@id": "_:N911dc30107a84b3e97c21d36091139c2",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1600"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5149210a9d7d4149b2aa08013806dc86",
+    "http://schema.org/identifier": [
+      {
+        "@value": "545"
+      },
+      {
+        "@value": "547"
+      },
+      {
+        "@value": "548"
+      },
+      {
+        "@value": "551"
+      },
+      {
+        "@value": "1413"
+      },
+      {
+        "@value": "2173"
+      },
+      {
+        "@value": "549"
+      },
+      {
+        "@value": "546"
+      },
+      {
+        "@value": "550"
+      },
+      {
+        "@value": "1434"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nff5012965c6c40f0afe20b6b745ec60a",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The GenOuest platform offers a complete environment for its users. It is thus possible to benefit from Linux accounts ( on the cluster or on genocloud ), relational databases, web servers.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N597bc4d553c84fa4a23a3a0ccbc1e0f8",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "134"
+      }
+    ]
+  },
+  {
+    "@id": "_:N18bee12720424b809293eb33a32edcbe",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "GENOUEST"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb380ffa139a8450a8417d843e96bddbc",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2200.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4e452ef2054b475f81829c3e1daa745a",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2171"
+      },
+      {
+        "@value": "553"
+      },
+      {
+        "@value": "2177"
+      },
+      {
+        "@value": "2184"
+      },
+      {
+        "@value": "2178"
+      },
+      {
+        "@value": "2181"
+      },
+      {
+        "@value": "1435"
+      },
+      {
+        "@value": "1437"
+      },
+      {
+        "@value": "556"
+      },
+      {
+        "@value": "1436"
+      },
+      {
+        "@value": "2200"
+      },
+      {
+        "@value": "2185"
+      },
+      {
+        "@value": "2175"
+      },
+      {
+        "@value": "1433"
+      },
+      {
+        "@value": "1440"
+      },
+      {
+        "@value": "1441"
+      },
+      {
+        "@value": "2172"
+      },
+      {
+        "@value": "557"
+      },
+      {
+        "@value": "2176"
+      }
+    ]
+  }
+]

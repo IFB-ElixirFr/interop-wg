@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/amigal",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "6000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "AGMIAL"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:18:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T10:18:15+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "71"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://genome.jouy.inra.fr/agmial/"
+      }
+    ]
+  }
+]

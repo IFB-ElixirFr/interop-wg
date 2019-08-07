@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/ant-motifs",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Ant-Motifs"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:54:52+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T16:54:20+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.isima.fr/~mephu/FILES/AntMotif/"
+      }
+    ]
+  }
+]

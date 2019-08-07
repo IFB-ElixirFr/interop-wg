@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/analyse-séquences-initiation-avancée",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "CBiB"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:36:41+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-18T10:47:11+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Advanced sequence analysis"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/pdf/16148.pdf"
+      }
+    ]
+  }
+]

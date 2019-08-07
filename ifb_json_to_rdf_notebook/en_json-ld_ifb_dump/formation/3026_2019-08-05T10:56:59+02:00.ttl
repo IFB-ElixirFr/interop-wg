@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/formation-au-logiciel-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-07-09T19:11:40+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-07-09T19:11:40+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formation au logiciel R"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.biosciencesco.fr/formations/bio-informatique/formation-au-logiciel-r/"
+      }
+    ]
+  }
+]

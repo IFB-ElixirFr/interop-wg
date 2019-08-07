@@ -1,0 +1,230 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/genotoul",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N43bd916cd599460bb36b13572ea2399a"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N5b578ce2ba244ec9a59d5e751ff51c55"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N944fc1d09db84f9dbd7c06adce33fbfd"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Ncadc9c815f244d038b07ad96c7a5d531"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N19893c77bb914e4fb393e3fbe6e1df8b"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:19:41+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-23T16:42:25+02:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N7c3b132b2cd3484fb999bb991dd407c6"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N132c2f2f7d934a55b7175ea10ac1671e"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Genotoul-bioinfo"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N8a86fb3513464aea8b2ed9d368ea85f0"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N2005ddee878c464b9703913c88334307"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N8ed6cab8e97e4ed59a7af1a93dec3051"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b578ce2ba244ec9a59d5e751ff51c55",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2984"
+      }
+    ]
+  },
+  {
+    "@id": "_:N944fc1d09db84f9dbd7c06adce33fbfd",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "3200.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c3b132b2cd3484fb999bb991dd407c6",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "41"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2005ddee878c464b9703913c88334307",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Castanet Tolosan"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31326"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "24 Chemin de Borde Rouge"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8a86fb3513464aea8b2ed9d368ea85f0",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "611"
+      },
+      {
+        "@value": "609"
+      },
+      {
+        "@value": "4263"
+      },
+      {
+        "@value": "608"
+      },
+      {
+        "@value": "2198"
+      },
+      {
+        "@value": "610"
+      },
+      {
+        "@value": "612"
+      },
+      {
+        "@value": "4262"
+      },
+      {
+        "@value": "607"
+      },
+      {
+        "@value": "2179"
+      }
+    ]
+  },
+  {
+    "@id": "_:N43bd916cd599460bb36b13572ea2399a",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>● Stockage scratch HPC<br />\r\n→ 900 Tera Octets utiles<br />\r\n→ 25 Giga bits / seconde</p>\r\n\r\n<p>● Stockage NAS</p>\r\n\r\n<p>→ 3 baies ISILON (au total 1.8 Peta Octets utiles)<br />\r\n→ 2 baies COMPELLENT/FLUIDFS (au total 450 Tera Octets utiles)<br />\r\n→ Au total 3.2 Peta Octets utiles</p>\r\n\r\n<p>The platform has about twenty physical servers complemented by seventy-five virtual servers that provide the login services, development, inputs / outputs, relational databases, genomic databases, administration, supervision, web, virtualization, backup, project hosting, bioinformatics software. The primary server, serving as access to users is called \"genologin.\"<br />\r\nSome examples (not exhaustive) web services hosted by the platform: NG6, galaxy, rnaspace, peroxibase, phyleasprog, Multalin, framed, MetExplore, Iccare, blast, emboss, BioMAJ ...<br />\r\nAdditionally we host (formalization by convention) data, web sites or information systems or other platforms other research teams in the region: get-Plage, biochip, Anexplo, TOXALIM, hsern, sigenae: gbf , LRSV, genphyse<br />\r\nSome details:<br />\r\n● Cluster computing</p>\r\n\r\n<ul>\r\n\t<li>64 nodes IVYBRIDGE (20c) = 1280 cores (2560 threads), 16 Tera Octets RAM</li>\r\n\t<li>48 nodes BROADWELL (32c) = 1536 cores (3072 threads), 12 Tera Octets RAM</li>\r\n\t<li>1 node SMP1 = 120 coeurs, 3 Tera Octets RAM</li>\r\n\t<li>1 node SMP2 = 48 coeurs, 1.5 Tera Octets RAM</li>\r\n\t<li>Interconnection Infiniband (QDR)&nbsp;QDR (40Gbs) / FDR (56 Gbs)</li>\r\n</ul>\r\n\r\n<p><br />\r\n● HPC Storage<br />\r\n→ 900 Tera Octets useful<br />\r\n→ 25 Giga bits / seconde<br />\r\n● NAS Storage<br />\r\n→ 3 bays ISILON (au total 1.8 Peta Octets useful)<br />\r\n→ 2 bays COMPELLENT/FLUIDFS (total of 450 Tera Octets useful)<br />\r\n→ total of&nbsp; 3.2 Peta Octets useful<br />\r\n● Server Virtualization<br />\r\n→ farm Vmware 3 servers<br />\r\n→ Bay DELL-MD discs (SAN mode) 40TB<br />\r\n→ 75 hosted virtual machines&nbsp;</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N19893c77bb914e4fb393e3fbe6e1df8b",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Support for scientific projects is made in two forms:<br />\r\n1) project hosting: this form of accompaniment is to make available a project a virtual machine that will be administered by the members.<br />\r\n2) the accompaniment: the project support is performed preferentially in the form of collaboration. The service is also practiced. In the first case, you are asked to partners a contribution to the functioning of the platform. He also asked them to commit to join the staff of the platform that accompanied the project to various valuation results. In the case of a service, the full cost of the service (storage, computing, human ressources are assessed and charged.</p>\r\n\r\n<p>3) data storage</p>\r\n"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>Please fill the form here : <a href=\"http://bioinfo.genotoul.fr/index.php/ask-for/project/\">http://bioinfo.genotoul.fr/index.php/ask-for/project/</a></p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncadc9c815f244d038b07ad96c7a5d531",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The areas of expertise of GenoToul bioinfo platform are:<br />\r\n- The processing of data from the high-throughput sequencing: assembly, annotation, analysis of expression (RNAseq, de novo RNAseq, sRNAseq), metagenomics analysis of variants, méthylSeq.<br />\r\n- Bioinformatics analysis of ncRNA: annotation, prediction, search targets, in archaea, bacteria, plants and animals.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N132c2f2f7d934a55b7175ea10ac1671e",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "850"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8ed6cab8e97e4ed59a7af1a93dec3051",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/"
+      }
+    ]
+  }
+]

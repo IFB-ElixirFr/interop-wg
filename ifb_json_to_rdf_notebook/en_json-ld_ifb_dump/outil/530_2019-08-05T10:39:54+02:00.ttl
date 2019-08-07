@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/ngs-qc-generator",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "NGS-QC Generator "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T11:12:49+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ANALYSIS OF THE DATA NGS - QUALITY CONTROL OF READINGS<br />\r\nUniversal quality control system for ChIP-seq and NGS 'enrichment-based' data (www.ngs-qc.org). The NGS-QC database hosts QC descriptors for 6066 publicly available data sets.<br />\r\nMendoza-Parra et al. A quality control system for profiles obtained by ChIP sequencing Nucleic Acids Res. 2013 41:e196.<br />\r\n&nbsp;<br />\r\nNB : content continuously updated to maintain coverage of all public data sets</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5b610336a216431681151703a19f4bac"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.ngs-qc.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b610336a216431681151703a19f4bac",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free Web access for the academic research community. Premium access is also available on request.</p>\r\n"
+      }
+    ]
+  }
+]

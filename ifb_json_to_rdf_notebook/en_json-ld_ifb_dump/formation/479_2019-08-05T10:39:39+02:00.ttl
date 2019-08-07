@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/initiation-à-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Jouy en Josas"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:23:42+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-31T10:24:26+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Initiation à R"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/?q=fr/formations"
+      }
+    ]
+  }
+]

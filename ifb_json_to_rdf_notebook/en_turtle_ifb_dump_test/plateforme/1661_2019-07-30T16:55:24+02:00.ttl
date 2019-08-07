@@ -1,0 +1,67 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/platforms/gmgf-gbit> a schema:LaboratoryScience ;
+    dbpedia-owl:Database [ schema:identifier "1802",
+                "1803",
+                "1805" ] ;
+    frapo:hasExpertise [ dc:description """<p>Expertise dans le domaine des maladies rares de la recherche au traitement :</p>\r
+\r
+<ul>\r
+	<li>Design et analyse des expériences de séquençage (WES, WGS, RNAseq, CHIPseq)</li>\r
+	<li>Recherche de nouveaux gènes par analyses familiales</li>\r
+	<li>Analyse des données</li>\r
+	<li>Création et hébergement de bases de données de patients et de mutations</li>\r
+</ul>\r
+\r
+<p>Expertise dans le domaine des biotechnologies</p>\r
+\r
+<ul>\r
+	<li>Toutes les technologies principales de biologie moléculaire</li>\r
+	<li>Développement d'outils spécifiques : validation d'hypothèses thérapeutiques</li>\r
+	<li>Développement d'outils d'analyse des données issues des technologies à haut débit (Array CGH, NGS, Génotypage à haut débit ...)</li>\r
+</ul>\r
+\r
+<p>&nbsp;</p>\r
+""" ] ;
+    dc:created "2016-04-08T12:14:11+02:00" ;
+    dc:modified "2019-03-06T11:03:56+01:00" ;
+    schema:name "MMG-GBIT" ;
+    premis:hasSoftware [ a <swpo:Tool> ;
+            schema:identifier "1804" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "129" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Marseille" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "13005" ;
+            schema:streetAddress "Faculté de Médecine de la Timone, 27 Bd Jean Moulin" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "INSERM UMR_S910" ;
+            schema:url "http://umr910.timone.univ-mrs.fr/team_description.php?lang=fr&team_id=17" ] .
+

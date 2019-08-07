@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/mmp",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T11:10:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:18:09+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "P3M"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N4fcd35113d33433c892b4d6bd87ecdf1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4fcd35113d33433c892b4d6bd87ecdf1",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Reims Cedex 2"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Moulin de la Housse - Bat. 18"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "51687"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "UFR Sciences Exactes et Naturelles"
+      }
+    ]
+  }
+]

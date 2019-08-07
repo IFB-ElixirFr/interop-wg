@@ -1,0 +1,222 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/platforms/pasteur",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N1258574529c14e4cb6fed3d7e9fff3d3"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nb3d9d36f773c46339e03e4acd74e3e0b"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N02056279bafe4820a405a53ae42646df"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N5b0a574d7a0a4f238567973d7bc37119"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:33:30+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-04T10:50:51+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf62d3532908e4eceaa03e36488e0ad0f"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "DBC"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nc8efa149d0914f0984d734d93e2e7bf4"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Na8724fe866b5408dbf20a497a081d066"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nf3e057fd2d3c4b88a5833499f1297555"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N19377e7a1b6d4ed59de33656d5fd50c1"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb3d9d36f773c46339e03e4acd74e3e0b",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "5000.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf3e057fd2d3c4b88a5833499f1297555",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "INSTITUT PASTEUR"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75015"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "25 Rue du Dr Roux"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1258574529c14e4cb6fed3d7e9fff3d3",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2760"
+      }
+    ]
+  },
+  {
+    "@id": "_:N19377e7a1b6d4ed59de33656d5fd50c1",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Pasteur"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://c3bi.pasteur.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na8724fe866b5408dbf20a497a081d066",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "136"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf62d3532908e4eceaa03e36488e0ad0f",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "577"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b0a574d7a0a4f238567973d7bc37119",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>The transcriptome and Epigenome plateforme provides 2 kind of services : a service activity and collaboration.</p>\r\n\r\n<p>RNA-seq : The plateform the bioinformatics analysis (primary data analysis, mapping on reference genome) and the statistical analysis of the data (standardization and differential analysis).</p>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc8efa149d0914f0984d734d93e2e7bf4",
+    "@type": [
+      "swpo:Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1456"
+      },
+      {
+        "@value": "2162"
+      },
+      {
+        "@value": "2165"
+      },
+      {
+        "@value": "1457"
+      },
+      {
+        "@value": "1459"
+      },
+      {
+        "@value": "2174"
+      },
+      {
+        "@value": "2199"
+      },
+      {
+        "@value": "1458"
+      }
+    ]
+  },
+  {
+    "@id": "_:N02056279bafe4820a405a53ae42646df",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1453"
+      },
+      {
+        "@value": "2167"
+      },
+      {
+        "@value": "2568"
+      },
+      {
+        "@value": "1454"
+      },
+      {
+        "@value": "1452"
+      },
+      {
+        "@value": "2166"
+      },
+      {
+        "@value": "500"
+      }
+    ]
+  }
+]

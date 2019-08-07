@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/formations/modify-and-extract-information-large-text-files",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "INRA Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-07-10T11:56:24+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T11:56:24+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Modify and extract information from large text files"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/modify-and-extract-information-from-large-text-files-2/"
+      }
+    ]
+  }
+]

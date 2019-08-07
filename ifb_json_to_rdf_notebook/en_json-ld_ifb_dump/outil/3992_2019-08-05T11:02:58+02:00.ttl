@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/pangenehome",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PanGeneHome"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-13T14:14:03+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T14:54:26+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://pangenehome.lmge.uca.fr"
+      }
+    ]
+  }
+]

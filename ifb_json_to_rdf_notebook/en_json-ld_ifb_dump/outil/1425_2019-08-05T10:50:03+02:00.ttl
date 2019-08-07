@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/services/outils/getec",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GETEC"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T10:01:19+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Genome Evolution by Transformation, Expansion and Contraction.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:54+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N8b27b6da3e6948c296b29b05d29ecc64"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8b27b6da3e6948c296b29b05d29ecc64",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://icube-bioinfo.u-strasbg.fr/webMathematica/GETEC/Accueil.jsp\">http://icube-bioinfo.u-strasbg.fr/webMathematica/GETEC/Accueil.jsp</a></p>\r\n"
+      }
+    ]
+  }
+]

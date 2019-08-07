@@ -22,6 +22,8 @@ import requests
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
 
+OUTPUT_DIR = "input"
+
 """
 Pour installer E-Direct:
 
@@ -124,7 +126,7 @@ def convertPMIDtoDOI(url_test):
     print(result)
     return result
 
-def writeDOIs(dois_list, min_date, max_date, term):
+def writeDOIsDates(dois_list, min_date, max_date, term):
     term = term.replace(" ", "_")
     min_date = min_date.replace("/", "_")
     max_date = max_date.replace("/", "_")
@@ -138,14 +140,25 @@ def writeDOIs(dois_list, min_date, max_date, term):
     output.close
     print("Result available in [" + path + "/" + filename + "]")
 
+def writeDOIs(dois_list):
+    print("Writing result...")
+    if not os.path.isdir(OUTPUT_DIR):
+        os.mkdir(OUTPUT_DIR)
+    filename = OUTPUT_DIR + "/pubmed_dataset_dois.txt"
+    dois = '\n'.join(dois_list)
+    output = open(filename, 'w')
+    output.write(dois)
+    output.close
+
 if __name__ == "__main__":
     url_test = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=23193287&format=json"
 
     term = "bioinformatics"
-    min_date = "2018/06/02"
-    max_date = "2018/06/10"
+    min_date = "2017/06/02"
+    max_date = "2019/06/10"
     xml_root = globalESEF(min_date, max_date, term)
     dois_list = getDOISFromXML(xml_root)
 
     print("Total number of DOIs found: " + str(len(dois_list)), end="\n\n")
-    writeDOIs(dois_list, min_date, max_date, term)
+    # writeDOIsDates(dois_list, min_date, max_date, term)
+    writeDOIs(dois_list)
