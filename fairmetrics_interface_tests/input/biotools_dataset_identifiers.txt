@@ -1,0 +1,5 @@
+https://identifiers.org/biotools:oligo-analysis
+https://identifiers.org/biotools:rsat_peak-motifs
+https://identifiers.org/biotools:rsat
+https://identifiers.org/biotools:convert-matrix
+https://identifiers.org/biotools:RSAT_-_Retrieve_Sequence

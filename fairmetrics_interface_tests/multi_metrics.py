@@ -21,8 +21,8 @@ import multi_progress
 
 PRINT_DETAILS = False
 FILENAME = ""
-OUTPUT_DIR = "output_12"
-NUMBER_DOIS = 12
+OUTPUT_DIR = "output_6"
+NUMBER_DOIS = 6
 
 # GLOBAL_PBAR = tqdm()
 
@@ -84,8 +84,9 @@ def multiTestMetrics(tuple_GUID):
 
         pbar.set_description('[' + str(count) + '/' + str(total) + ']' + ' Test [' + principle + '] for [' + GUID + ']')
 
-        if True:
-        # if principle[0] == 'I':
+        # if True:
+        # if principle[0:2] != 'I2':
+        if principle[0:2] == 'F1':
             if PRINT_DETAILS:
                 # print informations related to the metric
                 printMetricInfo(metric_info)
@@ -95,16 +96,20 @@ def multiTestMetrics(tuple_GUID):
 
             if PRINT_DETAILS:
                 #print results of the evaluation
-                printTestMetricComment('http://schema.org/comment', metric_evaluation_result)
-                printTestMetricScore('http://semanticscience.org/resource/SIO_000300', metric_evaluation_result)
+                printTestMetricResult(metric_evaluation_result, test_time)
 
             # get the score
             score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
             score = str(int(float(score)))
 
             # get and write comment
-            comment = '"' + metric_evaluation_result[0]['http://schema.org/comment'][0]['@value'] + '"'
+            comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
+            # remove empty lines from the comment
+            comment = test_metric.cleanComment(comment)
+            comment = '"' + comment + '"'
             comments_list.append(comment)
+
+
 
             test_line_list.append(score)
             headers_list.append(principle)
@@ -121,11 +126,11 @@ def multiTestMetrics(tuple_GUID):
     if not os.path.isdir(OUTPUT_DIR):
         os.mkdir(OUTPUT_DIR)
     output = OUTPUT_DIR + "/" + os.path.basename(FILENAME).replace(".txt", ".tsv")
-    test_metric.writeLineToFile("\t".join(test_line_list), "\t".join(headers_list), dirpath + "/" + output)
+    test_metric.writeScoreFile("\t".join(headers_list), "\t".join(test_line_list), dirpath + "/" + output)
 
     # write comments
     comments_filename = os.path.basename(FILENAME).split("_")[0] + "_comments.tsv"
-    test_metric.writeLineToFile("\t".join(comments_list), "\t".join(headers_list), "\t".join(descriptions_list), OUTPUT_DIR + "/" + comments_filename)
+    # test_metric.writeLineToFile("\t".join(comments_list), "\t".join(headers_list), "\t".join(descriptions_list), OUTPUT_DIR + "/" + comments_filename)
 
 
 
@@ -142,7 +147,10 @@ def subsetDOIs(dois_list, nb_dois_to_select):
     new_dois_list = []
     total_nb_dois = len(dois_list)
     for i, dois in enumerate(dois_list):
-        if i % int(total_nb_dois/nb_dois_to_select) == 0 and i != 0:
+        if total_nb_dois > nb_dois_to_select:
+            if i % int(total_nb_dois/nb_dois_to_select) == 0 and i != 0:
+                new_dois_list.append(dois)
+        else:
             new_dois_list.append(dois)
     return new_dois_list
 
@@ -158,8 +166,10 @@ if __name__ == "__main__":
     #         output_lines[2] = "Third_line  {}...".format(random.randint(1,10))
     #         time.sleep(0.5)
 
-    FILENAME = sys.argv[1]
+    # FILENAME = sys.argv[1]
+    FILENAME = "./input/pangaea_dataset_dois.txt"
     data = readDOIsFile(FILENAME)
+
 
     dois_list = data.split("\n")
     dois_list = subsetDOIs(dois_list, NUMBER_DOIS)
