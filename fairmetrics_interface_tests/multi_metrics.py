@@ -13,7 +13,7 @@ from tqdm import trange
 from reprint import output
 import time
 import random
-
+import argparse
 import test_metric
 import multi_progress
 # from test_metric import getMetrics
@@ -21,9 +21,33 @@ import multi_progress
 
 PRINT_DETAILS = False
 FILENAME = ""
-OUTPUT_DIR = "output_6"
-NUMBER_DOIS = 6
+OUTPUT_DIR = "output_critical_pub"
+NUMBER_DOIS = 200
+OUTPUT_PREF = "test"
 
+parents = [test_metric.parser]
+
+parser = argparse.ArgumentParser(description='A parallelized FAIRMetrics tester',
+                                formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument("-i","--input",
+                        help="The input file containing DOIs",)
+parser.add_argument("-wc","--write_comment",
+                        help="Zero or more letters from [iwfsc] (none=print all). Filter comment messages for INFO, WARN, FAIL, SUCC, CRIT in output comment file",
+                        # default='all',
+                        const='iwfsc',
+                        nargs='?',)
+parser.add_argument("-D","--directory",
+                        help="Output directory",
+                        default=OUTPUT_DIR,)
+parser.add_argument("-o","--output",
+                        help="Output prefix filenames",
+                        default=OUTPUT_PREF)
+parser.add_argument("-n","--number",
+                        help="Number of GUID to test from the file (test a subset)",
+                        type=int,
+                        default=NUMBER_DOIS)
+
+args = parser.parse_args()
 # GLOBAL_PBAR = tqdm()
 
 # class Pbar:
@@ -62,12 +86,16 @@ def multiTestMetrics(tuple_GUID):
 
     # metrics = test_metric.getMetrics()
 
-    comments_list = ['"' + GUID + '"']
-    test_line_list = [GUID]
+    # list that will contains the score for each metric test
+    test_score_list = [GUID]
+    # list that will contains the name of each (principle) metric test (F1, A1, I2, etc)
     headers_list = ["GUID"]
+    # list that will contains the executation time for each metric test
+    time_list = [GUID]
+    # list that will contains the comment for each metric test
+    comments_list = ['"' + GUID + '"']
+    # ist that will contains the description for each metric test
     descriptions_list = ["Description"]
-
-    # print(count)
 
     pbar = tqdm(total=len(metrics_info), position=position, desc=GUID, dynamic_ncols=True, unit='MI_test', ascii=' #', leave=False)
 
@@ -85,18 +113,21 @@ def multiTestMetrics(tuple_GUID):
         pbar.set_description('[' + str(count) + '/' + str(total) + ']' + ' Test [' + principle + '] for [' + GUID + ']')
 
         # if True:
-        # if principle[0:2] != 'I2':
-        if principle[0:2] == 'F1':
+        if principle[0:2] != 'I2':
+        # if principle[0:2] == 'F2':
             if PRINT_DETAILS:
                 # print informations related to the metric
-                printMetricInfo(metric_info)
+                test_metric.printMetricInfo(metric_info)
 
             # evaluate the metric
+            start_time = test_metric.getCurrentTime()
             metric_evaluation_result = test_metric.processFunction(test_metric.testMetric, [metric_info["smarturl"], data], 'Evaluating metric... ')
+            end_time = test_metric.getCurrentTime()
+            test_time = end_time - start_time
 
             if PRINT_DETAILS:
                 #print results of the evaluation
-                printTestMetricResult(metric_evaluation_result, test_time)
+                test_metric.printTestMetricResult(metric_evaluation_result, test_time)
 
             # get the score
             score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
@@ -106,17 +137,20 @@ def multiTestMetrics(tuple_GUID):
             comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
             # remove empty lines from the comment
             comment = test_metric.cleanComment(comment)
+            # filter comment based on args
+            if args.write_comment:
+                comment = test_metric.filterComment(comment, args.write_comment)
             comment = '"' + comment + '"'
-            comments_list.append(comment)
 
 
-
-            test_line_list.append(score)
+            # append score, principle, time, comment and description
+            test_score_list.append(score)
             headers_list.append(principle)
+            time_list.append(test_time)
+            comments_list.append(comment)
             descriptions_list.append(description)
 
-        # GLOBAL_PBAR.refresh()
-
+    test_metric.sumScoresTimes(headers_list, test_score_list, time_list)
 
     time.sleep(0.5)
     multi_progress.release_position(position_holders, position)
@@ -126,12 +160,13 @@ def multiTestMetrics(tuple_GUID):
     if not os.path.isdir(OUTPUT_DIR):
         os.mkdir(OUTPUT_DIR)
     output = OUTPUT_DIR + "/" + os.path.basename(FILENAME).replace(".txt", ".tsv")
-    test_metric.writeScoreFile("\t".join(headers_list), "\t".join(test_line_list), dirpath + "/" + output)
+    test_metric.writeScoreFile("\t".join(headers_list), "\t".join(test_score_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_score.tsv")
 
-    # write comments
-    comments_filename = os.path.basename(FILENAME).split("_")[0] + "_comments.tsv"
-    # test_metric.writeLineToFile("\t".join(comments_list), "\t".join(headers_list), "\t".join(descriptions_list), OUTPUT_DIR + "/" + comments_filename)
+    # write a new line to the time file or create it
+    test_metric.writeTimeFile("\t".join(headers_list), "\t".join(map(str, time_list)), OUTPUT_DIR, "/" + OUTPUT_PREF + "_time.tsv")
 
+    # write a new line to the comment file or create it
+    test_metric.writeCommentFile("\t".join(headers_list), "\t".join(comments_list), "\t".join(descriptions_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_comment.tsv")
 
 
 # def writeComments(comments_dict, GUID):
@@ -168,6 +203,10 @@ if __name__ == "__main__":
 
     # FILENAME = sys.argv[1]
     FILENAME = "./input/pangaea_dataset_dois.txt"
+    if args.input: FILENAME = args.input
+    if args.directory: OUTPUT_DIR = args.directory
+    if args.output: OUTPUT_PREF = args.output
+    if args.number: NUMBER_DOIS = args.number
     data = readDOIsFile(FILENAME)
 
 

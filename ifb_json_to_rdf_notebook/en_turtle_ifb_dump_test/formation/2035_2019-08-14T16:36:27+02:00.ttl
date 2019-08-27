@@ -1,0 +1,57 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/formations/introduction-à-phylogénie-moléculaire-concepts-methodes-et-outils> a edam:data_3669 ;
+    dbpedia-owl:location "Institut Pasteur 25-28 rue du Dr Roux 75015 Paris" ;
+    dc:created "2016-09-27T14:49:43+02:00" ;
+    dc:description """<p>Le C3BI (Institut Pasteur) propose des cours pour acquérir les notions théoriques de phylogénie et maitriser les outils et logiciels.<br />\r
+Les cours d’”Introduction à la phylogénie moléculaire” sont ouverts à tous (inscription obligatoire pour les cours et travaux pratiques dans la limite des places disponibles).<br />\r
+Il est possible de ne s’inscrire que pour la partie théorique. Ces cours sont dispensés en langue française.</p>\r
+\r
+<ul>\r
+	<li><strong>Lundi 14 Novembre</strong> (9h30-12h30): Présentation des principales banques de données et BLAST</li>\r
+	<li><strong>Mardi 15 Novembre</strong> (9h30-11h00): Alignements Multiples</li>\r
+	<li><strong>Mercredi 16 Novembre</strong> (9h30-11h00): Introduction à la Phylogénie</li>\r
+	<li><strong>Jeudi 17 Novembre</strong> (9h30-11h00): Modèles d’évolution</li>\r
+	<li><strong>Vendredi 18 Novembre</strong> (9h30-11h00): Approches par Maximum de Parcimonie</li>\r
+	<li><strong>Lundi 21 Novembre</strong> (9h30-11h00): Méthodes de Distance</li>\r
+	<li><strong>Mardi 22 Novembre</strong> (9h30-11h00): Méthodes de Vraisemblance</li>\r
+	<li><strong>Mercredi 23 Novembre</strong> (13h30-15h00): Reconstruction Phylogénétique &amp; Approches Bayésiennes</li>\r
+	<li><strong>Jeudi 24 Novembre</strong> (9h30-11h00): Inférence des Forces Sélectives</li>\r
+	<li><strong>Vendredi 25 Novembre</strong> (9h30-11h00): Choix des Méthodes et Interprétation</li>\r
+</ul>\r
+\r
+<p><a href="https://c3bi.pasteur.fr/wp-content/uploads/2016/09/program_phylogenie_09052016.pdf">programme complet </a></p>\r
+\r
+<p>inscription par mail à formation@pasteur.fr <em>(avec le sujet “Phylogénie Moléculaire”)</em> <strong>+</strong> <a href="https://docs.google.com/forms/d/1BLfI211EwW7h4CxVRetaK84LuwCGCly_wAxJzfw3UL0/viewform?edit_requested=true">formulaire </a></p>\r
+\r
+<hr />""" ;
+    dc:educationLevel "Formation professionnelle " ;
+    dc:modified "2017-01-10T15:54:20+01:00" ;
+    schema:name "Introduction à la Phylogénie Moléculaire : CONCEPTS, METHODES ET OUTILS" ;
+    schema:url "https://c3bi.pasteur.fr/training-introduction-a-la-phylogenie-moleculaire-concepts-methodes-et-outils/" .
+

@@ -1,0 +1,83 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/south-green> a schema:LaboratoryScience ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "1184" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "370.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "689",
+                "690",
+                "691",
+                "692",
+                "693" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>The South Green platform is a local network of scientists gathering Bioinformatics skills based on the <a href="http://www.agropolis.org/">Agropolis campus</a> that hosts research institutes such as <a href="http://www.cirad.fr/en/">CIRAD</a>, <a href="http://en.ird.fr/">IRD</a>, <a href="http://www.international.inra.fr/">INRA</a>, <a href="http://www.supagro.fr/">SupAgro</a>, <a href="http://www.bioversityinternational.org/">Bioversity international</a> as well as the <a href="http://www.cgiar.org/">CGIAR consortium</a>.</p>\r
+\r
+<p>Based on this strong local community in the field of agriculture, food, biodiversity and environment, this network of national and international scope, develops <strong>bioinformatics applications</strong> <strong>and resources</strong> dedicated to <strong>genetics and genomics of tropical and Mediterranean plants</strong>. South Green relies on the computer technical platforms of its partner institutes.<br />\r
+<br />\r
+The objectives of South Green are:</p>\r
+\r
+<ul>\r
+	<li>Promote the original tools from methods developed within the network,</li>\r
+	<li>Propose a single web portal for access to the tools developed by the network,</li>\r
+	<li>Promote exchange and collaborative developments within the network,</li>\r
+	<li>Promote interoperability developed within the network applications,</li>\r
+	<li>Provide training for biologists and bioinformaticians,</li>\r
+	<li>Ensure the maintenance and development, infrastructure and software applications via requests for funding in partnership,</li>\r
+	<li>Promote high quality process within the network (e.g. certifications),</li>\r
+	<li>Promote South Green visibility at the national and international level.</li>\r
+</ul>\r
+""" ] ;
+    frapo:supports [ dc:description """<p><u><strong>Appels d'offres plateforme spécifique:</strong></u></p>\r
+\r
+<p>Ces appels d'offres sont à privilgéier pour financement du matériel et les demandes de contrats d'ingénieurs informaticiens ou bioinformaticiens qui participeront au support et développements de la PF. La répartition des financements entre instituts partenaires sera décidée en fonction du type de projet et du montage du projet. Le comité pilotage doit être informé avant la soumission d'un projet qui engage la visibilité de la PF anfin de recevoir un accord de principe.</p>\r
+\r
+<p>Appels d'offres de projets scientifiques (ANR ...):</p>\r
+\r
+<p>Dans le cas d'un projet nécessitant des besoins importants de stockage ou de calculs, la personne porteuse du projet doit se référer au plateau adéquat, dès le montage du projet, et les responsables du plateau informeront les membres de South Green lors des réunions mensuelles. Dans le cas d'un projet nécessitant l'évolution d'applications existantes, ou le développement de nouvelles applications ayant pour vocation à être intégré dans South Green, la personne porteuse du projet doit informer le comité de pilotage de South Green, dès le montage du projet.</p>\r
+""" ;
+            wl:Condition """<p>Se référer aux modalités d'appui aux projets.</p>\r
+""" ] ;
+    dc:created "2015-07-24T14:07:14+02:00" ;
+    dc:modified "2019-03-15T14:30:11+01:00" ;
+    geosp:hasProject [ ocds:valueAmount "4" ] ;
+    meb:User [ ocds:valueAmount "300" ] ;
+    schema:name "South Green" ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "131",
+                "133" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Montpellier" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "34398" ;
+            schema:streetAddress "Agropolis" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "South green" ;
+            schema:url "http://www.southgreen.fr" ] .
+

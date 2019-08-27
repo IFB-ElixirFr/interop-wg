@@ -41,8 +41,10 @@ import subprocess
 TIMEOUT = (10, 28800)
 PRINT_DETAILS = False
 OUTPUT_DIR = "single_doi_test_output"
+OUTPUT_PREF = "test"
 
-parser = argparse.ArgumentParser(description='A FAIRMetrics tester')
+parser = argparse.ArgumentParser(description='A FAIRMetrics tester',
+                                formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 # parser.add_argument("guid", help="The GUID to be tested (DOI, etc)")
 parser.add_argument("-n","--name",
                         help="Print metric name to STDOUT",
@@ -54,7 +56,12 @@ parser.add_argument("-d","--description",
                         help="Print description of the metrics to STDOUT",
                         action="store_true")
 parser.add_argument("-c","--comment",
-                        help="Zero or more letters from [iwfsc] (zero=all). Print comment messages for INFO, WARN, FAIL, SUCC, CRIT to STDOUT",
+                        help="Zero or more letters from [iwfsc] (none=print all). Print comment messages for INFO, WARN, FAIL, SUCC, CRIT to STDOUT",
+                        # default='all',
+                        const='iwfsc',
+                        nargs='?',)
+parser.add_argument("-wc","--write_comment",
+                        help="Zero or more letters from [iwfsc] (none=print all). Filter comment messages for INFO, WARN, FAIL, SUCC, CRIT in output comment file",
                         # default='all',
                         const='iwfsc',
                         nargs='?',)
@@ -64,11 +71,16 @@ parser.add_argument("-s","--score",
 parser.add_argument("-t","--time",
                         help="Print metric test time to STDOUT",
                         action="store_true")
+parser.add_argument("-i","--input",
+                        help="The input GUID (Globally Unique Identifier: DOI, URL, etc...)",)
 parser.add_argument("-D","--directory",
                         help="Output directory",
-                        default=OUTPUT_DIR)
+                        default=OUTPUT_DIR,)
+parser.add_argument("-o","--output",
+                        help="Output prefix filenames",
+                        default=OUTPUT_PREF)
 
-args = parser.parse_args()
+
 
 def animated_loading(message):
     """
@@ -187,11 +199,11 @@ def testMetrics(GUID):
         # retrieve the name (principle) of each metric (F1, A1, I2, etc)
         principle = metric_info["principle"].rsplit('/', 1)[-1]
         # get the description on the metric
-        description = metric_info["description"]
+        description = '"' + metric_info["description"] + '"'
 
         # if True:
-        # if principle[0:2] != 'I2':
-        if principle[0] == 'F':
+        if principle[0:2] != 'I2':
+        # if principle[0] == 'F':
             if PRINT_DETAILS:
                 # print informations related to the metric
                 printMetricInfo(metric_info)
@@ -210,6 +222,9 @@ def testMetrics(GUID):
             comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
             # remove empty lines from the comment
             comment = cleanComment(comment)
+            # filter comment based on args
+            if args.write_comment:
+                comment = filterComment(comment, args.write_comment)
             comment = '"' + comment + '"'
 
 
@@ -227,13 +242,13 @@ def testMetrics(GUID):
     sumScoresTimes(headers_list, test_score_list, time_list)
 
     # write the list of score (and header if file doesnt exists yet) to a result file
-    writeScoreFile("\t".join(headers_list), "\t".join(test_score_list), "/result_metrics_test.tsv")
+    writeScoreFile("\t".join(headers_list), "\t".join(test_score_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_score.tsv")
 
     # write a new line to the time file or create it
-    writeTimeFile("\t".join(headers_list), "\t".join(map(str, time_list)), "/time_test.tsv")
+    writeTimeFile("\t".join(headers_list), "\t".join(map(str, time_list)), OUTPUT_DIR, "/" + OUTPUT_PREF + "_time.tsv")
 
     # write a new line to the comment file or create it
-    writeCommentFile("\t".join(headers_list), "\t".join(comments_list), "\t".join(descriptions_list), "/comment_metrics_test.tsv")
+    writeCommentFile("\t".join(headers_list), "\t".join(comments_list), "\t".join(descriptions_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_comment.tsv")
 
 def sumScoresTimes(headers_list, test_score_list, time_list):
     """
@@ -281,12 +296,12 @@ def sumScoresTimes(headers_list, test_score_list, time_list):
 
     # convert datetime in time_list to str
 
-def writeTimeFile(headers_list, time_list, filename):
+def writeTimeFile(headers_list, time_list, output_dir, filename):
     """
     """
-    if not os.path.isdir(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-    filename = OUTPUT_DIR + filename
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
+    filename = output_dir + filename
     exists = os.path.isfile(filename)
     if exists:
         file = open(filename, "a")
@@ -298,14 +313,14 @@ def writeTimeFile(headers_list, time_list, filename):
         file.write("\n" + time_list)
         file.close()
 
-def writeCommentFile(headers_list, test_comment_list, descriptions_list, filename):
+def writeCommentFile(headers_list, test_comment_list, descriptions_list, output_dir, filename):
     """
 
     @param descriptions_list List Contains the description of eache principle added to the top of the file
     """
-    if not os.path.isdir(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-    filename = OUTPUT_DIR + filename
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
+    filename = output_dir + filename
 
     exists = os.path.isfile(filename)
     if exists:
@@ -319,7 +334,7 @@ def writeCommentFile(headers_list, test_comment_list, descriptions_list, filenam
         file.write("\n" + test_comment_list)
         file.close()
 
-def writeScoreFile(headers_list, test_score_list, filename):
+def writeScoreFile(headers_list, test_score_list, output_dir, filename):
     """
     Write a line of scores associated to a GUID to a res file, create the file and headers if it doesn't exist yet.
 
@@ -329,9 +344,9 @@ def writeScoreFile(headers_list, test_score_list, filename):
     """
     logname = "result_metrics_test.log"
 
-    if not os.path.isdir(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-    filename = OUTPUT_DIR + filename
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
+    filename = output_dir + filename
 
     exists = os.path.isfile(filename)
     if exists:
@@ -386,7 +401,8 @@ def printTestMetricResult(result, test_time):
         comment = result[0]['http://schema.org/comment'][0]['@value']
 
         comment = cleanComment(comment)
-        comment = selectComment(comment)
+        comment_args = args.comment
+        comment = filterComment(comment, comment_args)
 
         # mettre boucle dans colorComment
         for line in comment.split("\n"):
@@ -403,7 +419,7 @@ def printTestMetricResult(result, test_time):
         print("Metric test time:")
         print(test_time, end='\n\n')
 
-def selectComment(comment):
+def filterComment(comment, comment_args):
     """
     Select the type of comment to display based on the command line arguments.
 
@@ -420,19 +436,23 @@ def selectComment(comment):
                         }
     filtered_comment = []
 
-    comment_args = args.comment
-
     additional_info = False
     for line in comment.split("\n"):
+        # check if line is not additional info (starts with any associantion_dict value)
         for value in association_dict.values():
-            if line.startswith(value): additional_info = False
+            if line.startswith(value):
+                additional_info = False
+                break
 
-        for i, arg in enumerate(comment_args):
-            if line.startswith(association_dict[arg]) or additional_info == True:
-                # l = line.replace(key_term, termcolor.colored(key_term, value_color))
+        for arg in comment_args:
+            # if line statswith the param value or is additional info, add it to filtered_comment
+            if line.startswith(association_dict[arg]) or additional_info:
                 filtered_comment.append(line)
-                if additional_info: break
-                if i+1 == len(comment_args): additional_info = True
+                additional_info = True
+                break
+            # if additional_info:
+            #     filtered_comment.append(line)
+            #     break
 
 
     return "\n".join(filtered_comment)
@@ -527,9 +547,15 @@ def readDOIsFile(filename):
     return data
 
 if __name__ == "__main__":
-
+    args = parser.parse_args()
     PRINT_DETAILS = True
+
+    if len(sys.argv) < 2:
+        print("You haven't specified any arguments. Use -h to get more details on how to use this command.")
+        sys.exit(1)
+
     if args.directory: OUTPUT_DIR = args.directory
+    if args.output: OUTPUT_PREF = args.output
     # RSAT paper
     # GUID_test = "10.1093/nar/gky317"
 
@@ -537,10 +563,11 @@ if __name__ == "__main__":
     # GUID_test = "https://doi.pangaea.de/10.1594/PANGAEA.902591"
 
     # Dataset
-    # GUID_test = "https://doi.org/10.5061/dryad.615"
-
+    GUID_test = "https://doi.org/10.5061/dryad.615"
+    if args.input: GUID_test = args.input
     # !!!! preblematic url !!!!
-    GUID_test = "10.1155/2019/2561828"
+    # GUID_test = "10.1155/2019/2561828"
+    # GUID_test = "10.1155/2017/3783714"
 
 
     # GUID_test = "https://identifiers.org/biotools:the_flux_capacitor"

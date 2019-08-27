@@ -1,0 +1,55 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/services/outils/ordo> a schema:SoftwareApplication ;
+    edam:data_1190 "ORDO" ;
+    dc:created "2015-11-17T12:03:59+01:00" ;
+    dc:description """<div>\r
+<div>\r
+<div>\r
+<p>Orphanet Rare Disease Ontology: Nomenclature, classifications and scientific data on rare diseases exploitable in an ontological form in OWL format. Elaborated in partnership with the European Bioinformatics Institute (EBI ; Contact Helen Parkinson). Available since January 2014.</p>\r
+</div>\r
+</div>\r
+</div>\r
+""" ;
+    dc:modified "2019-02-15T16:07:43+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<div>\r
+<div>\r
+<div>\r
+<p>Downloadable and freely accessible via Orphadata.org,</p>\r
+\r
+<p>Downloadable and usable via Bioportal.</p>\r
+\r
+<p>Availability of a sparql EndPoint.</p>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    c4o:GlobalCitationCount "39" ;
+    schema:url "http://www.orphadata.org/cgi-bin/inc/ordo_orphanet.inc.php" ;
+    nno:hasDownloadCount "6741" .
+

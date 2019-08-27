@@ -134,7 +134,7 @@ def rdfize(json_result):
     jld = json.loads("{}")
     jld.update(createContext())
     # jld['@id'] = str("ifbn:" + json_result['nid'])
-    jld['@id'] = str("ifb:" + json_result['path']['alias'])
+    jld['@id'] = str("ifb:" + json_result['path']['language'] + "/" + json_result['path']['alias'])
 
 
 
