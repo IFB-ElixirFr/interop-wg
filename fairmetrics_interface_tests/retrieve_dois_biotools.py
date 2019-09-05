@@ -15,14 +15,14 @@ import requests
 
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
-MAX_NB = 200
+MAX_NB = 2000
 OUTPUT_DIR = "input"
 
 def biotoolsRestRequest(page):
     print("REST request to biotools...")
     print(page)
     # rest request
-    url = 'https://bio.tools/api/tool/?format=json&q=rsat&' + page[1:]
+    url = 'https://bio.tools/api/tool/?format=json&q=&' + page[1:]
     while True:
         try:
             response = requests.get(url, timeout=TIMEOUT)

@@ -19,10 +19,10 @@ import multi_progress
 # from test_metric import getMetrics
 # from module_metrics.testMetrics import testMetrics
 
-PRINT_DETAILS = False
+# PRINT_DETAILS = False
 FILENAME = ""
-OUTPUT_DIR = "output_critical_pub"
-NUMBER_DOIS = 200
+OUTPUT_DIR = "output_test"
+NUMBER_DOIS = 6
 OUTPUT_PREF = "test"
 
 parents = [test_metric.parser]
@@ -108,33 +108,32 @@ def multiTestMetrics(tuple_GUID):
         # metric_info = test_metric.processFunction(test_metric.getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
         # metric_info = getMetricInfo(metric["@id"])
         principle = metric_info["principle"].rsplit('/', 1)[-1]
+        # principle = metric_info["principle"]
         description = metric_info["description"]
 
         pbar.set_description('[' + str(count) + '/' + str(total) + ']' + ' Test [' + principle + '] for [' + GUID + ']')
 
-        # if True:
-        if principle[0:2] != 'I2':
+        if True:
+        # if principle[0:2] != 'I2':
         # if principle[0:2] == 'F2':
-            if PRINT_DETAILS:
-                # print informations related to the metric
-                test_metric.printMetricInfo(metric_info)
 
             # evaluate the metric
             start_time = test_metric.getCurrentTime()
-            metric_evaluation_result = test_metric.processFunction(test_metric.testMetric, [metric_info["smarturl"], data], 'Evaluating metric... ')
+            metric_evaluation_result_text = test_metric.processFunction(test_metric.testMetric, [metric_info["smarturl"], data], 'Evaluating metric... ')
             end_time = test_metric.getCurrentTime()
+            # metric_evaluation_result = json.loads(metric_evaluation_result_text)
             test_time = end_time - start_time
 
-            if PRINT_DETAILS:
-                #print results of the evaluation
-                test_metric.printTestMetricResult(metric_evaluation_result, test_time)
 
             # get the score
-            score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
+            score = test_metric.requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
+            # score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
             score = str(int(float(score)))
 
             # get and write comment
-            comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
+            comment = test_metric.requestResultSparql(metric_evaluation_result_text, "schema:comment")
+            # comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
+
             # remove empty lines from the comment
             comment = test_metric.cleanComment(comment)
             # filter comment based on args
@@ -214,7 +213,7 @@ if __name__ == "__main__":
     dois_list = subsetDOIs(dois_list, NUMBER_DOIS)
 
     num_cores = multiprocessing.cpu_count()
-    # num_cores = 12
+    num_cores = 1
     # executing metrics evaluations
     # setting up multi process/progressbars
     maxrows = num_cores + 1

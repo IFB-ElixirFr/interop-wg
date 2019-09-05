@@ -1,2 +1,12 @@
 GUID	F1	F1	F1	F2	F2	F3	F3	F4	A1.1	A1.1	A1.2	A1.2	A2	I1	I1	I1	I1	I3	R1.1	R1.1	F	A	I	R	total
 10.1155/2019/2561828	1	1	0	1	1	0	1	1	0	1	0	1	0	1	1	0	0	1	0	0	6	2	3	0	11
+https://doi.org/10.5061/dryad.615	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	1	1	4	2	3	2	11
+https://doi.org/10.5061/dryad.615	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	1	1	4	2	3	2	11
+https://doi.org/10.5061/dryad.615	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	1	1	1	1	13	13
+https://doi.org/10.5061/dryad.615	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	1	1	1	1	13	13
+http://www.ebi.ac.uk/training/events/2019/cabana-workshop-bioinformatics-and-biodiversity-unlocking-new-tools-biodiversity-research	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	3	3
+https://tess.elixir-europe.org/events/cabana-workshop-bioinformatics-and-biodiversity-unlocking-new-tools-for-biodiversity-research	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	3	3
+http://edamontology.org/topic_2269	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	0	1	1	0	0	10	10
+https://www.uniprot.org/uniprot/P01892	1	0	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	19	19
+https://www.genecards.org/cgi-bin/carddisp.pl?gene=BRCA1	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	0	1	1	0	0	10	10
+https://www.ncbi.nlm.nih.gov/gene/672	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	0	1	1	0	0	10	10

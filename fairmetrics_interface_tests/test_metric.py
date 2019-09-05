@@ -13,6 +13,7 @@ from rdflib import Graph, plugin
 from rdflib.serializer import Serializer
 import argparse
 import termcolor
+from string import Template
 
 import itertools
 import threading
@@ -143,12 +144,12 @@ def testMetric(metric_api_url, data):
     @param metric_api_url String The URL of one metric to test the data against
     @param data dict Contain the GUID to be tested
 
-    @return json Result returned by the request that is JSON-LD formated
+    @return String Result returned by the request that is JSON-LD formated
     """
     while True:
         try:
             response = requests.request(method='POST', url=metric_api_url, data=data, timeout=TIMEOUT)
-            result = response.json()
+            result = response.text
             break
         except requests.exceptions.Timeout:
             print("Timeout, retrying...")
@@ -197,7 +198,8 @@ def testMetrics(GUID):
         # retrieve more specific info about each metric
         metric_info = processFunction(getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
         # retrieve the name (principle) of each metric (F1, A1, I2, etc)
-        principle = metric_info["principle"].rsplit('/', 1)[-1]
+        # principle = metric_info["principle"].rsplit('/', 1)[-1]
+        principle = metric_info["principle"]
         # get the description on the metric
         description = '"' + metric_info["description"] + '"'
 
@@ -210,16 +212,19 @@ def testMetrics(GUID):
 
             # evaluate the metric
             start_time = getCurrentTime()
-            metric_evaluation_result = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
+            metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
             end_time = getCurrentTime()
+            # print(metric_evaluation_result_text)
+            metric_evaluation_result = json.loads(metric_evaluation_result_text)
             test_time = end_time - start_time
 
             if PRINT_DETAILS:
                 #print results of the evaluation
-                printTestMetricResult(metric_evaluation_result, test_time)
+                printTestMetricResult(metric_evaluation_result_text, test_time)
 
             # get comment
-            comment = metric_evaluation_result[0]['http://schema.org/comment'][0]['@value']
+            # REQUETE SPARQL !!!!!
+            comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
             # remove empty lines from the comment
             comment = cleanComment(comment)
             # filter comment based on args
@@ -229,7 +234,7 @@ def testMetrics(GUID):
 
 
             # get the score
-            score = metric_evaluation_result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value']
+            score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
             score = str(int(float(score)))
 
             # append score, principle, time, comment and description
@@ -249,6 +254,38 @@ def testMetrics(GUID):
 
     # write a new line to the comment file or create it
     writeCommentFile("\t".join(headers_list), "\t".join(comments_list), "\t".join(descriptions_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_comment.tsv")
+
+    ### RAJOUT SOMME SCORES et temps
+    # if args.score:
+    # if args.time:
+
+def requestResultSparql(metric_evaluation_result_text, term):
+
+    g = rdflib.Graph()
+    result = g.parse(data=metric_evaluation_result_text, format='json-ld')
+    rdf_string = g.serialize(format="turtle").decode("utf-8")
+    # print(rdf_string)
+
+    prefix = """
+    PREFIX obo:<http://purl.obolibrary.org/obo/>
+    PREFIX schema:<http://schema.org/>
+    PREFIX ss:<http://semanticscience.org/resource/>
+    """
+    s = Template(
+        """
+        $prefix
+        SELECT ?s ?p ?o
+        WHERE { ?s $term ?o } limit 50
+        """)
+
+    query_string = s.substitute(prefix=prefix, term=term)
+
+    query_res = result.query(query_string)
+    res_list = []
+    for (s, p, o) in query_res:
+        res_list.append(o)
+
+    return "\n".join(res_list)
 
 def sumScoresTimes(headers_list, test_score_list, time_list):
     """
@@ -398,7 +435,7 @@ def printTestMetricResult(result, test_time):
     if args.comment:
         print("Comment:")
         # print(result[0][key][0]['@value'], end='\n\n')
-        comment = result[0]['http://schema.org/comment'][0]['@value']
+        comment = requestResultSparql(result, "schema:comment")
 
         comment = cleanComment(comment)
         comment_args = args.comment
@@ -413,7 +450,7 @@ def printTestMetricResult(result, test_time):
 
     if args.score:
         print("Score:")
-        print(result[0]['http://semanticscience.org/resource/SIO_000300'][0]['@value'], end='\n\n')
+        print(requestResultSparql(result, "ss:SIO_000300"), end='\n\n')
 
     if args.time:
         print("Metric test time:")
@@ -498,7 +535,7 @@ def colorComment(line):
 
 def printMetricInfo(metric_info):
     if args.name or args.principle or args.description or args.comment or args.score or args.time:
-        print('####################################################################', end='\n\n')
+        print('#' * 70, end='\n\n')
 
     if args.name:
         print(metric_info["name"], end='\n\n')
