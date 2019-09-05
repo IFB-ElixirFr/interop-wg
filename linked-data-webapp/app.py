@@ -185,8 +185,12 @@ def comulis_demo():
 
     return render_template('demo_comulis.html', seg_entries=seg_entries, reg_entries=reg_entries, vis_entries=vis_entries)
 
+@app.route('/is_it_fair')
+def is_it_fair():
+    return render_template('is_it_fair.html')
 
 
 if __name__ == "__main__":
-    context = ('server.crt', 'server.key')
-    app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
+    #context = ('server.crt', 'server.key')
+    #app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
+    app.run(host='0.0.0.0', port=5000, debug=True)

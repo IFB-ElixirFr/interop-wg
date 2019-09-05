@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+{% include 'nav.html' %}
+{% endblock %}
+
+{% block body %}
+
+<h1 class="title">How FAIR is my resource</h1>
+
+<div class="field has-addons">
+  <div class="control">
+    <input class="input is-large" type="text" placeholder="FAIR resource URL">
+  </div>
+  <div class="control">
+    <a class="button is-info is-large">
+      Check
+    </a>
+  </div>
+</div>
+
+{% endblock %}
