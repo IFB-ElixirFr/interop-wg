@@ -192,4 +192,4 @@ def is_it_fair():
 if __name__ == "__main__":
     # context = ('server.crt', 'server.key')
     # app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', debug=True, port=5000,)
