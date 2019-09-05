@@ -90,16 +90,16 @@ def curation_needs_demo():
 @app.route('/comulis_demo')
 def comulis_demo():
     q_segmentation = """
-    SELECT DISTINCT ?soft ?title 
+    SELECT DISTINCT ?soft ?title
         (group_concat(?function_label;separator="|") as ?operations)
-        (group_concat(?topic_label;separator="|") as ?topics) 
-        WHERE { 
+        (group_concat(?topic_label;separator="|") as ?topics)
+        WHERE {
         ?soft a <http://biii.eu/node/software> .
         ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function .
-        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_segmentation> . 
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_segmentation> .
         ?edam_function rdfs:label ?function_label .
         ?soft dc:title ?title .
-        
+
         OPTIONAL {
             ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
             ?edam_topic rdfs:label ?topic_label .
@@ -110,16 +110,16 @@ def comulis_demo():
     """
 
     q_registration = """
-    SELECT DISTINCT ?soft ?title 
+    SELECT DISTINCT ?soft ?title
         (group_concat(?function_label;separator="|") as ?operations)
-        (group_concat(?topic_label;separator="|") as ?topics) 
-    WHERE { 
+        (group_concat(?topic_label;separator="|") as ?topics)
+    WHERE {
         ?soft a <http://biii.eu/node/software> .
-        ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function . 
-        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_registration> . 
-        ?edam_function rdfs:label ?function_label . 
+        ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function .
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_registration> .
+        ?edam_function rdfs:label ?function_label .
         ?soft dc:title ?title .
-        
+
         OPTIONAL {
             ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
             ?edam_topic rdfs:label ?topic_label .
@@ -130,17 +130,17 @@ def comulis_demo():
     """
 
     q_visualisation = """
-    SELECT DISTINCT ?soft ?title 
+    SELECT DISTINCT ?soft ?title
         (group_concat(?function_label;separator="|") as ?operations)
         (group_concat(?topic_label;separator="|") as ?topics)
-    WHERE { 
+    WHERE {
         ?soft a <http://biii.eu/node/software> .
         ?soft <http://bise-eu.info/core-ontology#hasFunction> ?edam_function .
-        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_visualisation> . 
+        ?edam_function rdfs:subClassOf* <http://edamontology.org/operation_Image_visualisation> .
         ?edam_function rdfs:label ?function_label .
 
         ?soft dc:title ?title .
-        
+
         OPTIONAL {
             ?soft <http://bise-eu.info/core-ontology#hasTopic> ?edam_topic .
             ?edam_topic rdfs:label ?topic_label .
@@ -187,10 +187,9 @@ def comulis_demo():
 
 @app.route('/is_it_fair')
 def is_it_fair():
-    return render_template('is_it_fair.html')
-
+    return render_template('is_it_fair.html', )
 
 if __name__ == "__main__":
-    #context = ('server.crt', 'server.key')
-    #app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
+    # context = ('server.crt', 'server.key')
+    # app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
     app.run(host='0.0.0.0', port=5000, debug=True)
