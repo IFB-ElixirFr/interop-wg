@@ -5,12 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="css/uikit.min.css" />-->
-    <!--<script src="{{ url_for('static',filename='js/uikit.min.js') }}"></script>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
     <!--<script src="{{ url_for('static',filename='js/uikit-icons.min.js') }}"></script>-->
 
     <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/uikit.min.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bulma.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/app.css')}}">
+
+
 </head>
 
 <body>
@@ -34,5 +43,6 @@
         </section>
     </div>
 </div>
+
 </body>
 </html>

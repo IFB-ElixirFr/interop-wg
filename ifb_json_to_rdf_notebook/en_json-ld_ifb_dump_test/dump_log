@@ -1,0 +1,21 @@
+2019-09-06 13:16:03 [INFO] Connecting to IFB website...
+2019-09-06 13:16:06 [INFO] Connected
+2019-09-06 13:16:06 [INFO] [290] Requesting: [https://www.france-bioinformatique.fr/fr/node/290/node_export/json]
+2019-09-06 13:16:06 [INFO] [290] JSON retrieved
+2019-09-06 13:16:06 [INFO] [290] Type: [plateforme], rdfize: [True]
+2019-09-06 13:16:06 [INFO] [290] Graph created and valid, file path: [en_json-ld_ifb_dump_test/plateforme/290_2019-09-06T13:16:06+02:00.ttl]
+2019-09-06 13:16:06 [INFO] [291] Requesting: [https://www.france-bioinformatique.fr/fr/node/291/node_export/json]
+2019-09-06 13:16:06 [INFO] [291] JSON retrieved
+2019-09-06 13:16:06 [INFO] [291] Type: [plateforme], rdfize: [True]
+2019-09-06 13:16:06 [INFO] [291] Graph created and valid, file path: [en_json-ld_ifb_dump_test/plateforme/291_2019-09-06T13:16:06+02:00.ttl]
+2019-09-06 13:16:06 [INFO] [292] Requesting: [https://www.france-bioinformatique.fr/fr/node/292/node_export/json]
+2019-09-06 13:16:06 [INFO] [292] JSON retrieved
+2019-09-06 13:16:06 [INFO] [292] Type: [plateforme], rdfize: [True]
+2019-09-06 13:16:06 [INFO] [292] Graph created and valid, file path: [en_json-ld_ifb_dump_test/plateforme/292_2019-09-06T13:16:06+02:00.ttl]
+2019-09-06 13:16:06 [INFO] [293] Requesting: [https://www.france-bioinformatique.fr/fr/node/293/node_export/json]
+2019-09-06 13:16:06 [INFO] [293] JSON retrieved
+2019-09-06 13:16:06 [INFO] [293] Type: [plateforme], rdfize: [True]
+2019-09-06 13:16:06 [INFO] [293] Graph created and valid, file path: [en_json-ld_ifb_dump_test/plateforme/293_2019-09-06T13:16:06+02:00.ttl]
+2019-09-06 13:16:06 [INFO] [294] Requesting: [https://www.france-bioinformatique.fr/fr/node/294/node_export/json]
+2019-09-06 13:16:07 [INFO] [294] JSON retrieved
+2019-09-06 13:16:07 [WARNING] [294] Type: [chapitres], rdfize: [False]

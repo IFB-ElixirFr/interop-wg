@@ -1,3 +1,30 @@
 html{
   font-family: 'Raleway', sans-serif;
+
+}
+
+/* table#summary_table.dataTable tbody tr:hover {
+  background-color: #ffa;
+}
+
+table#summary_table.dataTable thead:hover {
+  background-color: #ffa;
+} */
+
+td.details-control {
+   background: url('http://www.datatables.net/examples/resources/details_open.png') no-repeat center center;
+   cursor: pointer;
+}
+tr.shown td.details-control {
+   background: url('http://www.datatables.net/examples/resources/details_close.png') no-repeat center center;
+}
+
+span.tag.is-success {
+  display: grid;
+  text-align: center;
+}
+
+span.tag.is-danger {
+    display: grid;
+    text-align: center;
 }

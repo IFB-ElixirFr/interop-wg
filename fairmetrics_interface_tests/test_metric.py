@@ -33,7 +33,7 @@ from tqdm import *
 
 import random
 
-from reprint import output
+# from reprint import output
 
 import subprocess
 
@@ -169,7 +169,12 @@ def testMetrics(GUID):
     Call multiples time "testMetric" to test each metric against one GUID.
 
     @param GUID String The GUID to be tested
+
+    @return tuple (headers_list, descriptions_list, test_score_list, time_list, comments_list)
     """
+
+    if args.directory: OUTPUT_DIR = args.directory
+    if args.output: OUTPUT_PREF = args.output
 
     # Create the data dict containing the GUID
     data = '{"subject": "' + GUID + '"}'
@@ -198,8 +203,8 @@ def testMetrics(GUID):
         # retrieve more specific info about each metric
         metric_info = processFunction(getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
         # retrieve the name (principle) of each metric (F1, A1, I2, etc)
-        # principle = metric_info["principle"].rsplit('/', 1)[-1]
-        principle = metric_info["principle"]
+        principle = metric_info["principle"].rsplit('/', 1)[-1]
+        # principle = metric_info["principle"]
         # get the description on the metric
         description = '"' + metric_info["description"] + '"'
 
@@ -255,16 +260,17 @@ def testMetrics(GUID):
     # write a new line to the comment file or create it
     writeCommentFile("\t".join(headers_list), "\t".join(comments_list), "\t".join(descriptions_list), OUTPUT_DIR, "/" + OUTPUT_PREF + "_comment.tsv")
 
-    ### RAJOUT SOMME SCORES et temps
+    ### RAJOUT SOMME SCORES et temps dans stdout
     # if args.score:
     # if args.time:
+    return (headers_list, descriptions_list, test_score_list, list(map(str, time_list)), comments_list)
 
 def requestResultSparql(metric_evaluation_result_text, term):
 
     g = rdflib.Graph()
     result = g.parse(data=metric_evaluation_result_text, format='json-ld')
     rdf_string = g.serialize(format="turtle").decode("utf-8")
-    # print(rdf_string)
+    # print(g.serialize(format="json-ld").decode("utf-8"))
 
     prefix = """
     PREFIX obo:<http://purl.obolibrary.org/obo/>
@@ -583,16 +589,24 @@ def readDOIsFile(filename):
         data = file.read()
     return data
 
+def webTestMetrics(GUID_test):
+    global args
+    args = parser.parse_args()
+    PRINT_DETAILS = True
+    args.description = True
+    args.directory = "web_test_dir"
+
+    return testMetrics(GUID_test)
+
 if __name__ == "__main__":
     args = parser.parse_args()
     PRINT_DETAILS = True
 
-    if len(sys.argv) < 2:
-        print("You haven't specified any arguments. Use -h to get more details on how to use this command.")
-        sys.exit(1)
+    # if len(sys.argv) < 2:
+    #     print("You haven't specified any arguments. Use -h to get more details on how to use this command.")
+    #     sys.exit(1)
 
-    if args.directory: OUTPUT_DIR = args.directory
-    if args.output: OUTPUT_PREF = args.output
+
     # RSAT paper
     # GUID_test = "10.1093/nar/gky317"
 
@@ -615,4 +629,4 @@ if __name__ == "__main__":
 
 
     # for i in range(0, 10):
-    testMetrics(GUID_test)
+    results = testMetrics(GUID_test)

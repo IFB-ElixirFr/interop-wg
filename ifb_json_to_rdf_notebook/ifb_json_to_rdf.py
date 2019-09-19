@@ -31,7 +31,7 @@ TIMEOUT = (10, 300)
 # fr or en
 LANGUAGE = "en"
 # turtle or json-ld
-RDF_FORMAT = "turtle"
+RDF_FORMAT = "json-ld"
 OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump_test"
 
 def requestsIFB(url, s, node_id):
@@ -111,6 +111,7 @@ def createContext():
             "nno": "https://w3id.org/nno/ontology#",
             "c4o": "http://purl.org/spar/c4o/",
             "dqm": "http://purl.org/dqm-vocabulary/v1/dqm#",
+            "odapps": "http://semweb.mmlab.be/ns/odapps#",
 
             # "und": "http://adefinir/",
 
@@ -263,6 +264,7 @@ def platformRdf(key, json_result, jld):
             if not 'gleif-base:hasWebsite' in jld.keys():
                 jld['gleif-base:hasWebsite'] = {
                     "@type": "schema:WebSite",
+                    # "@type": "@id",
                     "schema:url": [elem['url']],
                     "schema:name": [elem['title']]
                 }
@@ -277,6 +279,7 @@ def platformRdf(key, json_result, jld):
             if not 'org:siteAddress' in jld.keys():
                 jld['org:siteAddress'] = {
                     "@type": "schema:PostalAddress",
+                    # "@type": "@id",
                     "schema:addressCountry": [elem['country']],
                     "schema:addressLocality": [elem['locality']],
                     "schema:postalCode": [elem['postal_code']],
@@ -306,7 +309,7 @@ def platformRdf(key, json_result, jld):
         for i, elem in enumerate(json_result['field_outils']['und']):
             if not "premis:hasSoftware" in jld.keys():
                 jld["premis:hasSoftware"] = {
-                    "@type": "swpo:Tool",
+                    "@type": "odapps:Tool",
                     "schema:identifier": [elem['target_id']]
                 }
             else:
@@ -382,6 +385,8 @@ def platformRdf(key, json_result, jld):
                 }
             else :
                 jld['cogs:Server']["dc:description"].append(elem['value'])
+
+
 
     # nombre utilisateurs (du serveur ?)
     if key == "field_nombre_d_utilisateurs":
@@ -760,8 +765,8 @@ if __name__ == "__main__":
         else:
 
             #not parallelized
-            # for node_id in range(0, 400):
-            nodes_list = range(0, 5000)
+            nodes_list = range(290, 295)
+            # nodes_list = range(0, 5000)
             nodes_pbar = tqdm(nodes_list, position=1)
             for node_id in nodes_pbar:
                 # 324, 326

@@ -1,0 +1,232 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/cbib",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N148cfd02835040e1ba46ca0de7f7d45d"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N9d5009e628844c959d124a5c3d9a59ae"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nf2ed9686b56446cfb8aaac7f27dc634d"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N3b3876077fc1484a9fdeaf8eeda6d557"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N392a4b6210754a3d8a9fb80a156871b6"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N68c5a6ab91c54dc3980d591799c3cc3e"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-21T10:27:52+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-07T11:00:05+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N5eca1a5f039745248447535ed5c39c09"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N80d208d1e78a43c1a6183dde346d9b64"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "CBiB"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N9e8bd85b62674fc6946b8b05e2dab1f1"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N31aa44b541c54993aa53ffdb2bcc46a7"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nfbf60911f5b141c0910119735a79d9bb"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9d5009e628844c959d124a5c3d9a59ae",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf2ed9686b56446cfb8aaac7f27dc634d",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "360.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5eca1a5f039745248447535ed5c39c09",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "4"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b3876077fc1484a9fdeaf8eeda6d557",
+    "http://schema.org/identifier": [
+      {
+        "@value": "601"
+      },
+      {
+        "@value": "602"
+      }
+    ]
+  },
+  {
+    "@id": "_:N80d208d1e78a43c1a6183dde346d9b64",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "38"
+      }
+    ]
+  },
+  {
+    "@id": "_:N148cfd02835040e1ba46ca0de7f7d45d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Virtualization infrastructure</p>\r\n\r\n<ul>\r\n\t<li>Cluster VMware</li>\r\n\t<li>2 servers DELL PowerEdge R905 (16 cores, 64 Go RAM)</li>\r\n</ul>\r\n\r\n<p>Storage infrastructure</p>\r\n\r\n<ul>\r\n\t<li>1 storage based on ZFS for production, 50 TB (mirrored on remote site)</li>\r\n\t<li>1 NetApp appliance for production, 20 TB</li>\r\n\t<li>1 NetApp appliance for backup (remote site), 20 TB</li>\r\n</ul>\r\n\r\n<p>Computing infrastructure</p>\r\n\r\n<ul>\r\n\t<li>1 computing server DELL PowerEdge R820 (32 cores, 512 Go RAM, 5 TB of space disk)</li>\r\n\t<li>1 computing server DELL PowerEdge R815 (32 cores, 256 Go RAM, 2.5 TB of space disk)</li>\r\n\t<li>Galaxy portal, 1 server DELL PowerEdge R910 (32 cores/64 threads, 128 Go RAM, 800 GB of space disk)</li>\r\n</ul>\r\n\r\n<p>Network infrastructure</p>\r\n\r\n<ul>\r\n\t<li>Internet access 1 Gbits/s (shared)</li>\r\n\t<li>LAN&nbsp; 10 Gbits/s</li>\r\n\t<li>SAN FiberChannel 4 Gbits/s</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9e8bd85b62674fc6946b8b05e2dab1f1",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1418"
+      },
+      {
+        "@value": "597"
+      },
+      {
+        "@value": "600"
+      },
+      {
+        "@value": "599"
+      },
+      {
+        "@value": "598"
+      },
+      {
+        "@value": "2242"
+      },
+      {
+        "@value": "1417"
+      }
+    ]
+  },
+  {
+    "@id": "_:N31aa44b541c54993aa53ffdb2bcc46a7",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bordeaux"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "33076"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "146 Rue Léo Saignat"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfbf60911f5b141c0910119735a79d9bb",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Bordeaux Bioinformatics Center"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.cbib.u-bordeaux2.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N68c5a6ab91c54dc3980d591799c3cc3e",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>2 &nbsp;supporting system modes for projects: service provision or collaboration (R&amp;D).</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N392a4b6210754a3d8a9fb80a156871b6",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<pre>\r\nThe goal of Bordeaux Bioinformatics Center (CBiB) is to design, implement and provide access to biological data analysis services suited to high speed production (eg., Genomics, proteomics, metabolomics, etc. .). This requirement to analyse large volumes of data quickly and reliably, brings the CBiB to develop \"Big Data\" specific methods. To do this, the CBiB meets the necessary skills in bioinformatics and computer science; the center is equipped with appropriate computing and storage means, consistent with regional facilities (the Mésocentre Calculation Aquitaine - CEC) and the National Bioinformatics Infrastructure (Investment Future, French Institute of Bioinformatics - IFB).\r\n\r\n\r\nThe CBiB structures its activities around three strategic areas:</pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n1. NGS: Service activity for the treatment of data from New Sequencing Technologies. This axis developed in collaboration with the Platform Genome-Transcriptome Bordeaux, producer of data and with Genotoul Bioinformatics in Toulouse in the incipient collaboration ReNaBi / IBiSA (exchanges of expertise, sharing of training biologists, R &amp; D missions).\r\n\r\n​2. Comparative Genomics: research activity and service for the storage, analysis and large-scale comparison of bacterial genomes through the Molligen platform.\r\n\r\n3. Metabolomics: In collaboration with the Metabolomics Platform Bordeaux (PMB) that produces the data, the CBiB is involved in data management projects in metabolomics with the recent extension of this work to eco-physiological data. Moreover, the CBiB is heavily involved in metabolomic data standardization activities at the European level (European COSMOS project).</pre>\r\n\r\n<pre>\r\n\r\n\r\n​The Bordeaux Bioinformatics Center (CBiB) provides access to high performance computing resources, provides data analysis and features programming expertise. These resources are at the service of academic scientists and private companies to enable them to meet their needs in bioinformatics in an efficient and profitable manner.</pre>\r\n"
+      }
+    ]
+  }
+]
