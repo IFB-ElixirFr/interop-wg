@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/rnaseq-analysis-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Roscoff "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T16:40:48+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T16:40:48+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RNASeq Analysis with Galaxy"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://abims.sb-roscoff.fr/training/courses"
+      }
+    ]
+  }
+]

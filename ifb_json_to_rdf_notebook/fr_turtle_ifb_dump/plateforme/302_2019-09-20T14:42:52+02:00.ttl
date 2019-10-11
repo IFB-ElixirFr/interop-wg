@@ -1,0 +1,146 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/igr> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>- Cluster de calcul dédié à l’analyse de données de séquencage<br />\r
+- Serveur Galaxy<br />\r
+- Serveur d’applications</p>\r
+\r
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Shiny<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Redmine<br />\r
+- Serveur dédié à l’analyse de données microarray</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "450" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "420.00" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>● Bioanalyses<br />\r
+Conception, définition de design expérimentaux en génomique (microarrays, NGS). Analyse de données génomiques (microarray et NGS)<br />\r
+- Microarray :<br />\r
+- Gene Expression (Agilent, Affymetrix)<br />\r
+- CGH array<br />\r
+- microRNA array<br />\r
+- NGS (DNA-seq):<br />\r
+- Détection de SNP (WES, WGS, TS)<br />\r
+- Détection de variants structuraux (LOH, CNV)<br />\r
+- ChipSeq<br />\r
+- NGS (RNA-seq) :<br />\r
+- Analyse différentielle<br />\r
+- recherche de transcrit de fusion<br />\r
+- recherche de splicing alternatif<br />\r
+- detection de SNP par RNA-seq</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>● Conseil / Support<br />\r
+Elaboration de cahier des charges pour des projets de recherche à composante "bioinformatique" : définition du projet bioinformatique, définition des compétences requises, rédaction de fiche de poste, recrutement de bioinformaticien, estimation du coût global. La plateforme peut se positionner en partenaire du projet ou en prestataire de service.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>● Formations<br />\r
+Organisation de formations généraliste en interne. Organisation de formations spécifiques, sur demande, dans les locaux des demandeurs (utilisation d’un logiciel, explication de méthodologie bioinformatique, statistiques)</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>● R&amp;D<br />\r
+Développement /Maintenance de pipelines d’analyse.<br />\r
+Développement à facon d’outils d’annotation / de visualisation de données NGS Développement de DB de données génomiques<br />\r
+Participation au developpement de DB en médecine personnalisée</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>1. Projets en routine :<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 1.1. Périmètre : Interne<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 1.2. Application : bioinformatique clinique<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 1.3. Financement : Gustave Roussy.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>2. Prestations classiques (projets courts) :<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 2.1. Périmètre : National<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 2.2. Applications : Analyses ponctuelles de données génomiques pour un projet ou une cohorte. Développement bioinformatique légers (&lt;3 mois)<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 2.3. Financement : Prestation payantes (facturation) + coauthorship<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 2.4. La modalité « prestation classique » consiste en une prise en charge totale par<br />\r
+la plateforme de la réalisation de l'analyse bioinformatique. Au minimum deux rencontres sont prévues avec le demandeur, la première afin de mettre en place le cahier des charges (appréhender la question posée et les données pour lesquelles il demande une expertise, émission d’un devis), et la dernière pour un rendu du travail réalisé par la plateforme (après remise d'un document explicatif de la démarche suivie et des résultats obtenus).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>3. Collaboration (projets longs).<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 3.1. Périmètre : International<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Applications : Demandes conjointes ANR/FRM etc. en tant que partenaire ou sous-traitant<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Financement : Projet ANR/FRM/PHRC...<br />\r
+&nbsp;&nbsp;&nbsp;&nbsp; 3.4. Les projets réalisés « en collaboration » nécessitent soit une participation active à l'analyse des données du biologiste soit la mise à disposition d'un CDD ou d'un stagiaire au sein de la plate-forme et co-encadré par le personnel de la plate-forme.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-23T10:28:57+02:00" ;
+    dc:modified "2019-03-04T17:50:11+01:00" ;
+    geosp:hasProject [ ocds:valueAmount "58" ] ;
+    meb:User [ ocds:valueAmount "25" ] ;
+    schema:name "IGR" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "453",
+                "454",
+                "455" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "129",
+                "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Villejuif" ;
+            schema:postOfficeBoxNumber "UMS INSERM 23/CNRS 3655 AMMICA" ;
+            schema:postalCode "94800" ;
+            schema:streetAddress "114 rue Edouard Vaillant" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "Gustave Roussy" ;
+            schema:url "http://gustaveroussy.fr/fr/content/plateforme-de-bioinformatique-activit%C3%A9s" ] .
+

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/formation-abims",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T13:03:31+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>L'offre de formation repose sur des modules de formation d'initiation aux environnements (Linux, Cluster, etc.), d'utilisation des outils (Galaxy, etc.) et langages (PERL, R, etc.), et de compréhension des méthodes (RNA-seq, Analyses statistiques, etc.). ABiMS est également en mesure de proposer des formations à façon pour des communautés (e.g. Métabolomique) ou des projets (École thématique).<br />\r\nUniversitaires.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>Galaxy pour l'analyse de données métabolomique (1 jour)</li>\r\n\t<li>Cluster (1 jour)</li>\r\n\t<li>Linux Initiation (1 jour)</li>\r\n\t<li>Linux avancé (1 jour)</li>\r\n\t<li>Linux scripting (1 jour)</li>\r\n\t<li>Galaxy initiation (1 jour)</li>\r\n\t<li>Galaxy RNAseq de novo/avec référence &amp; cleaning (2 jours)</li>\r\n\t<li>Galaxy : initiation à la phylogénie (2 jours)</li>\r\n\t<li>R initiation (1 jour)</li>\r\n\t<li>R avancé (1 jour)</li>\r\n</ul>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:38+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formation ABiMS"
+      }
+    ]
+  }
+]

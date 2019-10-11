@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/physicist",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "150"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhySIC_IST "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:30:35+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Méthode de super-arbre</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:48+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N86bebd6d8330437b88991b99db056a19"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "20"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.atgc-montpellier.fr/physic_ist/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N86bebd6d8330437b88991b99db056a19",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit via le site web de la plateforme.</p>\r\n"
+      }
+    ]
+  }
+]

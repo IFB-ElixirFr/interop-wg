@@ -39,10 +39,10 @@ import subprocess
 
 
 # timeout (connect, read) in secondes
-TIMEOUT = (10, 28800)
+TIMEOUT = (10, 3600)
 PRINT_DETAILS = False
-OUTPUT_DIR = "single_doi_test_output"
-OUTPUT_PREF = "test"
+OUTPUT_DIR = "para_doi_test_output"
+OUTPUT_PREF = "ptest"
 
 parser = argparse.ArgumentParser(description='A FAIRMetrics tester',
                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -80,6 +80,11 @@ parser.add_argument("-D","--directory",
 parser.add_argument("-o","--output",
                         help="Output prefix filenames",
                         default=OUTPUT_PREF)
+parser.add_argument("-tn", "--thread_num",
+                        help="Number of threads to use. Max available: " + str(multiprocessing.cpu_count()),
+                        type=int,
+                        choices=range(1, multiprocessing.cpu_count()+1),
+                        default=1)
 
 
 
@@ -183,71 +188,121 @@ def testMetrics(GUID):
     # Retrieve all the metrics general info and api urls
     metrics = getMetrics()
 
+    metric_test_results = [{
+        "@id": "metric",
+        "score": GUID,
+        "principle": "GUID",
+        "test_time": GUID,
+        "comment": '"' + GUID + '"',
+        "description": "Description"
+    }]
+
+    if args.thread_num > 1:
+        metrics_list = []
+        for metric in metrics:
+            metric_test_results.append({
+                "@id": metric["@id"],
+                "principle": metric["principle"].rsplit('/', 1)[-1]
+            })
+            metrics_list.append((metric, data))
+        # initialize parallelized
+        num_cores = multiprocessing.cpu_count()
+        p = Pool(num_cores)
+        list_results = []
+        # starting metrics test
+        for result in tqdm(p.imap_unordered(pTestMetric, metrics_list), total=len(metrics_list), dynamic_ncols=True):
+            list_results.append(result)
+
+        p.close()
+        p.join()
+
+        # append res to lists
+        for result in list_results:
+            for i, test in enumerate(metric_test_results):
+                if result:
+                    if result["@id"] == test["@id"]:
+                        metric_test_results[i]["score"] = result["score"]
+                        metric_test_results[i]["test_time"] = result["test_time"]
+                        metric_test_results[i]["comment"] = result["comment"]
+                        metric_test_results[i]["description"] = result["description"]
+
+
+    else:
+        n = 0
+        # iterate over each metric
+        for metric in metrics:
+            n += 1
+
+            # retrieve more specific info about each metric
+            metric_info = processFunction(getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
+            # retrieve the name (principle) of each metric (F1, A1, I2, etc)
+            principle = metric_info["principle"].rsplit('/', 1)[-1]
+            # principle = metric_info["principle"]
+            # get the description on the metric
+            description = '"' + metric_info["description"] + '"'
+
+            if True:
+            # if principle[0:2] != 'I2':
+            # if principle[0] == 'F':
+                if PRINT_DETAILS:
+                    # print informations related to the metric
+                    printMetricInfo(metric_info)
+
+                # evaluate the metric
+                start_time = getCurrentTime()
+                metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
+                end_time = getCurrentTime()
+                # print(metric_evaluation_result_text)
+                metric_evaluation_result = json.loads(metric_evaluation_result_text)
+                test_time = end_time - start_time
+
+                if PRINT_DETAILS:
+                    #print results of the evaluation
+                    printTestMetricResult(metric_evaluation_result_text, test_time)
+
+                # get comment
+                # REQUETE SPARQL !!!!!
+                comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
+                # remove empty lines from the comment
+                comment = cleanComment(comment)
+                # filter comment based on args
+                if args.write_comment:
+                    comment = filterComment(comment, args.write_comment)
+                comment = '"' + comment + '"'
+
+
+                # get the score
+                score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
+                score = str(int(float(score)))
+
+                # add score, principle, time, comment and description
+
+                metric_test_results.append({
+                    "@id": metric["@id"],
+                    "principle": principle,
+                    "score": score,
+                    "test_time": test_time,
+                    "comment": comment,
+                    "description": description,
+                })
+
     # list that will contains the score for each metric test
-    test_score_list = [GUID]
+    test_score_list = []
     # list that will contains the name of each (principle) metric test (F1, A1, I2, etc)
-    headers_list = ["GUID"]
+    headers_list = []
     # list that will contains the executation time for each metric test
-    time_list = [GUID]
+    time_list = []
     # list that will contains the comment for each metric test
-    comments_list = ['"' + GUID + '"']
+    comments_list = []
     # ist that will contains the description for each metric test
-    descriptions_list = ["Description"]
+    descriptions_list = []
 
-    n = 0
-
-    # iterate over each metric
-    for metric in metrics:
-        n += 1
-
-        # retrieve more specific info about each metric
-        metric_info = processFunction(getMetricInfo, [metric["@id"]], 'Retrieving metric informations... ')
-        # retrieve the name (principle) of each metric (F1, A1, I2, etc)
-        principle = metric_info["principle"].rsplit('/', 1)[-1]
-        # principle = metric_info["principle"]
-        # get the description on the metric
-        description = '"' + metric_info["description"] + '"'
-
-        # if True:
-        if principle[0:2] != 'I2':
-        # if principle[0] == 'F':
-            if PRINT_DETAILS:
-                # print informations related to the metric
-                printMetricInfo(metric_info)
-
-            # evaluate the metric
-            start_time = getCurrentTime()
-            metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
-            end_time = getCurrentTime()
-            # print(metric_evaluation_result_text)
-            metric_evaluation_result = json.loads(metric_evaluation_result_text)
-            test_time = end_time - start_time
-
-            if PRINT_DETAILS:
-                #print results of the evaluation
-                printTestMetricResult(metric_evaluation_result_text, test_time)
-
-            # get comment
-            # REQUETE SPARQL !!!!!
-            comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
-            # remove empty lines from the comment
-            comment = cleanComment(comment)
-            # filter comment based on args
-            if args.write_comment:
-                comment = filterComment(comment, args.write_comment)
-            comment = '"' + comment + '"'
-
-
-            # get the score
-            score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
-            score = str(int(float(score)))
-
-            # append score, principle, time, comment and description
-            test_score_list.append(score)
-            headers_list.append(principle)
-            time_list.append(test_time)
-            comments_list.append(comment)
-            descriptions_list.append(description)
+    for test_result in metric_test_results:
+        test_score_list.append(test_result["score"])
+        headers_list.append(test_result["principle"])
+        time_list.append(test_result["test_time"])
+        comments_list.append(test_result["comment"])
+        descriptions_list.append(test_result["description"])
 
     sumScoresTimes(headers_list, test_score_list, time_list)
 
@@ -264,6 +319,52 @@ def testMetrics(GUID):
     # if args.score:
     # if args.time:
     return (headers_list, descriptions_list, test_score_list, list(map(str, time_list)), comments_list)
+
+def pTestMetric(metric):
+    # retrieve more specific info about each metric
+    metric_info = getMetricInfo(metric[0]["@id"])
+    # retrieve the name (principle) of each metric (F1, A1, I2, etc)
+    principle = metric_info["principle"].rsplit('/', 1)[-1]
+    # get the description on the metric
+    description = '"' + metric_info["description"] + '"'
+
+    # if principle[0:2] != 'I2':
+    # if principle[0] == 'F':
+    if True:
+        start_time = getCurrentTime()
+        metric_evaluation_result_text = testMetric(metric[0]["smarturl"], metric[1])
+        end_time = getCurrentTime()
+        # print(metric_evaluation_result_text)
+        metric_evaluation_result = json.loads(metric_evaluation_result_text)
+        test_time = end_time - start_time
+
+        # get comment
+        # REQUETE SPARQL !!!!!
+        comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
+        # remove empty lines from the comment
+        comment = cleanComment(comment)
+        # filter comment based on args
+        if args.write_comment:
+            comment = filterComment(comment, args.write_comment)
+        comment = '"' + comment + '"'
+
+
+        # get the score
+        score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
+        score = str(int(float(score)))
+
+        dict_result = {
+            "@id": metric[0]["@id"],
+            "score": score,
+            "principle": principle,
+            "test_time": test_time,
+            "comment": comment,
+            "description": description,
+        }
+
+        return dict_result
+
+    return False
 
 def requestResultSparql(metric_evaluation_result_text, term):
 
@@ -594,6 +695,7 @@ def webTestMetrics(GUID_test):
     args = parser.parse_args()
     PRINT_DETAILS = True
     args.description = True
+    args.thread_num = multiprocessing.cpu_count()
     args.directory = "web_test_dir"
 
     return testMetrics(GUID_test)

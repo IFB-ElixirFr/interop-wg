@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/genrgens",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GenRGenS "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:10:09+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Software tool dedicated to randomly generating genomic sequences and structures</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T19:34:59+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nb064e193ef844de4b636ec7220048408"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "65"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.lri.fr/~genrgens/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb064e193ef844de4b636ec7220048408",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Jar + tar.gz download, http://www.lri.fr/~genrgens/ Gratuit pour u-psud</p>\r\n"
+      }
+    ]
+  }
+]

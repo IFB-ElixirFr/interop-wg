@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/cadbiom",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Cadbiom"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:24:30+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<h4>CADBIOM is an open source modelling software. Based on Guarded transition semantic, it gives a formal framework to help the modelling of biological systems such as cell signaling network.</h4>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T10:26:42+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N9e8e4aa366c1404199427795af16ff3f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://cadbiom.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9e8e4aa366c1404199427795af16ff3f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free</p>\r\n"
+      }
+    ]
+  }
+]

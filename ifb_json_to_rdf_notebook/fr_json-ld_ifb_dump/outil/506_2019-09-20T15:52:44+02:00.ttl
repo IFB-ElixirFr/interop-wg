@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/s-mart",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "474"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "267"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "S-MART"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T15:14:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Boite à outils pour manipuler des données NGS : en particulier de type RNA-Seq, ChiP-Seq. Plus généralement il permet de comparer des annotations sur la base de leur localisation. S-MART fournit également de nombreuses façons de visualiser vos données: taille des reads, de la densité sur le génome, la distance par rapport à un ensemble de référence, et la corrélation des deux ensembles de données (avec des nuages de points).</p>\r\n\r\n<p><br />\r\nZytnicki M, Quesneville H (2011) S-MART, A Software Toolbox to Aid RNA-seq Data Analysis. PLoS ONE 6(10): e25988. doi:10.1371/journal.pone.0025988</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-12T16:07:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N26ae517d2c56492990b3d4849e6639da"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "18"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Tools/S-Mart"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "152"
+      }
+    ]
+  },
+  {
+    "@id": "_:N26ae517d2c56492990b3d4849e6639da",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Disponible en téléchargement :&nbsp;<a href=\"https://urgi.versailles.inra.fr/Tools/S-Mart\">https://urgi.versailles.inra.fr/Tools/S-Mart</a></p>\r\n"
+      }
+    ]
+  }
+]

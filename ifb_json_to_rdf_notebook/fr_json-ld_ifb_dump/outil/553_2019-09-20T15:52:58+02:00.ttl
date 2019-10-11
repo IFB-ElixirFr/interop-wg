@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/logol",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Logol"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T14:33:29+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Langage pour la recherche de motifs complexes. Interface web évoluée et téléchargement possible. La ressource a été mise en ligne en 2013 pour une première phase d’utilisation interne pour finaliser les développements et aboutir à un système stable.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nbf2f7d8a7ea74e4abd56e0e8c2e65d21"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://logol.genouest.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbf2f7d8a7ea74e4abd56e0e8c2e65d21",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Utilisation interne.</p>\r\n\r\n<p>Accès libre.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/peppsy",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PepPSY"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T16:13:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>PepPSy has been developed as a user-friendly gene expression-based prioritization system, to help investigators to determine in which human tissues they should look for an unseen protein and curators to quickly look at available transcriptomics/proteomics data for a list of proteins.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T10:55:26+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1b760d0dc517422dbe588aefb8762c61"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://peppsy.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1b760d0dc517422dbe588aefb8762c61",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/pangenehome",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PanGeneHome"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-13T14:14:03+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>PanGeneHome is a web server dedicated to the analysis of available microbial pangenomes. Several standalone tools (e.g. PGAP, PANNOTATOR, PanGP, Roary&nbsp;and BPGA) and web servers (e.g. Panseq, PGAT and PanWeb) dedicated to pangenome analysis have been developed recently and offer the possibility to compute pangenome analysis for genomes provided by a user. For all these tools and servers, users have to collect genomes and manage to run the tools, which implies a significant effort on the user side. To tackle this problem, we developped PanGeneHome, the only web site offering pre-computed pangenome analysis with up-to-date and large scale data. PanGeneHome provides an easy way to get a glimpse on the pangenome of a microbial group of interest, the analysis being precomputed and available for 615 taxa, covering 182 species and 49 orders. Considering the fast growing number of microbial genomes, the PanGeneHome tool will need to be updated regularly.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T14:54:26+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6dc1a55da5b543af8ebf7406366e3fb5"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://pangenehome.lmge.uca.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6dc1a55da5b543af8ebf7406366e3fb5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

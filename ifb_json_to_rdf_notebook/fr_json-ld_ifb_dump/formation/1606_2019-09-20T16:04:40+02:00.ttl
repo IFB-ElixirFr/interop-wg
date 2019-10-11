@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/modules-biologie-école-doctorale-svsae",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T12:29:20+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:27+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Modules Biologie École Doctorale SVSAE"
+      }
+    ]
+  }
+]

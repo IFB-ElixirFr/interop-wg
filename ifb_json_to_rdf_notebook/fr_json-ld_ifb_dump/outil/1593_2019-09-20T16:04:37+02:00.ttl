@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/nucbase",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Nucbase"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T22:22:12+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Program designed to make an exhaustive search for sequence matches and to align short sequence reads from large nucleic acid databases to genomes or input sequences.</p>\r\n\r\n<p>Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Dufourt, J., P. Pouchin, P. Peyret, E. Brasset, and C. Vaury (2013) NucBase, an easy to use read mapper for small RNAs. Mobile DNA 4:1.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ndf97a5273e08486f8575d9b10b381941"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "84"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndf97a5273e08486f8575d9b10b381941",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur https://grr.gred-clermont.fr/nucbase</p>\r\n"
+      }
+    ]
+  }
+]

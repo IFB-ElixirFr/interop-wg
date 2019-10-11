@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/formations-dans-cadre-du-mésocentre",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Campus des Cézeaux, Aubière"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-13T15:13:20+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T15:13:35+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formations dans le cadre du Mésocentre"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/pipealign",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PipeAlign"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T09:59:46+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Outil pour l'analyse des familles de protéines.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N27a3104c21374cfdad08279fdde63777"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://galaxy.bioinfo-bistro.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N27a3104c21374cfdad08279fdde63777",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès web.</p>\r\n"
+      }
+    ]
+  }
+]

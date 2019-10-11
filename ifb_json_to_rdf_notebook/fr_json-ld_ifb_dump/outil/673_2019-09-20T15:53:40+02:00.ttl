@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/sa-frag",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "340"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "26"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SA-Frag"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T10:59:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SA-Frag is a service that will, given an amino acid sequence, return 3D fragments predicted to match the various positions of the sequence. SA-Frag will thus return an alignement of the fragments identified with the query and a collection of 3D structures corresponding to the fragments in the PDB format.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:56+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N2d23ef6d47c74a408abc044c7d2efee6"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2d23ef6d47c74a408abc044c7d2efee6",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Service en ligne en accès libre.</p>\r\n"
+      }
+    ]
+  }
+]

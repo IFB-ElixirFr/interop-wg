@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/sortmerna",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SortMeRNA"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T12:05:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Objectif</strong></p>\r\n\r\n<p>SortMeRNA est un outil d'analyse de séquences biologiques pour le filtrage de données méta-transcriptomiques et méta-génomiques, le mapping et la sélection d'OTU (unité taxonomique opérationnelle). La principale application de SortMeRNA est le filtrage et le mapping d'ARN ribosomiques à partir de données NGS.</p>\r\n\r\n<p><strong>Description de l'outil</strong></p>\r\n\r\n<p>L'algorithme principal est basé sur des graines approchées, ainsi qu'une structure d'indexation de texte optimisée. Il permet des analyses rapides et sensibles de séquences nucléiques.</p>\r\n\r\n<p>SortMeRNA prend en entrée un fichier de reads (au format fasta ou fastq) et un ou plusieurs fichier(s) de base(s) de données d'ARNr. Il en extrait les ARNr et les reads refusésdans 2 fichiers. Sur demande, il peut fournir des alignements locaux de haute qualité des reads d'ARNr contre les ARNr des bases de données. SortMeRNA fonctionne avec des données Illumina, 454, Ion Torrent et PacBio et produit en sortie des alignements de type SAM ou Blast. Il est implémenté en C++.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-14T11:28:02+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Naa3d945687834785881ef0c45f722bcd"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "507"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.lifl.fr/RNA/sortmerna/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naa3d945687834785881ef0c45f722bcd",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://bioinfo.lifl.fr/RNA/sortmerna/\">SortMeRNA</a> est distribué gratuitement sous licence LGPL.</p>\r\n"
+      }
+    ]
+  }
+]

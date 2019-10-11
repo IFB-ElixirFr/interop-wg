@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/ngs-data-analysis",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:37:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>&nbsp;Master 2&nbsp;Bioinformatics research students,&nbsp;University&nbsp;of Bordeaux.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:32+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "NGS data analysis"
+      }
+    ]
+  }
+]

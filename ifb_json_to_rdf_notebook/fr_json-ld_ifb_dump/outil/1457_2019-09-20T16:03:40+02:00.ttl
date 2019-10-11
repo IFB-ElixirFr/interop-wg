@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/macsyfinder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "macsyfinder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T18:30:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Detection of macromolecular systems in protein datasets using systems modelling and similarity search.</p>\r\n\r\n<p>MacSyFinder is a program to model and detect macromolecular systems, genetic pathways in protein datasets. In prokaryotes, these systems have often evolutionarily conserved properties: they are made of conserved components, and are encoded in compact loci (conserved genetic architecture). The user models these systems with MacSyFinder to reflect these conserved features, and to allow their efficient detection.</p>\r\n\r\n<p>Criteria for systems detection include <strong>component content (quorum)</strong>, and <strong>genomic co-localization</strong>. Each component corresponds to a hidden Markov model (HMM) protein profile to perform homology searches with the program Hmmer .</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Homepage&nbsp;: <u><a class=\"western\" href=\"https://github.com/gem-pasteur/macsyfinder\">https://github.com/gem-pasteur/macsyfinder</a></u></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-09T13:05:15+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Na4dd64ae0d894a998115e6666c646771"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "23"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/gem-pasteur/macsyfinder"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na4dd64ae0d894a998115e6666c646771",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>freely available&nbsp; (GPLv2)</p>\r\n"
+      }
+    ]
+  }
+]

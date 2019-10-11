@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/galaxy-ld",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy-LD"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T17:40:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Galaxy-LD is a tool dedicated to the generation of provenance graphs (RDF, PROV-O ontology) based on Galaxy user histories. The tool is currently available through a command line interface. A web-based user interface is under active development.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T18:11:47+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/albangaignard/galaxy-ld"
+      }
+    ]
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/migale",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N5de484aa3bbc4685bc88b64682238acc"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N97a095c286d54012be3775a764bf716f"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nade08abd872d4d03a8ac570da095c198"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nc2831c47f12f46609c244a3f81771bbd"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N64baa052c40c49c4887eba194bec8d1d"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:32:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-14T12:02:40+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Ne41d9f94fe144025b4216c9fc38c5d11"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MIGALE"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nb2a7c7b5f1b941fcbb9cee0c9de414ee"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Ncff5d8006a5e4ba589da705ca9769664"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N23da7ee6fd584de997f2cec66206cd55"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N789ccee1b375410e982a5e54a52985f1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5de484aa3bbc4685bc88b64682238acc",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1082"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nade08abd872d4d03a8ac570da095c198",
+    "http://schema.org/identifier": [
+      {
+        "@value": "468"
+      },
+      {
+        "@value": "467"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc2831c47f12f46609c244a3f81771bbd",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>La plate-forme MIGALE a une interaction privilégiée avec l’équipe StatInfOmics de l&nbsp;‘unité MaIAGE à qui elle fournit un support logistique important. Les compétences de cette équipe sont les statistiques appliquées à l’analyse des données « omiques », et la bioinformatique au sens large, concernant en particulier :</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>la structure des génomes&nbsp;:</p>\r\n\r\n<ul>\r\n\t<li>traitement et analyse des données NGS</li>\r\n\t<li>l’annotation structurale et fonctionnelle de génomes complets,</li>\r\n\t<li>la recherche de motifs dans les séquences ou les réseaux</li>\r\n</ul>\r\n\r\n<p>la transcriptomique&nbsp;:</p>\r\n\r\n<ul>\r\n\t<li>l’annotation structurale des ANR messagers</li>\r\n\t<li>l’analyse des régulations</li>\r\n</ul>\r\n\r\n<p>la structure et fonction des protéines&nbsp;:</p>\r\n\r\n<p>classification et analyse des structures 3D des protéines<br />\r\nmodélisation de la structure 3D des protéines</p>\r\n\r\n<ul>\r\n\t<li>analyse des relations structure 3D – fonction des protéines</li>\r\n</ul>\r\n\r\n<p>la génomique évolutive</p>\r\n\r\n<ul>\r\n\t<li>comparaison de génomes microbiens</li>\r\n\t<li>étude des processus évolutifs</li>\r\n\t<li>Les autres équipes de l’unité ont des compétences&nbsp;:</li>\r\n\t<li>en biologie des systèmes</li>\r\n\t<li>biologie des systèmes pour les procaryotes (B. subtilis)</li>\r\n\t<li>modélisation et analyse de réseaux de régulation biologique</li>\r\n</ul>\r\n\r\n<p>en extraction de connaissances à partir de textes scientifiques appliquée</p>\r\n\r\n<ul>\r\n\t<li>à la modélisation des réseaux de régulation génique et du métabolisme,</li>\r\n\t<li>à la relation génotype-phénotype,</li>\r\n\t<li>aux phénotypes multi-espèce et à l’adaptation à l’environnement.</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N64baa052c40c49c4887eba194bec8d1d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Les utilisateurs font une demande d’hébergement à la plate-forme et de collaboration avec l’équipe de l’unité qui assure le traitement et l’analyse des données bioinformatiques.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N97a095c286d54012be3775a764bf716f",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "300.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb2a7c7b5f1b941fcbb9cee0c9de414ee",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "495"
+      },
+      {
+        "@value": "465"
+      },
+      {
+        "@value": "489"
+      },
+      {
+        "@value": "486"
+      },
+      {
+        "@value": "492"
+      },
+      {
+        "@value": "488"
+      },
+      {
+        "@value": "466"
+      },
+      {
+        "@value": "464"
+      },
+      {
+        "@value": "487"
+      },
+      {
+        "@value": "496"
+      },
+      {
+        "@value": "498"
+      },
+      {
+        "@value": "490"
+      },
+      {
+        "@value": "493"
+      },
+      {
+        "@value": "485"
+      },
+      {
+        "@value": "491"
+      },
+      {
+        "@value": "499"
+      },
+      {
+        "@value": "497"
+      },
+      {
+        "@value": "494"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncff5d8006a5e4ba589da705ca9769664",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne41d9f94fe144025b4216c9fc38c5d11",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "451"
+      }
+    ]
+  },
+  {
+    "@id": "_:N23da7ee6fd584de997f2cec66206cd55",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Jouy-en-Josas"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Unité MaIAGE"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "78350"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Domaine de Vilvert"
+      }
+    ]
+  },
+  {
+    "@id": "_:N789ccee1b375410e982a5e54a52985f1",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "http://migale.jouy.inra.fr/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/"
+      }
+    ]
+  }
+]

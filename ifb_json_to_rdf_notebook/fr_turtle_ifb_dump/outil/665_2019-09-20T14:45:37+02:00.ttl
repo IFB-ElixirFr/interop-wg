@@ -1,0 +1,43 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/services/outils/pep-fold> a schema:SoftwareApplication ;
+    dbpedia-owl:visitorsPerYear "30000" ;
+    dbpedia-owl:visitorsTotal "3900" ;
+    edam:data_1190 "PEP-FOLD" ;
+    dc:created "2015-09-22T10:52:12+02:00" ;
+    dc:description """<p><strong>PEP-FOLD</strong>&nbsp;is a de novo approach aimed at predicting peptide structures from amino acid sequences.</p>\r
+\r
+<p>This method, based on structural alphabet SA letters to describe the conformations of four consecutive residues, couples the predicted series of SA letters to a greedy algorithm and a coarse-grained force field.</p>\r
+""" ;
+    dc:modified "2017-01-24T16:15:37+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>Service en ligne en accès libre.</p>\r
+""" ] ;
+    c4o:GlobalCitationCount "377" ;
+    schema:url "http://bioserv.rpbs.univ-paris-diderot.fr/services/PEP-FOLD3/" .
+

@@ -1,0 +1,193 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/bilille",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N8c4f654886fb42278b2d93fd7b0d7037"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nbcb7add6f3a2448d8408bf5c4027d3a5"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N137ba1a74a6741ffac70dc800dd7421d"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Nff358e9d3dca40d191e3ee5446a83520"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:41:10+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-19T15:08:45+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "bilille"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N3195c1a92f2d4adeaec315cd5dd85bca"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N97cf06f091ea4277a45cc1a5299ed252"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N73e0cd2c523f461cb0eb49a0c89462e9"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Ncf86550e2b8f401d84886071a1f4d012"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8c4f654886fb42278b2d93fd7b0d7037",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Cloud acheté par la bilille, hébergé au Centre de Ressources Informatiques de l'Université Lille 1</p>\r\n\r\n<p>- 3 noeuds à 2*12 coeurs et 256 Go de ram - Dell FC630 (2015)<br />\r\n- 1 noeud à 2*12 coeurs et 512 Go de ram - Dell FC630 (2015)<br />\r\n- 6 noeuds à 2*4 coeurs et 96 Go de ram - Dell R610 (2011)<br />\r\n- réseau 10 Gb/s (2015)</p>\r\n\r\n<p>Les cloud vient d'être mis en place. Seules 2 VM bioinfo sont proposées pour l'instant.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbcb7add6f3a2448d8408bf5c4027d3a5",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "144"
+      }
+    ]
+  },
+  {
+    "@id": "_:N137ba1a74a6741ffac70dc800dd7421d",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "76.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncf86550e2b8f401d84886071a1f4d012",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "bilille"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://wikis.univ-lille.fr/bilille/accueil"
+      }
+    ]
+  },
+  {
+    "@id": "_:N97cf06f091ea4277a45cc1a5299ed252",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N73e0cd2c523f461cb0eb49a0c89462e9",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Batiment M3, Faculté des Sciences et Technologies, Université de Lille"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "59000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Pôle recherche de la faculté de médecine, Université de Lille"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nff358e9d3dca40d191e3ee5446a83520",
+    "http://schema.org/identifier": [
+      {
+        "@value": "515"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3195c1a92f2d4adeaec315cd5dd85bca",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "514"
+      },
+      {
+        "@value": "1518"
+      },
+      {
+        "@value": "1444"
+      },
+      {
+        "@value": "512"
+      },
+      {
+        "@value": "1449"
+      },
+      {
+        "@value": "1450"
+      },
+      {
+        "@value": "3524"
+      }
+    ]
+  }
+]

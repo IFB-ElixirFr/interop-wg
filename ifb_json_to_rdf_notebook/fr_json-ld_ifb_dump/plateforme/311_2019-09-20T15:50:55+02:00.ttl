@@ -1,0 +1,308 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/genouest",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nc506d2b3a7014f2a9a2af3c1261ebfa8"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N01596cafc9694ba8882188f8d7c5df72"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N5bc3045a8ef945828d754c1297d5a751"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N65edbbd5585f4351925e2e81650d6735"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nb40378ccae9549dba0276e7bd4d83696"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N76541aedae5642409ea3156e18aba64e"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:17:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T11:34:26+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Nded6daf4a0b347adae06981f7f391ff2"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf6159a52ca69422098499c3def85130b"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "GenOuest "
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N7955081fac9f4af18112930293613df1"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Ned488e1c88cc4b8c9a71df1a76789d93"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N7e4e355544bc43d380ad98ba7ad67397"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N5d5b4a6bb99c47928979a14ae760b676"
+      }
+    ]
+  },
+  {
+    "@id": "_:N76541aedae5642409ea3156e18aba64e",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plate-forme GenOuest propose un environnement outillé pour ses utilisateurs. Il est ainsi possible de bénéficier de comptes Linux (sur le cluster ou bien sur genocloud), de bases de données relationnelles, de serveurs web.Suivant les cas de figures, les projets pourront être simplement hébergés sur la plate-forme, les utilisateurs agissant en toute autonomie avec cependant l'accès à un support technique. Dans un autre cas, les projets pourront être menés en collaboration avec la plate-forme, principalement par affectation d'un ingénieur recruté dans le cadre du projet scientifique.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N01596cafc9694ba8882188f8d7c5df72",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1600"
+      }
+    ]
+  },
+  {
+    "@id": "_:N65edbbd5585f4351925e2e81650d6735",
+    "http://schema.org/identifier": [
+      {
+        "@value": "547"
+      },
+      {
+        "@value": "550"
+      },
+      {
+        "@value": "549"
+      },
+      {
+        "@value": "2173"
+      },
+      {
+        "@value": "551"
+      },
+      {
+        "@value": "1413"
+      },
+      {
+        "@value": "546"
+      },
+      {
+        "@value": "548"
+      },
+      {
+        "@value": "1434"
+      },
+      {
+        "@value": "545"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ned488e1c88cc4b8c9a71df1a76789d93",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "134"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5bc3045a8ef945828d754c1297d5a751",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2200.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nded6daf4a0b347adae06981f7f391ff2",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "21"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7955081fac9f4af18112930293613df1",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "556"
+      },
+      {
+        "@value": "1436"
+      },
+      {
+        "@value": "1437"
+      },
+      {
+        "@value": "2176"
+      },
+      {
+        "@value": "2200"
+      },
+      {
+        "@value": "2171"
+      },
+      {
+        "@value": "2185"
+      },
+      {
+        "@value": "2184"
+      },
+      {
+        "@value": "1433"
+      },
+      {
+        "@value": "2175"
+      },
+      {
+        "@value": "1440"
+      },
+      {
+        "@value": "557"
+      },
+      {
+        "@value": "553"
+      },
+      {
+        "@value": "1435"
+      },
+      {
+        "@value": "2177"
+      },
+      {
+        "@value": "2178"
+      },
+      {
+        "@value": "2172"
+      },
+      {
+        "@value": "2181"
+      },
+      {
+        "@value": "1441"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf6159a52ca69422098499c3def85130b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5d5b4a6bb99c47928979a14ae760b676",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "GENOUEST"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb40378ccae9549dba0276e7bd4d83696",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plate-forme GenOuest plusieurs catégories de prestations : 1) une infrastructure bio-informatique : il s’agit de proposer un environnement bio-informatique complet au sein duquel les utilisateurs pourront évoluer en autonomie complète ou bien en recourant au support proposé par les personnels de la plate-forme. 2) le développement d’applications bioinformatiques : pour certains projets le nécessitant, des environnements spécifiques, des interfaces ou des bases de données sont développés<br />\r\npar les ingénieurs de la plate-forme. 3) une expertise et une consultance : pour certains projets les scientifiques font appel à la plate-forme GenOuest pour bénéficier d’une expertise en bio-informatique pour l’analyse de leurs données ou bien pour élaborer des stratégies d’analyse bioinformatiques. 4) Du transfert technologique : du fait de son implantation au sein d’un institut de recherche en informatique et bio-informatique, la plate-forme est en mesure de réaliser un transfert technologique des nouveaux outils directement issus de la recherche. 5) Des formations : un ensemble de formation est proposé par la plate-forme GenOuest 6) De l’hébergement scientifique : en partenariat avec les ingénieurs de la plate-forme les utilisateurs peuvent mettre en place de nouvelles ressources et/ou valoriser leurs travaux scientifiques grâce à la mise en place de sites ou applications web.<br />\r\nD’autre part, GenOuest réalise des recherches et développements autour de plusieurs axes principaux :<br />\r\nLes développements axés principalement sur l’analyse de séquences biologiques (Logol, DrMotifs), l'intégration des données biologiques (BioMAJ, SeqCrawler, Danaïdes), mais aussi sur l'utilisation de méta-données en biologie (EMME).<br />\r\nLes développements technologiques sur des outils ou environnements facilitant l'administration et l'exploitation des applications de bioinformatique (BioMAJ, MobyleNet, Galaxy) ou explorer nouveau paradigme de calcul pour la bioinformatique (genocloud, Grisbi).<br />\r\nLes deux axes précédents sont fédérés dans le projet e-biogenouest qui, centré sur les environnements virtuels de recherche, va exploiter les diverses avancées réalisées précédemment (gestion de données biologiques, portails, etc.)<br />\r\nLa plate-forme est en interaction étroite avec les deux équipes de bioinformatique locales, Dyliss et GenScale, qui elles même collaborent et organisent des séminaires communs.<br />\r\nL’équipe Dyliss se spécialise sur l'analyse de séquences et la biologie des systèmes en utilisant des systèmes formels pour caractériser les facteurs génétiques qui contrôlent les réponses phénotypiques en fonction de l’environnement. L’équipe GenScale se concentre sur l'analyse des données génomiques à grande échelle en développant des algorithmes optimisés (CPU et mémoire), et qui peuvent également être exécutés dans des environnements parallèles.<br />\r\nLes domaines d’expertise de ces deux équipes contribuent à renforcer l’expertise de la plate-forme GenOuest et permettent de proposer des outils innovants.<br />\r\nLa plate-forme GenOuest est également associée de manière très étroite avec la plate-forme INRA Bipaa qui propose des ressources bioinformatiques pour la génomique et la post-génomique des insectes.<br />\r\nD’un point de vue thématique les outils et méthodes développés au sein de ce groupe d’une cinquantaine de personnes trouvent leur application dans les domaines traditionnels de Biogenouest : Mer, Agronomie, Santé, Environnement.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7e4e355544bc43d380ad98ba7ad67397",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Rennes"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "263 avenue du Général Leclerc"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "35000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Campus de Beaulieu"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc506d2b3a7014f2a9a2af3c1261ebfa8",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Cluster de calcul</strong></p>\r\n\r\n<p>Les ressources de calcul sont accessibles de manière anonyme pour certains outils ou bien de manière authentifiée (ligne de commande ou portail Galaxy <a href=\"https://galaxy.genouest.org/\">https://galaxy.genouest.org/</a>).</p>\r\n\r\n<p>Le cluster repose sur une quarantaine de serveurs proposant un ensemble de calcul basé sur les gestionnaires de tâche SGE et Slurm (passage progressif vers Slurm)</p>\r\n\r\n<p>L'ensemble de calcul est associé à deux espaces de stockage: un espace à haute performance de 300 To et un espace conventionnel NFS de 1,9 Po.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Cloud</strong></p>\r\n\r\n<p>L'infrastructure genocloud, basée sur Openstack, est composée de 16 serveurs offrant 400 coeurs. Cet ensemble est associé à 300 To de stockage. Plusieurs images préconfigurées et thématiquement adaptées sont mises à la disposition des utilisateurs.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-rna-seq-novo",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-08T12:04:12+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-08T14:16:50+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse RNA-seq de novo"
+      }
+    ]
+  }
+]

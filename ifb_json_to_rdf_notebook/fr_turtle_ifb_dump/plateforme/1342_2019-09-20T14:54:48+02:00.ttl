@@ -1,0 +1,89 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/bimeps> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<h4>Infrastructure:</h4>\r
+\r
+<p>Les infrastructures utilisées par la PF sont soit des ressources publiques (UMPC) soit des ressources propres (ICM), dans les deux cas en usage mutualisé avec d’autres structures utilisatrices, et qui ne sont pas à ce jour ouvertes à l’extérieur mais ont vocation à le devenir.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<h4>Description des serveurs:</h4>\r
+\r
+<p>Active Directory(3), mail(1), Intranet/Sharepoint(1), MySQL(1), Oracle(2), RemoteDesktop(1), VMware(1), environ 30 serveurs applicatifs</p>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "1460" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "2020.00" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>L'Institut du Cerveau et de la Moelle épinière (ICM), situé sur le&nbsp;site de l’Hôpital de la Pitié-Salpêtrière,&nbsp;constitue un pôle majeur de recherche fondamentale et clinique sur le système nerveux, où 650 chercheurs, ingénieurs et médecins couvrent l’ensemble des disciplines de la neurologie dans le but d’accélérer les découvertes sur le fonctionnement du cerveau, et les développements de traitements pour des maladies comme Alzheimer, Parkinson, la sclérose en plaques, ou l'épilepsie.</p>\r
+\r
+<p>La plate-forme iCONICS&nbsp;développe et met en œuvre une expertise, des méthodes et des outils afin de répondre aux besoins de la recherche biomédicale en neurosciences :&nbsp;de l'annotation sémantique et la structuration informatique des informations, à la mise à disposition d’outils facilitant l’analyse et la visualisation des données à haut-débit, jusqu’à l’analyse statistique et intégrative de ces données.</p>\r
+\r
+<p>L’expertise de la plate-forme iCONICS&nbsp;couvre ainsi&nbsp;les volets suivants&nbsp;:</p>\r
+\r
+<ul>\r
+	<li>standardisation, contrôle, annotation et référencement de données (« data management »)</li>\r
+	<li>développement et déploiement de bases de données et applicatifs pour la gestion et l’exploitation de données cliniques, omiques et imagerie</li>\r
+	<li>analyses de puces à ADN (génotypage, transcriptomique, méthylation)</li>\r
+	<li>analyses de données de séquençage à haut-débit (NGS) : variants (panels de gènes – capture, amplicons –, « whole-exome »), expression (ARN codants ou non codants – RNA-seq, single-cell, miR-seq), épigénomique (ouverture de la chromatine – ATAC-seq –, interactions protéines-ADN – ChIP-seq –, marques de méthylation – Bisulfite-seq)</li>\r
+	<li>analyses biostatistiques : support généraliste (tests, modèles, croisements de données), intégration de données hétérogènes et de grandes dimensions (typiquement données génétiques, omiques, cliniques et neuro-imagerie)</li>\r
+	<li>développement et mise à disposition de logiciels spécialisés avec interfaces graphiques (e.g. filtrage de données d’exomes, visualisation de données transcriptomiques, analyse intégrative&nbsp;de données multimodales)</li>\r
+</ul>\r
+\r
+<p>Au-delà des maladies&nbsp;et modèles relatifs au&nbsp;système nerveux central, iCONICS propose son soutien à tout projet de recherche biomédicale visant à mieux comprendre les mécanismes biologiques sous-jacents aux pathologies humaines, depuis le dessin des études jusqu’au traitement, la visualisation et l’interprétation des résultats.</p>\r
+\r
+<p>&nbsp;</p>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>Différentes modalités de soutien aux projets scientifiques et cliniques sont possibles&nbsp;:</p>\r
+\r
+<ul>\r
+	<li>Nous pouvons héberger, selon les capacités d’accueil disponibles, des chercheurs/ingénieurs venant analyser leurs propres données tout en bénéficiant de l’environnement scientifique et technique du site. Cela est par exemple le cas lorsqu’un porteur de projet obtient le financement d’un post-doctorant en bio-informatique pour analyser ses données mais qu’il ne dispose pas en local de l’expertise pour encadrer efficacement ce post-doctorant.</li>\r
+	<li>Nous nous proposons comme partenaires pour des projets collaboratifs, notamment lors de la réponse à des appels d’offres, ceci afin de fournir des garanties de faisabilité et de réalisation des projets. Une partie du financement demandé pourra alors couvrir la participation d'iCONICS&nbsp;au projet, en particulier pour du personnel supplémentaire dédié au projet.</li>\r
+	<li>Nous proposons également un accompagnement de projet sous forme de conseil et de prestation de service. Après une première prise de contact avec le demandeur, une fiche projet synthétisant les besoins exprimés et les solutions proposées est rédigée par la PF. Après accord du demandeur, un devis de prestation lui est envoyé, selon une tarification définie.</li>\r
+</ul>\r
+""" ] ;
+    dc:created "2015-12-08T13:55:50+01:00" ;
+    dc:modified "2019-06-14T17:32:23+02:00" ;
+    schema:name "iCONICS" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1347" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "129" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Paris" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "75013" ;
+            schema:streetAddress "47 boulevard de l'Hôpital" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "iCONICS" ;
+            schema:url "https://icm-institute.org/fr/iconics-the-bioinformatics-and-biostatistics-core-facility/" ] .
+

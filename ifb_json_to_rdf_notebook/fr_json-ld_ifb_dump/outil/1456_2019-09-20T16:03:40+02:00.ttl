@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/fqtools",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "fqtools"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T18:28:21+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>fqtools is a package which provides tools to handle efficiently files in FASTAQ format.</p>\r\n\r\n<p>The following tools are provided&nbsp;:</p>\r\n\r\n<p>fqduplicate&nbsp;: retrieve duplicated entries</p>\r\n\r\n<p>fqextract&nbsp;: extract entries</p>\r\n\r\n<p>fqquality&nbsp;: filter a file according to the quality</p>\r\n\r\n<p><u><a class=\"western\" href=\"ftp://ftp.pasteur.fr/pub/gensoft/projects/\">ftp://ftp.pasteur.fr/pub/gensoft/projects/</a></u></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:48+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N796ee60ef1b642568bea53df6dde939d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N796ee60ef1b642568bea53df6dde939d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>access&nbsp;: free (GPLv2)</p>\r\n"
+      }
+    ]
+  }
+]

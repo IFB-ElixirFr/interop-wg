@@ -1,0 +1,269 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/ebio",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N2c2104b90d964fdf896033e079bd6ac4"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N9482c9200de0455eb4e28921b6499811"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N5ce64d2df3b94ba2b48b0e13cf0466e9"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N426566795b8d46e4bc7396b1c81a8306"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nbfaeb5d0264f472eb8a388274df56121"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N0126b208f6354b389f782d09f25be321"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-13T15:36:56+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:59:18+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N62bd6be4947f4849b96980f21819e74c"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "EBIO"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N8836e8e375274791a4d9570ebe32636e"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N6666b6db3c3b419c91c0b59c82f1858e"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N059299d420ee4b72a51d6aefb4ac00e3"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Na7de5556df4d47d8979d945cd1fc8840"
+      }
+    ]
+  },
+  {
+    "@id": "_:N426566795b8d46e4bc7396b1c81a8306",
+    "http://schema.org/identifier": [
+      {
+        "@value": "300"
+      },
+      {
+        "@value": "2692"
+      },
+      {
+        "@value": "275"
+      },
+      {
+        "@value": "360"
+      },
+      {
+        "@value": "301"
+      },
+      {
+        "@value": "1445"
+      },
+      {
+        "@value": "359"
+      },
+      {
+        "@value": "358"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5ce64d2df3b94ba2b48b0e13cf0466e9",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "87.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N62bd6be4947f4849b96980f21819e74c",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "50"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8836e8e375274791a4d9570ebe32636e",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "367"
+      },
+      {
+        "@value": "277"
+      },
+      {
+        "@value": "363"
+      },
+      {
+        "@value": "365"
+      },
+      {
+        "@value": "366"
+      },
+      {
+        "@value": "369"
+      },
+      {
+        "@value": "368"
+      },
+      {
+        "@value": "370"
+      },
+      {
+        "@value": "364"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbfaeb5d0264f472eb8a388274df56121",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plateforme Bioinformatique eBio (<a href=\"http://ebio.u-psud.fr/\">http://ebio.u-psud.fr/</a>), créée en décembre 2009, est au centre du dispositif de bioinformatique de l’Université Paris-Sud. Elle est associée aux services de bioinformatiques de l’INRA Moulon, de l’hôpital Paul Brousse et de Gustave Roussy. eBio est labellisée par IBISA/Reseau National des Plateformes Bioinformatiques (RENABI) et membre de l’Alliance des Plateformes Bioinformatiques d’Ile de France (APLIBIO).&nbsp; Le site principal de eBio est localisé au bat 400 de l'Université Paris–Sud et intégré à l'I2BC (UMR9198, Gif sur Yvette).</p>\r\n\r\n<p>Les missions d’eBio comprennent : (1) le soutien bioinformatique aux projets de recherche, (2) la mise à disposition de moyens de calcul et stockage, (3) le développement et la maintenance de serveurs web de bioinformatique et bases de données de génomique. La plateforme a accompagné ou hébergé plus de 50 projets de recherche depuis début 2010.</p>\r\n\r\n<p>Les principaux domaines d’expertise de la plateforme sont les suivants :</p>\r\n\r\n<p>-&nbsp;&nbsp; &nbsp;L’analyse de données RNA-seq, notamment la detection de transcrits non codants, transcrits alternatifs, l’analyse d’expression différentielle, le ribosome profiling<br />\r\n-&nbsp;&nbsp; &nbsp;L’analyse des structures d’ARN (alignement, structure secondaire)<br />\r\n-&nbsp;&nbsp; &nbsp;L’intégration de logiciels et de workflows d’analyse sous Galaxy<br />\r\n-&nbsp;&nbsp; &nbsp;L’assemblage des génomes de bactéries/champignons, la détection de variants<br />\r\n-&nbsp;&nbsp; &nbsp;La phylogénie moléculaire et l’analyse fonctionnelle par profil phylogénétique<br />\r\n-&nbsp;&nbsp; &nbsp;L’annotation des génomes de bactéries, archées et champignons (séquences CRISPR, terminateurs de transcription, ARN régulateurs, minisatellites)<br />\r\n-&nbsp;&nbsp; &nbsp;Le calcul distribué et sur cloud (déploiement de services d’analyse sur cluster et cloud académique)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na7de5556df4d47d8979d945cd1fc8840",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "EBIO"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ebio.u-psud.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0126b208f6354b389f782d09f25be321",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La modalité « service » consiste en une prise en charge totale par la plate-forme de la réalisation de l'analyse bio-informatique. Au minimum deux rencontres sont prévues avec le demandeur, la première afin d'appréhender la question posée et les données pour lesquelles il demande une expertise, et la dernière pour un rendu du travail réalisé par la plate-forme (après remise d'un document explicatif de la démarche suivie et des résultats obtenus). Si le demandeur ne fait pas partie d'une unité mixte avec l'Université Paris-Sud, les analyses sont payées selon un forfait jour/homme.</p>\r\n\r\n<p>Les projets réalisés « en collaboration » nécessitent soit une participation active à l'analyse des données du biologiste soit la mise à disposition d'un CDD ou d'un stagiaire au sein de la plate-forme et co-encadré par le personnel de la plate-forme.</p>\r\n\r\n<p>La modalité « accès aux ressources » implique que les biologistes lancent eux-mêmes leur analyses sur le cluster de calcul, moyennant éventuellement formation et/ou accompagnements ponctuels assurés par le personnel de la plate-forme.</p>\r\n\r\n<p>Une réflexion est en cours concernant les accès moyennant finances de personnes sans rattachement à l'université Paris-Sud afin de leur proposer une offre contrainte en ressources et dans le temps.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "3 types d'appui : service, en collaboration et accès aux ressources de calcul"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>Dépôt de demande de soutien sur <a href=\"http://ebio.u-psud.fr/eBIO_services.php\">http://ebio.u-psud.fr/eBIO_services.php</a></p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N059299d420ee4b72a51d6aefb4ac00e3",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Orsay"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "15 rue George Clémenceau"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9482c9200de0455eb4e28921b6499811",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "220"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2c2104b90d964fdf896033e079bd6ac4",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Technologie ZFS, NFS.</li>\r\n\t<li>Samba 2 hôtes de virtualisation KVM.</li>\r\n\t<li>DB : PosgreSQL, MySQL, ZODB Galaxy.</li>\r\n\t<li>Autres : LDAP, Salt, subvesion, trac, dhcp, FAI, tftp, ftp, zenoss, varnish.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6666b6db3c3b419c91c0b59c82f1858e",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  }
+]

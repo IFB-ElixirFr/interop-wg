@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/micado",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MICADo"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T14:13:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Logiciel pour la détection de mutation dans des données de séquençage PacBio issues du cancer.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:28:07+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Neb2e4a000f9d43899bde624f784ccd35"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/cbib/MICADo"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neb2e4a000f9d43899bde624f784ccd35",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Public.</p>\r\n"
+      }
+    ]
+  }
+]

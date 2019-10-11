@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/cesgo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "CesGO"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T11:42:53+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>CeSGO offers a complete Virtual Research Environment (VRE) for Life Sciences. This VRE is based on a collaborative environment built on Wordpress and BuddyPress. It associated to the data sharing services of Owncloud and the SEEK platform.</p>\r\n\r\n<p>Main site : <a href=\"https://www.cesgo.org/en/\">https://www.cesgo.org/en/</a></p>\r\n\r\n<p>Collaborative platform : <a href=\"https://www.cesgo.org/collaboration\">https://www.cesgo.org/collaboration</a></p>\r\n\r\n<p>Data management platform : <a href=\"https://data-access.cesgo.org\">https://data-access.cesgo.org</a></p>\r\n\r\n<p>Scientific data platform : <a href=\"https://seek.cesgo.org/\">https://seek.cesgo.org/</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><br />\r\n&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T11:43:06+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.cesgo.org"
+      }
+    ]
+  }
+]

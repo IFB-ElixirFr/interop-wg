@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/lebibi",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "154145"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "leBiBI"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-27T16:08:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Online system (associated with various sequence databases) devoted to bacterial taxonomic identification.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T16:37:18+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd1bb631657eb4a4e8940ade166dca5b6"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "94"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://umr5558-bibiserv.univ-lyon1.fr/lebibi/lebibi.cgi"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd1bb631657eb4a4e8940ade166dca5b6",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free online access.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/ebai18-ecole-bioinformatique-aviesan-ifb-initiation-au-traitement-des-données-génomique",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Rscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-11T09:59:23+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-12T14:41:33+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "EBAI18 - Ecole de Bioinformatique Aviesan-IFB - Initiation au traitement des données de génomique obtenues par séquençage à haut débit"
+      }
+    ]
+  }
+]

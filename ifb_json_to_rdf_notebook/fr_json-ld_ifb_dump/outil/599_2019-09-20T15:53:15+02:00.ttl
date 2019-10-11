@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/tango",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Tango"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:33:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Outil pour l'assignation taxonomique (métagénomique).</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:17:53+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N4d00a3caba1347dcbacd8482a96bd530"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "9"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://sourceforge.net/projects/taxoassignment/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d00a3caba1347dcbacd8482a96bd530",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Public</p>\r\n"
+      }
+    ]
+  }
+]

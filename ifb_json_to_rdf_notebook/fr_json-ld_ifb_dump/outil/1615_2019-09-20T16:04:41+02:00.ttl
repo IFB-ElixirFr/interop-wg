@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/wisescaffolder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "WiseScaffolder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T22:57:15+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>WiseScaffolder:</strong>&nbsp;genome scaffolding of pre-assembled contigs using mate-pair data. [<a href=\"http://abims.sb-roscoff.fr/wisescaffolder\" style=\"color: rgb(59, 59, 59); font-weight: bold; text-decoration: none;\" target=\"_blank\">webpage</a>]</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5b14bd13086e440089b338167f973b69"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b14bd13086e440089b338167f973b69",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://webtools.sb-roscoff.fr/\" style=\"color: rgb(59, 59, 59); font-weight: bold; text-decoration: none; font-family: Georgia, sans-serif, 'Times New Roman', Times, serif; font-size: 15px;\">http://webtools.sb-roscoff.fr</a>&nbsp;: Galaxy instance that host tools developped at the Station Biologique de Roscoff in collaboration with ABiMS&nbsp;(no account)</p>\r\n"
+      }
+    ]
+  }
+]

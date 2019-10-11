@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/absynte",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "940"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "373"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Absynte "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:37:06+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Web service designed to display local syntenies in completely sequenced prokaryotic chromosomes. FR</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T15:10:18+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N9b45babb85e04878a42511fa6473a852"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "24"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://archaea.u-psud.fr/absynte"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9b45babb85e04878a42511fa6473a852",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>web server + web service, http://archaea.u-psud.fr/absynte Gratuit pour u-psud.</p>\r\n"
+      }
+    ]
+  }
+]

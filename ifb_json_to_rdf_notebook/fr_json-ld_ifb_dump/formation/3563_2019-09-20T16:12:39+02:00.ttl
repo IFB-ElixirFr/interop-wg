@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/initiation-ngs-workflow-managers-developed-within-south-green-platform-galaxy-and-toggle",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Centre IRD, Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-17T23:48:47+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-18T10:32:09+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Initiation to NGS Workflow Managers developed within the South Green Platform: Galaxy and TOGGLe"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://southgreenplatform.github.io/trainings//galaxyToggle/"
+      }
+    ]
+  }
+]

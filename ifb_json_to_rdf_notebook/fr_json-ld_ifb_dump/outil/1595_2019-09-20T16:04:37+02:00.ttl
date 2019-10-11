@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/activcollector",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ActivCollector "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T22:24:13+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Estimation tools design of energy expenditure and energy intake.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T16:26:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N474046da83354218b0e8607cad64f911"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://activcollector.clermont.inra.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N474046da83354218b0e8607cad64f911",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

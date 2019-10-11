@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/biotechnologies-et-bioinformatique-appliquées-aux-maladies-rares",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-04-11T12:06:11+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Module optionnel du DIU Maladies rares : de la recherche au traitement.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T09:53:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Biotechnologies et bioinformatique appliquées aux maladies rares"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://fondation-maladiesrares.org/actualite/diu-maladies-rares-de-la-recherche-au-traitement"
+      }
+    ]
+  }
+]

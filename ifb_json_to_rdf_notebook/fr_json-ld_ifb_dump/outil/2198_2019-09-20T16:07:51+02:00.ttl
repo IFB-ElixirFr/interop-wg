@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/jvenn",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Jvenn"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-19T15:05:22+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>A javascript plugin for venn diagrams.</p>\r\n\r\n<p>A demo is available here: <a href=\"http://bioinfo.genotoul.fr/jvenn/example.html\">http://bioinfo.genotoul.fr/jvenn/example.html</a></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6f2a60b9c3694353b7e36ba4cfab5a9d"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://jvenn.toulouse.inra.fr/app/index.html"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1124"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f2a60b9c3694353b7e36ba4cfab5a9d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>The software package is available under the GNU General Public License (GPL) and can be downloaded from the gitlab forgemia : https://forgemia.inra.fr/genotoul-bioinfo/jvenn.</p>\r\n"
+      }
+    ]
+  }
+]

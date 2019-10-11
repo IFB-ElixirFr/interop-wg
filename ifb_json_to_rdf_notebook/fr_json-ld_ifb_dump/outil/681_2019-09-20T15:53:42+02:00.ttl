@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/clustsee",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Clust&See"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:16:25+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Clust&amp;See est un plug-in Cytoscape dans lequel plusieurs algorithmes de partitionnement de graphes et OCG sont implémentés. Il permet d'identifier, de visualier et d'analyser les classes de sommets obtenus. La partition obtenue est visualisée sour la forme d'un graphe quotient. Cet outil permet d'étudier en détail les liens entre sommets, arêtes, classes et partitions.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T11:00:08+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N359ccb92e2e64ef7aa039218216ac6e0"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "28"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://apps.cytoscape.org/apps/clustnsee"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1284"
+      }
+    ]
+  },
+  {
+    "@id": "_:N359ccb92e2e64ef7aa039218216ac6e0",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Libre sur&nbsp;<a href=\"http://tagc.univ-mrs.fr/tagc/index.php/clustnsee\" style=\"box-sizing: border-box; color: rgb(69, 169, 58); text-decoration: none; margin: 0px; padding: 0px; border: 0px; font-size: 16px; letter-spacing: 0.32px; vertical-align: baseline; font-family: roboto-regular, Helvetica, Arial, sans-serif;\">http://tagc.univ-mrs.fr/tagc/index.php/clustnsee</a>&nbsp;et sur l'App store de Cytoscape <a href=\"http://apps.cytoscape.org/apps/clustnsee\">http://apps.cytoscape.org/apps/clustnsee</a>.</p>\r\n"
+      }
+    ]
+  }
+]

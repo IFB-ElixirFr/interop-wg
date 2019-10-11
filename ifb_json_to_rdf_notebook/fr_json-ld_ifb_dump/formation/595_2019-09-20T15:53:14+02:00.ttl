@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/m2-«-biostatistique-bioinformatique-biomathématique-en-santé-b3s-»",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:13:53+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-01-25T13:56:01+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "M2 « BioStatistique, BioInformatique, BioMathématique en Santé (B3S) » "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  }
+]

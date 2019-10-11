@@ -1,0 +1,101 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/ABiMS> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<ul>\r
+	<li>2 serveurs BDD (MysQL + PostreSQL)</li>\r
+	<li>1 serveur GPU</li>\r
+	<li>1 serveur R</li>\r
+	<li>10 serveurs WEB</li>\r
+	<li>3 serveurs Galaxy pour la production (NGS, Metabolomics et Public)</li>\r
+	<li>1 serveur de développement Galaxy</li>\r
+	<li>60&nbsp;nœuds de calculs</li>\r
+	<li>1 serveur maître</li>\r
+	<li>4 serveurs NFS</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "2000" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "2000.00" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>ABiMS works with research team&nbsp;within the framework of scientific collaboration formalised as project.</p>\r
+\r
+<p>ABiMS provide differents&nbsp;services :</p>\r
+\r
+<ul>\r
+	<li>A scientific computing environment (<strong>Infrastructure As A Service - IAAS</strong>)</li>\r
+	<li><strong>Advice and expertise</strong>&nbsp;in 'omic data analysis</li>\r
+	<li><strong>Software engineering</strong>&nbsp;(information system, databases, ...)</li>\r
+	<li>User&nbsp;<strong>support</strong>&nbsp;and<strong>&nbsp;training</strong></li>\r
+</ul>\r
+""" ] ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>ABiMS proposes bioinformtics services :</p>\r
+\r
+<p>- infrastructure : cluster, sotrage, tools</p>\r
+\r
+<p>- training : Linux, R langage, Galaxy....</p>\r
+\r
+<p>- bio-analysis : NGS, génomic, transcriptomic, métagénomic, genome annotation...</p>\r
+\r
+<p>- development of databases and offers an infrastructure for the scientific calculation. The offer of bio-analysis is particularly developed.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-20T19:51:26+02:00" ;
+    dc:modified "2019-03-19T10:18:27+01:00" ;
+    meb:User [ ocds:valueAmount "600" ] ;
+    schema:name "ABiMS" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1614",
+                "1615",
+                "1616",
+                "1626",
+                "539",
+                "540" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Roscoff" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "29680" ;
+            schema:streetAddress "Place Georges Teissier - Station Biologique de Roscoff" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "ABiMS" ;
+            schema:url "http://abims.sb-roscoff.fr/" ] .
+

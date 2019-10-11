@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/bioshadock",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "BioShaDock"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T16:03:10+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>BioShaDock is a bioinformatics-focused Docker registry, which provides a local and fully controlled environment to build and publish bioinformatic software as portable Docker images. It provides a number of improvements over the base Docker registry on authentication and permissions management, that enable its integration in existing bioinformatic infrastructures such as computing platforms. The metadata associated with the registered images are domain-centric, including for instance concepts deﬁned in the EDAM ontology, a shared and structured vocabulary of commonly used terms in bioinformatics. The registry also includes user deﬁned tags to facilitate its discovery, as well as a link to the tool description in the ELIXIR registry if it already exists.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd4465673d7ec4b12a81c5bf03f099737"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "docker-ui.france-bioinformatique.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd4465673d7ec4b12a81c5bf03f099737",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre sur <a href=\"http://docker-ui.france-bioinformatique.fr\" target=\"_blank\">docker-ui.france-bioinformatique.fr</a>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

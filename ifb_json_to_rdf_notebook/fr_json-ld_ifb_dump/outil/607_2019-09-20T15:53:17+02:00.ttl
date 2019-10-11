@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rnabrowse-nouvelle-version",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "4720"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "2250"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "RNAbrowse nouvelle version "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:54:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>35 instances including 10 Sigenae.<br />\r\nTranscriptome analysis based on a de novo assembly of next generation RNA sequences is now performed routinely in many laboratories. The generated results, including contig sequences, quantification figures, functional annotations and variation discovery outputs are usually bulky and quiet diverse. RNAbrowse is an user oriented storage and visualisation environment permitting to explore the data in a top-down manner, going from general graphical views to all possible details. The software package is based on biomart, easy to install and populate with local data.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd03934177f93452ba0b585f028a4d8a7"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "17"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://forgemia.inra.fr/genotoul-bioinfo/ngspipelines"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1982"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd03934177f93452ba0b585f028a4d8a7",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>The software package is available under the GNU General Public License (GPL) and can be downloaded from the gitlab formia : https://forgemia.inra.fr/genotoul-bioinfo/ngspipelines.<br />\r\nAvailable on web sites for users.</p>\r\n"
+      }
+    ]
+  }
+]

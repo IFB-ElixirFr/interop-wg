@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/initiation-r-language",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université de Nantes"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T13:43:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>OBJECTIVES :</p>\r\n\r\n<pre>\r\n* Acquire basic knowledge on the  R language\r\n* Experience the main features of R\r\n* Be autonomous in handling data\r\n* Perform simple statistical analysis and build charts\r\n* Learn how to create functions</pre>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-29T11:58:58+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Initiation to the R language"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.pf-bird.univ-nantes.fr/66223960/0/fiche___pagelibre/&RH=1353428537611"
+      }
+    ]
+  }
+]

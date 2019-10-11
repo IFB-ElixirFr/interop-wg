@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/phylogenyfr-blast-explorer",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "800000"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "100000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Phylogeny.fr/ Blast-Explorer "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T13:57:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Robust Phylogenetic Analysis For The Non-Specialist</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-12T18:00:22+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ned63a2b180be4554a92b6ad2e7091ea1"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2200"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.phylogeny.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ned63a2b180be4554a92b6ad2e7091ea1",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

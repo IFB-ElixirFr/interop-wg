@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/training-synteny-data-visualization-gnpis",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Webinar"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-19T15:48:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:02+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Training: Synteny data visualization into GnpIS"
+      }
+    ]
+  }
+]

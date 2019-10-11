@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-silico-structures-3d-protéines-modélisation-homologie-protéines-homologues",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Jouy en Josas"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-18T22:22:22+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:02+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ": Analyse in silico de structures 3D de protéines. Modélisation par homologie de protéines homologues, sauvage et mutées, arrimage de ligands."
+      }
+    ]
+  }
+]

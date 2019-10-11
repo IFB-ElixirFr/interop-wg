@@ -1,0 +1,223 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/mbi",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nae68c3308c1b468fab7d84b7c75e2bf4"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N8c392573c4f34e06b65d5d79064b9a72"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Ne3d6f6512ef948a6b6c6fe6abb90b894"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N1ed14024ac504f4eaae4abbb92b344cf"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nc6032c6a887f41d186f581b5126a42d5"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N7cf7a7c16cae4b50a6fe70707ab930b2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:38:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-14T15:26:10+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N787518a5558c42ae9ec6169ca9111d5b"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MBI"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nd3f5496f6ce64cbb96c6a92e6e4cfc14"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nb25dd0b9645e4857a3175fd69445a388"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nae7b2515f0514afcbf32dab1e88346e8"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N51cd78e72c0848169f717b7233b4c144"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne3d6f6512ef948a6b6c6fe6abb90b894",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "80.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N787518a5558c42ae9ec6169ca9111d5b",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "25"
+      }
+    ]
+  },
+  {
+    "@id": "_:N51cd78e72c0848169f717b7233b4c144",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MBI: Modelling Biomolecules and their Interactions"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://mbi.loria.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb25dd0b9645e4857a3175fd69445a388",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "134"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd3f5496f6ce64cbb96c6a92e6e4cfc14",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "535"
+      },
+      {
+        "@value": "536"
+      },
+      {
+        "@value": "537"
+      },
+      {
+        "@value": "2183"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nae7b2515f0514afcbf32dab1e88346e8",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villers-lès-Nancy"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "54600"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "615 Rue du Jardin Botanique"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nae68c3308c1b468fab7d84b7c75e2bf4",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Cluster : 300 CPU cores (2.4 GHz Intel Xeon) + 8 GPU (Nvidia Tesla K40M)</p>\r\n\r\n<p>Databases : MySQL, PostgreSQL</p>\r\n\r\n<p>Tools : NAMD, Autodock, Gold, Hex, Parafit, KBDOCK, Kpax, ECDomainMiner, Coron, Knime</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7cf7a7c16cae4b50a6fe70707ab930b2",
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Principalement sur la base des comptes d'utilisateurs locaux. "
+      }
+    ]
+  },
+  {
+    "@id": "_:N8c392573c4f34e06b65d5d79064b9a72",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "300"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc6032c6a887f41d186f581b5126a42d5",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Plateforme expérimentale de recherche dépendant de Inria Nancy Grand-Est, la plateforme MBI s’est constituée autour de deux domaines principaux d’expertise.</p>\r\n\r\n<p>1. La modélisation 3D des protéines et de leurs interactions, avec en particulier la simulation de dynamiques moléculaires (logiciel NAMD), et la mise à disposition de programmes ultra-rapides de docking rigide et de comparaison de formes, exécutés sur des clusters mixtes (CPU et GPU).</p>\r\n\r\n<p>2. L’extraction de connaissances à partir de données biologiques ou biomédicales, avec en particulier la mise en œuvre de méthodes de fouille de données symboliques et/ou relationnelles, en utilisant une suite logicielle construite dans l’équipe Orpailleur autour de la recherche de motifs fréquents et de l’analyse formelle de concept (suite CORON), ainsi que des workflows d’apprentissage (à partir de la plateforme KNIME).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1ed14024ac504f4eaae4abbb92b344cf",
+    "http://schema.org/identifier": [
+      {
+        "@value": "538"
+      }
+    ]
+  }
+]

@@ -1,0 +1,169 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/isfinder",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Ne1b3fe50a43d41398cd304fc18804773"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Ne9bcde3d7a35491da9559483b6dfb20f"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Na6976ed2923a4429a8439e80c3bb07ca"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nf630e62821b44208a3a26c68ca69120d"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:21:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:15:21+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nfd35a2bc4dba4690b1ed72dda77360f6"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ISfinder"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Na27572ec9e5f4e628819ad20eab1ea77"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N4b3e8c0f56d94850a26165c5317b119c"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Ne50c64b8a85540bab09de5dd12a89c1f"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfd35a2bc4dba4690b1ed72dda77360f6",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "14878"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na27572ec9e5f4e628819ad20eab1ea77",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "628"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf630e62821b44208a3a26c68ca69120d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ISfinder est le Centre International de Référence des Séquences d'Insertion (IS) Procaryotes, en co-tutelle entre le LMGM et l’Unité de Microbiologie Appliquée (Université Catholique de Louvain, Belgique). Les IS sont des éléments génétiques mobiles (EGM) de petite taille qui codent essentiellement pour les fonctions nécessaires à leur transposition. Les transposases (enzymes qui assurent la transposition des IS) sont de loin les protéines les plus représentées dans les génomes. ISfinder est une plateforme d’annotation des IS bactériennes, développée dans un souhait de contribuer à la compréhension de la diversité des éléments génétiques mobiles et de leur impact sur leurs génomes hôtes. ISfinder joue de nombreux rôles parmi lesquels : répertorier les IS dans les banques de données publiques (et dans certains cas, privées) ; analyser les génomes bactériens pour leur contenu en IS ; maintenir une nomenclature cohérente et distribuer les noms officiels pour la communauté ; établir une phylogénie au fur et au mesure de l’identification de nouvelles séquences ; et, fournir des informations sur les IS. La base assure aussi une classification des différents IS en famille en fonction de la nature de leur transposase, de leur organisation génétique, de leurs extrémités et de leur spécificité d’insertion. En fournissant une vue globale et détaillée des différents types d’IS, ISfinder alimente également les études de nouveaux groupes d’EGM. Outre une base de données (www-is.biotoul.fr), le site met à disposition de la communauté scientifique deux outils spécifiques : ISbrowser, qui permet de visualiser la distribution des IS complets et partiels dans des génomes procaryotes annotés de façon experte par nos soins et ISsaga, qui est un outil d’annotation semi-automatique des IS dans les génomes procaryotes. Nous sommes parmi les experts mondiaux reconnus dans le domaine des éléments transposables procaryotes. Nous possédons une double spécificité : une compréhension de la diversité de structure et d’organisation des TE (y compris les IS) ainsi qu’une connaissance de la mécanistique des différents processus de la transposition. Nous avons apporté des contributions capitales dans les deux domaines. Ces deux spécificités sont très complémentaires et s’avèrent essentielles pour la maintenance et le développement du site ISfinder.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne50c64b8a85540bab09de5dd12a89c1f",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ISfinder"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www-is.biotoul.fr//"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne1b3fe50a43d41398cd304fc18804773",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>2 serveurs physiques</li>\r\n\t<li>3 serveurs virtuels de type LAMP (linux, apache, Mysql, php) Stockage de type iSCSI.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne9bcde3d7a35491da9559483b6dfb20f",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "1.20"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na6976ed2923a4429a8439e80c3bb07ca",
+    "http://schema.org/identifier": [
+      {
+        "@value": "629"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4b3e8c0f56d94850a26165c5317b119c",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Toulouse"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31062"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "118 Route de Narbonne"
+      }
+    ]
+  }
+]

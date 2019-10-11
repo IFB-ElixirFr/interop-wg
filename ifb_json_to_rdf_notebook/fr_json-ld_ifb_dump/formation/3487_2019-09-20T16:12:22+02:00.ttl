@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/manual-curation-transposable-element-annotation",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "URGI ­ INRA,  Bat 18 ­ Route de Saint­Cyr ­ RD10, 78026 Versailles Cedex"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-05T11:50:19+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-11T09:16:45+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Manual curation of Transposable element annotation"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Platform/Training/Manual-curation-of-Transposable-element-annotation"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/biomaj2galaxy",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "BioMAJ2Galaxy"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T14:54:20+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>BioMAJ2Galaxy makes it possible to configure BioMAJ to automatically download some reference data, to then convert them and/or index it in various formats, and then make this data available in a Galaxy server using data libraries or data managers.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N0e08107675ed4245a2ab3ea94f3e80c2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/genouest/biomaj2galaxy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0e08107675ed4245a2ab3ea94f3e80c2",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Téléchargement libre : <a href=\"https://github.com/genouest/biomaj2galaxy\">https://github.com/genouest/biomaj2galaxy</a></p>\r\n"
+      }
+    ]
+  }
+]

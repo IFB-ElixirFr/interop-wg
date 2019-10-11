@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/wginr",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "wginr"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:03:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>WGInR ('Whole Genomes In R') are C and R tools from the Lyon Cancer Bioinformatics Facility to manipulate Whole Genomes in R.</p>\r\n\r\n<p>This includes the&nbsp;asdog&nbsp;package for Copy Number Analysis of tumour with paired normal WGS data.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:06:17+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/aviari/wginr"
+      }
+    ]
+  }
+]

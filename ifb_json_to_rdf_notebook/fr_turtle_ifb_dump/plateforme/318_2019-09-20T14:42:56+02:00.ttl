@@ -1,0 +1,57 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/isfinder> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<ul>\r
+	<li>2 serveurs physiques</li>\r
+	<li>3 serveurs virtuels de type LAMP (linux, apache, Mysql, php) Stockage de type iSCSI.</li>\r
+</ul>\r
+""" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "1.20" ] ;
+    dbpedia-owl:Database [ schema:identifier "629" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>ISfinder est le Centre International de Référence des Séquences d'Insertion (IS) Procaryotes, en co-tutelle entre le LMGM et l’Unité de Microbiologie Appliquée (Université Catholique de Louvain, Belgique). Les IS sont des éléments génétiques mobiles (EGM) de petite taille qui codent essentiellement pour les fonctions nécessaires à leur transposition. Les transposases (enzymes qui assurent la transposition des IS) sont de loin les protéines les plus représentées dans les génomes. ISfinder est une plateforme d’annotation des IS bactériennes, développée dans un souhait de contribuer à la compréhension de la diversité des éléments génétiques mobiles et de leur impact sur leurs génomes hôtes. ISfinder joue de nombreux rôles parmi lesquels : répertorier les IS dans les banques de données publiques (et dans certains cas, privées) ; analyser les génomes bactériens pour leur contenu en IS ; maintenir une nomenclature cohérente et distribuer les noms officiels pour la communauté ; établir une phylogénie au fur et au mesure de l’identification de nouvelles séquences ; et, fournir des informations sur les IS. La base assure aussi une classification des différents IS en famille en fonction de la nature de leur transposase, de leur organisation génétique, de leurs extrémités et de leur spécificité d’insertion. En fournissant une vue globale et détaillée des différents types d’IS, ISfinder alimente également les études de nouveaux groupes d’EGM. Outre une base de données (www-is.biotoul.fr), le site met à disposition de la communauté scientifique deux outils spécifiques : ISbrowser, qui permet de visualiser la distribution des IS complets et partiels dans des génomes procaryotes annotés de façon experte par nos soins et ISsaga, qui est un outil d’annotation semi-automatique des IS dans les génomes procaryotes. Nous sommes parmi les experts mondiaux reconnus dans le domaine des éléments transposables procaryotes. Nous possédons une double spécificité : une compréhension de la diversité de structure et d’organisation des TE (y compris les IS) ainsi qu’une connaissance de la mécanistique des différents processus de la transposition. Nous avons apporté des contributions capitales dans les deux domaines. Ces deux spécificités sont très complémentaires et s’avèrent essentielles pour la maintenance et le développement du site ISfinder.</p>\r
+""" ] ;
+    dc:created "2015-07-24T12:21:18+02:00" ;
+    dc:modified "2019-03-06T16:15:21+01:00" ;
+    meb:User [ ocds:valueAmount "14878" ] ;
+    schema:name "ISfinder" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "628" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Toulouse" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "31062" ;
+            schema:streetAddress "118 Route de Narbonne" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "ISfinder" ;
+            schema:url "https://www-is.biotoul.fr//" ] .
+

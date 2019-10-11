@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/dropnet",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "72000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "DroPNet "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:58:10+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Drosophila Protein Network allows the generation and analysis of protein-protein interaction (PPI) networks. This platform will help integrating user experimental data with various available PPI databases.</p>\r\n\r\n<p><br />\r\nPublication :<br />\r\nY. Renaud, A. Baillif, J-B. Perez, M. Agier, E. Mephu Nguifo, V. Mirouse (2012) DroPNet: a web portal for integrated analysis of Drosophila protein-protein interaction networks. &nbsp;Nucleic Acids Research, 40(Web Server issue):W134-9, Oxford.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T16:58:35+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N77e2bf25dd8243dba3bb01b4882c8506"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://dropnet.isima.fr/site/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N77e2bf25dd8243dba3bb01b4882c8506",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://dropnet.isima.fr/site/</p>\r\n"
+      }
+    ]
+  }
+]

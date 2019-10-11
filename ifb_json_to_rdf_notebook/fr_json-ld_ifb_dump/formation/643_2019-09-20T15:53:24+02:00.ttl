@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/master-biostatistiques",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T12:58:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Deux objectifs sont visés par la formation. Le premier est de former des chercheurs ou enseignants-chercheurs dans le domaine de la statistique théorique ou appliquée. Le deuxième objectif est de former des statisticiens de haut niveau pour des organismes de recherche ou des entreprises.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:20+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Master Biostatistiques"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rhom",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "R'HOM"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:47:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>R'HOM (Recherche de régions HOMogènes dans les séquences d'ADN) est un logiciel dédié à l'utilisation de modèles de chaînes de Markov cachées pour la segmentation de séquences d'ADN en régions homogènes. R'HOM permet d'estimer un modèle de la composition des séquences d'ADN plus réaliste qu'un modèle de chaîne de Markov homogène et ensuite de segmenter les séquences sous ce modèle. Il a été utilisé notamment pour la recherche de transferts horizontaux chez B. subtilis et pour l'estimation de modèles destinés au calcul de la significativité de comptages de mots. R'HOM a été développé en coopération avec le Laboratoire Statistique et Génome d'Evry.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6ab4dccbe9a949dc93e40c9516dd5a45"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6ab4dccbe9a949dc93e40c9516dd5a45",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://genome.jouy.inra.fr/ssb/rhom</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/galaxy-mpagenomics",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy - MPAgenomics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-02-04T10:37:30+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Intégration du package MPAgenomics à Galaxy.<br />\r\nCréation et déploiement d'une instance d'une instance publique de Galaxy</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-16T14:19:39+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N4d3ce8051e2e4d2fa1fa56894d81707e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d3ce8051e2e4d2fa1fa56894d81707e",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Galaxy MPAgenomics est accessible via le <a href=\"http://enhttps://cloud.france-bioinformatique.fr/accounts/login/\">cloud</a> de l'IFB Core.</p>\r\n"
+      }
+    ]
+  }
+]

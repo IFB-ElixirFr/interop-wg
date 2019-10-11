@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/biomaj",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "BioMAJ "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T14:50:41+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<p>BioMAJ (BIOlogie Mise A Jour) is a workflow engine dedicated to data synchronization and processing.</p>\r\n\r\n<p>The software automates the update cycle and the supervision of the locally mirrored databank repository.</p>\r\n\r\n<p>The software is free and released under AGPL v3 based licence.</p>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-10-01T14:41:07+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N00e2116a554548998157a74db6e5bb3e"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "11"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://biomaj.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N00e2116a554548998157a74db6e5bb3e",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Téléchargement libre : <a href=\"https://github.com/genouest/biomaj\">https://github.com/genouest/biomaj</a></p>\r\n"
+      }
+    ]
+  }
+]

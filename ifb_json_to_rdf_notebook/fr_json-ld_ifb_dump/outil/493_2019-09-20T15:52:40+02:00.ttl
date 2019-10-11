@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/anovarray",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "AnovArray"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:45:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>AnovArray est un ensemble de macros SAS pour l'analyse de données expressionnelles de type microarray et macroarray. Il permet la quantification des variations biologiques et technologiques et la détection de gènes différentiels entre plusieurs conditions. Les méthodes statistiques utilisées sont l'analyse de variance (ANOVA) et la méthode FDR (False Discovery Rate) pour le calcul de probabilités ajustées dans le cadre de test d'hypothèses multiples.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:00+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5e15f6bde46146379a82c8c1cfe69c98"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5e15f6bde46146379a82c8c1cfe69c98",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://migale.jouy.inra.fr/?q=anovarray</p>\r\n"
+      }
+    ]
+  }
+]

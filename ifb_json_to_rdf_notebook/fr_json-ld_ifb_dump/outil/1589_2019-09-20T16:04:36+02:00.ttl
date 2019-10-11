@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/ant-motifs",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Ant-Motifs"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:54:52+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Motifs extraction and supervised classification for proteins structure.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T16:54:20+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N32af128aa4094818979b1e6bcdea0960"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.isima.fr/~mephu/FILES/AntMotif/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N32af128aa4094818979b1e6bcdea0960",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://www.isima.fr/~mephu/FILES/AntMotif/</p>\r\n"
+      }
+    ]
+  }
+]

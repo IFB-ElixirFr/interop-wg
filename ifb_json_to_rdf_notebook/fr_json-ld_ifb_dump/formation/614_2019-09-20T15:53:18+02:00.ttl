@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/cluster",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:01:45+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session is designed to help you deal with the platform compute cluster and data banks. You will launch your first processing batch on the cluster and will learn how to track and manage them. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T11:10:07+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Cluster"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/cluster-2/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rnacraft",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "rnacraft"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:05:12+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Quantification of cell activity within a dataset through gene expression</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:06:17+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/EmilieT/rnacraft"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/syntview",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SynTView"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T18:33:01+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SynTView is a comparative and interactive viewer for microbial genomes, designed to run as either a web-based tool (Flash technology) or a desktop application (AIR environment). The basis of the program is a generic genome browser with sub-maps holding information about genomic objects (annotations). The software is characterised by the presentation of syntenic organisations of microbial genomes and the visualisation of polymorphism data (typically Single Nucleotide Polymorphisms — SNPs) along these genomes; these features are accessible to the user in an integrated way. A variety of specialised views are available and are all dynamically inter-connected (including linear and circular multi-genome representations, dot plots, phylogenetic profiles, SNP density maps, and more).</p>\r\n\r\n<p>Documentation, tutorials and demonstration sites are available at the URL:&nbsp;<a href=\"http://genopole.pasteur.fr/SynTView\">http://genopole.pasteur.fr/SynTView</a></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:48+01:00"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/phylgrid",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhylGrid"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:45:09+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Distributed software for selecting regular and explorative oligonucleotide probes at large scale using a computing grid. This software can be used in various applications including in phylogenetic microarray experiments.</p>\r\n\r\n<p><br />\r\n&nbsp;&nbsp; &nbsp;Publications :<br />\r\n&nbsp;&nbsp; &nbsp;Jaziri, F., Missaoui, M., Cipière, S., Peyret, P. and Hill, D.R.C (2011) Large Scale Parallelization Method of 16S rRNA Probe Design Algorithm on Distributed Architecture: Application to Grid Computing. Proceedings of the IEEE International Conference on Informatics and Computational Intelligence ICI2011, Bandung, Indonesia, 2011, 35-40.<br />\r\n&nbsp;&nbsp; &nbsp;Jaziri, F., Peyretaillade, E., Missaoui, M., Parisot, N., Cipière, S., Denonfoux, J., Mahul, A., Peyret, P. and Hill, DRC (2014) Large scale explorative oligonucleotide probe selection for thousands of genetic groups on a computing grid: application to phylogenetic probe design using a curated small subunit ribosomal RNA gene database. Scientific World Journal, 2014: 9p.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:52+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N61bff9d10cc04f3dbbde8bc6c08c345f"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N61bff9d10cc04f3dbbde8bc6c08c345f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

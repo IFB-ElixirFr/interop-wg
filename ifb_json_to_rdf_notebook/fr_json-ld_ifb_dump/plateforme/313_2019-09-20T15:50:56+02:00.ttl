@@ -1,0 +1,193 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/prabi-amsb",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N897df8d10b5a421b9a12c16c1671b165"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N4ff113b8f07b492db95103d56332cd4a"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nd382800b18e24b91b4871af0eadfc779"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N31c1572ba2f64887809f43b1d7070e16"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N0be1a76bfb3a497a8d9e7a79cd998f52"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:46:44+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-20T09:59:59+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Nc5f08b63189646118c1468c096178ac7"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N82ff2ced63154baa8fc08a9f53ef9811"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-AMSB"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N5424562e0a5c420ab0f22004e9cb9668"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N63b038b7fc9041ad865d773e2660d963"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N6d4e65ed0e0b4ead81a49ea5346d2e31"
+      }
+    ]
+  },
+  {
+    "@id": "_:N31c1572ba2f64887809f43b1d7070e16",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Les domaines de compétences du PRABI-AMSB comprennent la phylogénie moléculaire, les statistiques, l’écologie, la virologie et la microbiologie ainsi que l’analyse de données biomédicales. Par ailleurs les méthodologies utilisées sont celles de la génomique, la transcriptomique, la métagénomique/métatranscriptomique, ainsi que la biologie des systèmes.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N897df8d10b5a421b9a12c16c1671b165",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>L’infrastructure informatique de la composante PRABI-AMSB est commune avec celle de la composante PRABI-Doua.&nbsp;</p>\r\n\r\n<ul>\r\n\t<li>un serveur NFS</li>\r\n\t<li>un serveur postgreSQL</li>\r\n\t<li>quatre serveurs pour le Web dont un pour Galaxy</li>\r\n\t<li>quatre serveurs de machines virtuelles.</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0be1a76bfb3a497a8d9e7a79cd998f52",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Prestations de services facturées en termes de mois ingénieur. La tarification est validée chaque année par le Conseil d’Administration de l’UCBL. Pour 2014, les tarifs étaient de 300 €/jour pour les académiques et 600 €/jour pour un partenaire privé</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc5f08b63189646118c1468c096178ac7",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4ff113b8f07b492db95103d56332cd4a",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1032"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6d4e65ed0e0b4ead81a49ea5346d2e31",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-AMSB"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.prabi.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5424562e0a5c420ab0f22004e9cb9668",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N63b038b7fc9041ad865d773e2660d963",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Université Claude Bernard – Lyon 1"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69622"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "43 boulevard du 11 Novembre 1918"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd382800b18e24b91b4871af0eadfc779",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "215.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N82ff2ced63154baa8fc08a9f53ef9811",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "190000"
+      }
+    ]
+  }
+]

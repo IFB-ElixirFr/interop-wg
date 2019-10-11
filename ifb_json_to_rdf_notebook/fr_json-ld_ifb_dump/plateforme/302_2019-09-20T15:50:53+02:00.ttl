@@ -1,0 +1,223 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/igr",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N488516ed46e148e9a23ddf0ab1f19b21"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N41b910b397464739b56142235f15fc1f"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Naa4b89c05adf422fbe6371158e401ca2"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nab8ec1cf000d47548c13e2b446adae14"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N13255081de5143e68d142027734c3c67"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:28:57+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-04T17:50:11+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N89cc832a1630457cbb0ab0db4ee22027"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N62515b3c02bb4d5db95048caa139da5c"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IGR"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nc463c0171aec4876a75f59c89bdef2d2"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Ne59b8141f9054de8a80e827a56347c57"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N45c6ff03c90b49358d526dc647f8e8dd"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N2966b76e714743d09deb85ffcac48a56"
+      }
+    ]
+  },
+  {
+    "@id": "_:N45c6ff03c90b49358d526dc647f8e8dd",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villejuif"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "UMS INSERM 23/CNRS 3655 AMMICA"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "94800"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "114 rue Edouard Vaillant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N89cc832a1630457cbb0ab0db4ee22027",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "58"
+      }
+    ]
+  },
+  {
+    "@id": "_:N41b910b397464739b56142235f15fc1f",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "450"
+      }
+    ]
+  },
+  {
+    "@id": "_:N62515b3c02bb4d5db95048caa139da5c",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "25"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naa4b89c05adf422fbe6371158e401ca2",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "420.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne59b8141f9054de8a80e827a56347c57",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:N488516ed46e148e9a23ddf0ab1f19b21",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>- Cluster de calcul dédié à l’analyse de données de séquencage<br />\r\n- Serveur Galaxy<br />\r\n- Serveur d’applications</p>\r\n\r\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Shiny<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Redmine<br />\r\n- Serveur dédié à l’analyse de données microarray</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nab8ec1cf000d47548c13e2b446adae14",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>● Bioanalyses<br />\r\nConception, définition de design expérimentaux en génomique (microarrays, NGS). Analyse de données génomiques (microarray et NGS)<br />\r\n- Microarray :<br />\r\n- Gene Expression (Agilent, Affymetrix)<br />\r\n- CGH array<br />\r\n- microRNA array<br />\r\n- NGS (DNA-seq):<br />\r\n- Détection de SNP (WES, WGS, TS)<br />\r\n- Détection de variants structuraux (LOH, CNV)<br />\r\n- ChipSeq<br />\r\n- NGS (RNA-seq) :<br />\r\n- Analyse différentielle<br />\r\n- recherche de transcrit de fusion<br />\r\n- recherche de splicing alternatif<br />\r\n- detection de SNP par RNA-seq</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>● Conseil / Support<br />\r\nElaboration de cahier des charges pour des projets de recherche à composante \"bioinformatique\" : définition du projet bioinformatique, définition des compétences requises, rédaction de fiche de poste, recrutement de bioinformaticien, estimation du coût global. La plateforme peut se positionner en partenaire du projet ou en prestataire de service.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>● Formations<br />\r\nOrganisation de formations généraliste en interne. Organisation de formations spécifiques, sur demande, dans les locaux des demandeurs (utilisation d’un logiciel, explication de méthodologie bioinformatique, statistiques)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>● R&amp;D<br />\r\nDéveloppement /Maintenance de pipelines d’analyse.<br />\r\nDéveloppement à facon d’outils d’annotation / de visualisation de données NGS Développement de DB de données génomiques<br />\r\nParticipation au developpement de DB en médecine personnalisée</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc463c0171aec4876a75f59c89bdef2d2",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "454"
+      },
+      {
+        "@value": "453"
+      },
+      {
+        "@value": "455"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2966b76e714743d09deb85ffcac48a56",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Gustave Roussy"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://gustaveroussy.fr/fr/content/plateforme-de-bioinformatique-activit%C3%A9s"
+      }
+    ]
+  },
+  {
+    "@id": "_:N13255081de5143e68d142027734c3c67",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>1. Projets en routine :<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 1.1. Périmètre : Interne<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 1.2. Application : bioinformatique clinique<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 1.3. Financement : Gustave Roussy.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>2. Prestations classiques (projets courts) :<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 2.1. Périmètre : National<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 2.2. Applications : Analyses ponctuelles de données génomiques pour un projet ou une cohorte. Développement bioinformatique légers (&lt;3 mois)<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 2.3. Financement : Prestation payantes (facturation) + coauthorship<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 2.4. La modalité « prestation classique » consiste en une prise en charge totale par<br />\r\nla plateforme de la réalisation de l'analyse bioinformatique. Au minimum deux rencontres sont prévues avec le demandeur, la première afin de mettre en place le cahier des charges (appréhender la question posée et les données pour lesquelles il demande une expertise, émission d’un devis), et la dernière pour un rendu du travail réalisé par la plateforme (après remise d'un document explicatif de la démarche suivie et des résultats obtenus).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>3. Collaboration (projets longs).<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 3.1. Périmètre : International<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 3.2. Applications : Demandes conjointes ANR/FRM etc. en tant que partenaire ou sous-traitant<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 3.3. Financement : Projet ANR/FRM/PHRC...<br />\r\n&nbsp;&nbsp;&nbsp;&nbsp; 3.4. Les projets réalisés « en collaboration » nécessitent soit une participation active à l'analyse des données du biologiste soit la mise à disposition d'un CDD ou d'un stagiaire au sein de la plate-forme et co-encadré par le personnel de la plate-forme.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/formation-microscope",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université Evry Paris-Saclay"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T15:38:46+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T15:38:46+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formation MicroScope "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.genoscope.cns.fr/agc/microscope/training"
+      }
+    ]
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/sigenae",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N1d09a100db2f491f95378e7a76915bb0"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Ncc3476910a0440f4a6b1649aa9cfe728"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:23:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-08-29T16:22:22+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "SIGENAE"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N56026986d2414b759803e36a5f05f2ea"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N099e6d400cb84f909e0184ff23914c16"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N3b8c4fd9f0014b81834545a50f9d9185"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N5f94a213c1c544b6bb8f9a8f1ec82cf8"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1d09a100db2f491f95378e7a76915bb0",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Pas d'infrastructure propre : utilisation de genotoul</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b8c4fd9f0014b81834545a50f9d9185",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Castanet Tolosan"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31320"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Chemin de Borderouge - Auzeville"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5f94a213c1c544b6bb8f9a8f1ec82cf8",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.sigenae.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncc3476910a0440f4a6b1649aa9cfe728",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Analyse de données issues des technologies à haut débit : séqueçage et génotypage.<br />\r\nDéveloppement de logiciel.<br />\r\nBases de données</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56026986d2414b759803e36a5f05f2ea",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1631"
+      },
+      {
+        "@value": "1630"
+      }
+    ]
+  },
+  {
+    "@id": "_:N099e6d400cb84f909e0184ff23914c16",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  }
+]

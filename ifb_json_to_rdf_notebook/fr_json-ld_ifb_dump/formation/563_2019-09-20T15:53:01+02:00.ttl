@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-des-séquences-nucléiques-introduction-généraliste",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-08T15:35:27+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:53:26+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à l'analyse de séquences nucléiques Du séquençage à l'annotation : aspects théoriques et pratiques"
+      }
+    ]
+  }
+]

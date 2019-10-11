@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/metavir",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "600"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Metavir"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:50:07+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Web server for the analysis of viral metagenomes. Results from a variety of analyses realized on public viromes can be visualised. Users can also upload their own data in a private mode to be analysed. Recently Metavir was updated to allow for the analysis of assembled viromes.</p>\r\n\r\n<p><br />\r\n&nbsp;&nbsp; &nbsp;Publications :<br />\r\n&nbsp;&nbsp; &nbsp;Roux, S., M. Faubladier, A. Mahul, N. Paulhe, A. Bernard, D. Debroas, and F. Enault (2011) Metavir: a web server dedicated to virome analysis. Bioinformatics (Oxford, England) 27:3074-3075.<br />\r\n&nbsp;&nbsp; &nbsp;Roux, S., J. Tournayre, A. Mahul, D. Debroas, and F. Enault (2014) Metavir 2: new tools for viral metagenome comparison and assembled virome analysis. BMC bioinformatics 15:76.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:52+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N0b57a38a0ffd408d8a77613ba688c691"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "32"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0b57a38a0ffd408d8a77613ba688c691",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://metavir-meb.univ-bpclermont.fr/</p>\r\n"
+      }
+    ]
+  }
+]

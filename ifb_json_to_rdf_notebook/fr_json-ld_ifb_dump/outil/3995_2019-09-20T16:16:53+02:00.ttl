@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/phrogs",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhROGS"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-13T16:42:16+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T16:48:55+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://phrogs.lmge.uca.fr"
+      }
+    ]
+  }
+]

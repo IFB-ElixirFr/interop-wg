@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/modify-and-extract-information-large-text-files",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "INRA Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-07-10T11:56:24+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session is organized by the <strong>Genotoul bioinfo platform</strong> and aims at understanding how to efficiently process large raw or result text files. You will learn how to add a header line or change parts of a file without having the make a copy. You will learn how to extract columns and perform simple figure manipulations on files with millions of lines. A large share of the time will be spent practicing with sed and awk.</p>\r\n\r\n<div>\r\n<div>\r\n<p>This training is focused on practice. It consists of 3 modules with a large variety of exercises:<br />\r\nYou are going to learn how to manipulate large file.</p>\r\n\r\n<ul>\r\n\t<li><strong>09:00 am to 10:30 am : Regular expressions – TP1</strong></li>\r\n\t<li><strong>10:45 am to 12:30 pm : File editing with sed – TP2</strong></li>\r\n\t<li><strong>14:00 pm to 17:00 pm : Extracting information with awk – Combining unix sed and awk within pipes – TP3</strong></li>\r\n</ul>\r\n</div>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-08-12T11:41:06+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Modify and extract information from large text files"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/modify-and-extract-information-from-large-text-files-2/"
+      }
+    ]
+  }
+]

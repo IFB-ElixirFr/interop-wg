@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/erpin",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "415"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "350"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ERPIN"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:07:45+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Easy RNA Profile IdentificatioN tool, an RNA motif search program.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T15:52:06+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N460b915a30ee442783e4d2dd20d5075c"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "216"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rssf.i2bc.paris-saclay.fr/Software/erpin.php"
+      }
+    ]
+  },
+  {
+    "@id": "_:N460b915a30ee442783e4d2dd20d5075c",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>http://rna.igmors.u-psud.fr/Software/erpin.php Gratuit pour u-psud</p>\r\n"
+      }
+    ]
+  }
+]

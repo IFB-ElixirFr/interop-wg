@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/portail-galaxy-plateforme-migale",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "588722"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Portail Galaxy de la plateforme MIGALE "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:19:53+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Mise en ligne d’outils et de workflows.</p>\r\n\r\n<p>Mise à jours en janvier 2015</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:03+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N43944a08905941b3b2458b29d544c24f"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N43944a08905941b3b2458b29d544c24f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès gratuit avec un compte à http://migale.jouy.inra.fr/galaxy/</p>\r\n"
+      }
+    ]
+  }
+]

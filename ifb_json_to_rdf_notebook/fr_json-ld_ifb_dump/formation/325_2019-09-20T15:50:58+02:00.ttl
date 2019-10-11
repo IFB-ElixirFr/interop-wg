@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/ateliers-ngs-master-bibs-u-psud",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "U-Psud university, Orsay"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:45:45+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>NA</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T20:30:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Ateliers NGS, Master BIBS U-Psud"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.bibs.u-psud.fr/m2_ami2b.php"
+      }
+    ]
+  }
+]

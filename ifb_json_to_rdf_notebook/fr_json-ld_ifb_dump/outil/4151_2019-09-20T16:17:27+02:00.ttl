@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/r-tools-mine-craft-somatic-mutations-cancer-genomes",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "R tools to mine & craft somatic mutations from cancer genomes"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-05-28T11:05:58+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>R tools to mine &amp; craft somatic mutations from cancer genomes</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-05-28T11:06:17+02:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/EmilieT/mutcraft"
+      }
+    ]
+  }
+]

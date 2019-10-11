@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/reprogenomics-viewer",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ReproGenomics Viewer"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T14:39:19+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The ReproGenomics Viewer (RGV) is a cross-species genomic toolbox for the reproductive community. The system is based on the implementation of a JBrowse genome browser and a Galaxy bioinformatics workflow environment.</p>\r\n\r\n<p>Mis en place en 2015</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N976dfbe4ce1a423a9b11cba31dc4400e"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rgv.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N976dfbe4ce1a423a9b11cba31dc4400e",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre</p>\r\n\r\n<p><a href=\"http://rgv.genouest.org/\">http://rgv.genouest.org/</a></p>\r\n"
+      }
+    ]
+  }
+]

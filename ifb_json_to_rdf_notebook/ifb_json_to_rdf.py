@@ -29,10 +29,10 @@ import logging.handlers
 
 TIMEOUT = (10, 300)
 # fr or en
-LANGUAGE = "en"
+LANGUAGE = "fr"
 # turtle or json-ld
 RDF_FORMAT = "json-ld"
-OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump_test"
+OUTPUT_DIR = LANGUAGE + "_" + RDF_FORMAT + "_ifb_dump"
 
 def requestsIFB(url, s, node_id):
     """
@@ -90,18 +90,17 @@ def createContext():
     ctx = {
         "@context": {
             "edam": "http://edamontology.org/",
-            "foaf": "http://xmlns.com/foaf/0.1/",
+            # "foaf": "http://xmlns.com/foaf/0.1/",
             "schema": "http://schema.org/",
             "dc": "http://purl.org/dc/terms/",
             "ifbn": "https://www.france-bioinformatique.fr/node/",
             "ifb": "https://www.france-bioinformatique.fr/",
             "org": "http://www.w3.org/ns/org#",
             "vcard": "https://www.w3.org/TR/vcard-rdf/",
-            "dfcore": "http://ontology.tno.nl/dfcore/",
             "dbpedia": "http://dbpedia.org/ontology/",
             "gleif-base": "https://www.gleif.org/ontology/Base/",
+            # alternative a premis (dead link)
             "premis": "http://sw-portal.deri.org/ontologies/swportal#",
-            "dbpedia-owl": "http://dbpedia.org/ontology/",
             "cci": "http://cookingbigdata.com/linkeddata/ccinstances#",
             "ocds": "http://purl.org/onto-ocds/ocds#",
             "frapo": "http://purl.org/cerif/frapo/",
@@ -318,12 +317,12 @@ def platformRdf(key, json_result, jld):
     # données (DB ?)
     if key == "field_donnee":
         for i, elem in enumerate(json_result['field_donnee']['und']):
-            if not "dbpedia-owl:Database" in jld.keys():
-                jld["dbpedia-owl:Database"] = {
+            if not "dbpedia:Database" in jld.keys():
+                jld["dbpedia:Database"] = {
                     "schema:identifier": [elem['target_id']]
                 }
             else:
-                jld["dbpedia-owl:Database"]["schema:identifier"].append(elem['target_id'])
+                jld["dbpedia:Database"]["schema:identifier"].append(elem['target_id'])
 
     # cpu hour/year
     # if key == "field_heure_de_cpu_an":
@@ -371,10 +370,10 @@ def platformRdf(key, json_result, jld):
     # type d'infra
     if key == 'field_type_d_infrastructure' and language in json_result['field_type_d_infrastructure'].keys():
         for i, elem in enumerate(json_result['field_type_d_infrastructure'][language]):
-            if not 'dbpedia-owl:Infrastructure' in jld.keys():
-                jld['dbpedia-owl:Infrastructure'] = [elem['value']]
+            if not 'dbpedia:Infrastructure' in jld.keys():
+                jld['dbpedia:Infrastructure'] = [elem['value']]
             else :
-                jld['dbpedia-owl:Infrastructure'].append(elem['value'])
+                jld['dbpedia:Infrastructure'].append(elem['value'])
 
     # serveur description
     if key == 'field_descriptions_des_serveurs' and language in json_result['field_descriptions_des_serveurs'].keys():
@@ -496,18 +495,18 @@ def toolRdf(key, json_result, jld):
     # visites annuelles
     if key == 'field_outils_visites_anuelles':
         for i, elem in enumerate(json_result['field_outils_visites_anuelles']['und']):
-            if not "dbpedia-owl:visitorsPerYear" in jld.keys():
-                jld["dbpedia-owl:visitorsPerYear"] = [elem['value']]
+            if not "dbpedia:visitorsPerYear" in jld.keys():
+                jld["dbpedia:visitorsPerYear"] = [elem['value']]
             else:
-                jld["dbpedia-owl:visitorsPerYear"].append(elem['value'])
+                jld["dbpedia:visitorsPerYear"].append(elem['value'])
 
     # visites uniques /!\ à completer !!!!
     if key == 'field_outils_visites_uniques':
         for i, elem in enumerate(json_result['field_outils_visites_uniques']['und']):
-            if not "dbpedia-owl:visitorsTotal" in jld.keys():
-                jld["dbpedia-owl:visitorsTotal"] = [elem['value']]
+            if not "dbpedia:visitorsTotal" in jld.keys():
+                jld["dbpedia:visitorsTotal"] = [elem['value']]
             else:
-                jld["dbpedia-owl:visitorsTotal"].append(elem['value'])
+                jld["dbpedia:visitorsTotal"].append(elem['value'])
 
     # downloads
     if key == 'field_outils_telechargements':
@@ -606,6 +605,7 @@ def writeRDF(raw_jld, type, node_id):
         ts = datetime.now().timestamp()
         time = timestampToIso(ts)
 
+        # write each file by node
         dir_path = OUTPUT_DIR + "/" + type
         if not os.path.isdir(dir_path):
             os.makedirs(dir_path)
@@ -745,6 +745,8 @@ if __name__ == "__main__":
     password = ifb_logs.getPassword()
     payload = {'name': name, 'pass': password, 'form_id': 'user_login', 'op': 'Log in'}
 
+    # graph containing all nodes
+    all_res_graph = rdflib.Graph()
     # opening a session
     with requests.Session() as s:
 
@@ -765,8 +767,8 @@ if __name__ == "__main__":
         else:
 
             #not parallelized
-            nodes_list = range(290, 295)
-            # nodes_list = range(0, 5000)
+            # nodes_list = range(290, 295)
+            nodes_list = range(0, 5000)
             nodes_pbar = tqdm(nodes_list, position=1)
             for node_id in nodes_pbar:
                 # 324, 326
@@ -787,8 +789,18 @@ if __name__ == "__main__":
                     raw_jld = rdfize(json_result)
                     # readRDF(raw_jld)
                     writeRDF(raw_jld, json_result['type'], node_id)
+
+
+                    # append graph
+                    result = all_res_graph.parse(data=raw_jld, format='json-ld')
                 else:
                     logger.warning('[' + node_id + ']' + " Type: [" + json_result['type'] + "], rdfize: [False]")
+    # write Graph
+    rdf_string = all_res_graph.serialize(format=RDF_FORMAT).decode("utf-8")
+    # append into a single file
+    single_file_path = OUTPUT_DIR + "/" +  "all_nodes.ttl"
+    with open(single_file_path  ,"w") as file:
+        file.write(rdf_string)
     print("\n\n\nDump done !")
                 # check node if they have json and their title
 

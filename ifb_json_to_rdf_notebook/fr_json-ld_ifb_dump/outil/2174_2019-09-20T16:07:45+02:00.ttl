@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/mobyle",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "209734"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "20399"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Mobyle"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-17T16:34:02+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Mobyle is a framework and web portal specifically aimed at the integration of bioinformatics software and databanks.</p>\r\n\r\n<p>Mobyle is the successor of <a class=\"external\" href=\"http://dx.doi.org/10.1093/bioinformatics/17.1.73\">Pise</a> and the <a class=\"external\" href=\"http://dx.doi.org/10.1093/nar/gki477\">RPBS server</a>, previous systems that provided web environments to define and execute bioinformatics analyses.</p>\r\n\r\n<h3>Functionalities:</h3>\r\n\r\n<ul>\r\n\t<li><strong>data reusability</strong>: the tagging of the user data facilitates the reuse of input values or results between different programs.</li>\r\n\t<li><strong>automatic data validation and format conversion</strong>: the description of the expected data and their format allows to verify and convert input values if necessary.</li>\r\n\t<li><strong>service discovery and workflow authoring assistance</strong>: services are provided through a searchable menu; furthermore, type compatibility mechanisms between results and potential program inputs let users either interactively pipe tasks or build complete workflows before to run them.</li>\r\n</ul>\r\n\r\n<p>Based on extensive user studies, we developed the end-user interface as a Web Portal that provides a global and integrated view of all the elements needed to perform analyses, such as the available programs, the submitted jobs and the data of interest.</p>\r\n\r\n<h3>References:</h3>\r\n\r\n<p>Bertrand Néron, Hervé Ménager, Corinne Maufrais, Nicolas Joly, Julien Maupetit, Sébastien Letort, Sébastien Carrere, Pierre Tuffery, and Catherine Letondal<br />\r\n<a class=\"external\" href=\"http://dx.doi.org/10.1093/bioinformatics/btp493\">Mobyle: a new full web bioinformatics framework</a><br />\r\n<em>Bioinformatics</em> (2009); 25 (22): 3005-3011.&nbsp;doi:10.1093/bioinformatics/btp493.&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T17:10:20+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ncdf818245cba42faba02a7bd859eb935"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "239"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://projets.pasteur.fr/projects/mobyle/wiki"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncdf818245cba42faba02a7bd859eb935",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>The Mobyle framework is developped under the GPLv2 license.</p>\r\n"
+      }
+    ]
+  }
+]

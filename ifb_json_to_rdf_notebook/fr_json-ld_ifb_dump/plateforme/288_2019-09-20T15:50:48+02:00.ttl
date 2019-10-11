@@ -1,0 +1,191 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/curie",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nc9a36bbe2b3d43fead3cc73e5c25c0d1"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Naedc96c7eeda494f9343e2c77c8ea0bc"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Na3d268e4676a4c1288af550282c7525a"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N9caca43f62724a3bbeec04499ee31048"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:35:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-09-04T13:29:54+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Na6726bde75684df1b1240eb4fa6f7cec"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Institut Curie"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N7c1ad316cf3044799598434e1e00aca0"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N8843947325564771b2c6efcfedb547b1"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N438486f1d6434e82ac4d900d987b4c90"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N8572cf1a26734fc080bfe1e6ba0664b2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7c1ad316cf3044799598434e1e00aca0",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "442"
+      },
+      {
+        "@value": "443"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8843947325564771b2c6efcfedb547b1",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naedc96c7eeda494f9343e2c77c8ea0bc",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2000"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na3d268e4676a4c1288af550282c7525a",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2000.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N438486f1d6434e82ac4d900d987b4c90",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75005"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "26 rue d’Ulm"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc9a36bbe2b3d43fead3cc73e5c25c0d1",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<ul>\r\n\t<li>3 web servers</li>\r\n\t<li>3 database servers</li>\r\n\t<li>60 computation servers</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na6726bde75684df1b1240eb4fa6f7cec",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1656"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9caca43f62724a3bbeec04499ee31048",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The expertise of the platform is versatile on many aspects of high-throughput data management, processing, integration and statistical and functional analysis in biology and in clinics.<br />\r\nMany data types are treated:</p>\r\n\r\n<ul>\r\n\t<li>Microarrays: expression, copy number, SNP, ChIP</li>\r\n\t<li>NanoString</li>\r\n\t<li>NGS: Exome-seq, targeted-seq, WGS, RNA-seq, smallRNA-seq, 5C, HiC, ChIP-seq …</li>\r\n\t<li>RPPA,</li>\r\n\t<li>Mass spectometry, classical and SILAC, SWATH</li>\r\n\t<li>low-throughput biological data.</li>\r\n</ul>\r\n\r\n<p>The expertise covers fundamental, translational and clinical research, including clinical trials.<br />\r\nIn all these domain, the platform also develop appropriate methods, implement tools and automatic pipelines, and package and release them publicly or grant on-line access to the community.<br />\r\nSoftware optimisation for high-performance computing is also part of our know-how.<br />\r\nFinally the platform has developed an experience in training biologists, clinicians and bioinformaticians in all above-mentionned fields</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8572cf1a26734fc080bfe1e6ba0664b2",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Curie "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://u900.curie.fr"
+      }
+    ]
+  }
+]

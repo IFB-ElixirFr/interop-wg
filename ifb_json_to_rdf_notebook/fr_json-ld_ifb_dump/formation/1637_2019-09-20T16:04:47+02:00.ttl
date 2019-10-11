@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/rôles-multiples-l’arn",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "institut Pasteur"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-21T11:36:45+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<pre>\r\nCe cours théorique et pratique de deux semaines est orienté sur les méthodes pour étudier la synthèse, maturation et la dégradation d’une large variété de molécules d’ARN dans les cellules eucaryotes - <a href=\"http://www.pasteur.fr/fr/enseignement/cours-pasteur/pole-mecanismes-du-vivant/roles-multiples-l-arn\">voir plus</a>\r\n</pre>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation universitaire "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-21T10:18:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Rôles multiples de l’ARN"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.pasteur.fr/fr/enseignement/programmes-doctoraux-et-cours/cours-pasteur/roles-multiples-arn"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rgccasgcca",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "RGCCA/SGCCA"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-12-08T14:26:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>RGCCA (Regularized Generalized Canonical Correlation Analysis – Psychometrika 2011, 76(2):257–284) et son extension parcimonieuse (SGCCA – Biostatistics 2014, 15(3):569–83) sont des méthodes multivariées reposant sur la modélisation des relations entre blocs de variables ou groupes d’individus, et permettant l’analyse intégrative de données hétérogènes et de grandes dimensions.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:58+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N845e4ec3a5524402a11934ce4e305d9a"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "3708"
+      }
+    ]
+  },
+  {
+    "@id": "_:N845e4ec3a5524402a11934ce4e305d9a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>RGCCA est disponible dans le dépôt CRAN (<a href=\"http://www.cran.r-project.org\" target=\"_blank\">Comprehensive R Archive Network</a>).</p>\r\n"
+      }
+    ]
+  }
+]

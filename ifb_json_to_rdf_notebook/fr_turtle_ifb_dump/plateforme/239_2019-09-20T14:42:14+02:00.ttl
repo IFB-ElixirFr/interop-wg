@@ -1,0 +1,101 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/ebio> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<ul>\r
+	<li>Technologie ZFS, NFS.</li>\r
+	<li>Samba 2 hôtes de virtualisation KVM.</li>\r
+	<li>DB : PosgreSQL, MySQL, ZODB Galaxy.</li>\r
+	<li>Autres : LDAP, Salt, subvesion, trac, dhcp, FAI, tftp, ftp, zenoss, varnish.</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "220" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "87.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "1445",
+                "2692",
+                "275",
+                "300",
+                "301",
+                "358",
+                "359",
+                "360" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>La plateforme Bioinformatique eBio (<a href="http://ebio.u-psud.fr/">http://ebio.u-psud.fr/</a>), créée en décembre 2009, est au centre du dispositif de bioinformatique de l’Université Paris-Sud. Elle est associée aux services de bioinformatiques de l’INRA Moulon, de l’hôpital Paul Brousse et de Gustave Roussy. eBio est labellisée par IBISA/Reseau National des Plateformes Bioinformatiques (RENABI) et membre de l’Alliance des Plateformes Bioinformatiques d’Ile de France (APLIBIO).&nbsp; Le site principal de eBio est localisé au bat 400 de l'Université Paris–Sud et intégré à l'I2BC (UMR9198, Gif sur Yvette).</p>\r
+\r
+<p>Les missions d’eBio comprennent : (1) le soutien bioinformatique aux projets de recherche, (2) la mise à disposition de moyens de calcul et stockage, (3) le développement et la maintenance de serveurs web de bioinformatique et bases de données de génomique. La plateforme a accompagné ou hébergé plus de 50 projets de recherche depuis début 2010.</p>\r
+\r
+<p>Les principaux domaines d’expertise de la plateforme sont les suivants :</p>\r
+\r
+<p>-&nbsp;&nbsp; &nbsp;L’analyse de données RNA-seq, notamment la detection de transcrits non codants, transcrits alternatifs, l’analyse d’expression différentielle, le ribosome profiling<br />\r
+-&nbsp;&nbsp; &nbsp;L’analyse des structures d’ARN (alignement, structure secondaire)<br />\r
+-&nbsp;&nbsp; &nbsp;L’intégration de logiciels et de workflows d’analyse sous Galaxy<br />\r
+-&nbsp;&nbsp; &nbsp;L’assemblage des génomes de bactéries/champignons, la détection de variants<br />\r
+-&nbsp;&nbsp; &nbsp;La phylogénie moléculaire et l’analyse fonctionnelle par profil phylogénétique<br />\r
+-&nbsp;&nbsp; &nbsp;L’annotation des génomes de bactéries, archées et champignons (séquences CRISPR, terminateurs de transcription, ARN régulateurs, minisatellites)<br />\r
+-&nbsp;&nbsp; &nbsp;Le calcul distribué et sur cloud (déploiement de services d’analyse sur cluster et cloud académique)</p>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>La modalité « service » consiste en une prise en charge totale par la plate-forme de la réalisation de l'analyse bio-informatique. Au minimum deux rencontres sont prévues avec le demandeur, la première afin d'appréhender la question posée et les données pour lesquelles il demande une expertise, et la dernière pour un rendu du travail réalisé par la plate-forme (après remise d'un document explicatif de la démarche suivie et des résultats obtenus). Si le demandeur ne fait pas partie d'une unité mixte avec l'Université Paris-Sud, les analyses sont payées selon un forfait jour/homme.</p>\r
+\r
+<p>Les projets réalisés « en collaboration » nécessitent soit une participation active à l'analyse des données du biologiste soit la mise à disposition d'un CDD ou d'un stagiaire au sein de la plate-forme et co-encadré par le personnel de la plate-forme.</p>\r
+\r
+<p>La modalité « accès aux ressources » implique que les biologistes lancent eux-mêmes leur analyses sur le cluster de calcul, moyennant éventuellement formation et/ou accompagnements ponctuels assurés par le personnel de la plate-forme.</p>\r
+\r
+<p>Une réflexion est en cours concernant les accès moyennant finances de personnes sans rattachement à l'université Paris-Sud afin de leur proposer une offre contrainte en ressources et dans le temps.</p>\r
+""" ;
+            dc:title "3 types d'appui : service, en collaboration et accès aux ressources de calcul" ;
+            wl:Condition """<p>Dépôt de demande de soutien sur <a href="http://ebio.u-psud.fr/eBIO_services.php">http://ebio.u-psud.fr/eBIO_services.php</a></p>\r
+""" ] ;
+    dc:created "2015-07-13T15:36:56+02:00" ;
+    dc:modified "2019-03-06T11:59:18+01:00" ;
+    meb:User [ ocds:valueAmount "50" ] ;
+    schema:name "EBIO" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "277",
+                "363",
+                "364",
+                "365",
+                "366",
+                "367",
+                "368",
+                "369",
+                "370" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Orsay" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "91000" ;
+            schema:streetAddress "15 rue George Clémenceau" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "EBIO" ;
+            schema:url "http://ebio.u-psud.fr/" ] .
+

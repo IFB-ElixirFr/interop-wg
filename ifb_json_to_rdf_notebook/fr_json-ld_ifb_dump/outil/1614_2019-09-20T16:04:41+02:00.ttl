@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/micrhode-workflow",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MicRhoDE workflow"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T22:54:57+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>MicRhoDE workflow:</strong>&nbsp;places query sequences into MicRhoDE tree (type-1 rhodopsin phylogeny). [<a href=\"http://application.sb-roscoff.fr/micrhode\" target=\"_blank\">webpage</a>]</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N837fbc62cb084bee9738f9d3c267466a"
+      }
+    ]
+  },
+  {
+    "@id": "_:N837fbc62cb084bee9738f9d3c267466a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://webtools.sb-roscoff.fr/\">http://webtools.sb-roscoff.fr</a>&nbsp;: Galaxy instance that host tools developped at the Station Biologique de Roscoff in collaboration with ABiMS&nbsp;(no account)</p>\r\n"
+      }
+    ]
+  }
+]

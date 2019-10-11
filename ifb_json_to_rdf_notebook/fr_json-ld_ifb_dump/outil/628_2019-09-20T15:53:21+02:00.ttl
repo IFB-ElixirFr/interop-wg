@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/issaga",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "368"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ISsaga "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:43:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Plateforme d’annotation semi-automatique des génomes bactériens.</p>\r\n\r\n<p>2016 : nouvelle version, qui permet de soumettre pour annotation des contigs et des données métagénomiques.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-31T11:48:23+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1a049ac4143a41a8bd2b43ab5a1d2167"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "71"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www-is.biotoul.fr//"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "23846"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1a049ac4143a41a8bd2b43ab5a1d2167",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Les utilisateurs demandent un compte puis peuvent charger de façon illimitée, des projets d’annotation de génomes.</p>\r\n\r\n<p>Gratuit.</p>\r\n\r\n<p>NB : Le nombre de nouveaux comptes ouverts par an est comptabilisé dans \"visites uniques\" mais chaque utilisateur a un accès illimité à son compte et à ses génomes chargés.</p>\r\n"
+      }
+    ]
+  }
+]

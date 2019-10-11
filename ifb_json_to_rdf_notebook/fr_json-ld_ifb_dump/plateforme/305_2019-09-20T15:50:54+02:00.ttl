@@ -1,0 +1,245 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/pasteur",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nfcd2d1c2947b4a8cbb839489858678d0"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N5f84c28e45d84d67b939ed61ceae81e5"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nbe3555a390e74127bc14f5fa348e1010"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N324a98519dd34d5989393942bdd7aa05"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N4b9fcfb9d58d43d9bca8e816289d7071"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:33:30+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-04T10:50:51+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N3ca0a0b1f4634f099c037602d1688c1e"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "DBC"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N78f883b9d2e24ba795ffde5745010236"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N4876c258ef084ea5af72d818266dccc0"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N0f3a0f6dab814ff08bf6bae561b95c83"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Neb7e08e6c92f4f0ca5cb9b63c2b4c792"
+      }
+    ]
+  },
+  {
+    "@id": "_:N324a98519dd34d5989393942bdd7aa05",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1454"
+      },
+      {
+        "@value": "2166"
+      },
+      {
+        "@value": "1453"
+      },
+      {
+        "@value": "2568"
+      },
+      {
+        "@value": "2167"
+      },
+      {
+        "@value": "1452"
+      },
+      {
+        "@value": "500"
+      }
+    ]
+  },
+  {
+    "@id": "_:N78f883b9d2e24ba795ffde5745010236",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2174"
+      },
+      {
+        "@value": "1458"
+      },
+      {
+        "@value": "1459"
+      },
+      {
+        "@value": "2162"
+      },
+      {
+        "@value": "1456"
+      },
+      {
+        "@value": "1457"
+      },
+      {
+        "@value": "2199"
+      },
+      {
+        "@value": "2165"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0f3a0f6dab814ff08bf6bae561b95c83",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "INSTITUT PASTEUR"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75015"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "25 Rue du Dr Roux"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4876c258ef084ea5af72d818266dccc0",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "136"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4b9fcfb9d58d43d9bca8e816289d7071",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Programme Hétérogénéité Tumorale et Ecosystème – INSERM<br />\r\nIntegrating the intra-tumoral microbiome to promote understanding on tumor plasticity.<br />\r\n8 partenaires&nbsp;(4 Institut Pasteur units and 4 inserm units)<br />\r\nfunded by INSERM</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Hétérogénéité Tumorale et Ecosystème"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfcd2d1c2947b4a8cbb839489858678d0",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>serveurs :</p>\r\n\r\n<ul>\r\n\t<li>2 noeuds (40 coeurs, 512GB RAM)</li>\r\n\t<li>​​52 noeuds (12 coeurs, 256GB RAM)</li>\r\n\t<li>163 noeuds (12 coeurs, 64GB RAM)</li>\r\n\t<li>1 noeud GPU-K80 (20 cores, 256 GB RAM, 4xNvidia-K80)</li>\r\n\t<li>2 noeuds GPU-M40 (20 cores, 256 GB RAM, 4xNvidia-M40)</li>\r\n\t<li>2 noeuds GPU-P100 (20 cores, 512 GB RAM, 4xNvidia-P100)</li>\r\n</ul>\r\n\r\n<p>stockage Isilon accessible via NFS</p>\r\n\r\n<p>cluster géré via Sun Grid Engine (ou descendants) puis SLURM</p>\r\n\r\n<p>programmes bioinformatiques accessible via « module » .</p>\r\n\r\n<p>Le détail des données et outils est&nbsp; accessible à l'adresse suivante:&nbsp; <a href=\"https://bioweb.pasteur.fr/\">https://bioweb.pasteur.fr/</a></p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbe3555a390e74127bc14f5fa348e1010",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "5000.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3ca0a0b1f4634f099c037602d1688c1e",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "577"
+      }
+    ]
+  },
+  {
+    "@id": "_:Neb7e08e6c92f4f0ca5cb9b63c2b4c792",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Pasteur"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://c3bi.pasteur.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5f84c28e45d84d67b939ed61ceae81e5",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2760"
+      }
+    ]
+  }
+]

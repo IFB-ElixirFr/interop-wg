@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rnaspace-0",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "17558"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "14318"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "RNAspace"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:55:04+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>RNAspace is a platform which aims at providing an integrated environment for non-coding RNA annotation.<br />\r\nThe increasing number of ncRNA discovered since 2000 and the lack of user friendly tools for finding and annotating them, have made necessary to propose to biologists an in silico environment allowing structural and functional annotations of these molecules with regard to available protein genes annotation environments.<br />\r\nRNAspace makes available a variety of ncRNA gene finders and ncRNA databases as well as user-friendly tools to explore computed results including comparison, visualization and edition of putative RNAs. RNAspace also allows to export putative RNAs in various formats.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T15:59:43+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd62a184552c548edace3fd45fb7ca771"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "27"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rnaspace.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd62a184552c548edace3fd45fb7ca771",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>RNAspace is an open source project. It is developed in Python. It is copyrighted with the GNU General Public License, and is free (in the GNU sense) for all to use, and is in constant development. RNAspace is hosted at Sourceforge. It is also available as a web server at rnaspace.org</p>\r\n"
+      }
+    ]
+  }
+]

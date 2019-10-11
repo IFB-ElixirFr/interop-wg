@@ -213,7 +213,7 @@ if __name__ == "__main__":
     dois_list = subsetDOIs(dois_list, NUMBER_DOIS)
 
     num_cores = multiprocessing.cpu_count()
-    num_cores = 1
+    # num_cores = 1
     # executing metrics evaluations
     # setting up multi process/progressbars
     maxrows = num_cores + 1

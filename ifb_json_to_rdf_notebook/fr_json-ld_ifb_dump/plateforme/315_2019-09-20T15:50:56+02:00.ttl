@@ -1,0 +1,169 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/prabi-gerland",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N53f9f7fcb47c480cace0cbce2e6d2997"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N7e2d5ef4e5194a1f91c93d44c3e67af7"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N3ce2acaba73c4ffa9fde54f8bcf61eaa"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:01:03+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-05T15:43:55+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Lyon-Gerland"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nc5c98f35e0c74f60918bab325d1b3a65"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Necd0b30f855b4f7db71e2ebc2a47517e"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N315e78d1d37f4b259f5f2362e3ecf638"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N0ee73640741047c383ebdde1afc15be4"
+      }
+    ]
+  },
+  {
+    "@id": "_:N53f9f7fcb47c480cace0cbce2e6d2997",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>- 1 nouvelle salle machine 57 m² localisée à l’IBCP (disponible depuis 2013 dans le cadre du plan Campus) est mise à disposition pour héberger les moyens informatiques du PRABI-Gerland et assurer la sauvegarde.</p>\r\n\r\n<p>- Dernière machine intégrée sur crédits PRABI et dédiée au service SGI NUMA 144 cores, 768 GB RAM, 19,2 To 15000 rpm+ 28 To 7200 rpm (upgradée sur crédits RENABI-IFB)</p>\r\n\r\n<p>- Salle équipée 3D 3D avec vidéoprojecteur stétéroscopique utilisée pour les formations.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc5c98f35e0c74f60918bab325d1b3a65",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "583"
+      },
+      {
+        "@value": "582"
+      },
+      {
+        "@value": "581"
+      },
+      {
+        "@value": "584"
+      }
+    ]
+  },
+  {
+    "@id": "_:N315e78d1d37f4b259f5f2362e3ecf638",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69367"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "7 Passage du Vercors"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0ee73640741047c383ebdde1afc15be4",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Gerland"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://prabi.ibcp.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3ce2acaba73c4ffa9fde54f8bcf61eaa",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Le PRABI-Gerland <a href=\"https://prabi.ibcp.fr\">https://prabi.ibcp.fr</a> localisé à l'IBCP développe les bases de données dans le&nbsp;domaine infectieux, les méthodes de prédiction et d'optimisation des structures 3D de protéines&nbsp;ainsi que les outils et services s'y rapportant. Dans le domaine des services la spécificité de la PF&nbsp;est la bioinformatique structurale (Modélisation moléculaire, prédiction de structure) introduite&nbsp;sur Lyon dès 1986 (il y a 25 ans avant même que le mot n'existe...). Dans ce domaine, l’activité&nbsp;proposée par le PRABI-Gerland s’appuie sur les expertises suivantes:<br />\r\n Prédiction de structure de protéines [G. Deléage]<br />\r\n Modélisation moléculaire [E. Bettler, G. Deléage, R. Terreux]<br />\r\n Intégration de méthodes et serveurs Web [C. Combet, G Deléage]<br />\r\n Serveur Web 3D [E. Bettler, G. Deléage]<br />\r\n Drug design et QSAR (R. Terreux, J.A. Chemelle)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Mots clefs: </strong>Bioinformatique structurale, Prédiction de structure, Base de données structurales,&nbsp;Analyse de séquences, Modélisation moléculaire, docking moléculaire.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Principaux sites web:</strong> <a href=\"https://prabi.ibcp.fr\" target=\"_blank\">https://prabi.ibcp.fr</a> (site en cours de refonte)<br />\r\n <a href=\"https://geno3d-prabi.ibcp.fr/\" target=\"_blank\">https://geno3d-prabi.ibcp.fr/</a><br />\r\n <a href=\"https://npsa-prabi.ibcp.fr/\" target=\"_blank\">https://npsa-prabi.ibcp.fr/</a><br />\r\n <a href=\"http://sumo-pbil.ibcp.fr\" target=\"_blank\">http://sumo-pbil.ibcp.fr</a><br />\r\n <a href=\"http://espript.ibcp.fr\" target=\"_blank\">http://espript.ibcp.fr</a><br />\r\n <a href=\"http://endscript.ibcp.fr\" target=\"_blank\">http://endscript.ibcp.fr</a></p>\r\n\r\n<p><strong>Méthodes de prédiction des structures secondaires de protéines.</strong><br />\r\nPlusieurs méthodes originales ont été développées, Self Optimized Prediction Method (SOPM),&nbsp;génère automatiquement à partir de cette base de donnée, une \"sous-base\" rassemblant les 60 à&nbsp;80 protéines les plus homologues ou appartenant à la même classe structurale que la protéine<br />\r\nétudiée. En effet, des protéines homologues ont généralement une structure assez proche (30%&nbsp;d'identité indique une architecture semblable). Après une phase d'apprentissage automatique&nbsp;sur cette \"sous-base\", en particulier d'optimisation des paramètres, la prédiction de la structure&nbsp;de la protéine est réalisée. La version SOPMA tire bénéfice des alignements multiples. La&nbsp;méthode MLRC combine les réseaux de neurones avec la méthode SOPMA.<br />\r\n [SOPMA] Self optimised Prediction Method (1995)<br />\r\n [SOPM] Self optimised Prediction Method (1994)<br />\r\n [DPM] Double prediction Method (1987)<br />\r\n [MLRC] Multivariate Linear Regression Combination (1999)<br />\r\n [AMPHIPASEEK] Prediction of membrane anchor helical peptides (2006)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Intégration de methodes- Webiciels</strong><br />\r\n<strong>Serveur NPS@</strong><br />\r\nLe PRABI Gerland a développé le premier serveur de mail Français pour la prédiction de&nbsp;structures secondaires de protéines (80 000 prédictions en tout). Ensuite ces méthodes ont été intégrées dans [NPS@ 2000]. Le serveur est actuellement dans sa version 3. Dans le cadre de RENABI-IFB, ce serveur généraliste de séquences couplé aux prédictions de structures sera mis&nbsp;à jour en termes d’ergonomie, d’interface et de conception. Mise à disposition d’outils et de services en ligne correspondant aux domaines d’expertise du&nbsp;laboratoire d’accueil de la PF.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Serveur Web ESPript/ENDscript</strong><br />\r\nA partir d’une protéine de structure connue (code ou fichier PDB), le serveur ENDscript produit,&nbsp;en quelques secondes et de manière automatisée, plusieurs illustrations téléchargeables dans&nbsp;des formats usuels (PostScript, PDF, PNG et TIFF) :<br />\r\n1/ Une première figure, générée par le logiciel ESPript, présente la séquence de la protéine&nbsp;d’intérêt agrémentée de ses éléments de structure secondaire, de l’accessibilité au solvant et de&nbsp;l’hydropathie par résidu. Si disponibles, sont aussi représentés les contacts cristallographiques&nbsp;et non-cristallographiques protéine/protéine et/ou protéine/ligand ainsi que les résidus&nbsp;impliqués dans des ponts disulfures.<br />\r\n2/ Une seconde figure ESPript montre, en plus des informations précédentes, un alignement&nbsp;multiple de séquences des protéines homologues coloré en fonction de la conservation des&nbsp;résidus et agrémenté des éléments de structure secondaire de ces dernières si leurs structures&nbsp;sont connues.&nbsp;</p>\r\n\r\n<p>3/ Deux représentations 3D interactives visualisables par le logiciel PyMOL : a) une&nbsp;représentation en ruban, colorée en fonction de la conservation de séquence. b) une&nbsp;représentation en tube dont le diamètre est proportionnel à la déviation structurale (rmsd)&nbsp;entre la protéine d’intérêt et les protéines homologues de structure connue. De plus, si&nbsp;disponible, peuvent être affichés : l’assemblage de l’unité biologique, les modèles RMN multiples,&nbsp;les ligands et les résidus en contact avec ces derniers.<br />\r\nLe serveur ESPript permet, en complément d’ENDscript ou de manière autonome, de&nbsp;représenter des alignements multiples de séquences avec la possibilité d’ajouter des marqueurs&nbsp;définis par l’utilisateur de manière à produire des figures facilitant l’analyse ou dédiées aux&nbsp;communications scientifiques.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Modélisation moléculaire</strong><br />\r\nUn serveur Web de modélisation moléculaire automatique de structure 3D de protéines appelé&nbsp;geno3D est disponible depsuis 2002 qui permet aux biologistes et biochimistes d'obtenir un&nbsp;modèle 3D de qualité si la séquence \"query\" présente plus de 35% d'identité avec une protéine&nbsp;de structure 3D connue. Le principe de cette modélisation consiste à appliquer les techniques de&nbsp;modélisation sous contraintes à la protéine à modéliser (de type RMN) à partir d'un jeu de&nbsp;contraintes calculées sur l'empreinte structurale. Plusieurs empreintes sont utilisables, le ligand&nbsp;(si présent) est replacé dans les modèles, 10 modèles sont générés. Les résultats sont proposés&nbsp;sous la forme d’une archive récupérable et les résultats sont conservés 8 jours sur le serveur. Ce&nbsp;serveur génère 100 modèles/mois. Un système intégré de modélisation moléculaire (MAGOS ) à&nbsp;grande échelle de protéomes entiers a été utilisé pour des protéomes de virus (modeome3D) et&nbsp;de plantes (arabidome3D).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Docking et sites 3D- chemo-informatique</strong><br />\r\nUne méthode bioinformatique SUMO a été développée permettant de détecter des sites 3D&nbsp;fonctionnels communs à plusieurs protéines. L’approche a fait l’objet d’un brevet déposé par le&nbsp;CNRS et d'un serveur Web pour rendre utilisable la méthode par la communauté académique.<br />\r\nDans un travail récent, nous avons réévalué les paramètres et avons montré que la qualité de&nbsp;comparaison était améliorée tout comme la rapidité du calcul. Cette méthode a été appliquée&nbsp;pour établir une classification des antibiotiques à noyau ß lactame.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7e2d5ef4e5194a1f91c93d44c3e67af7",
+    "http://schema.org/identifier": [
+      {
+        "@value": "586"
+      },
+      {
+        "@value": "587"
+      },
+      {
+        "@value": "588"
+      },
+      {
+        "@value": "585"
+      }
+    ]
+  },
+  {
+    "@id": "_:Necd0b30f855b4f7db71e2ebc2a47517e",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  }
+]

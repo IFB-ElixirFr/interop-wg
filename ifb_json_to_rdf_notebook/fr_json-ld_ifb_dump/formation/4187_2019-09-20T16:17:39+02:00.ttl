@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/r-introduction",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Centre de bioinformatique de Bordeaux (CGFB)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T15:44:28+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-17T15:44:28+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "R introduction"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/stage-19024-Langage-R--introduction.html?axe=98"
+      }
+    ]
+  }
+]

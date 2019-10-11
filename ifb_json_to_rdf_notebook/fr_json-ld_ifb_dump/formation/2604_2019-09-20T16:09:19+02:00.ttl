@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/how-use-south-green-hpc-ird-cluster",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "IRD, Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-15T17:53:54+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T22:52:32+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "How to use South Green HPC (IRD cluster)?"
+      }
+    ]
+  }
+]

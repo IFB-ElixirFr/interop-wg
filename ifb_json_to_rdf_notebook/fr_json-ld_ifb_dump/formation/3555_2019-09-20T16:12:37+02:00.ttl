@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/survival-guide-perl-applied-bioinformatics",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "ISRA, Bel Air, Dakar (Sénégal)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-17T22:40:25+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-18T10:32:09+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Survival Guide for Perl applied to Bioinformatics"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://southgreenplatform.github.io/trainings//perl/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/ngs-et-cancer-canceropôle-analyse-rnaseq",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-14T12:57:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "NGS et Cancer (Canceropôle) : Analyse A-RNASeq"
+      }
+    ]
+  }
+]

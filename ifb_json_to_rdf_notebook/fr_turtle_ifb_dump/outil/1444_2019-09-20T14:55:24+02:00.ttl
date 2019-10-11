@@ -1,0 +1,49 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/services/outils/vidjil> a schema:SoftwareApplication ;
+    edam:data_1190 "Vidjil" ;
+    dc:created "2016-01-22T11:37:49+01:00" ;
+    dc:description """<p><strong>Objectif</strong></p>\r
+\r
+<p>Vidjil est une plate-forme logicielle open-source dédiée à l'analyse de données de séquençage haut-débit issues de lymphocytes. Les recombinaisons V(D)J dans les lymphocytes sont essentielles pour la diversité immunologique. Ils sont aussi des marqueurs utiles de pathologies et, pour la leucémie, ils sont utilisés pour quantifier le minimum résiduel de la maladie pendant la phase de rémission du patient. Le séquençage Haut-Débit (NGS/HTS) permet maintenant le séquençage exhaustif des populations lymphoïques avec des méthodes dédiées de Rep-Seq et les logiciels associés.</p>\r
+\r
+<p><strong>Description de l'outil</strong></p>\r
+\r
+<p>Vidjil est constitué de 3 parties : un algorithme, un visualisateur et un serveur qui permettent l'analyse de populations lymphocitaires qui contiennent des recombinaisons V(D)J.</p>\r
+\r
+<p>L'algorithme haut-débit de Vidjil extrait les jonctions V(D)J et les regroupe en clones. Cette analyse est basée sur une heuristique à base de graine espacées et est rapide et évolutive, puisque, dans la première phase, aucun alignement n'est réalisé sur les séquences initiales de la base de données. Chaque séquence est assignée à un cluster selon sa jonction V(D)J. Puis, une séquence représentative de chaque cluster est calculée en un temps linéaire par rapport à la taille du cluster. Pour finir, nous réalisons un alignement complet par programmation dynamique de cette séquence représentative contre les séquences initiales.</p>\r
+\r
+<p>Vidjil contient également un navigateur dynamique (en D3JS) pour visualiser et analiser les clones et leur évolution au cours du temps.</p>\r
+""" ;
+    dc:modified "2018-12-14T11:27:45+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>Vidjil est open-source, sous la licence GNU GPLv3 (code disponible sur <a href="https://github.com/vidjil/vidjil">GitHub</a>). Le browser peut-être utilisé via le <a href="http://rbx.vidjil.org/browser/">web</a> et une version en ligne de commande peut-être téléchargée (cf. <a href="http://bioinfo.lifl.fr/vidjil/">page d'accueil</a>).</p>\r
+""" ] ;
+    c4o:GlobalCitationCount "25" ;
+    schema:url "http://www.vidjil.org/" .
+

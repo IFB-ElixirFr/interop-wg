@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/hectar",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "HECTAR"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-02T23:00:10+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Hectar:</strong>&nbsp;Predict subcellular targeting for heterokont proteins.&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N3c2281b80e4b425bbbc6252fe8803cbe"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3c2281b80e4b425bbbc6252fe8803cbe",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://webtools.sb-roscoff.fr/\" style=\"color: rgb(59, 59, 59); font-weight: bold; text-decoration: none; font-family: Georgia, sans-serif, 'Times New Roman', Times, serif; font-size: 15px;\">http://webtools.sb-roscoff.fr</a>&nbsp;: Galaxy instance that host tools developped at the Station Biologique de Roscoff in collaboration with ABiMS&nbsp;(no account).</p>\r\n"
+      }
+    ]
+  }
+]

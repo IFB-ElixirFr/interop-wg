@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/carnac",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Carnac"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T10:45:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Carnac est un logiciel d'analyse de structures secondaires d'une famille d'ARN homologues. Il permet de prédire si les séquences partagent réellement une structure secondaire commune. Lorsque cette structure existe, Carnac est capable de détecter une grande partie des tiges. L'entrée du programme est un ensemble de séquences d'ARN simple brin non alignées. La stratégie de repliement s'appuie sur un modèle thermodynamique qui minimise l'énergie. Elle associe l'information provenant des conservations locales de la structure primaire avec celle des covariations entre séquences.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-13T17:38:08+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nbd035f2a932c4669916902c9b7df5559"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "93"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.lifl.fr/RNA/carnac/carnac.php"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbd035f2a932c4669916902c9b7df5559",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://bioinfo.lifl.fr/RNA/carnac/\">Carnac</a> peut être utilisé via une interface web ou être téléchargé pour être installé localement (un compilateur C est nécessaire). Une version exécutable sous Windows est également disponible.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/rpbs",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N2bfeb7142a134fb1b8b6856b7f761ef2"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N56a0dc870cf7401d9244f52dc1923d0c"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nfce20255a4a44411b8878ac534b9faf5"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:Ne835e7d2a8ed4e3f903dd76946224175"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N2bf6b3566f7c471cb2cf6b57dc3c4620"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Na5b72ef7d72a451cbcc821ef836d4a53"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:36:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:42:28+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N8f0934d41ec14a7792f63e22381dc6cb"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N8cfc8e0289ea4d2aae78d683130ceac0"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RPBS"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nac9fa9bf545642a2a85adea20b950d24"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N45f60c0a6e8c40028f2b94895c8402d9"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N8ad1fa3141744bf7a378228f157cea1d"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N0d3ab50c1a504b1485b13d9b9c0ead11"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2bfeb7142a134fb1b8b6856b7f761ef2",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Salle serveur de 40m²</li>\r\n\t<li>Architecture de type PAAS (Platform As A Service)</li>\r\n\t<li>Ferme de calcul hétérogène (noeuds 12 coeurs / 48Go de RAM, noeud 60 coeurs / 512 Go de RAM, noeud GPU en cours d'installation) sur un réseau interne 10Gb</li>\r\n\t<li>Espace disque de travail de 30To sous LustreFS</li>\r\n\t<li>Espace de stockage NFS de 2x30To</li>\r\n\t<li>Gestion logicielle avec SaltStack</li>\r\n\t<li>Encapsulation des services dans des conteneurs Docker</li>\r\n\t<li>Gestionnaire de tâches: Slurm</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N45f60c0a6e8c40028f2b94895c8402d9",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      },
+      {
+        "@value": "169"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8cfc8e0289ea4d2aae78d683130ceac0",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "41"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8ad1fa3141744bf7a378228f157cea1d",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75013"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "35 rue Hélène Brion"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2bf6b3566f7c471cb2cf6b57dc3c4620",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Bioinformatique Structurale : analyse et modélisation de la structure et de la fonction des protéines, des peptides. Complexes protéiques, peptide-protéine. Criblage <em>in silico</em>.</p>\r\n\r\n<ul>\r\n\t<li>Modélisation comparative de la structure des&nbsp;protéines</li>\r\n\t<li>Recherche de similitudes structurales</li>\r\n\t<li>Modélisation de la structure de complexes protéiques</li>\r\n\t<li>Modélisation <em>de novo</em> de la structure des&nbsp;peptides</li>\r\n\t<li>Criblage <em>in silico</em> (structure-based)</li>\r\n\t<li>Impact structural de mutations ponctuelles</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na5b72ef7d72a451cbcc821ef836d4a53",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Service hosting : TEF, HHalign-Kbest, InterEvDock, MIR, Yakusa, SPROUTS &amp;&nbsp;SolyPep</li>\r\n\t<li>Hardware hosting : PAAS SDV</li>\r\n</ul>\r\n"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<ul>\r\n\t<li>Hébergement physique : les équipes demandeuses font une demande d’hébergement à la plate-forme qui assure l'intégration du matériel dans la ressource de calcul.</li>\r\n\t<li>Déploiement de services : les équipes demandeuses font une demande de déploiement à la plate-forme qui assure le déploiement du service sur la ressource de calcul et, si demandé, sur le portail Web.</li>\r\n\t<li>Projets scientifiques : les équipes demandeuses font une demande à la plate-forme pour une prestation ou un projet collaboratif.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfce20255a4a44411b8878ac534b9faf5",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "70.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne835e7d2a8ed4e3f903dd76946224175",
+    "http://schema.org/identifier": [
+      {
+        "@value": "662"
+      },
+      {
+        "@value": "663"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8f0934d41ec14a7792f63e22381dc6cb",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "7"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac9fa9bf545642a2a85adea20b950d24",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2939"
+      },
+      {
+        "@value": "664"
+      },
+      {
+        "@value": "1410"
+      },
+      {
+        "@value": "669"
+      },
+      {
+        "@value": "670"
+      },
+      {
+        "@value": "665"
+      },
+      {
+        "@value": "2205"
+      },
+      {
+        "@value": "1412"
+      },
+      {
+        "@value": "1411"
+      },
+      {
+        "@value": "666"
+      },
+      {
+        "@value": "2940"
+      },
+      {
+        "@value": "667"
+      },
+      {
+        "@value": "671"
+      },
+      {
+        "@value": "2206"
+      },
+      {
+        "@value": "672"
+      },
+      {
+        "@value": "673"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0d3ab50c1a504b1485b13d9b9c0ead11",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RPBS"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/index.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N56a0dc870cf7401d9244f52dc1923d0c",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "960"
+      }
+    ]
+  }
+]

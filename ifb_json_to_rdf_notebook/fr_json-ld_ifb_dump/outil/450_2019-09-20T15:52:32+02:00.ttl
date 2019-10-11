@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/genatlas-et-mirifix",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "78000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GenAtlas et Mirifix "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T13:32:31+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Outil de recherche établissant un lien entre gènes codants et non-codants et maladies génétiques.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-04-06T11:22:55+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N737fbecf4662408aaf0b81c44f72cdf5"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.france-bioinformatique.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N737fbecf4662408aaf0b81c44f72cdf5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Publique (GenAtlas)</p>\r\n\r\n<p>Restreint (Mirifix)</p>\r\n"
+      }
+    ]
+  }
+]

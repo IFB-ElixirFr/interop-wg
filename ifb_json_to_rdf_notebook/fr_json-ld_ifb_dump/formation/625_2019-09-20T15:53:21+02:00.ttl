@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/galaxy-srnaseq",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:10:48+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>As the command line training but with Galaxy. Organized jointly by the Sigenae and Bioinfo Genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-02T15:15:29+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Galaxy : sRNAseq"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/srnaseq/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/und/services/outils/seqinr",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "seqinR"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-02-02T17:01:59+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T16:44:23+01:00"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://pbil.univ-lyon1.fr/software/seqinr/home?lang=eng"
+      }
+    ]
+  }
+]

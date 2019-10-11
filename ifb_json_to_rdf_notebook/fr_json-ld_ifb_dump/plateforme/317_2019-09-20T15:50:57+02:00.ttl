@@ -1,0 +1,230 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/genotoul",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N8df920f843b0449686e19bf429f9dafc"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N8689760c5dda41a085471222a3a4a4c6"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nc47e07fb21ba4a7388431a9831251a53"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N3838bfec9f554f56bdc6fb7c8c30de16"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nb60b65fc2873424484b239c07d2d926f"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:19:41+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-08-12T11:41:06+02:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N59154c60254040bfad05d03d006e3363"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nc5cd3d5cb5bf4de0ba80b7815546dad2"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Genotoul-bioinfo"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N99c8fe0950b24ce0aa4026f2b6639a02"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nee1b2bb8a7714b1c9a61fafbf7bcbab4"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N60719a012886442db9fe8495cfd66689"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3838bfec9f554f56bdc6fb7c8c30de16",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Les domaines d’expertise de la plateforme GenoToul bioinfo sont :</p>\r\n\r\n<ul>\r\n\t<li>le traitement des données issues du séquençage haut débit : assemblage,&nbsp;annotation, analyse d’expression (RNAseq, RNAseq de novo, sRNAseq),&nbsp;métagénomique, analyse de variants, méthylSeq.</li>\r\n\t<li>l’analyse bioinformatique des ARNnc : annotation, prédiction, recherche de&nbsp;cibles, chez les archae, les bactéries, les plantes et les animaux.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N60719a012886442db9fe8495cfd66689",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc47e07fb21ba4a7388431a9831251a53",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "3200.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb60b65fc2873424484b239c07d2d926f",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Support for scientific projects is made in two forms:<br />\r\n1) project hosting: this form of accompaniment is to make available a project a virtual machine that will be administered by the members.<br />\r\n2) the accompaniment: the project support is performed preferentially in the form of collaboration. The service is also practiced. In the first case, you are asked to partners a contribution to the functioning of the platform. He also asked them to commit to join the staff of the platform that accompanied the project to various valuation results. In the case of a service, the full cost of the service (storage, computing, human ressources are assessed and charged.</p>\r\n\r\n<p>3) data storage</p>\r\n"
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p>Si vous souhaitez que nous vous accompagnions, contactez nous : <a href=\"http://bioinfo.genotoul.fr/index.php/ask-for/project/\">http://bioinfo.genotoul.fr/index.php/ask-for/project/</a></p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nee1b2bb8a7714b1c9a61fafbf7bcbab4",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Castanet Tolosan"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "31326"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "24 Chemin de Borde Rouge"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc5cd3d5cb5bf4de0ba80b7815546dad2",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "850"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8df920f843b0449686e19bf429f9dafc",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plate-­forme dispose d'une vingtaine de serveurs physiques complétés par soixante-quinze serveurs virtuels qui assurent les services de login, développement, entrées/sorties, bases de données relationnelles, banques de données génomiques, administration, supervision, web, virtualisation, sauvegarde, hébergement de projets, logiciels en bioinformatique. Le serveur principal, servant d'accès aux utilisateurs s'appelle \"genologin\".<br />\r\nQuelques exemples (liste non exhaustive) de services web hébergés par la plateforme : ng6, galaxy, rnaspace, peroxibase, phyleasprog, multalin, FrameD, MetExplore, Iccare, blast, emboss, biomaj...<br />\r\nPar ailleurs nous hébergeons (formalisation par convention) les données, sites web ou systèmes d'information d'autres plateformes ou d'autres équipes de recherche de la région : get-­‐plage, biopuce, anexplo, toxalim, hsern, sigenae : gbf, lrsv, genphyse</p>\r\n\r\n<p>● Cluster SLURM</p>\r\n\r\n<ul>\r\n\t<li>64 noeuds IVYBRIDGE (20c) = 1280 coeurs (2560 threads), 16 Tera Octets RAM</li>\r\n\t<li>48 noeuds BROADWELL (32c) = 1536 coeurs (3072 threads), 12 Tera Octets RAM</li>\r\n\t<li>1 noeud SMP1 = 120 coeurs, 3 Tera Octets RAM</li>\r\n\t<li>1 noeud SMP2 = 48 coeurs, 1.5 Tera Octets RAM</li>\r\n\t<li>Interconnexion Infiniband QDR (40Gbs) / FDR (56 Gbs)</li>\r\n</ul>\r\n\r\n<p>● Stockage scratch HPC<br />\r\n→ 900 Tera Octets utiles<br />\r\n→ 25 Giga bits / seconde</p>\r\n\r\n<p>● Stockage NAS</p>\r\n\r\n<p>→ 3 baies ISILON (au total 1.8 Peta Octets utiles)<br />\r\n→ 2 baies COMPELLENT/FLUIDFS (au total 450 Tera Octets utiles)<br />\r\n→ Au total 3.2 Peta Octets utiles</p>\r\n\r\n<p>● Virtualisation de serveurs<br />\r\n→ ferme Vmware de 3 serveurs<br />\r\n→ baie disques DELL-MD (mode SAN) 40To<br />\r\n→ 75 machines virtuelles hébergées (fin 2016)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8689760c5dda41a085471222a3a4a4c6",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2984"
+      }
+    ]
+  },
+  {
+    "@id": "_:N59154c60254040bfad05d03d006e3363",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "41"
+      }
+    ]
+  },
+  {
+    "@id": "_:N99c8fe0950b24ce0aa4026f2b6639a02",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "4262"
+      },
+      {
+        "@value": "610"
+      },
+      {
+        "@value": "4263"
+      },
+      {
+        "@value": "607"
+      },
+      {
+        "@value": "2198"
+      },
+      {
+        "@value": "609"
+      },
+      {
+        "@value": "2179"
+      },
+      {
+        "@value": "612"
+      },
+      {
+        "@value": "611"
+      },
+      {
+        "@value": "608"
+      }
+    ]
+  }
+]

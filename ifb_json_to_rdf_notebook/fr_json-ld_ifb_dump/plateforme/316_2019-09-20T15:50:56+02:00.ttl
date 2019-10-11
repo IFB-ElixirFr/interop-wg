@@ -1,0 +1,158 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/PRABI-G",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N433a11651cf34d12a78a63e822732219"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N528f7dbcd91b435c8c334c7bb67bf4bc"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:16:35+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-11T16:40:52+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-G"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N257c6bfac2c242d6b74360e8fe509f49"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N813d35449a7c4f87addfe0835d728963"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N6f60f73f7585486a8912347c89e64926"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N3b5d905639ab4e1a9a94beba21e42efd"
+      }
+    ]
+  },
+  {
+    "@id": "_:N528f7dbcd91b435c8c334c7bb67bf4bc",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Computational biology for MS-based proteomics (basic science and biomedical&nbsp;research) and metagenomics (environment, ecology and evolution)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N433a11651cf34d12a78a63e822732219",
+    "http://schema.org/identifier": [
+      {
+        "@value": "578"
+      },
+      {
+        "@value": "579"
+      },
+      {
+        "@value": "2382"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f60f73f7585486a8912347c89e64926",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "GRENOBLE Cedex 9"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "38054"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "17 avenue des Martyrs"
+      }
+    ]
+  },
+  {
+    "@id": "_:N813d35449a7c4f87addfe0835d728963",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "129"
+      },
+      {
+        "@value": "134"
+      },
+      {
+        "@value": "130"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3b5d905639ab4e1a9a94beba21e42efd",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Prabig"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.prabi.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N257c6bfac2c242d6b74360e8fe509f49",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "577"
+      }
+    ]
+  }
+]

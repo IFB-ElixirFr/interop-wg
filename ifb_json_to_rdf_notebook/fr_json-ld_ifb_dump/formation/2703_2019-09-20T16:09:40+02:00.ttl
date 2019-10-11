@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/fouille-données-et-analyse-données-ngs-avec-r",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "CBiB"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-20T11:26:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:57:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Fouille de données et analyse de données NGS avec R"
+      }
+    ]
+  }
+]

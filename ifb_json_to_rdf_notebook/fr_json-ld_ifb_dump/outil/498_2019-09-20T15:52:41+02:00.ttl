@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rmes",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "R'MES"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:47:39+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>R'MES (Recherche de Mots Exceptionnels dans les Séquences d'ADN) est un ensemble de programmes C++ dédié à la recherche de mots (ou familles de mots) ayant une fréquence exceptionnelle dans une séquence donnée (ADN, protéine ou autre). Une visualisation des résultats générés par R'MES peut être obtenue grâce à l'interface graphique RMESPlot disponible sur http://mulcyber.toulouse.inra.fr/projects/rmesplot.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Na924ccb9e3104a4990962f7f453c2a62"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na924ccb9e3104a4990962f7f453c2a62",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé librement sur http://migale.jouy.inra.fr/?q=rmes</p>\r\n"
+      }
+    ]
+  }
+]

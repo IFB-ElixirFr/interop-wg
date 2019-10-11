@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/domire",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "DOMIRE"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:42:16+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>DOMIRE est un serveur utilisant le programme VAST (comparaison des structures 3D des protéines) pour définir les limites des domaines structuraux dans les protéines à partir de leurs coordonnées atomiques. Il fournit aussi pour chaque structure requête une liste de voisins structuraux.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ndf846012b4e14c57894414c5f3eb4744"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "9"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndf846012b4e14c57894414c5f3eb4744",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès gratuit à http://genome.jouy.inra.fr/domire</p>\r\n"
+      }
+    ]
+  }
+]

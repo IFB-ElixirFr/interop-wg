@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/microscope",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "55000"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "11000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MicroScope"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T14:41:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p class=\"rtejustify\">Located at Genoscope (CEA sequencing center for environmental genomics), the LABGeM bioinformatics team has developed MicroScope, a web-based platform for prokaryotic genome analysis and expert functional annotation.</p>\r\n\r\n<p class=\"rtejustify\">MicroScope combines tools and graphical interfaces to analyze genomes and to perform manual curation of gene function in a comparative and metabolic context.</p>\r\n\r\n<p class=\"rtejustify\">This platform provides data from completed and ongoing genome projects together with post-genomic experiments (i.e. transcriptomics, re-sequencing of evolved strains) allowing users to improve the understanding of gene functions. Expert annotations are continuously gathered in the MicroScope database contributing to the improvement of the quality of microbial genome annotations, and thus to the predicted metabolic networks.</p>\r\n\r\n<p class=\"rtejustify\">MicroScope can be used as a community resource for comparative analysis and annotation of publicly available genomes but also as a private resource with restricted access rights on genomic data. In addition, we regularly hold professional trainings sessions on the use of MicroScope platform.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-19T11:21:15+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Naf23a906f2bf4641be82ec559f719ff3"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "910"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.genoscope.cns.fr/agc/microscope"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naf23a906f2bf4641be82ec559f719ff3",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<ul>\r\n\t<li>Free for academics.</li>\r\n\t<li>Sales quote available on demand for non-academics&nbsp;</li>\r\n</ul>\r\n\r\n<p><strong>Service features:</strong></p>\r\n\r\n<ul>\r\n\t<li>Microbial genome annotation (complete, WGS or metagenome-assembled genomes)</li>\r\n\t<li>Comparative genomics and pangenomics</li>\r\n\t<li>Function and biological process predictions</li>\r\n\t<li>Metabolic network reconstruction&nbsp;</li>\r\n\t<li>Analysis of transcriptomics data</li>\r\n\t<li>Variant calling of evolved strains</li>\r\n\t<li>Technical support</li>\r\n\t<li>Trainings on prokaryotic genome annotation&nbsp; and on the curation of metabolic networks&nbsp;</li>\r\n</ul>\r\n\r\n<p>More details <a href=\"https://www.genoscope.cns.fr/agc/microscope/about/services.php\">here</a>.</p>\r\n"
+      }
+    ]
+  }
+]

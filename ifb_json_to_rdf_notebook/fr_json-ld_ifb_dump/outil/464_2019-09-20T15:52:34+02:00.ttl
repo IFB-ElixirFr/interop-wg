@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/amigal",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "6000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "AGMIAL"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:18:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>AGMIAL, plate-forme d’annotation de génomes microbiens.<br />\r\nBryson K, Loux V, Bossy R, Nicolas P, Chaillou S, van de Guchte M, Penaud S, Maguin E, Hoebeke M, Bessières P, Gibrat JF: AGMIAL: implementing an annotation strategy for prokaryote genomes as a distributed system. Nucleic Acids Res 2006, 34:3533–3545.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T10:18:15+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N413a48bf13ef4ef6a823a769c14614bf"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "71"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://genome.jouy.inra.fr/agmial/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N413a48bf13ef4ef6a823a769c14614bf",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut être téléchargé gratuitement sur le site http://genome.jouy.inra.fr/agmial. Il est également possible de demander l’installation d’une instance d’AGMIAL sur les machines de la plate-forme MIGALE.</p>\r\n"
+      }
+    ]
+  }
+]

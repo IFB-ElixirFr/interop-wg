@@ -1,0 +1,51 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/formations/modify-and-extract-information-large-text-files> a edam:data_3669 ;
+    dbpedia-owl:location "INRA Auzeville-Tolosane" ;
+    dc:created "2019-07-10T11:56:24+02:00" ;
+    dc:description """<p>This training session is organized by the <strong>Genotoul bioinfo platform</strong> and aims at understanding how to efficiently process large raw or result text files. You will learn how to add a header line or change parts of a file without having the make a copy. You will learn how to extract columns and perform simple figure manipulations on files with millions of lines. A large share of the time will be spent practicing with sed and awk.</p>\r
+\r
+<div>\r
+<div>\r
+<p>This training is focused on practice. It consists of 3 modules with a large variety of exercises:<br />\r
+You are going to learn how to manipulate large file.</p>\r
+\r
+<ul>\r
+	<li><strong>09:00 am to 10:30 am : Regular expressions – TP1</strong></li>\r
+	<li><strong>10:45 am to 12:30 pm : File editing with sed – TP2</strong></li>\r
+	<li><strong>14:00 pm to 17:00 pm : Extracting information with awk – Combining unix sed and awk within pipes – TP3</strong></li>\r
+</ul>\r
+</div>\r
+</div>\r
+""" ;
+    dc:educationLevel "Formation professionnelle " ;
+    dc:modified "2019-08-12T11:41:06+02:00" ;
+    schema:name "Modify and extract information from large text files" ;
+    schema:url "http://bioinfo.genotoul.fr/index.php/events/modify-and-extract-information-from-large-text-files-2/" .
+

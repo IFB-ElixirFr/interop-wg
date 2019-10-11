@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/introduction-molecular-phylogeny",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T09:55:07+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Training organized by CNRS Entreprises</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T17:34:00+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction to molecular phylogeny"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://cnrsformation.cnrs.fr/stage-17008-Phylogenie-moleculaire-%28Lyon%29.html?axe=65"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-données-métagénomiques-16s",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-29T10:28:25+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T10:53:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de données métagénomiques 16S"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://migale.jouy.inra.fr/?q=fr/formations"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/synteny-viewer",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "2982"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "1480"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Synteny Viewer"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T22:26:18+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Web-oriented platform dedicated to the visualization of conserved genes/loci between species (i.e. comparative genomics or synteny) based on ancestral genomes reconstruction (i.e. paleogenomics). Users can navigate between plant (cereals, monocots, eudicots) and animal (vertebrates) genomes to transfer any structural and functional information from models to species of agricultural or medical interests. From the ongoing developments, the tools will be generic across eukaryotic phyla (plants, vertebrates, prokaryotes, protists, insects, etc.) and will target not only genome structures (gene order, sequences, etc.) but also the annotation of functions (gene ontologies, metabolic pathways, regulatory interactions, etc.). The platform will allow users to visualise conserved/specific genes either at the locus or at the gene levels in the considered genomes as well as associated gene structure, molecular evolution, expression, regulation as phenotypic and trait data, and provide access to the raw data (gene name, sequence, position, expression, methylation, repeat content context, polymorphism, phenotype, QTL, association genetics) obtained from synteny, duplication and ancestral content analyses for both plant and animal lineages. Transfert vers le CRRI.</p>\r\n\r\n<p><br />\r\nPublication :<br />\r\n&nbsp;&nbsp; &nbsp;Pont C, Murat F, Guizard S, Flores R, Foucrier S, Bidet Y, Quraishi UM, Alaux M, Doležel J, Fahima T, Budak H, Keller B, Salvi S, Maccaferri M, Steinbach D, Feuillet C, Quesneville H, Salse J (2013) Wheat Syntenome Unveils New Evidences of Contrasted Evolutionary Plasticity Between paleo- and Neoduplicated Subgenomes. Plant Journal. 76(6):1030-44.</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N82297c684b89401aad3e5023ca6dcad4"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "10"
+      }
+    ]
+  },
+  {
+    "@id": "_:N82297c684b89401aad3e5023ca6dcad4",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur https://urgi.versailles.inra.fr/synteny</p>\r\n"
+      }
+    ]
+  }
+]

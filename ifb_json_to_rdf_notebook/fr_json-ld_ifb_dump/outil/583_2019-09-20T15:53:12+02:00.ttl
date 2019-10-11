@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/nps",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "480414"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "NPS@ "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:04:06+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Serveur intégré d’analyse de séquences des protéines.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-27T16:15:41+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ndfe045027f0e4d7d82c29831f6e77c80"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1079"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://npsa-prabi.ibcp.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndfe045027f0e4d7d82c29831f6e77c80",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>https://npsa-prabi.ibcp.fr (depuis avril 1998).</p>\r\n"
+      }
+    ]
+  }
+]

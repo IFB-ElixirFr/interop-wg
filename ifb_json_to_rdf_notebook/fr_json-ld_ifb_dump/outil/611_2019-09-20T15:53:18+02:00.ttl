@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/interface-web-blast",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "325"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "194"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Interface web blast "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:58:30+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:13:58+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N5ec7c2104766482bae8bc22e23452dd6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://blast.toulouse.inra.fr/blast.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5ec7c2104766482bae8bc22e23452dd6",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Available on the web site.</p>\r\n"
+      }
+    ]
+  }
+]

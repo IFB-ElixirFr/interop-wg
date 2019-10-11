@@ -1,0 +1,143 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/tagc-bcf",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N382cba6564c4444eb3e96204819fe94b"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:09:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-05T16:22:26+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "TAGC-BCF"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nadb09bef53064a56a48c5135a241453e"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N6613e8939e264a888758b92648c172cb"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Naaaf2f86ee2a42fd9c4974f4155e07d3"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N21863c73b2694471a442a7b154b90805"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6613e8939e264a888758b92648c172cb",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nadb09bef53064a56a48c5135a241453e",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "681"
+      },
+      {
+        "@value": "683"
+      },
+      {
+        "@value": "682"
+      },
+      {
+        "@value": "679"
+      },
+      {
+        "@value": "680"
+      },
+      {
+        "@value": "684"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naaaf2f86ee2a42fd9c4974f4155e07d3",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Parc Scientifique de Luminy case 928"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13288"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 avenue de Luminy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N21863c73b2694471a442a7b154b90805",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "TAGC"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://tagc.univ-amu.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N382cba6564c4444eb3e96204819fe94b",
+    "http://schema.org/identifier": [
+      {
+        "@value": "2268"
+      },
+      {
+        "@value": "678"
+      }
+    ]
+  }
+]

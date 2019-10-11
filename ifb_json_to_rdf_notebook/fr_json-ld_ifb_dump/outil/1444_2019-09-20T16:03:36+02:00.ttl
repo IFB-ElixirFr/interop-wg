@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/vidjil",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Vidjil"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T11:37:49+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Objectif</strong></p>\r\n\r\n<p>Vidjil est une plate-forme logicielle open-source dédiée à l'analyse de données de séquençage haut-débit issues de lymphocytes. Les recombinaisons V(D)J dans les lymphocytes sont essentielles pour la diversité immunologique. Ils sont aussi des marqueurs utiles de pathologies et, pour la leucémie, ils sont utilisés pour quantifier le minimum résiduel de la maladie pendant la phase de rémission du patient. Le séquençage Haut-Débit (NGS/HTS) permet maintenant le séquençage exhaustif des populations lymphoïques avec des méthodes dédiées de Rep-Seq et les logiciels associés.</p>\r\n\r\n<p><strong>Description de l'outil</strong></p>\r\n\r\n<p>Vidjil est constitué de 3 parties : un algorithme, un visualisateur et un serveur qui permettent l'analyse de populations lymphocitaires qui contiennent des recombinaisons V(D)J.</p>\r\n\r\n<p>L'algorithme haut-débit de Vidjil extrait les jonctions V(D)J et les regroupe en clones. Cette analyse est basée sur une heuristique à base de graine espacées et est rapide et évolutive, puisque, dans la première phase, aucun alignement n'est réalisé sur les séquences initiales de la base de données. Chaque séquence est assignée à un cluster selon sa jonction V(D)J. Puis, une séquence représentative de chaque cluster est calculée en un temps linéaire par rapport à la taille du cluster. Pour finir, nous réalisons un alignement complet par programmation dynamique de cette séquence représentative contre les séquences initiales.</p>\r\n\r\n<p>Vidjil contient également un navigateur dynamique (en D3JS) pour visualiser et analiser les clones et leur évolution au cours du temps.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-14T11:27:45+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Naef029e8ed994dcdadfc48df54890eaa"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "25"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.vidjil.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Naef029e8ed994dcdadfc48df54890eaa",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Vidjil est open-source, sous la licence GNU GPLv3 (code disponible sur <a href=\"https://github.com/vidjil/vidjil\">GitHub</a>). Le browser peut-être utilisé via le <a href=\"http://rbx.vidjil.org/browser/\">web</a> et une version en ligne de commande peut-être téléchargée (cf. <a href=\"http://bioinfo.lifl.fr/vidjil/\">page d'accueil</a>).</p>\r\n"
+      }
+    ]
+  }
+]

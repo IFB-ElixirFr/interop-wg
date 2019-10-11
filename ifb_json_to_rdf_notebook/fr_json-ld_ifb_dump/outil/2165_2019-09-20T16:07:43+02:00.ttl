@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/shaman-shiny-application-metagenomic-analysis",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1855"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "742"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SHAMAN: a Shiny Application for Metagenomic ANalysis"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-11T14:30:45+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SHAMAN is a SHiny application for Metagenomic ANalysis including the normalization, the differential analysis and mutiple visualization.</p>\r\n\r\n<p>SHAMAN is based on DESeq2 R package <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20979621\">[Anders and Huber 2010]</a> for the analysis of metagenomic data, as suggested in <a href=\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3974642/\">[McMurdie and Holmes 2014,</a> <a href=\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4727335/\">Jonsson2016]</a> . SHAMAN robustly identifies the differential abundant genera with the Generalized Linear Model implemented in DESeq2 <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25516281\">[Love 2014]</a> . Resulting p-values are adjusted according to the Benjamini and Hochberg procedure [Benjamini and Hochberg 1995]. The PCOA is performed with the <a href=\"http://pbil.univ-lyon1.fr/ade4/\">ade4 R package</a> and plots are generated with <a href=\"http://ggplot2.org/\">ggplot2</a> or <a href=\"http://d3js.org/\">D3.js packages</a> . &nbsp; &nbsp;&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-11T15:01:28+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nc8e34bd35c6141c99f5746d17d5e44df"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://shaman.c3bi.pasteur.fr/"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "127"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc8e34bd35c6141c99f5746d17d5e44df",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>the web server is open and available at &nbsp;<a href=\"http://shaman.c3bi.pasteur.fr/\">http://shaman.c3bi.pasteur.fr/</a></p>\r\n\r\n<p>the code is accessible here <a href=\"https://github.com/aghozlane/shaman\">https://github.com/aghozlane/shaman</a> and release under the GPLv3 license.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/memhdx",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1524"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "833"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MEMHDX"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-19T15:25:44+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T15:26:02+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://memhdx.c3bi.pasteur.fr/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/remap",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "17570"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "5246"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ReMap"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:19:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ReMap est une analyse intégrative de toutes les données ChIP-Seq de facteur de transcription, données publiques (GEO, ArrayExpress) et non-ENCODE. A cela, et pour complémenter notre catalogue, nous avons ajouté les données d'ENCODE.</p>\r\n\r\n<p>Nous obtenons un catalogue d'environ 9 millions de sites de fixation au travers de 234 facteurs de transcription. Toutes ces données sont disponibles sur le site ReMap.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-26T12:25:55+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "25"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://tagc.univ-mrs.fr/remap/"
+      }
+    ]
+  }
+]

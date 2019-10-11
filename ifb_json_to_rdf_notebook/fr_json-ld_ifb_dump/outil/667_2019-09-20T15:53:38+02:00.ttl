@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/pep-sitefinder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1482"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "347"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PEP-SiteFinder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T10:54:27+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>PEP-SiteFinder</strong>&nbsp;is a service aimed at identifying patches on a protein surface, which a peptide of specified sequence is likely to interact with.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:58+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N3ad9bb521898451f858f461c4fc93948"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3ad9bb521898451f858f461c4fc93948",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Service en ligne en accès libre.</p>\r\n"
+      }
+    ]
+  }
+]

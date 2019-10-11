@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/caspo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Caspo"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:22:36+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The caspo pipeline is dedicated to automated reasoning on logical signaling networks</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T10:20:13+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N4d6a7170f19b44d5a9665e21725a76ea"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioasp.github.io/caspo/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d6a7170f19b44d5a9665e21725a76ea",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free</p>\r\n"
+      }
+    ]
+  }
+]

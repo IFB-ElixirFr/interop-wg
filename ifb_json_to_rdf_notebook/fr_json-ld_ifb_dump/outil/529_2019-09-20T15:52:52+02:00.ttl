@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/msda",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "1584"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MSDA"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T11:12:27+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Une suite de logiciels et de bases de données pour l’interprétation de données d’analyses protéomiques par spectrométrie de masse (outils de recherche dans les bases de données, pipeline de séquençage de novo, extraction d’annotations fonctionnelles des protéines, extraction de spectres selon des critères de qualité spectrale, ...) Carapito et al. Proteomics. 2014 14:1014-1019.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N67c0826b275e4057a04ee1f164af7698"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://msda.unistra.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N67c0826b275e4057a04ee1f164af7698",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre web.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/interface-web-emboss",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "14274"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "10059"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Interface web Emboss "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:58:59+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>emboss tools interface.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T14:47:32+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N65f921fe1f4d41b895be15b249a898b7"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://emboss.toulouse.inra.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N65f921fe1f4d41b895be15b249a898b7",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Site web</p>\r\n"
+      }
+    ]
+  }
+]

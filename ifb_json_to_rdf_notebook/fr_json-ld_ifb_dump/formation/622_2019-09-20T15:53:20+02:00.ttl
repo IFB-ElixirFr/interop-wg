@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/galaxy-first-step",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:08:44+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Galaxy is a workbench available for biologists from Sigenae Platform. Galaxy objectives are:<br />\r\n&nbsp;&nbsp;&nbsp; First, making bioinfo Linux tools accessible to biologists.<br />\r\n&nbsp;&nbsp;&nbsp; Then, it is possible to add Linux tools by developpers into Galaxy workbench.<br />\r\n&nbsp;&nbsp;&nbsp; Then, Galaxy is used to hide the complexity of the infrastructure and to allow creation, execution and sharing of workflows.<br />\r\nYou will acquire the following competencies required for the other Galaxy trainning:<br />\r\n&nbsp;&nbsp;&nbsp; Login to Galaxy: Galaxy Workbench (To access to Galaxy, you need to have an LDAP Genotoul login and password).<br />\r\n&nbsp;&nbsp;&nbsp; Begin to use some tools provided (BWA, SAM tools, FastQC).<br />\r\n&nbsp;&nbsp;&nbsp; Work on files.</p>\r\n\r\n<p>Organized jointly by the Sigenae and the Bioinfo Genotoul platform.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-02T15:13:14+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Galaxy : first step"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/first-step-with-galaxy/"
+      }
+    ]
+  }
+]

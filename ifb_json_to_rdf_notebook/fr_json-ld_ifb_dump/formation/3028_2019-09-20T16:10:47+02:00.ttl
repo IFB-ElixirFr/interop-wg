@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-des-données-rna-seq-sous-lenvironnement-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Lyon"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-07-09T19:14:26+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-07-09T19:14:26+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse des données RNA-Seq sous l'environnement Galaxy"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.biosciencesco.fr/formations/bio-informatique/analyse-des-donnees-rna-seq-sous-lenvironnement-galaxy/"
+      }
+    ]
+  }
+]

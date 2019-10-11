@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/hands-ngs-course",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-21T11:24:01+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<pre>\r\nThe aim of this course is to provide students with theory and practical\r\ntools to analyze Next Generation Sequencing (NGS) data.  The course is\r\ncomposed of a theory and practice lessons . In the first week theory\r\nsessions will cover the main kind of HTS analyses (re-sequencing and\r\nvariant analysis, de-novo sequencing, transcriptomics, ChIP-Seq,\r\nmetagenomics), in addition to some general bioinformatics tools and\r\nBiostatistics. The second week is dedicated to practice, in which the\r\nstudents work with their own data in small groups with a mentor that\r\nguides them. The practice week is designed so the course is of immediate\r\nuse to each student. We expect the students to go back to their countries\r\nwith the necessary knowledge to continue working on their own data.</pre>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "hands-on NGS course"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://c3bi.pasteur.fr"
+      }
+    ]
+  }
+]

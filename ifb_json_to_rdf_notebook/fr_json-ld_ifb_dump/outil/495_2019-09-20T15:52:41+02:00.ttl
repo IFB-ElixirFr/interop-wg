@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/island",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ISLAND"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:46:33+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ISLAND est un programme qui permet de simuler le progrès d'un projet de cartographie physique de génomes par la méthode d'ancrage. Il fournit en particulier le nombre moyen de contigs obtenus, leur longueur moyenne et la proportion moyenne de génome recouverte par les contigs, en fonction de la longueur du génome, des nombres de clones et ancres utilisés et des longueurs de clones.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ndaad467ae61a41ca9efb8778f880f537"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndaad467ae61a41ca9efb8778f880f537",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://genome.jouy.inra.fr/ssb/software/island/</p>\r\n"
+      }
+    ]
+  }
+]

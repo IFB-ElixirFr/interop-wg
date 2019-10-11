@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/varank",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "VaRank"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T10:02:41+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Workflow pour l'analyse et l'ordonnancement des SNVs et indels issus de données de séquençage haut débit.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-02-02T17:38:47+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N751d7de2ad9841e887366438658d932a"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.lbgi.fr/VaRank/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N751d7de2ad9841e887366438658d932a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Téléchargeable via le site Web</p>\r\n"
+      }
+    ]
+  }
+]

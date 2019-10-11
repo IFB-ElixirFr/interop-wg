@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/kaksi",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "KAKSI"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:41:52+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>KAKSI est un programme d'assignation de la structure secondaire des protéines. L'assignation des structures secondaires : l'hélice alpha (H), les brins bêta (b), les tournants (T) et les structures apériodiques (C) est effectuée sur la base des distances entre les carbones alpha et des angles phi et psi de la chaîne principale. Le programme calcule aussi la courbure de la chaîne principale.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:03+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nc0c88b1b06b742468f1d2f4c91119271"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "84"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc0c88b1b06b742468f1d2f4c91119271",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://migale.jouy.inra.fr/sites/all/downloads/Migale/Outils/kaksi.tarball.tar.gz</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/autograph",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Autograph"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-17T11:11:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>AutoGRAPH is an integrated web server for multi-species comparative genomic analysis. It is designed for constructing and visualizing synteny maps between two or three species, determination and display of macrosynteny and microsynteny relationships among species, and for highlighting evolutionary breakpoints.<br />\r\n&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-17T11:11:15+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nb1239544c65445f3a391416c139367de"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://autograph.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb1239544c65445f3a391416c139367de",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free access.</p>\r\n"
+      }
+    ]
+  }
+]

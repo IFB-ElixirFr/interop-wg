@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/gene-expression-data-analysis-galaxy-microarray",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Inserm"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T13:44:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<p>Objectives :</p>\r\n\r\n<pre>\r\n* Assimilate the concepts and methods related to gene expression analysis from microarray data (Affymetrix/Agilent)\r\n* Learn how to analyze transcriptome data (microarray) under the Galaxy environment\r\n* Learn more about biological data interpretation\r\n</pre>\r\n\r\n<pre>\r\n\r\nTheory: 30% / Practice : 70%\r\nOne workstation per student.\r\nParticipants who wish may, on the last day, analyze their own dataset.</pre>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-29T11:59:58+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RNASeq data analysis with Galaxy"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.pf-bird.univ-nantes.fr/85361781/0/fiche___pagelibre/&RH=1357829686766"
+      }
+    ]
+  }
+]

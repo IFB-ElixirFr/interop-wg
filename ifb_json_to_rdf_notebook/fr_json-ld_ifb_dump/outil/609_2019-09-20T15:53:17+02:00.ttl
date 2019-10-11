@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/ng6",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "33094"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "18359"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "NG6"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:55:27+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The platform works in tight collaboration with the GeT sequencing platform for the management and the analysis of data produced by their Roche 454 and Illumina HiSeq sequencers.<br />\r\nNG6 is an extensible sequencing provider oriented LIMS. It includes read quality control and first level analysis processes which ease the data validation made jointly by the sequencing facility staff ant the end-users. It provides a secured user-friendly interface to visualize and download the raw sequences files and the analysis results.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:35:52+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6667329398494f7d9a5e34b416d87af0"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "40"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ng6.toulouse.inra.fr/index.php?id=3"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1543"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6667329398494f7d9a5e34b416d87af0",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>The NG6 code is freely available on the gitlab formia : https://forgemia.inra.fr/genotoul-bioinfo/ng6. To ease the installation, the package and all its dependencies are also available as a virtual machine. Installing and maintaining the system would require expertise in Linux system administration.<br />\r\nAvailable by the web site for users</p>\r\n"
+      }
+    ]
+  }
+]

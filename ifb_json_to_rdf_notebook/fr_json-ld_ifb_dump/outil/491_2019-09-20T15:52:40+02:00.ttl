@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/esap",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ESAP"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:45:09+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ESAP est un programme de prédiction de la conformation de boucles dans les protéines. Il est basé sur une technique de Monte-Carlo dans l'espace des angles dièdres.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nda4ea6e2113d44308f7cd5f9f824af8d"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nda4ea6e2113d44308f7cd5f9f824af8d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://migale.jouy.inra.fr/sites/all/downloads/Mig/Logiciels/ESAP.version4.tar.gz</p>\r\n"
+      }
+    ]
+  }
+]

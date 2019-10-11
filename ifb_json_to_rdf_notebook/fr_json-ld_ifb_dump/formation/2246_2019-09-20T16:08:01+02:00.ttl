@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/cycle-« initiation-à-bioinformatique »-module-24 -alignement-séquences",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université de Lille"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T14:44:20+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-04T11:15:53+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Cycle « Initiation à la bioinformatique » - Module 2/4 : Alignement de séquences"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://wikis.univ-lille.fr/bilille/formation"
+      }
+    ]
+  }
+]

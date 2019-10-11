@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/diplôme-universitaire-en-bioinformatique-intégrative",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Université Paris-Diderot"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-06-17T17:50:55+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-06-24T15:42:22+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Diplôme Universitaire en bioinformatique intégrative : DU-Bii 2019"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://formation-continue.univ-paris-diderot.fr/dubii"
+      }
+    ]
+  }
+]

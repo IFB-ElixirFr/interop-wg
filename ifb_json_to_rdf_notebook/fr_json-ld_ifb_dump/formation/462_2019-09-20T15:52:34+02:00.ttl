@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/formations-à-plate-forme-microscope",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Evry"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T14:42:41+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-05-30T12:36:08+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Formations à la plate-forme Microscope"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.genoscope.cns.fr/agc/microscope/training"
+      }
+    ]
+  }
+]

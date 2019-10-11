@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/ordo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ORDO"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-11-17T12:03:59+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<p>Orphanet Rare Disease Ontology: Nomenclature, classifications et données scientifiques sur les maladies rares exploitable sous la forme d’une ontologie au format OWL. Réalisation en partenariat avec le European Bioinformatics Institute (EBI ; Contact Helen Parkinson). Mise à disposition en janvier 2014.</p>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-15T16:07:43+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N0537ee58ab0440b8b45142d3f5aae5ae"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "39"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.orphadata.org/cgi-bin/inc/ordo_orphanet.inc.php"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "6741"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0537ee58ab0440b8b45142d3f5aae5ae",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<p>Téléchargement en accès libre sur Orphadata.org,</p>\r\n\r\n<p>Téléchargement et utilisation possible à partir de Bioportal.</p>\r\n\r\n<p>Mise à disposition d’un sparql EndPoint.</p>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

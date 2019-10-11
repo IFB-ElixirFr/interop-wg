@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/class2g",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Class2g"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:46:16+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Class2g fournit une ségrégation des gènes en deux groupes selon leur expression et donne la probabilité d'appartenir à chaque groupe. Les données peuvent être le ratio de l'expression des gènes dans les deux conditions dans des expériences de microarray, l'intensité du signal de l'expression des gènes dans des expériences de macroarray, ou l'intensité du signal de l'hybridation des gènes dans un contexte de génomique comparative.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N58a1b220c66f4dc7bc5f2bdba33d89e5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N58a1b220c66f4dc7bc5f2bdba33d89e5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://migale.jouy.inra.fr/?q=class2g</p>\r\n"
+      }
+    ]
+  }
+]

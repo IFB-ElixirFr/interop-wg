@@ -1,0 +1,80 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/mmp",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T11:10:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:18:09+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "P3M"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nf843c49f7b3d4c7d9302995b48dbff10"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N6d677715779a464eb79df09ee55fc7b0"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf843c49f7b3d4c7d9302995b48dbff10",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Reims Cedex 2"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Moulin de la Housse - Bat. 18"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "51687"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "UFR Sciences Exactes et Naturelles"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6d677715779a464eb79df09ee55fc7b0",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Plateau de Modélisation Moléculaire Multi-échelle"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://p3m.univ-reims.fr"
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-données-rna-seq-sous-l’environnement-galaxy",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "PRABI (Campus scientifique de la Doua, LYON-VILLEURBANNE)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-08T15:59:04+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T15:08:23+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse de données RNA-seq sous l’environnement Galaxy "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.biosciencesco.fr/formation-continue/bio-informatique/analyse-des-donnees-rna-seq-sous-lenvironnement-galaxy/"
+      }
+    ]
+  }
+]

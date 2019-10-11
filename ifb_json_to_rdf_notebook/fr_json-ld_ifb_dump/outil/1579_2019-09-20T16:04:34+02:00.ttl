@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/goarrays",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GoArrays"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:44:27+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Microarray probe design application. It enables the design of specific probes of each gene in an entire genome, with an original approach. The use of specific microarray technology requires a very detailed attention for the design of specific probes spotted on the solid phase. These problems are far from being commonplace since they refer to complex physicochemical constraints. We propose a new approach to design oligonucleotides which combines good specificity with a potentially high sensitivity. This approach is original in the biological point of view as far as in the algorithmic point of view, and is particularly adapted when dealing with a complex target mixture (where it’s difficult to find specific sequences fo all genes).</p>\r\n\r\n<p><br />\r\n&nbsp;&nbsp; &nbsp;Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Rimour, S., D. Hill, C. Militon, and P. Peyret (2005) GoArrays: highly dynamic and efficient microarray probe design. Bioinformatics (Oxford, England) 21:1094-1103.<br />\r\n&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T17:00:27+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1c970abe2fbd4b14a0fffd9cc6965ad1"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "3"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://g2im.u-clermont1.fr/serimour/goarrays.html"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1c970abe2fbd4b14a0fffd9cc6965ad1",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://g2im.u-clermont1.fr/serimour/goarrays.html</p>\r\n"
+      }
+    ]
+  }
+]

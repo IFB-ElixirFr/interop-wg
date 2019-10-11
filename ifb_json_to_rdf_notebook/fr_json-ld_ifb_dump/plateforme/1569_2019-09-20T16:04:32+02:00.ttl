@@ -1,0 +1,282 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/AUBI",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N6f62906b3c7847d2a573186b37a5e6ea"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N4e093f88431d4f5fbe579bfaa0993a74"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N30e33a97c9544c36a7a552a855190e4b"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N92606f191cdc4fe299a203c3be5e21b2"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N2e360af0155f4a4a987bd4329d2686af"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T14:55:49+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-04-09T16:43:46+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N7a63fda560c143c19a12b450a1e57938"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "AuBi"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N4469f9e696ae41e6a6ee09c4853609b3"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N0cb3b139ed4942d2a2570ae6063db432"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N5783eb078e62444db95ddfd3193587e9"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N46bbbd6db4a54155b87837dfb03ee7ef"
+      }
+    ]
+  },
+  {
+    "@id": "_:N46bbbd6db4a54155b87837dfb03ee7ef",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "AuBI - Université de Clermont Auvergne (UCA)"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://mesocentre.uca.fr/projets-associes/plateforme-aubi/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4469f9e696ae41e6a6ee09c4853609b3",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1591"
+      },
+      {
+        "@value": "3995"
+      },
+      {
+        "@value": "1583"
+      },
+      {
+        "@value": "1596"
+      },
+      {
+        "@value": "1587"
+      },
+      {
+        "@value": "1582"
+      },
+      {
+        "@value": "1580"
+      },
+      {
+        "@value": "1593"
+      },
+      {
+        "@value": "1592"
+      },
+      {
+        "@value": "1575"
+      },
+      {
+        "@value": "1577"
+      },
+      {
+        "@value": "1589"
+      },
+      {
+        "@value": "1576"
+      },
+      {
+        "@value": "1578"
+      },
+      {
+        "@value": "1594"
+      },
+      {
+        "@value": "1579"
+      },
+      {
+        "@value": "1595"
+      },
+      {
+        "@value": "3992"
+      },
+      {
+        "@value": "1585"
+      },
+      {
+        "@value": "1597"
+      },
+      {
+        "@value": "1584"
+      },
+      {
+        "@value": "1586"
+      },
+      {
+        "@value": "1581"
+      },
+      {
+        "@value": "1588"
+      },
+      {
+        "@value": "1590"
+      }
+    ]
+  },
+  {
+    "@id": "_:N92606f191cdc4fe299a203c3be5e21b2",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1574"
+      },
+      {
+        "@value": "1571"
+      },
+      {
+        "@value": "1573"
+      },
+      {
+        "@value": "1572"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4e093f88431d4f5fbe579bfaa0993a74",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1088"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7a63fda560c143c19a12b450a1e57938",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "143"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e360af0155f4a4a987bd4329d2686af",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>La plateforme fait apparaître une forte expertise en génomique, épigénomique et métagénomique. Les modèles biologiques sont variés (micro-organismes, plantes, animaux) donnant un caractère généraliste à de nombreux outils.<br />\r\nCette plate-forme fait suite à une structuration des laboratoires de l'Université Clermont Auvergne faisant de la recherche dans ce domaine&nbsp;:</p>\r\n\r\n<ul>\r\n\t<li>GDEC (http://www6.clermont.inra.fr/umr1095/) UMR 1095 INRA, Université Clermont Auvergne ;</li>\r\n\t<li>GReD (https://www.gred-clermont.fr/) UMR 6293 CNRS, U1103 INSERM, Université Clermont Auvergne ; &nbsp;</li>\r\n\t<li>LIMOS (http://limos.isima.fr/) UMR 6158 CNRS, Université Clermont Auvergne ;</li>\r\n\t<li>LMGE (http://www.lmge.univ-bpclermont.fr/) UMR 6023 CNRS, Université Clermont Auvergne&nbsp;; &nbsp;</li>\r\n\t<li>M2ISH (http://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/microbes-intestin-inflammation-et-susceptibilite-de-l-hote-m2ish-/) UMR 1071, Université Clermont Auvergne ;</li>\r\n\t<li>MEDIS (http://www.uca.fr/laboratoires-/collegium-sciences-de-la-vie-sante-environnement/microbiologie-environnement-digestif-sante-medis-/) UMR 454 INRA, Université Clermont Auvergne ; &nbsp;</li>\r\n\t<li>NeuroDOL (http://neurodol.uca.fr/) UMR1107 Inserm, Université Clermont Auvergne ;</li>\r\n\t<li>PIAF (http://www6.clermont.inra.fr/piaf) UMR A547 INRA, Université Clermont Auvergne&nbsp;;</li>\r\n\t<li>UMRH (http://umrh-bioinfo.clermont.inra.fr/Intranet/web/UMRH) UMR1213 INRA, VetAgroSup ;</li>\r\n\t<li>UNH (https://www6.clermont.inra.fr/unh/) UMR INRA, Université Clermont Auvergne ;</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N30e33a97c9544c36a7a552a855190e4b",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "520.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5783eb078e62444db95ddfd3193587e9",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Saint-Genes-Champanelle"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "CBRV Facultés Médecine & Pharmacie 28 Place Henri Dunant 63001 Clermont-Ferrand"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "63122"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "INRA Theix"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0cb3b139ed4942d2a2570ae6063db432",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f62906b3c7847d2a573186b37a5e6ea",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Ressources mutualisées du Mésocentre Clermont Auvergne.</strong></p>\r\n\r\n<p><strong>Cluster de calcul avec SLURM, stockage distribuée avec CEPH, plateforme d'hébergement de services avec VMWARE.</strong></p>\r\n\r\n<p><strong>Projets 2017 : calculateur haute performance à mémoire partagée, Cloud IaaS de production Openstack.</strong></p>\r\n\r\n<p><strong>Hébergement dans le datacenter de l'Université Clermont Auvergne.</strong></p>\r\n"
+      }
+    ]
+  }
+]

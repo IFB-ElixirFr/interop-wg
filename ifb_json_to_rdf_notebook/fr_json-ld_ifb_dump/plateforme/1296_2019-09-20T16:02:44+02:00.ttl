@@ -1,0 +1,146 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/orphanet",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N88aa4713e296411885c88cc74fcdf2f5"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Hébergée "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N4ddb9f12d01540ecb6d6fe1f06c852bd"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-11-17T10:49:52+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T16:25:45+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Orphanet"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nb00ddf0f3fde48738371fd2ec4235564"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N87fff1694a1b436bac176b1e4e140164"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Na1908bb4ff7e45eaa09239020b8655bd"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N076696651c1643faa9724541fc55ef3d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N88aa4713e296411885c88cc74fcdf2f5",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1298"
+      },
+      {
+        "@value": "1297"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb00ddf0f3fde48738371fd2ec4235564",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1299"
+      }
+    ]
+  },
+  {
+    "@id": "_:N87fff1694a1b436bac176b1e4e140164",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:N076696651c1643faa9724541fc55ef3d",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Orphanet"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "www.orpha.net"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na1908bb4ff7e45eaa09239020b8655bd",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "75014"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "96 rue Didot"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4ddb9f12d01540ecb6d6fe1f06c852bd",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Le domaine d’expertise d’Orphanet est celui des maladies rares dans leurs aspects médicaux (histoire naturelle, diagnostic et prise en charge), épidémiologiques (prévalence, incidence, prévalence à la naissance, distribution géographique et par âge d’apparition et de décès), génétiques (déterminants génétiques de causalité, de susceptibilité), phénotypiques (fréquence d’occurrence des présentations phénotypiques des maladies), nosologiques (classification multi-dimensionnelle), terminologiques (interopérabilité sémantique). La couverture du domaine est aussi géographique, car représentant également l’expertise, l’offre de diagnostic et des soins et l’état d’avancement de la recherche dans 41 pays.<br />\r\nOrphanet se définit comme une offre de données et de services à forte valeur ajoutée, cette valeur provenant du fait que ces données sont intégrées, qualifiées, expertisées et contrôlées du point de vue de la qualité.</p>\r\n"
+      }
+    ]
+  }
+]

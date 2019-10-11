@@ -1,0 +1,59 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/plateformes/ARTbio",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-02-22T16:16:06+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2016-02-22T16:36:05+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ARTbio"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nea3c21fb090b4ff8be0ad96693af770a"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nea3c21fb090b4ff8be0ad96693af770a",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Paris"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "750005"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "9 quai Saint-Bernard"
+      }
+    ]
+  }
+]

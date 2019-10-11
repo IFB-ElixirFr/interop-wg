@@ -1,0 +1,201 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/microscope",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N851ad30679a04033b2df63d9a1d64e54"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N034046d2f330475db1e3720d5cd2d276"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N52dda2bb0c614259bd1acec684aa1f9d"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Na3a981d2edab406c8a90b9dc5c07fef3"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T10:30:40+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T12:23:45+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Ne4ac41f031c844c4bc51605db76a7c1a"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nabba44e9c9094ce8a1c9b14188128902"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MicroScope"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Na7b9215166e94045b33d063e50b42a61"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N1a17d4d51acb4875844eb2c81454e52a"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N7985d0b9503f4c0ead570908a4545ad1"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N52c7e267643c4ec88b6edb1bb3d6b994"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1a17d4d51acb4875844eb2c81454e52a",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "130"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7985d0b9503f4c0ead570908a4545ad1",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Evry"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91057"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "2, rue Gaston Crémieux, CP 5706"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52c7e267643c4ec88b6edb1bb3d6b994",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "MicroScope"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.genoscope.cns.fr/agc/microscope"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne4ac41f031c844c4bc51605db76a7c1a",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "307"
+      }
+    ]
+  },
+  {
+    "@id": "_:N034046d2f330475db1e3720d5cd2d276",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "370"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na3a981d2edab406c8a90b9dc5c07fef3",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>Développement de méthodes et d’outils destinés à l’annotation, à la génomique et au métabolisme comparatifs de génomes bactériens.</li>\r\n\t<li>Organisation et gestion de données génomiques et métaboliques dans des structures de bases de données.</li>\r\n\t<li>Prédiction et analyse de réseaux et modèles métaboliques de génomes bactériens.</li>\r\n\t<li>Analyse de données NGS : projets d’évolution (polymorphismes) et de transcriptomique (RNA-seq).</li>\r\n\t<li>Développement d’interfaces Web conviviales pour l’utilisation des outils d’analyses et l’annotation experte (composant MaGe, Magnifying Genomes).</li>\r\n\t<li>Service pour l’analyse de données génomiques ouvert à la communauté internationale des microbiologistes.</li>\r\n\t<li>Formations à l’annotation, à l’analyse comparative génomique et métabolique et à l’analyse de données de transcriptomique avec l’interface graphique MaGe.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N52dda2bb0c614259bd1acec684aa1f9d",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "40.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na7b9215166e94045b33d063e50b42a61",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "461"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nabba44e9c9094ce8a1c9b14188128902",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "984"
+      }
+    ]
+  },
+  {
+    "@id": "_:N851ad30679a04033b2df63d9a1d64e54",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>1 serveur de stockage.</p>\r\n\r\n<p>1 serveurs MySQL.</p>\r\n\r\n<p>1 cluster de calcul.</p>\r\n\r\n<p>1 serveur Web.</p>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

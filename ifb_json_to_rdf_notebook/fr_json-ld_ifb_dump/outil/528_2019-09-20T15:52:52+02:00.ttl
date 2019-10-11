@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/macsims",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Macsims"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T11:12:02+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>MACSIMS est un système de gestion des informations liées à l'alignement multiple qui combine les connaissances structurales et fonctionnelles des protéines avec des prédictions ab initio. Thompson et al. BMC Bioinformatics. 2006 318.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:58+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nfbd5bf27edec47e6b792a2e4af36082a"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "21"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfbd5bf27edec47e6b792a2e4af36082a",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès libre web.</p>\r\n"
+      }
+    ]
+  }
+]

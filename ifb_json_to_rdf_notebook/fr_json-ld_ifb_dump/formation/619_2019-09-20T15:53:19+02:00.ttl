@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/sequences-alignment-and-phylogeny",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:06:53+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session is organized by the bios4Biol CATI and the genotoul bioinfo platform and aims at initiating participants to molecular phylogenetics studies.<br />\r\nYou will discover how to build a sequence dataset, to align sequences, to edit and refine the resulting alignment.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-02T14:56:38+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Sequences alignment and phylogeny "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/sequences-alignment-phylogeny/"
+      }
+    ]
+  }
+]

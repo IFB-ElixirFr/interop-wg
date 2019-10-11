@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/xheinz",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "xHeinz"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-19T14:29:59+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<pre>\r\nxHeinz est un outil qui trouve des modules optimaux conservés entre deux espèces.</pre>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:21:54+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "4"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/ls-cwi/xheinz"
+      }
+    ]
+  }
+]

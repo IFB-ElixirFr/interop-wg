@@ -1,0 +1,175 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/plateformes/plateforme-de-présentation",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nac6d193df40e4f508bdf2c2e33787dbd"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N5b02a14b0e8c4e8eb5e078d3cb540be7"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N7f45d6494c134a3bba8ce07940bbe07e"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N0f9d78085a6242e8b01b5328aacecf0e"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-11-10T11:24:33+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-12T13:12:04+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N9b224c4f9b924b0fa3d14c2f3d0a2550"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Plateforme de présentation"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nb4e88db43f6348b490cc57ce50bbc3d6"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N9a78b251aae34713a7a3f279577e0c08"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N09d5e197f0044f2eba0332b5008d22cf"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7f45d6494c134a3bba8ce07940bbe07e",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "500.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9a78b251aae34713a7a3f279577e0c08",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Gif-sur-Yvette"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91190"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "1 rue de la terrace"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb4e88db43f6348b490cc57ce50bbc3d6",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:N09d5e197f0044f2eba0332b5008d22cf",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IFB"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.france-bioinformatique.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5b02a14b0e8c4e8eb5e078d3cb540be7",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "150"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0f9d78085a6242e8b01b5328aacecf0e",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1653"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nac6d193df40e4f508bdf2c2e33787dbd",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This is a short description about my servers.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9b224c4f9b924b0fa3d14c2f3d0a2550",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "78"
+      }
+    ]
+  }
+]

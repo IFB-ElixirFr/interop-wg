@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/ecdomainminer",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "100"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ECDomainMiner"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T20:01:00+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Predicts EC (Enzyme Classification) numbers for Pfam domains</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T20:12:32+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6b18531117ee448bb01462c76af2810c"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "0"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://ecdm.loria.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6b18531117ee448bb01462c76af2810c",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free for academic users</p>\r\n"
+      }
+    ]
+  }
+]

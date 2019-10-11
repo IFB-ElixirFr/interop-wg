@@ -1,0 +1,116 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/cbib> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<p>Infrastructure de virtualisation:</p>\r
+\r
+<ul>\r
+	<li>Cluster Proxmox : 3 serveurs DELL PowerEdge R640 (2 CPU Xeon 4114, 20 coeurs, 256Go, stockage dédié partagé 20To)</li>\r
+</ul>\r
+\r
+<p>Infrastructure de stockage:</p>\r
+\r
+<ul>\r
+	<li>Un stockage pour la production sur IBM Spectrum Scale, ~300To utile, IBM Spectrum Scale (ex-GPFS) composé de 2 nœuds GPFS [Dell R730] + JBOD [Dell MD3460]</li>\r
+	<li>Un stockage dans un site distant pour la réplication du stockage de production basé sur GlusterFS, ~400To</li>\r
+	<li>Un stockage pour la sauvegarde basé sur ZFS, 50To (répliquée sur un site distant)</li>\r
+	<li>Un système de stockage distribué. Projet MCIA-iRODS</li>\r
+</ul>\r
+\r
+<p>Infrastructure de calcul:</p>\r
+\r
+<ul>\r
+	<li>Cluster cortex. Total de 25 nœuds de calcul, 512 cœurs, 7.2To RAM : 24 nœuds de calcul standard, Dell R630 (20 cœurs, 256 Go RAM), 1 nœud de calcul "big memory", Dell R630 (32 cœurs, 1To RAM), 2 nœuds de login, Dell R630 (20 cœurs, 256 Go RAM)</li>\r
+	<li>Portail Galaxy, 1 serveur DELL PowerEdge R910 (32 coeurs/64 threads, 128Go RAM, 800 Go d'espace disque)</li>\r
+</ul>\r
+\r
+<p>Infrastructure réseau:</p>\r
+\r
+<ul>\r
+	<li>Accès Internet ~1 Gbits/s (partagé) fournit par l’Université de Bordeaux</li>\r
+	<li>LAN Intel Omni-Path (données), 100Gbit/s</li>\r
+	<li>LAN Ethernet, 10 Gbits/s</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "600" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "360.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "601",
+                "602" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>L'objectif du Centre de Bioinformatique de Bordeaux (CBiB) est de concevoir, mettre en œuvre et fournir l’accès aux services d’analyse de données biologiques adaptés à une production à haut débit (ex., génomique, protéomique, métabolomique, etc.). Cette exigence d’analyser les données de grande volumétrie de façon rapide et fiable, amène le CBiB à développer les méthodes de type « Big Data ». Pour ce faire, le CBiB réunit les compétences nécessaires en bioinformatique et en informatique ; le centre est équipé de moyens de calculs et stockage adaptés, en cohérence avec les équipements régionaux (le Mésocentre de Calcul Aquitain - MCIA) et l’infrastructure nationale de Bioinformatique (Investissement d’Avenir, Institut Français de Bioinformatique - IFB).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Le CBiB structure ses activités autour de trois axes stratégiques:</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>1. NGS : Activité de service pour le traitement de données issues des Nouvelles Technologies de Séquençage. Cet axe est réalisé en collaboration avec la Plate-forme Génome-Transcriptome de Bordeaux, productrice des données et avec GenoToul Bioinformatique à Toulouse dans le cadre du rapprochement initié ReNaBi/IBiSA (échanges de compétences techniques, mutualisation des formations aux biologistes, missions de service et thématique R&amp;D).</p>\r
+\r
+<p>2. Génomique Comparative : activité de recherche et de service pour le stockage, l'analyse et la comparaison à grande échelle de génomes bactériens au travers de la plateforme MolliGen.</p>\r
+\r
+<p><br />\r
+3. Métabolomique : En collaboration avec la Plate-forme Métabolomique de Bordeaux, (PMB) productrice des données, le CBiB est impliqué dans des projets de gestion de données en métabolomique avec l’extension récente de ces travaux aux données éco-physiologique. Par ailleurs, le CBiB est très fortement impliqué dans les activités de standardisation de données métabolomiques au niveau Européen (projet Européen COSMOS).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Le Centre de bioinformatique de Bordeaux (CBiB) fournit un accès à des ressources de calcul de haute performance, assure l'analyse des données et dispose d'une expertise en programmation. Ces ressources sont au service des scientifiques académiques et des entreprises privées pour leur permettre de répondre à leurs besoins en bioinformatique de manière efficace et rentable.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-21T10:27:52+02:00" ;
+    dc:modified "2019-03-07T11:00:05+01:00" ;
+    meb:User [ ocds:valueAmount "38" ] ;
+    schema:name "CBiB" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1417",
+                "1418",
+                "2242",
+                "597",
+                "598",
+                "599",
+                "600" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Bordeaux" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "33076" ;
+            schema:streetAddress "146 Rue Léo Saignat" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "Centre de Bioinformatique de Bordeaux" ;
+            schema:url "http://www.cbib.u-bordeaux.fr/" ] .
+

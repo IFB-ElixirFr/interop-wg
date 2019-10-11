@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/galaxycbib",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "150"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy@CBiB "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:32:25+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Portail d'analyse de données Galaxy.&nbsp;Des outils bioinformatiques sont mis à disposition sur le Toolshed:&nbsp;400 briques testées.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T14:14:35+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N9580b4092a4a492bb77baab843385a01"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://services.cbib.u-bordeaux.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9580b4092a4a492bb77baab843385a01",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Libre sur le web, sur demande pour avoir un espace de travail plus conséquent.</p>\r\n"
+      }
+    ]
+  }
+]

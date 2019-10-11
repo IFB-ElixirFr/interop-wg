@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/mirkwood",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "miRkwood"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T12:40:15+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>Objectif</strong></p>\r\n\r\n<p>miRkwood est un pipeline bioinformatique qui permet l'identification rapide et facile de microARN à partir de génomes de plantes. Il offre une interface intuitive pour naviguer dans les données, ainsi que de nombreuses options d'export pour permettre à l'utilisateur de mener des analyses plus poussées sur un ordinateur personnel</p>\r\n\r\n<p><strong>Description du logiciel</strong></p>\r\n\r\n<p>miRkwood prend en entrée un ensemble de petits reads, qui ont été préalablement alignés sur le génome de référence. Il identifie de nouveaux microARN en se basant sur la distribution des reads et la capacité des régions flanquantes à se replier en des structures de type tige-boucle. Puis, le résultat est affiné à l'aide d'une variété de fonctionnalités supplémentaires qui ajoutent de nouveaux éléments probants à la prédiction : stabilité du duplexe, stabilité thermodynamique, conservation phylogénétique, répétitions, <em>etc.</em></p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-16T14:19:39+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nf59511612dcf460ebc702a479e6c1482"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf59511612dcf460ebc702a479e6c1482",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://bioinfo.lifl.fr/mirkwood/\">miRkwood</a> est accessible via un serveur web et en tant qu'application stand-alone.</p>\r\n"
+      }
+    ]
+  }
+]

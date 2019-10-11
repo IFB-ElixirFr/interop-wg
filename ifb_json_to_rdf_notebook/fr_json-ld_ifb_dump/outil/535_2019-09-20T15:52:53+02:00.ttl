@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/hex",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "18000"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "5000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Hex"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T12:43:15+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Ab initio rigid body protein-protein docking.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T19:31:36+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1e14d1d0fa744ab6995f06aa77ea9826"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "720"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://hex.loria.fr"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "43000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1e14d1d0fa744ab6995f06aa77ea9826",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free licence for academic use</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/bird",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N89a197c8ec184b54a80c5590e9b8e52d"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N19831c7fad6740be951732b95cd39948"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nd9e3a33010cd4460a408e0d1e9298467"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N1aa21ed17c0f47b4a5fcafada5eca528"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nef9c85214e9b49c4aaf37028021b75a2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:15:58+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-29T14:28:42+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:Nf3c11e6bc5c4404aada72d231327b2c4"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N76326c231d624cd29287635dc19091fd"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "BiRD"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nd766abb748da4ea28e984f747dc2266e"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N4072f00bc36f431abdfa5ec98dba2749"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N0068c5dd6f0148229a33046c9ddb1610"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N585f362d995948bba5fcd0cdecc88cf8"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf3c11e6bc5c4404aada72d231327b2c4",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0068c5dd6f0148229a33046c9ddb1610",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Nantes"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "44000"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "IRS UN, 8 Quai Moncousu"
+      }
+    ]
+  },
+  {
+    "@id": "_:N76326c231d624cd29287635dc19091fd",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "206"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd9e3a33010cd4460a408e0d1e9298467",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "400.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4072f00bc36f431abdfa5ec98dba2749",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd766abb748da4ea28e984f747dc2266e",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "2256"
+      },
+      {
+        "@value": "2258"
+      },
+      {
+        "@value": "2259"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1aa21ed17c0f47b4a5fcafada5eca528",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<p>La plateforme BiRD conseille, propose et développe des services en bioinformatique : <strong>analyse de données de séquençage et génotypage à haut débit</strong> pour la détection de variants, étude du transcriptome (RNA-Seq et puces à ADN). Pour cela elle travaille aux cotés de la <a class=\"lien_interne\" href=\"https://pf-genomique.univ-nantes.fr/plateforme-genomique-de-nantes-721645.kjsp?RH=1353428509817\" title=\"plateforme de génomique\">plateforme Génomique</a> qui prend en charge les projets de préparations de librairies et séquençage. Ensemble les 2 plateformes forme l'infrastructure <a class=\"lien_interne\" href=\"https://sfrsante.univ-nantes.fr/plates-formes/analyses-omiques-purification-et-criblage/genobird-infrastructure-de-genomique-et-bioinformatique-2288900.kjsp?RH=1353428509817\" title=\"GenoBiRD\">GenoBiRD</a>.<br />\r\n<br />\r\nPour toutes ces applications, BiRD possède une expertise dans l'analyse de données à grande échelle et a <strong>développé des pipelines d’analyse bioinformatiques</strong> dédiés permettant de standardiser l’analyse depuis les données brutes jusqu’à l’interprétation biologique.<br />\r\n<br />\r\nCes services sont supportés par <strong>une infrastructure de calcul et de stockage</strong> dédiée directement connectée aux séquenceurs, accessible à distance à travers plusieurs services et ouverte à la communauté scientifique quelque soit sa tutelle.</p>\r\n\r\n<p>La plateforme assure :</p>\r\n\r\n<ul>\r\n\t<li>un <strong><a class=\"type_rubrique_0001 lien_interne\" href=\"https://pf-bird.univ-nantes.fr/analyse-de-donnees/\" title=\"accompagnement des projets d'analyse\">accompagnement des projets d'analyse</a> de données en génomique</strong>, depuis la définition du projet jusqu'à l'obtention de données filtrées et de bonne qualité.</li>\r\n\t<li>la mise à disposition de la communauté scientifique <strong>une <a class=\"type_rubrique_0001 lien_interne\" href=\"https://pf-bird.univ-nantes.fr/ressources/cluster-de-calcul/\">infrastructure</a> à haute performance et des ressources bioinformatiques</strong> adaptées (cluster calcul, stockage et CLOUD OpenStack) pour le traitement et l'analyse de données 'omics'. Basée sur cette infrastructure, une <strong><a class=\"lien_externe\" href=\"http://galaxy-bird2.univ-nantes.fr\" target=\"_blank\" title=\"instance Galaxy\">instance Galaxy</a> </strong> permet aux biologistes un accès facilité aux outils d'analyse de données.</li>\r\n\t<li>des <a class=\"type_rubrique_0001 lien_interne\" href=\"https://pf-bird.univ-nantes.fr/formation/\"><strong>formations</strong></a> dans le domaine de la Bioinformatique, comme une formation à l'analyse de données de transcriptome ou une initiation à l'utilisation du langage R.</li>\r\n</ul>\r\n\r\n<div>\r\n<p>&nbsp;</p>\r\n\r\n<p>Implantée <strong>au sein de la <a class=\"lien_interne\" href=\"http://www.sfrsante.univ-nantes.fr/\" target=\"_blank\">SFR Santé François Bonamy</a></strong>, la plateforme s'appuie sur les <strong>équipes de recherche en génétique et génomique humaine de <a class=\"lien_interne\" href=\"http://www.umr1087.univ-nantes.fr\" target=\"_blank\">l'UMR U1087</a></strong>, à laquelle elle est adossée. L'un des objectifs scientifiques de ces équipes est d'élucider les mécanismes moléculaires de pathologies cardiovasculaires (mort subite, arythmies, valvulopathies, anévrismes cérébraux, etc.). Les stratégies d'analyse mises en oeuvre s'appuient sur les technologies de criblage génomique à haut-débit couplées au développement de nouveaux outils bioinformatiques dédiés, dans le but d'identifier de nouveaux marqueurs de risque dans ces pathologies.</p>\r\n\r\n<p>La plateforme est également co-dirigée scientiquement par le <a class=\"lien_externe\" href=\"http://ls2n.fr/\" title=\"LS2N (Laboratoire des Sciences Numériques Nantes)\">LS2N (Laboratoire des Sciences Numériques Nantes)</a>. Les travaux de recherche et développements de la plateforme BiRD sont menés en collaboration avec l’équipe ComBi dont les thématiques de recherche principales se concentrent autour de la génomique comparative et de la biologie des systèmes. Ensemble, ces deux laboratoires définissent les orientations stratégiques et scientifiques de BiRD, et coordonnent les ressources humaines et matérielles.</p>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N89a197c8ec184b54a80c5590e9b8e52d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>&nbsp;</p>\r\n\r\n<ul>\r\n\t<li><a href=\"http://www.pf-bird.univ-nantes.fr/85168536/0/fiche___pagelibre/&amp;RH=1365411208755&amp;RF=1442585061597\"><strong>cluster de calcul ouvert à la communauté </strong></a><strong>(hébergé dans le <a href=\"http://www.univ-nantes.fr/55783809/0/fiche___pagelibre/&amp;RH=PRES#KLINK#KLINK\">datacenter</a> de l'université de Nantes) :</strong>\r\n\r\n\t<ul>\r\n\t\t<li>10 lames pour un total de 560 coeurs et 3.8 To de RAM</li>\r\n\t\t<li>Espace de stockage de 400To utiles (BeeGFS) associé</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li><strong>cluster de calcul dédié à l'analyse des projets NGS</strong> et au développement des pipelines :\r\n\t<ul>\r\n\t\t<li>6 lames pour un total de 384 coeurs et 2.1 To de RAM.</li>\r\n\t\t<li>Espace de stockage de 150To utiles associé</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>Serveur Galaxy : <a href=\"http://galaxy-bird.univ-nantes.fr\">http://galaxy-bird2.univ-nantes.fr</a> (necessite la création d'un compte sur le cluster)</li>\r\n\t<li>d'une <a class=\"lien_interne\" href=\"https://pf-bird.univ-nantes.fr/ressources/cloud/infrastructure-cloud-2189212.kjsp?RH=1513961431157\" title=\"plateforme de CLOUD sous OpenStack\">plateforme de CLOUD sous OpenStack intégrée dans le projet Biosphère</a>\r\n\t<ul>\r\n\t\t<li>160 coeurs</li>\r\n\t\t<li>50 To de stockage</li>\r\n\t</ul>\r\n\t</li>\r\n\t<li>Trois autres serveurs (web, fichiers et développement)</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nef9c85214e9b49c4aaf37028021b75a2",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>o Etude du transcriptome (RNAseq, puces à ADN Affymetrix et Agilent) : QC, analyse primaire (alignement, normalisation, filtrage, détection de gènes différentiels, clustering, annotation fonctionnelle)</p>\r\n\r\n<p>o Recherche de variations génétiques issues du séquencage Haut Débit (NGS) : QC, alignement, détection de variants.</p>\r\n\r\n<p>o Génotypage (puces Axiom) : analyse primaire GWAS.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": " Conduite de projet en analyse de données "
+      }
+    ],
+    "http://www.wsmo.org/ns/wsmo-lite#Condition": [
+      {
+        "@value": "<p><strong>Tous les projets sont gérés dans le cadre d'une démarche qualité</strong>. Un projet démarre généralement par une réunion entre le porteur de projet et les membres de la plateforme, pendant laquelle la faisabilité du projet est discutée.</p>\r\n\r\n<p>Lorsqu'un projet est pris en charge, la plateforme <strong>s'engage à réaliser les analyses primaires et à fournir tous les documents associés</strong> (données brutes, données normalisées, classification hiérarchique, recherche de gènes différentiels, fichiers fastq, fichiers bam, fichiers vcf...)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N19831c7fad6740be951732b95cd39948",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "560"
+      }
+    ]
+  },
+  {
+    "@id": "_:N585f362d995948bba5fcd0cdecc88cf8",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "pf-bird.univ-nantes.fr"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.pf-bird.univ-nantes.fr/"
+      }
+    ]
+  }
+]

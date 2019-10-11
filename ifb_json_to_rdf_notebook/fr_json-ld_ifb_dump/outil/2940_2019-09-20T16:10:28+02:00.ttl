@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/faf-drugs4",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "8400"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "780"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "FAF-Drugs4"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-06-11T11:47:23+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>FAF-Drugs</strong>&nbsp;(Free ADME-Tox Filtering Tool version 4.0) is a program for filtering large compound libraries prior to in silico screening experiments or related modeling studies. The main goal is the computational prediction of some ADME-Tox properties (Adsorption, Distribution, Metabolism, Excretion and Toxicity) in order to assist hit selection before chemical synthesis or ordering.</p>\r\n\r\n<p>FAF-Drugs employs pre-defined filters, but users can also customize their own filtering parameters by using the Filter-Editor service.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-06-11T11:47:35+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N688a2a02a1a043d38cfcd831972185cf"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "35"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://fafdrugs4.mti.univ-paris-diderot.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N688a2a02a1a043d38cfcd831972185cf",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Service en accès libre.</p>\r\n"
+      }
+    ]
+  }
+]

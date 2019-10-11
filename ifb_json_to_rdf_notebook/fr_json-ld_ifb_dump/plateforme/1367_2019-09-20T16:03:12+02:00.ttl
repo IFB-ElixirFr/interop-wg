@@ -1,0 +1,108 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/ifb-core",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-05T13:25:56+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-09-11T15:19:39+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IFB Core"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N5c08dea17ae143ff9de249ef0deaa907"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Ne66078122f6446b0972181a4911f8a46"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N7f3b6670fe61470bb9eb0681798da878"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7f3b6670fe61470bb9eb0681798da878",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "https://www.france-bioinformatique.fr/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.france-bioinformatique.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5c08dea17ae143ff9de249ef0deaa907",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "134"
+      },
+      {
+        "@value": "130"
+      },
+      {
+        "@value": "133"
+      },
+      {
+        "@value": "132"
+      },
+      {
+        "@value": "129"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne66078122f6446b0972181a4911f8a46",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Evry"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "2 rue Gaston Crémieux"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "91057"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Génoscope"
+      }
+    ]
+  }
+]

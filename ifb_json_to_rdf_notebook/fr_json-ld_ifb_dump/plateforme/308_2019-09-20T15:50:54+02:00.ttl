@@ -1,0 +1,258 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/bistro",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N04393f1bade047d883cacade3662f681"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Na09421cd52294db1b44d22fced0a7d7b"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N6be19931a8d24651bea171a1fa823855"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N87eddec369d74d8c8f3d9caaac0a1921"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N822109011b8e4b0c87da09395263d4b5"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:Nbfbffd89b7ab4232825ca7679d440905"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-23T11:08:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-12T17:03:49+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "BIstrO"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N0b3ea9bd185b4ff78c039e80401cc95a"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N5661a7e536634f7cab20d131b244726e"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N3d58177f52bc4abe91fddea3d6d0db02"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nfa14c09587de40fa9b8acfdabe9f04d8"
+      }
+    ]
+  },
+  {
+    "@id": "_:N87eddec369d74d8c8f3d9caaac0a1921",
+    "http://schema.org/identifier": [
+      {
+        "@value": "517"
+      },
+      {
+        "@value": "1429"
+      },
+      {
+        "@value": "1387"
+      },
+      {
+        "@value": "520"
+      },
+      {
+        "@value": "522"
+      },
+      {
+        "@value": "523"
+      },
+      {
+        "@value": "521"
+      },
+      {
+        "@value": "524"
+      },
+      {
+        "@value": "516"
+      },
+      {
+        "@value": "519"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3d58177f52bc4abe91fddea3d6d0db02",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Illkirch"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "67412"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "300 boulevard Sébastien Brant"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5661a7e536634f7cab20d131b244726e",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nfa14c09587de40fa9b8acfdabe9f04d8",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "BIstrO"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo-bistro.fr/bioinfo-bistro/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0b3ea9bd185b4ff78c039e80401cc95a",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1424"
+      },
+      {
+        "@value": "529"
+      },
+      {
+        "@value": "527"
+      },
+      {
+        "@value": "1427"
+      },
+      {
+        "@value": "1426"
+      },
+      {
+        "@value": "530"
+      },
+      {
+        "@value": "528"
+      },
+      {
+        "@value": "1425"
+      },
+      {
+        "@value": "526"
+      },
+      {
+        "@value": "1423"
+      },
+      {
+        "@value": "531"
+      }
+    ]
+  },
+  {
+    "@id": "_:N04393f1bade047d883cacade3662f681",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>L’infrastructure propre (financée par l’IFB à hauteur de 60 MEuros) est hébergée par la grille de calcul TIER-2 de l’IPHC: 1 cluster de calcul Linux&nbsp; en accès libre pour le public avec identification.<br />\r\nLa plate-forme partage également une partie de l’infrastructure informatique distribuée dans les instituts partenaires de la plate-forme :<br />\r\n• IBMP (Fédérative entre IBMP, GMGM, IBMC (ARN, RIDI), Herbier de Strasbourg)<br />\r\no Cluster de calcul de 72 coeurs et 576 Go RAM avec 60 To de stockage associé au calcul et 60 To de stockage capacitifs.</p>\r\n\r\n<p>o Plus de 50 outils d’analyses de séquences (Alignement, phylogénie, NGS, smallRNAs, EMBOSS, …) sont déployées sur les lames.<br />\r\n<br />\r\n• ICube : BFO, LBGI<br />\r\no Infrastructure : propre<br />\r\no Serveur web (KVM) : 24 cœurs (128 GB RAM)<br />\r\no Capacité de stockage utile totale : 7 To<br />\r\no Outils bioinformatiques et banques de données disponibles : 10<br />\r\no Serveur en accès libre</p>\r\n\r\n<p>• IGBMC : GalaxEast<br />\r\no Infrastructure : propre<br />\r\no Nombre de serveurs et type :<br />\r\n• Serveurs web nginx (VM) : 2<br />\r\n• Serveur posgreSQL (VM) : 1<br />\r\n• Serveurs FTP (VM) : 2<br />\r\no Ferme de calcul : 16 nœuds : 256 cœurs<br />\r\no Capacité de stockage utile totale : 2,5 To<br />\r\no Nombre d’outils bioinformatiques disponibles : 119<br />\r\no Gestionnaire de file : GridEngine<br />\r\no Serveur en accès libre pour les utilisateurs de GalaxEast</p>\r\n\r\n<p>• IGBMC : NGS-QC<br />\r\no Infrastructure : propre (financé par l’équipe Gronemeyer et un projet de maturation soutenu par le SATT Conectus Alsace.<br />\r\no Nombre de serveurs: 2 servers ; 2 x 40 coeurs ; 256 GB RAM<br />\r\no Capacité de stockage utile totale : &gt; 20 To<br />\r\no Nombre de collections de données mises à disposition : 1.<br />\r\no Nombre d’outils bioinformatiques disponibles : 1<br />\r\no Serveur en accès libre</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na09421cd52294db1b44d22fced0a7d7b",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "380"
+      }
+    ]
+  },
+  {
+    "@id": "_:N822109011b8e4b0c87da09395263d4b5",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>• Biologie Végétale Intégrative (silencing, épigénétique, intéractions hôtes pathogènes, cycle cellulaire, …)<br />\r\n• Maladies génétiques rares (ciliopathies, rétinopathies, myopathies, …)<br />\r\n• Génomique structurale, fonctionnelle, comparative<br />\r\n• Protéomique haut-débit et Protéomique structurale<br />\r\n• Développement de méthodes quantitatives basées sur la spectrométrie de masse et leur application à des systèmes biologiques<br />\r\n• ARN non-codantes : architecture, mécanismes d'évolution, et rôles dans la pathogénicité<br />\r\n• L'étude des micro-organismes adaptés à des conditions environnementales extrêmes<br />\r\n• Recherche transdisciplinaire à l'interface de la biologie, la biochimie, la physique et la médecine</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>La plateforme BISTRO regroupe plusieurs plateformes/services bioinformatiques dans différents Instituts de recherche à Strasbourg :</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Génétique Moléculaire, Génomique Microbiologie (GMGM)</h5>\r\n\r\n<p>L'étude des micro-organismes adaptés à des conditions environnementales extrêmes peuvent révéler des capacités microbiennes insoupçonnées. Leur compréhension, y compris les fonctions métaboliques et la formation de biofilm impliqués dans l'adaptation à des conditions particulières est un objectif majeur de la microbiologie environnementale. Nous étudions ces mécanismes d'adaptation microbienne dans les écosystèmes contaminés par des éléments toxiques à 3 niveaux : (i) l'isolement de nouvelles souches et la caractérisation de leurs propriétés métaboliques, (ii) l'étude de la réponse adaptative aux métaux toxiques dans des conditions de laboratoire, (iii) l'étude d'environnements contaminés pour comprendre le fonctionnement des communautés microbiennes in situ.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut de Biologie Moléculaire et Cellulaire (IBMC)</h5>\r\n\r\n<p>L’équipe « évolution des ARN non-codants chez les levures » s'intéresse au rôle et à l'évolution des ARNnc dans les mécanismes biologiques. De tels ARN étaient connus depuis longtemps, mais on pensait alors qu’ils n’étaient que des \"composants infrastructuraux\" de la machinerie traductionnelle, des reliquats d’un monde ancestral \"tout ARN\" : les ARN ribosomiques, les ARN de transferts, les introns ainsi que les petits ARN nucléolaires. Au moyen d'approches bioinformatiques et expérimentales, nous nous intéressons particulièrement : (i) à l'étude des relations structure-fonction dans certaines familles d'ARNnc (ribosomes, riboswitches,...), (ii) à l'identification et à l'étude de nouveaux ARNnc impliqués dans les mécanismes de pathogénicité chez certaines espèces de levures.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut de Biologie Moléculaire des Plantes (IBMP)</h5>\r\n\r\n<p>L’activité de recherche est dédiée à l’étude des mécanismes fondamentaux de la vie des plantes dont les applications trouvent notamment leur place dans les domaines des biotechnologies ou de la recherche médicale. Les domaines étudiés sont très variés : (i) la biosynthèse de molécules bioactives (impliquées dans l’élaboration de matériaux, de cosmétiques, d’arômes ou de médicaments) et de leur régulation, (ii) virus végétaux, (iii) des grandes voies de régulation permettant le développement et la reproduction des plantes ainsi que l’adaptation à leur environnement, (iv) la biogenèse des organites, chloroplastes et mitochondries, indispensables à la production d’énergie des cellules et dont les dysfonctionnements peuvent engendrer des effets fortement délétères quant à la vie cellulaire. http://ibmp.u-strasbg.fr/</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Laboratoire des sciences de l'ingénieur, de l'informatique et de l'imagerie (ICube)</h5>\r\n\r\n<p>L'équipe Complex systems and Translational Bioinformatics (CSTB) couvre un large spectre de recherches en informatique : la bioinformatique et génomique intégratives, la bioinformatique théorique, la fouille de données, l'ingénierie des connaissances et l'optimisation stochastique. Dans le domaine de la bioinformatique, nous nous focalisons essentiellement sur le domaine de la santé et plus particulièrement à l’étude des maladies génétiques rares et à la compréhension des mécanismes physiopathologiques impliqués dans ces maladies. Ces mécanismes ont souvent un intérêt potentiel pour la compréhension des processus biologiques altérés dans des maladies plus communes, telles que l’obésité, les diabètes ou les cancers.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut de génétique et de biologie moléculaire et cellulaire (IGBMC)</h5>\r\n\r\n<p>L'objectif de l'institut est de développer la recherche transdisciplinaire à l'interface de la biologie, la biochimie, la physique et la médecine. Nous explorons des thématiques très diverses, alliant recherche fondamentale et appliquée dans le domaine de la santé. Les travaux concernent des sujets très variés, allant de l'analyse structurale des protéines à la génétique humaine, en passant par les cellules souches, la biophysique ou l'épigénétique. Les résultats scientifiques ont déjà permis d'importantes avancées, notamment pour la compréhension de nombreuses pathologies humaines comme certains cancers ou maladies génétiques rares.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut clinique de la souris (ICS - IGBMC)</h5>\r\n\r\n<p>Le service informatique ICS possède une expertise informatique forte dans la mise en place de la chaine de traitement des données issues des souris génétiquement modifiés : développement d’outils de capture des données de phénotypage, des traitements statistiques appropriés, des procédures d’interfaçage avec des ressources externes. Il développe également l’analyse intégrative de ces données en les croisant avec les ressources publiques disponibles (MGI, EMMA…).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Institut Pluridisciplinaire Hubert Curien (IPHC)</h5>\r\n\r\n<p>Le Laboratoire de Spectrométrie de Masse BioOrganique (LSMBO) de l’IPHC se concentre sur le développement de méthodes analytiques pour la détermination structurale de macromolécules, principalement des protéines, sans aucune ambiguïté structurale, jusqu’au dernier atome. Des méthodes d’analyse protéomique à haut débit sont développées pour la quantification de protéomes complexes ou la découverte de biomarqueurs de pathologies. Nous développons également la MS supramoléculaire pour décrire des complexes non-covalents, des approches de protéomique structurale, de protéogénomique et de complexomique. L’équipe de bioinformatique du laboratoire développe les outils logiciels nécessaires à l’interprétation de l’ensemble des données générées, outils qui sont accessibles sur MSDA (Mass Spectrometry Data Analysis, <a href=\"https://msda.unistra.fr/\">https://msda.unistra.fr/</a>)</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h5>Laboratoire de Génétique Médicale (LGM)</h5>\r\n\r\n<p>Le leitmotiv du LGM est d’avoir comme point de départ l’observation clinique de patients atteints de maladies rares d’origine génétique; d’identifier les causes génétique(s) de leur affection(s) et d’en étudier les mécanismes physiopathogéniques au niveau cellulaire et au niveau d’organismes modèles pour aboutir à des hypothèses thérapeutiques ouvrant la voie vers des projets de thérapies précliniques pour in fine retourner vers le patient. La motivation profonde, qui anime l’équipe constituée aussi bien de médecins que de scientifiques, est basée sur sa volonté de développer une recherche véritablement translationnelle. La recherche sur les maladies rares génétiques sont à l’origine de découverte de nouvelles voies biologiques et peuvent avoir un impact fort sur les maladies communes. Ce laboratoire a permis de développer de nouveaux axes de recherché très compétitifs dans le domaine de la génétique humaine et de la physiopathologie intégrée de divers processus pathologiques à l’origine de maladies génétiques et/ou communes. http://www.u1112.inserm.fr/</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbfbffd89b7ab4232825ca7679d440905",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>1. BioImage<br />\r\n• Mode : BioImage partner<br />\r\n• Hosting of MitoCross labex (storage infrastructure hosted /configured/maintained by the platform)<br />\r\n• Support for project “Variation intra-spécifique et évolution des genomes” led by Joseph SCHACHERER (computing and data storage via the platform)<br />\r\n2. Structural biology<br />\r\n• Mode : Instruct project partner<br />\r\n• Support for Instruct project: European Research Infrastructure in Integrative Structural Biology<br />\r\n• Support for FRISBI&nbsp; project : French Infrastructure For Integrated Structural Biology<br />\r\n3. Proteomics<br />\r\n• Participation in project: Infrastructure Nationale en Biologie et Santé (ProFI : Proteomic French Infrastructure)<br />\r\n4. Participation in project: NOTOX project : Predicting long-term toxic effects using computer models based on systems characterization of organotypic cultures.&nbsp;<br />\r\n5. Mouse clinic (ICS)<br />\r\n• Mordor “Distribution of the fluorescent mu (MOR-mcherry) and delta (DOR-eGFP) opioid receptors in the brain and spinal cord”. Development and hosting of a “zoomable” image database in support of publication (<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24623156\">www.ncbi.nlm.nih.gov/pubmed/24623156</a>)<br />\r\n• Gencodys: Development and hosting of an intranet for progress monitoring of lines generated in the context of the GENCODYS consortium (<a href=\"http://www.gencodys.eu\">www.gencodys.eu</a>)<br />\r\n6. NGS quality control<br />\r\n•&nbsp; “Systems Biology of Cell Fate Decisions” project led by MA Mendoza Parra.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6be19931a8d24651bea171a1fa823855",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "60.00"
+      }
+    ]
+  }
+]

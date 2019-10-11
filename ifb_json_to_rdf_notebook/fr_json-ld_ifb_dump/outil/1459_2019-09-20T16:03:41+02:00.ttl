@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/integronfinder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "IntegronFinder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-22T18:36:13+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>IntegronFinder is a program that detects integrons in DNA sequences. The program is available on a webserver <a class=\"reference internal\" href=\"https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr/repos/khillion/integron_finder/integron_finder/1.5.1\" target=\"_blank\">(galaxy)</a>, or by command line (<a class=\"reference external\" href=\"https://github.com/gem-pasteur/Integron_Finder\" target=\"_blank\">IntegronFinder on github</a>).</p>\r\n\r\n<p>Integrons are major genetic element, notorious for their major implication in the spread of antibiotic resistance genes. More generally,&nbsp; integrons are gene-capturing device, whose broader evolutionary role remains poorly understood. IntegronFinder is able to detect with high accuracy integron in DNA sequences. It is accurate because it combines the use of HMM profiles for the detection of the essential protein, the site-specific integron integrase, and the use of Covariance Models for the detection of the recombination site, the <em>attC</em> site.</p>\r\n\r\n<p>IntegronFinder can also annotate gene cassettes (CDS nearby <em>attC</em> sites) using Resfams, a database of HMM profiles aiming at annotating antibiotic resistance genes. This database is provided but the user can add any other HMM profiles database of its own interest.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-09T13:15:45+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd51fddec67b649f796d750840bc1812f"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "23"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/gem-pasteur/Integron_Finder"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd51fddec67b649f796d750840bc1812f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Integron_Finder is released under the GPLv3 license &nbsp;and is available here: https://github.com/gem-pasteur/Integron_Finder</p>\r\n"
+      }
+    ]
+  }
+]

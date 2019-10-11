@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/igo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "250"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "IGO"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:19:19+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>IGO est un portail permettant de croiser des informations entre différents outils de l’unité (Insyght, Mosaic, Prose, Pareo, Subtilis Expression Browser)</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:03+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ncb23001f535b4881a23160eb1151be54"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncb23001f535b4881a23160eb1151be54",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès gratuit à http://migale.jouy.inra.fr/IGO</p>\r\n"
+      }
+    ]
+  }
+]

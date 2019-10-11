@@ -1,0 +1,66 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/repet",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "1491"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "600"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "REPET"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T15:14:15+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Le package REPET est composé de plusieurs pipelines dont les 2 principaux TEdenovo et TEannot permettent de détecter <em>de novo </em>[1], classifier [2] et annoter [3] les éléments transposables dans un génome.&nbsp;</p>\r\n\r\n<p>PastecClassifier, pipeline (inclus dans le TEdenovo) permet de classifier une banque de Séquences d'ET (consensus ou pas) [2]</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>1. Flutre T, Duprat E, Feuillet C, Quesneville H: Considering transposable element diversification in de novo annotation approaches. PloS one 2011, 6(1):e16526.<br />\r\n2. Hoede C, Arnoux S, Moisset M, Chaumier T, Inizan O, Jamilloux V, Quesneville H: PASTEC: An Automatic Transposable Element Classification Tool. PloS one 2014, 9(5):e91929.<br />\r\n3. Quesneville H, Bergman CM, Andrieu O, Autard D, Nouaud D, Ashburner M, Anxolabehere D: Combined evidence annotation of transposable elements in genome sequences. PLoS computational biology 2005, 1(2):166-175.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-12T16:07:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N94aeaab1790840b99f366881f1f178b5"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "276"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://urgi.versailles.inra.fr/Tools/REPET"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "995"
+      }
+    ]
+  },
+  {
+    "@id": "_:N94aeaab1790840b99f366881f1f178b5",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Disponible en téléchargement : https://urgi.versailles.inra.fr/Tools/REPET</p>\r\n"
+      }
+    ]
+  }
+]

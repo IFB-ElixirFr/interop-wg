@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/gbrowse-virus-géants",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Gbrowse virus géants"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-02-12T18:14:42+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Interactive display of the genomes of members of the main giant virus families infecting Acanthamoeba: Pandoraviridae, Mimiviridae, Molliviridae.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-02-12T18:15:08+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N2e12afba9b214a3581f980d4680ca5c0"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.igs.cnrs-mrs.fr/cgi-bin/gb2/gbrowse/Mollivirus/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e12afba9b214a3581f980d4680ca5c0",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit - online</p>\r\n"
+      }
+    ]
+  }
+]

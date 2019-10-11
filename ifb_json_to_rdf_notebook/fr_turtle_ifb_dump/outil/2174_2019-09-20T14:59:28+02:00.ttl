@@ -1,0 +1,59 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/fr/services/outils/mobyle> a schema:SoftwareApplication ;
+    dbpedia-owl:visitorsPerYear "209734" ;
+    dbpedia-owl:visitorsTotal "20399" ;
+    edam:data_1190 "Mobyle" ;
+    dc:created "2017-01-17T16:34:02+01:00" ;
+    dc:description """<p>Mobyle is a framework and web portal specifically aimed at the integration of bioinformatics software and databanks.</p>\r
+\r
+<p>Mobyle is the successor of <a class="external" href="http://dx.doi.org/10.1093/bioinformatics/17.1.73">Pise</a> and the <a class="external" href="http://dx.doi.org/10.1093/nar/gki477">RPBS server</a>, previous systems that provided web environments to define and execute bioinformatics analyses.</p>\r
+\r
+<h3>Functionalities:</h3>\r
+\r
+<ul>\r
+	<li><strong>data reusability</strong>: the tagging of the user data facilitates the reuse of input values or results between different programs.</li>\r
+	<li><strong>automatic data validation and format conversion</strong>: the description of the expected data and their format allows to verify and convert input values if necessary.</li>\r
+	<li><strong>service discovery and workflow authoring assistance</strong>: services are provided through a searchable menu; furthermore, type compatibility mechanisms between results and potential program inputs let users either interactively pipe tasks or build complete workflows before to run them.</li>\r
+</ul>\r
+\r
+<p>Based on extensive user studies, we developed the end-user interface as a Web Portal that provides a global and integrated view of all the elements needed to perform analyses, such as the available programs, the submitted jobs and the data of interest.</p>\r
+\r
+<h3>References:</h3>\r
+\r
+<p>Bertrand Néron, Hervé Ménager, Corinne Maufrais, Nicolas Joly, Julien Maupetit, Sébastien Letort, Sébastien Carrere, Pierre Tuffery, and Catherine Letondal<br />\r
+<a class="external" href="http://dx.doi.org/10.1093/bioinformatics/btp493">Mobyle: a new full web bioinformatics framework</a><br />\r
+<em>Bioinformatics</em> (2009); 25 (22): 3005-3011.&nbsp;doi:10.1093/bioinformatics/btp493.&nbsp;</p>\r
+""" ;
+    dc:modified "2017-01-17T17:10:20+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>The Mobyle framework is developped under the GPLv2 license.</p>\r
+""" ] ;
+    c4o:GlobalCitationCount "239" ;
+    schema:url "https://projets.pasteur.fr/projects/mobyle/wiki" .
+

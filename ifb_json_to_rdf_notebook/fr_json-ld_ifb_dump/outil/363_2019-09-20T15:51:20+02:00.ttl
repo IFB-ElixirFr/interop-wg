@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/crisprfinder",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "2273"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "480"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "CRISPRFinder"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-31T14:04:42+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Easy detection of CRISPRs (Clustered Regulary Interspacing Short Palindromic Repeats) in user-submitted sequence data (allows sequences up to 67,000,000 bp)</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-23T19:34:59+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N11e4038357ed4b29bb4990e18032d1d8"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "648"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://crispr.i2bc.paris-saclay.fr/Server/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N11e4038357ed4b29bb4990e18032d1d8",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>web sever, http://crispr.u-psud.fr/Server/CRISPRfinder.php/ Gratuit pour u-psud</p>\r\n"
+      }
+    ]
+  }
+]

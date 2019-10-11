@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/oss-hmm",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "OSS-HMM"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:43:36+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>OSS-HMM (Optimal Secondary Structure prediction Hidden Markov Model) est un programme de prédiction de la structure secondaire des protéines selon 3 états : hélice alpha (H), brin bêta (b), et structure apériodique (C) qui utilise le formalisme des modèles de Markov cachés. Quand il est utilisé avec une seule séquence il fournit un Q3 de 68.8%. Avec un alignement multiple il fournit un Q3 de 75.5%. Cet outil peut aussi être utilisé pour générer des séquences de protéines ayant une suite de structures secondaires particulières.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nadf126ae77d14c14a5d822a032522c9c"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "29"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nadf126ae77d14c14a5d822a032522c9c",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://migale.jouy.inra.fr/?q=oss-hmm</p>\r\n"
+      }
+    ]
+  }
+]

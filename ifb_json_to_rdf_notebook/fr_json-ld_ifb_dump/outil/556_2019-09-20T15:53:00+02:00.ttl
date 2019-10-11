@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/e-bgo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "2833"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "e-BGO "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T14:34:42+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Portail de collaboration scientifique (mise en production en 2013).</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N2e783d56130b4d76a6c2913075dce0df"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.e-biogenouest.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:N2e783d56130b4d76a6c2913075dce0df",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Accès public.</p>\r\n"
+      }
+    ]
+  }
+]

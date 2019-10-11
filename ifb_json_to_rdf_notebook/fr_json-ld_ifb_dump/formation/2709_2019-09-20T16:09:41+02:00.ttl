@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/introduction-à-phylogénie-moléculaire-concepts-méthodes-et-interprétation",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Institut Pasteur"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-20T17:17:07+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:57:59+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à la Phylogénie Moléculaire : Concepts, méthodes et interprétation"
+      }
+    ]
+  }
+]

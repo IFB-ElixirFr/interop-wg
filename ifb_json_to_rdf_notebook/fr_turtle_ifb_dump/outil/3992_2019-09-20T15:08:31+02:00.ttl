@@ -1,0 +1,38 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/fr/services/outils/pangenehome> a schema:SoftwareApplication ;
+    edam:data_1190 "PanGeneHome" ;
+    dc:created "2019-03-13T14:14:03+01:00" ;
+    dc:description """<p>PanGeneHome is a web server dedicated to the analysis of available microbial pangenomes. Several standalone tools (e.g. PGAP, PANNOTATOR, PanGP, Roary&nbsp;and BPGA) and web servers (e.g. Panseq, PGAT and PanWeb) dedicated to pangenome analysis have been developed recently and offer the possibility to compute pangenome analysis for genomes provided by a user. For all these tools and servers, users have to collect genomes and manage to run the tools, which implies a significant effort on the user side. To tackle this problem, we developped PanGeneHome, the only web site offering pre-computed pangenome analysis with up-to-date and large scale data. PanGeneHome provides an easy way to get a glimpse on the pangenome of a microbial group of interest, the analysis being precomputed and available for 615 taxa, covering 182 species and 49 orders. Considering the fast growing number of microbial genomes, the PanGeneHome tool will need to be updated regularly.</p>\r
+""" ;
+    dc:modified "2019-03-13T14:54:26+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>Gratuit</p>\r
+""" ] ;
+    schema:url "http://pangenehome.lmge.uca.fr" .
+

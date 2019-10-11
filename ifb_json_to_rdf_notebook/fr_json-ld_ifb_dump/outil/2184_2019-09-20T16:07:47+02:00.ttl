@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/aureme",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Aureme"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-19T10:20:01+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>The toolbox AuReMe allows for the Automatic Reconstruction of Metabolic networks based on the combination<br />\r\nof multiple heteregeneous data and knowledge sources. Since 2016, the workflow has been made available<br />\r\nas a Docker image to facilitate its distribution among the scientific community</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-19T10:20:13+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nabbbdd8a93f042208dcf0d64eca019a0"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://aureme.genouest.org/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nabbbdd8a93f042208dcf0d64eca019a0",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free</p>\r\n"
+      }
+    ]
+  }
+]

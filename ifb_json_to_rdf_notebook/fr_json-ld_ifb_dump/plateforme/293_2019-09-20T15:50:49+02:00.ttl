@@ -1,0 +1,236 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/atgc",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N8f609673edcd4aaf840190a051f1ad73"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Nd78978d946cb49f6a3a5e8f082e6d36b"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Na9005aa364e445859dc9a58a2ff0eded"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N84fa32e61c02493a97422734950a68fc"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N7ef8c2dd3539413b97fcc47c6a1c5911"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-21T10:41:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-08T15:37:56+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N906f2e81e73e4e55b8edb0e4945f76f3"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ATGC"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N745770f7fde543599ba378bed5455ddf"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N4b57fceef1a74e4faa28237768327651"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Nc9776fe4788e4c2b8230158596442a01"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N3f9c496ce7464f22b27af1048560e08f"
+      }
+    ]
+  },
+  {
+    "@id": "_:N906f2e81e73e4e55b8edb0e4945f76f3",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "12000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7ef8c2dd3539413b97fcc47c6a1c5911",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>L'équipe Méthodes et Algorithmes pour la Bioinformatique (MAB) du LIRMM développe des logiciels et des méthodes de traitement des données de séquençages à haut débit. Ces outils sont diffusés à la communautée via ATGC. Nous fournissons un appui à l'analyse des données NGS sous la forme de collaborations.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Appui à projet en collaboration pour les activités NGS"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd78978d946cb49f6a3a5e8f082e6d36b",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "744"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8f609673edcd4aaf840190a051f1ad73",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>2 serveurs web redondants derrière un proxy.</li>\r\n\t<li>16 noeuds de calcul.</li>\r\n\t<li>1 serveur de disques avec NFS.</li>\r\n\t<li>1 serveur de bases de données avec MySQL et PostGRESQL.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4b57fceef1a74e4faa28237768327651",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na9005aa364e445859dc9a58a2ff0eded",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "30.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N84fa32e61c02493a97422734950a68fc",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Algorithmique du texte et des arbres, combinatoire, optimisation,&nbsp;modélisation probabiliste et statistique, classification, phylogénie, séquençage haut débit, génomes, transcriptomes, protéomes, cancer,&nbsp;paludisme, VIH.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3f9c496ce7464f22b27af1048560e08f",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ATGC Bioinformatics Platform"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.atgc-montpellier.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N745770f7fde543599ba378bed5455ddf",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "638"
+      },
+      {
+        "@value": "639"
+      },
+      {
+        "@value": "636"
+      },
+      {
+        "@value": "637"
+      },
+      {
+        "@value": "2124"
+      },
+      {
+        "@value": "1415"
+      },
+      {
+        "@value": "1416"
+      },
+      {
+        "@value": "635"
+      },
+      {
+        "@value": "633"
+      },
+      {
+        "@value": "632"
+      },
+      {
+        "@value": "634"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc9776fe4788e4c2b8230158596442a01",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "CC 477"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "34090"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "161 Rue Ada"
+      }
+    ]
+  }
+]

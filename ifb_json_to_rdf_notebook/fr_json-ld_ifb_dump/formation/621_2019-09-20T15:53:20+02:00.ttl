@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/phylogenomy-and-selection-pressure",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:08:18+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session is organized by the bios4Biol CATI.<br />\r\nMorning : phylogenomics<br />\r\nThe morning course will provide insigths about sampling problems in phylogenomics studies (genes, species) and methodological aspects of phylogenomics studies with two major focus on super-matrix and super-tree methods.<br />\r\nAfternoon : selection pressure<br />\r\nThe afternoon course will be dedicated to the use of the PAML4 package in order to study selection pressures in a sequence alignment.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-02T14:56:38+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Phylogenomy and selection pressure "
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/phylogenomics-and-selection-pressure/"
+      }
+    ]
+  }
+]

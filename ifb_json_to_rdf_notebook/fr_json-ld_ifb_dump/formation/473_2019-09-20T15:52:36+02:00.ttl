@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/comparaisons-séquences-protéiques",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-21T11:22:22+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:36+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Comparaisons de séquences protéiques"
+      }
+    ]
+  }
+]

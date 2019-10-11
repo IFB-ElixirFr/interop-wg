@@ -1,0 +1,23 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/partek-workshop",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-08-20T12:35:54+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:38+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Partek Workshop"
+      }
+    ]
+  }
+]

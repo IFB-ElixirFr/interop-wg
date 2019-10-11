@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/wwlig-csrre",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "310"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "170"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "wwLig-CSRre"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T10:58:34+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><strong>wwLigCSRre</strong>&nbsp;is intended for searching banks for compounds similar to a query, based on both coordinates and physico-chemical properties of atoms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-24T16:01:02+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne0b237b37f7045d5bd885aae61cb05a8"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "11"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioserv.rpbs.univ-paris-diderot.fr/services/wwLigCSRre/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne0b237b37f7045d5bd885aae61cb05a8",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Service en ligne en accès libre.</p>\r\n"
+      }
+    ]
+  }
+]

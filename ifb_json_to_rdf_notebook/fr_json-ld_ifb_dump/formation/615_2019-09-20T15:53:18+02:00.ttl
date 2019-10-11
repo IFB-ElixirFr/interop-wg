@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/read-alignment-and-snp-calling",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:02:15+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session, organized jointly with the Sigenae platform, is designed to help you deal with NGS data, in particular Roche 454 and Illumina Solexa technologies. You will discover the new sequence formats, the new assembly formats and the known biases of these technologies. You will use mapping on reference genome software, polymorphisms detection (with the GATK pipeline), polymorphisms annotation and alignment visualization software. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T12:04:36+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Read alignment and SNP calling"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/alignment-and-small-size-variants-calling/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/kaspod",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "92"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "KASpOD "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:35:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Program for designing signature sequences for various applications including in phylogenetic or functional microarray experiments.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Publication: Parisot, N., J. Denonfoux, E. Dugat-Bony, P. Peyret, and E. Peyretaillade (2012) KASpOD--a web service for highly specific and explorative oligonucleotide design. Bioinformatics (Oxford, England) 28:3161-3162.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-13T17:06:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne64dc25e00b645adb1dc856f72ed83d8"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "5"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://g2im.u-clermont1.fr/kaspod/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne64dc25e00b645adb1dc856f72ed83d8",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://g2im.u-clermont1.fr/kaspod/</p>\r\n"
+      }
+    ]
+  }
+]

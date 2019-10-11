@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/jbrowse-webapollo-browsers",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "JBrowse / WebApollo browsers"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-03T09:55:12+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Genome browser sfor marine model organsims&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N7f8c311b756042e2ad4284cd1af13ced"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7f8c311b756042e2ad4284cd1af13ced",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p><a href=\"http://www.embrc-france.fr/fr/our-services/supply-biological-resources/organismes-modeles\">MMODB Acces : EMBRC France</a></p>\r\n"
+      }
+    ]
+  }
+]

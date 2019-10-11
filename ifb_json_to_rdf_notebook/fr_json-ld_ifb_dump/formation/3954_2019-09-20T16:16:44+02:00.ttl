@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/8ème-école-bioinformatique-aviesan-ifb",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Station biologique de Roscoff"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2019-03-08T11:55:05+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-04-01T09:15:21+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "8ème école de bioinformatique AVIESAN-IFB"
+      }
+    ]
+  }
+]

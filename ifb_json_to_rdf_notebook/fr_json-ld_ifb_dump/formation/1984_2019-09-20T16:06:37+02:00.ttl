@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/ibi-2",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Gif sur Yvette, France"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-07-11T16:03:10+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-03-21T15:58:30+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IBI - 2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.france-bioinformatique.fr/en/evenements/IFB-IBI"
+      }
+    ]
+  }
+]

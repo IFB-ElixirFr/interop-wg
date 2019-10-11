@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/mugen",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MuGeN"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:46:53+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>MuGeN (Multi-Genome Navigator) est un outil interactif permettant une exploration dans plusieurs génomes annotés complétés par des résultats d'analyse in silico. Il dispose également d'un mode d'exécution en mode batch lui permettant de servir de générateur d'images à divers formats. Ce mode de fonctionnement le prédispose à être intégré à des sites Web pour l'affichage de cartes physiques annotées.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N90baed791ae54890b13fce4116eb3c0e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N90baed791ae54890b13fce4116eb3c0e",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://genome.jouy.inra.fr/MuGeN</p>\r\n"
+      }
+    ]
+  }
+]

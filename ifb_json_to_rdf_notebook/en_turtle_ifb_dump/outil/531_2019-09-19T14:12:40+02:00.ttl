@@ -1,0 +1,40 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/services/outils/galaxeast> a schema:SoftwareApplication ;
+    dbpedia-owl:visitorsTotal "280" ;
+    edam:data_1190 "GalaxEast" ;
+    dc:created "2015-09-07T11:13:13+02:00" ;
+    dc:description """<p>The objective of GalaxEast (http://www.galaxeast.fr) is to provide a reliable public Galaxy instance, with guaranteed availability and accessibility. GalaxEast offers a catalogue of about a hundred tools, mainly for handling of sequencing data (ChIP-seq, RNA-seq and DNAseq) high speed. The addition of proteomic and spectroscopy data analysis tools is planned for 2014. The tools come from both the official Galaxy toolshed and the developments of bioinformaticians from the local community. The new tools will be made available in the platform toolshed. The platform has a wiki that allows users to find documentation and request the addition of new tools and genomes.</p>\r
+""" ;
+    dc:modified "2017-02-02T17:38:47+01:00" ;
+    dqm:hasCondition [ dqm:Condition """<p>Open access for the French academic research community.<br />\r
+Access facilitated via rapid connexions (eg : Osiris, Renater)</p>\r
+""" ] ;
+    schema:url "http://www.galaxeast.fr/" .
+

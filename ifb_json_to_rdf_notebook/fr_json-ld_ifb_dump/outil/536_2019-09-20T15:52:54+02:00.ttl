@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/hexserver",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "5000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "HexServer"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-07T12:43:47+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Ab initio rigid body protein-protein docking using GPU.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-18T19:31:36+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N47f1bae6fb9940829ff506cb87dc6611"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "266"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://hexserver.loria.fr"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "0"
+      }
+    ]
+  },
+  {
+    "@id": "_:N47f1bae6fb9940829ff506cb87dc6611",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free service: no login or registration required</p>\r\n"
+      }
+    ]
+  }
+]

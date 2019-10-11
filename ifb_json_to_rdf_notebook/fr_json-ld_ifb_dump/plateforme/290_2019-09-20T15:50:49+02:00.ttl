@@ -1,0 +1,216 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/ABiMS",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:Nc87c45269e1c49c4b6dd3276caf4904b"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Ncbcf9f73ec0b41838d42a5930099f717"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:Nc515d5930f7b4277a8e6628ae9ca29c9"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Ne1efd73dc9154c7484a80d51ae87a3ac"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N383392147484440d9954c307507016ed"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-20T19:51:26+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-19T10:18:27+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nf404867da23447cba40d83ed2a5e9285"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ABiMS"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N66eafbcb79d74fa498e52b1fd4574f25"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N644141ca4db840b59f4e6cf02dd8cf79"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:Na507b6d7377f4f029b6103e1097abcd6"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Ndc58c7b1754c446eb8c2dc9e889b1534"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc87c45269e1c49c4b6dd3276caf4904b",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<ul>\r\n\t<li>2 serveurs BDD (MysQL + PostreSQL)</li>\r\n\t<li>1 serveur GPU</li>\r\n\t<li>1 serveur R</li>\r\n\t<li>10 serveurs WEB</li>\r\n\t<li>3 serveurs Galaxy pour la production (NGS, Metabolomics et Public)</li>\r\n\t<li>1 serveur de développement Galaxy</li>\r\n\t<li>60&nbsp;nœuds de calculs</li>\r\n\t<li>1 serveur maître</li>\r\n\t<li>4 serveurs NFS</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf404867da23447cba40d83ed2a5e9285",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ndc58c7b1754c446eb8c2dc9e889b1534",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "ABiMS"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://abims.sb-roscoff.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ncbcf9f73ec0b41838d42a5930099f717",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "2000"
+      }
+    ]
+  },
+  {
+    "@id": "_:N66eafbcb79d74fa498e52b1fd4574f25",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1616"
+      },
+      {
+        "@value": "540"
+      },
+      {
+        "@value": "1626"
+      },
+      {
+        "@value": "539"
+      },
+      {
+        "@value": "1615"
+      },
+      {
+        "@value": "1614"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na507b6d7377f4f029b6103e1097abcd6",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Roscoff"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "29680"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Place Georges Teissier - Station Biologique de Roscoff"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nc515d5930f7b4277a8e6628ae9ca29c9",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "2000.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne1efd73dc9154c7484a80d51ae87a3ac",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>ABiMS works with research team&nbsp;within the framework of scientific collaboration formalised as project.</p>\r\n\r\n<p>ABiMS provide differents&nbsp;services :</p>\r\n\r\n<ul>\r\n\t<li>A scientific computing environment (<strong>Infrastructure As A Service - IAAS</strong>)</li>\r\n\t<li><strong>Advice and expertise</strong>&nbsp;in 'omic data analysis</li>\r\n\t<li><strong>Software engineering</strong>&nbsp;(information system, databases, ...)</li>\r\n\t<li>User&nbsp;<strong>support</strong>&nbsp;and<strong>&nbsp;training</strong></li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N644141ca4db840b59f4e6cf02dd8cf79",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N383392147484440d9954c307507016ed",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>ABiMS proposes bioinformtics services :</p>\r\n\r\n<p>- infrastructure : cluster, sotrage, tools</p>\r\n\r\n<p>- training : Linux, R langage, Galaxy....</p>\r\n\r\n<p>- bio-analysis : NGS, génomic, transcriptomic, métagénomic, genome annotation...</p>\r\n\r\n<p>- development of databases and offers an infrastructure for the scientific calculation. The offer of bio-analysis is particularly developed.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  }
+]

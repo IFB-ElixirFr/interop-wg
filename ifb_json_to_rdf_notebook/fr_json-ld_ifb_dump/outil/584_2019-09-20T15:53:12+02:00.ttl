@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/sumo",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "7728"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SuMO"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:06:15+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Comparaisons par objets de surface et site de protéines.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-27T16:30:38+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne15842e854b546e3a79b177c07e669e4"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "97"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://sumo-pbil.ibcp.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne15842e854b546e3a79b177c07e669e4",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>http://sumo-pbil.ibcp.fr/cgi-bin/sumo-welcome</p>\r\n"
+      }
+    ]
+  }
+]

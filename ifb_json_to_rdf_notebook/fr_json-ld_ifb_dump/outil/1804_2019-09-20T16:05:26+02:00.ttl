@@ -1,0 +1,48 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/variant-annotation-and-filtration-tool-varaft",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "3100"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "VARiant Annotation and Filtration Tool (VarAFT)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-04-11T11:52:12+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>L'annotation et la filtration des données de NGS sont des étapes clé&nbsp;de l'analyse des données de NGS. Elles peuvent être réalisées via différentes suites logicielles nécessitant le plus souvent des compétences en bioinformatique (ligne de commande). VarAFT a été développé afin de fournir aux utilisateurs un outil puissant d'annotation et de filtration disponible via une interface utilisateur simple et conviviale. Il intègre une large palette d'annotations y compris les prédictions d'UMD-Predictor et d'HSF. Au niveau de la filtration, il permet de combiner plusieurs échantillons afin d'explorer différentes hypothèses : transmission autosomique dominante ou récessive, mutation de novo, mutation somatique, etc.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-17T14:26:52+01:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "18"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://varaft.eu"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "100"
+      }
+    ]
+  }
+]

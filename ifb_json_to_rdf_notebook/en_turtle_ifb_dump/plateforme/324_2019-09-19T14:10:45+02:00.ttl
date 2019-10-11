@@ -1,0 +1,79 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/tagc-bcf> a schema:LaboratoryScience ;
+    dbpedia-owl:Database [ schema:identifier "2268",
+                "678" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>The expertise of the&nbsp;TAGC-BCF s'articulent autour de la génomique et la bioinformatique appliquées à l'étude des pathologies. Notre approche est multidisciplinaire et s'appuie sur la biologie des systèmes.</p>\r
+\r
+<p>Nos domaines d'expertise sont notamment:</p>\r
+\r
+<ul>\r
+	<li>l'analyse de données de séquencage haut débit:\r
+	<ul>\r
+		<li>recherche et analyse de régions régulatrices</li>\r
+		<li>recherche de variants génétiques et régulateurs</li>\r
+		<li>analyse du transcriptome</li>\r
+		<li>épigénétique</li>\r
+	</ul>\r
+	</li>\r
+	<li>analyse et modélisation de réseaux d'intéractions</li>\r
+	<li>analyse statistique de données génomiques</li>\r
+	<li>intégration de données publiques</li>\r
+	<li>fouille de données</li>\r
+	<li>génétique humaine</li>\r
+	<li>génétique des organismes modèles eucaryotes</li>\r
+</ul>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>&nbsp;</p>\r
+\r
+<p>&nbsp;</p>\r
+""" ] ;
+    dc:created "2015-07-24T14:09:20+02:00" ;
+    dc:modified "2019-03-05T16:22:26+01:00" ;
+    schema:name "TAGC-BCF" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "679",
+                "680",
+                "681",
+                "682",
+                "683",
+                "684" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "129" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Marseille" ;
+            schema:postOfficeBoxNumber "Parc Scientifique de Luminy case 928" ;
+            schema:postalCode "13288" ;
+            schema:streetAddress "163 avenue de Luminy" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "TAGC" ;
+            schema:url "http://tagc.univ-amu.fr" ] .
+

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/und/formations/master-isdd",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T11:01:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:42+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Master ISDD"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://isddteach.sdv.univ-paris-diderot.fr/static/documents/plaquette_isdd_french_for_site_2016.pdf"
+      }
+    ]
+  }
+]

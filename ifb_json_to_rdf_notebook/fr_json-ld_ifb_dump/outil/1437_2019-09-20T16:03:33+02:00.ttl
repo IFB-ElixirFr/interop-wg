@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/go-docker",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "GO-Docker"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T14:57:21+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>It is a cluster management tool using Docker as execution/isolation system. The software does not manage however itself the dispatch of the commands on the remote nodes. For this, it integrates with container management tools (Docker Swarm, Apache Mesos, ...)</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-16T17:15:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Nd1ce4a10c10f43b98ee0c0a11ac773fe"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://godocker.genouest.org"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd1ce4a10c10f43b98ee0c0a11ac773fe",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Téléchargement libre : http://www.genouest.org/godocker/index.html</p>\r\n"
+      }
+    ]
+  }
+]

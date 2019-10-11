@@ -1,0 +1,219 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/PRABI-Doua",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N0cf3bd1eed0d4a2b8211105bd90df32e"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:Na160ff4790dd49e0a8da4f92ca215dd8"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N59af60fdb7d141c88c52f84aa23ac0a2"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N3764156e5e4a4982ae172a393242f1f1"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N0b3d332e5c1746b89f5868c21ea5eeaf"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T11:59:50+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-03T18:02:15+02:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nd656162efc8f43809e79d8f6a8abc753"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Lyon-Grenoble"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Na40b061f089147078482a72e395acc10"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N64ad2d67217e4d82b5f29b6e82b0c5c9"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N149086b2c57b44899c739b32bcbb7d40"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nd8cefb1cc7d349e4a31e6ad542ae4095"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3764156e5e4a4982ae172a393242f1f1",
+    "http://schema.org/identifier": [
+      {
+        "@value": "1504"
+      },
+      {
+        "@value": "1462"
+      },
+      {
+        "@value": "1461"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd8cefb1cc7d349e4a31e6ad542ae4095",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PRABI-Doua"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://doua.prabi.fr/main/index"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd656162efc8f43809e79d8f6a8abc753",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "150"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na160ff4790dd49e0a8da4f92ca215dd8",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1032"
+      }
+    ]
+  },
+  {
+    "@id": "_:N149086b2c57b44899c739b32bcbb7d40",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Villeurbanne"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "43 boulevard du 11 Novembre 1918"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "69622"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Université Claude Bernard – Lyon 1"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0b3d332e5c1746b89f5868c21ea5eeaf",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p class=\"rtejustify\">Les thématiques de recherche du PRABI-Doua s’organisent autour d’un point de vue méthodologique, qui affirme l’importance de la modélisation tant mathématique qu’informatique et d’une perspective évolutive qui organise les recherches indépendamment du niveau d’organisation biologique. C’est dans la synergie entre des problématiques biologiques propres et des développements méthodologiques que naît la plus grande part des résultats scientifiques de cette composante. Parmi les thématiques abordées figurent en particulier:</p>\r\n\r\n<ul>\r\n\t<li>Phylogénie et évolution moléculaire.</li>\r\n\t<li>Génomique comparative (organismes eucaryotes et procaryotes).</li>\r\n\t<li>Eléments transposables.</li>\r\n\t<li>Intreractions hôtes-parasites.</li>\r\n\t<li>Statistiques appliquées à l'écologie et l'évolution.</li>\r\n\t<li>Analyse statistique de données en grandes dimensions pour la génomique.</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N59af60fdb7d141c88c52f84aa23ac0a2",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "515.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0cf3bd1eed0d4a2b8211105bd90df32e",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p class=\"rtejustify\">L’infrastructure informatique de la composante PRABI-Doua est commune avec celle de la composante PRABI-AMSB et elle comprend:</p>\r\n\r\n<ul>\r\n\t<li>Un serveur NFS.</li>\r\n\t<li>Un serveur postgreSQL,</li>\r\n\t<li>Trois serveurs Web (service général, ProDom et BiBI).</li>\r\n\t<li>Un serveur de soumission de tâches sur le cluster.</li>\r\n</ul>\r\n\r\n<p class=\"rtejustify\">Cette i'infrastructure comprend également un cluster de calcul hébergé dans une salle machine séparée. Les caractéristiques de ce cluster sont les suivantes&nbsp;:</p>\r\n\r\n<ul>\r\n\t<li>26 nœuds de calcul (dont deux avec 1 To de RAM).</li>\r\n\t<li>96 processeurs</li>\r\n\t<li>1032 cœurs/threads.</li>\r\n\t<li>7 To RAM totale.</li>\r\n\t<li>215 To utile de stockage haute performance (4 tiroirs Panasas PAS11).</li>\r\n\t<li>300 To utiles de de stockage «froid» (baie Dell MD3060e + 1 PowerEdge R730.</li>\r\n</ul>\r\n\r\n<p class=\"rtejustify\">Les services proposés comprennent l'accès aux banques de données de séquences «généralistes» (GenBank, EMBL, Ensembl, RefSeq, UniProt), à des banques de données spécialisées développées localement (ProDom, HOGENOM) ainsi qu'a un très large panel de programmes utilisés en bioinformatique.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Na40b061f089147078482a72e395acc10",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1466"
+      },
+      {
+        "@value": "1500"
+      },
+      {
+        "@value": "1501"
+      },
+      {
+        "@value": "1465"
+      },
+      {
+        "@value": "1499"
+      }
+    ]
+  },
+  {
+    "@id": "_:N64ad2d67217e4d82b5f29b6e82b0c5c9",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  }
+]

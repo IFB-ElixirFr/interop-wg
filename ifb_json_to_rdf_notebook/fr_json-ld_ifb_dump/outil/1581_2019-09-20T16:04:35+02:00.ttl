@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/metaexploarrays",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MetaExploArrays "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:46:21+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Large scale oligonucleotide probe design software for explorative DNA microarrays. It allows selecting probes for an individual specific nucleic acid sequence or a group of sequences. It used a parallel approach to simultaneous design of thousands of sensitive, specific, isothermal and explorative</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Jaziri, F., Parisot, N., Denonfoux, J., Dugat-Bony, E., Peyretaillade, E., Peyret, P. and Hill, DRC (2012) MetaExploArrays: a large-scale oligonucleotide probe design software for explorative DNA microarrays. Proceedings of the IEEE Thirteenth International Conference on Parallel and Distributed Computing, Applications and Technologies PDCAT2012, IEEE, Beijing, China, 2012, ISBN: 978-0-7695-4879-1, 660-667.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N60eb10405a044bf4a6e12f2232236fd7"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N60eb10405a044bf4a6e12f2232236fd7",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

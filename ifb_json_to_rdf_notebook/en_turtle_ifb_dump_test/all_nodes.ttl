@@ -1,0 +1,293 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/ABiMS> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<ul>\r
+	<li>Database server : MysQL + PostreSQL</li>\r
+	<li>Biotsta R server</li>\r
+	<li>Web servers</li>\r
+	<li>Galaxy production servers : NGS, Metabolomics et Public</li>\r
+	<li>Galaxy development server</li>\r
+	<li>56 cluster nodes</li>\r
+	<li>&nbsp;master node</li>\r
+	<li>4 NFS servers</li>\r
+</ul>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "2000" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "2000.00" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>ABiMS proposes bioinformtics services :</p>\r
+\r
+<p>- infrastructure : cluster, sotrage, tools</p>\r
+\r
+<p>- training : Linux, R langage, Galaxy....</p>\r
+\r
+<p>- bio-analysis : NGS, génomic, transcriptomic, métagénomic, genome annotation...</p>\r
+\r
+<p>- development of databases and offers an infrastructure for the scientific calculation. The offer of bio-analysis is particularly developed.</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-20T19:51:26+02:00" ;
+    dc:modified "2019-03-19T10:18:27+01:00" ;
+    meb:User [ ocds:valueAmount "600" ] ;
+    schema:name "ABiMS" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1614",
+                "1615",
+                "1616",
+                "1626",
+                "539",
+                "540" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Roscoff" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "29680" ;
+            schema:streetAddress "Place Georges Teissier - Station Biologique de Roscoff" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "Roscoff" ;
+            schema:url "http://abims.sb-roscoff.fr/" ] .
+
+<https://www.france-bioinformatique.fr/en/platforms/INCa-SLC> a schema:LaboratoryScience ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "536" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "400.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "561" ] ;
+    dbpedia-owl:Infrastructure "Hébergée " ;
+    frapo:hasExpertise [ dc:description """<p>Cette structure a été créée à l'initiative de l'INCa dans le cadre de sa participation à l'"International&nbsp; Cancer&nbsp;Genome Consortium" (ICGC).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Elle a trois missions :<br />\r
+1 collecter ou préparer puis valider les acides nucléiques (ADN normal, ADN tumoral, ARN tumoral,...)&nbsp; qui&nbsp;&nbsp; seront&nbsp;&nbsp; examinés&nbsp;&nbsp; avec&nbsp;&nbsp; les&nbsp;&nbsp; techniques&nbsp;&nbsp; de&nbsp; la&nbsp; génomique:&nbsp;&nbsp; puce&nbsp;&nbsp; de&nbsp; génotypage,&nbsp;&nbsp; puce d'expression, RNA-­seq, DNA-­‐eq en génomes complets et en éxomes),<br />\r
+2 assurer la liaison avec les centres de génomique (académiques&nbsp; ou privés) réalisant le séquençage haut-­‐débit,<br />\r
+3 effectuer l'analyse des données de séquence transmises par ces centres de manière à en extraire l'information&nbsp; (variants&nbsp; somatiques&nbsp; et&nbsp; structuraux,&nbsp; nombre&nbsp; de&nbsp; copie,&nbsp; niveaux&nbsp; d'expression&nbsp; en RNA-­‐seq) utile aux équipes biomédicales.</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>Pour&nbsp; remplir&nbsp; sa&nbsp; mission,&nbsp; la&nbsp; plateforme&nbsp; a&nbsp; développé&nbsp; une&nbsp; application&nbsp; Internet&nbsp; permettant&nbsp; d'assurer&nbsp; la gestion&nbsp; de grands&nbsp; projets&nbsp; multicentriques&nbsp; en toute&nbsp; transparence&nbsp; pour&nbsp; les collaborateurs.&nbsp; Elle&nbsp; a mis en place&nbsp; des&nbsp; procédures&nbsp; de&nbsp; contrôle&nbsp; qualité&nbsp; des&nbsp; échantillons&nbsp; à&nbsp; analyser.&nbsp; Elle&nbsp; dessine&nbsp; et&nbsp; automatise&nbsp; des pipelines d'analyse pour les données de génomique qu'elle reçoit.</p>\r
+""" ] ;
+    frapo:supports [ dc:description """<div>\r
+<div>\r
+<div>\r
+<div>\r
+<div>\r
+<p>Mode prestation de service (financement par le demandeur) ou collaboration&nbsp;scientifique (pas de financement).</p>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<p>o ICGC Sein / Prostate / Carcinosarcome de l'endomètre<br />\r
+Projet international de séquençage de génome complets (tumeur +&nbsp;normal).<br />\r
+<a href="http://www.icgc.org">http://www.icgc.org</a> et <a href="http://dcc.icgc.org">http://dcc.icgc.org</a><br />\r
+o Basis Sein<br />\r
+Projet européen de séquençage de génome complets (tumeur + normal)&nbsp;de&nbsp; tumeurs du sein amplifiées sur HER.&nbsp;<a href="http://www.basisproject.eu">http://www.basisproject.eu</a><br />\r
+o Abs4NGS<br />\r
+Projet PIA de développement méthodologique bioinformatique pour le&nbsp;NGS. <a href="https://sites.google.com/site/abs4ngs/">https://sites.google.com/site/abs4ngs/</a><br />\r
+o Projet INCa NGS clinique.<br />\r
+Développements de pipelines dans le cadre du NGS clinique (ciblé) en&nbsp;cancérologie.<br />\r
+o Projets locaux dans le cadre du Lyric (<a href="http://www.cancer-">http://www.cancer-</a>­‐lyric.com/)<br />\r
+et/ou du Clara (<a href="http://www.canceropole-">http://www.canceropole-</a>­‐clara.com/)<br />\r
+Projet Profiler (NGS clinique); HNPACT (NGS cancer head and neck)</p>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+</div>\r
+""" ] ;
+    dc:created "2015-07-21T09:36:37+02:00" ;
+    dc:modified "2019-05-28T11:53:26+02:00" ;
+    geosp:hasProject [ ocds:valueAmount "10" ] ;
+    meb:User [ ocds:valueAmount "15" ] ;
+    schema:name "INCa-SLC" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "4148",
+                "4149",
+                "4150",
+                "4151" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Lyon" ;
+            schema:postOfficeBoxNumber "Fondation Synergie Lyon Cancer, Bât. Cheney D" ;
+            schema:postalCode "69008" ;
+            schema:streetAddress "28 rue Laënnec" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "synergielyoncancer.fr" ;
+            schema:url "http://www.synergielyoncancer.fr/" ] .
+
+<https://www.france-bioinformatique.fr/en/platforms/atgc> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<ul>\r
+	<li>2 redundant web servers behind a proxy.</li>\r
+	<li>16 compute nodes.</li>\r
+	<li>1 storage server with NFS.</li>\r
+	<li>1 databases server with MySQL and PostGRESQL.</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "744" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "30.00" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<p>Text and trees algorithmics, combinatorial optimization, statistical and probabilistic modeling, classification, phylogeny, high throughput sequencing, genomes, transcriptomes, proteomes, cancer, malaria, HIV.</p>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>The research projects involving the Mehods and Algorithms for Bioinformatics team (MAB) from LIRMM take advantage of the ATGC platform. The software and tools developed within these projects are provided to the scientific community thanks to ATGC.</p>\r
+""" ] ;
+    dc:created "2015-07-21T10:41:54+02:00" ;
+    dc:modified "2019-03-08T15:37:56+01:00" ;
+    meb:User [ ocds:valueAmount "12000" ] ;
+    schema:name "ATGC" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1415",
+                "1416",
+                "2124",
+                "632",
+                "633",
+                "634",
+                "635",
+                "636",
+                "637",
+                "638",
+                "639" ] ;
+    org:Organization [ a org:Organization ;
+            schema:identifier "132" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Montpellier" ;
+            schema:postOfficeBoxNumber "CC 477" ;
+            schema:postalCode "34090" ;
+            schema:streetAddress "161 Rue Ada" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "ATGC Bioinformatics Platform" ;
+            schema:url "http://www.atgc-montpellier.fr/" ] .
+
+<https://www.france-bioinformatique.fr/en/platforms/cbib> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<p>Virtualization infrastructure</p>\r
+\r
+<ul>\r
+	<li>Cluster VMware</li>\r
+	<li>2 servers DELL PowerEdge R905 (16 cores, 64 Go RAM)</li>\r
+</ul>\r
+\r
+<p>Storage infrastructure</p>\r
+\r
+<ul>\r
+	<li>1 storage based on ZFS for production, 50 TB (mirrored on remote site)</li>\r
+	<li>1 NetApp appliance for production, 20 TB</li>\r
+	<li>1 NetApp appliance for backup (remote site), 20 TB</li>\r
+</ul>\r
+\r
+<p>Computing infrastructure</p>\r
+\r
+<ul>\r
+	<li>1 computing server DELL PowerEdge R820 (32 cores, 512 Go RAM, 5 TB of space disk)</li>\r
+	<li>1 computing server DELL PowerEdge R815 (32 cores, 256 Go RAM, 2.5 TB of space disk)</li>\r
+	<li>Galaxy portal, 1 server DELL PowerEdge R910 (32 cores/64 threads, 128 Go RAM, 800 GB of space disk)</li>\r
+</ul>\r
+\r
+<p>Network infrastructure</p>\r
+\r
+<ul>\r
+	<li>Internet access 1 Gbits/s (shared)</li>\r
+	<li>LAN&nbsp; 10 Gbits/s</li>\r
+	<li>SAN FiberChannel 4 Gbits/s</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "600" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "360.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "601",
+                "602" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<pre>\r
+The goal of Bordeaux Bioinformatics Center (CBiB) is to design, implement and provide access to biological data analysis services suited to high speed production (eg., Genomics, proteomics, metabolomics, etc. .). This requirement to analyse large volumes of data quickly and reliably, brings the CBiB to develop "Big Data" specific methods. To do this, the CBiB meets the necessary skills in bioinformatics and computer science; the center is equipped with appropriate computing and storage means, consistent with regional facilities (the Mésocentre Calculation Aquitaine - CEC) and the National Bioinformatics Infrastructure (Investment Future, French Institute of Bioinformatics - IFB).\r
+\r
+\r
+The CBiB structures its activities around three strategic areas:</pre>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<pre>\r
+1. NGS: Service activity for the treatment of data from New Sequencing Technologies. This axis developed in collaboration with the Platform Genome-Transcriptome Bordeaux, producer of data and with Genotoul Bioinformatics in Toulouse in the incipient collaboration ReNaBi / IBiSA (exchanges of expertise, sharing of training biologists, R &amp; D missions).\r
+\r
+​2. Comparative Genomics: research activity and service for the storage, analysis and large-scale comparison of bacterial genomes through the Molligen platform.\r
+\r
+3. Metabolomics: In collaboration with the Metabolomics Platform Bordeaux (PMB) that produces the data, the CBiB is involved in data management projects in metabolomics with the recent extension of this work to eco-physiological data. Moreover, the CBiB is heavily involved in metabolomic data standardization activities at the European level (European COSMOS project).</pre>\r
+\r
+<pre>\r
+\r
+\r
+​The Bordeaux Bioinformatics Center (CBiB) provides access to high performance computing resources, provides data analysis and features programming expertise. These resources are at the service of academic scientists and private companies to enable them to meet their needs in bioinformatics in an efficient and profitable manner.</pre>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>2 &nbsp;supporting system modes for projects: service provision or collaboration (R&amp;D).</p>\r
+""" ] ;
+    dc:created "2015-07-21T10:27:52+02:00" ;
+    dc:modified "2019-03-07T11:00:05+01:00" ;
+    geosp:hasProject [ ocds:valueAmount "4" ] ;
+    meb:User [ ocds:valueAmount "38" ] ;
+    schema:name "CBiB" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1417",
+                "1418",
+                "2242",
+                "597",
+                "598",
+                "599",
+                "600" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Bordeaux" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "33076" ;
+            schema:streetAddress "146 Rue Léo Saignat" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "Bordeaux Bioinformatics Center" ;
+            schema:url "http://www.cbib.u-bordeaux2.fr/" ] .
+

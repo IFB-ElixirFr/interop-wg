@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/show",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "SHOW"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-04T09:48:11+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>SHOW (Structured HOmogeneities Watcher) est un \"R'HOM\" amélioré qui permet de définir souplement un modèle de chaîne de Markov cachée complexe puis d'utiliser ce modèle de diverses manières grâce à l'implémentation d'algorithmes de segmentation (forward-backward, Viterbi), d'estimation (EM) et de simulation. SHOW a essentiellement servi pour prédire les gènes bactériens mais il a aussi été utilisé avec d'autres objectifs comme la détection des sites d'épissage chez l'Homme. SHOW a été développé en collaboration avec le Laboratoire Statistique et Génome d'Evry.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:53:01+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N6f20014413994515889f1f5830ad65fc"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6f20014413994515889f1f5830ad65fc",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Le logiciel peut-être téléchargé gratuitement sur http://genome.jouy.inra.fr/ssb/SHOW</p>\r\n"
+      }
+    ]
+  }
+]

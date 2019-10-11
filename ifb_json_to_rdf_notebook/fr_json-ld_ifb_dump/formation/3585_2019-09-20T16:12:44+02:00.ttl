@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/analyse-fonctionnelle-et-interprétation-données-protéomique-avec-proteore",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "ISC-PIF (Institut des Systèmes Complexes Paris Ile de France), 113 rue Nationale 75013 Paris"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-12-20T11:08:07+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-20T11:08:14+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Analyse fonctionnelle et interprétation de données de protéomique avec ProteoRE"
+      }
+    ]
+  }
+]

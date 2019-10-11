@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/und/formations/galaxy-packages-and-workflow-deploiement",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-01-21T10:23:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:54:32+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Galaxy : packages and workflow deploiement."
+      }
+    ]
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/igs",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N160692127a4f45a8ac1ce9153a45b62d"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N89ca07b2607142809919641c51ec36ec"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N880eb38eb373428b9a0baa8599f032d8"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N01b42bd54fd642ccbc653e010b1c7463"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:Nf3012f51739c416798319574d3a2b7ed"
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N0b3e3627b8144e72a27c69b574d8be3f"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:03:01+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-06T11:21:55+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:N76809c992bcb40219fbe207f90ed80a2"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PACA-Bioinfo"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:N3d9ae49d6be14100b79c5ccc518e47a0"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N92c2621ff58f48f6bcb5b5d67110e84e"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N8e29565a841246f788c1c96969d43507"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N13414e1eabc54957bcbc0f670de61db2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0b3e3627b8144e72a27c69b574d8be3f",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Mise en place de site web et de listes de diffusions dédiés, d’espaces de stockage, de server ftp. Développement d’outils en ligne spécifiques. Accès aux données traitées.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Aide aux projets"
+      }
+    ]
+  },
+  {
+    "@id": "_:N160692127a4f45a8ac1ce9153a45b62d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>1 serveur public Phylogeny.fr</p>\r\n\r\n<p>1 serveur public Annotathon</p>\r\n\r\n<p>1 serveur de calcul Blast (privé)</p>\r\n\r\n<p>2 serveurs de calcul assemblage privés</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N01b42bd54fd642ccbc653e010b1c7463",
+    "http://schema.org/identifier": [
+      {
+        "@value": "650"
+      }
+    ]
+  },
+  {
+    "@id": "_:N880eb38eb373428b9a0baa8599f032d8",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "100.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N92c2621ff58f48f6bcb5b5d67110e84e",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N89ca07b2607142809919641c51ec36ec",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "624"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8e29565a841246f788c1c96969d43507",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Case 934"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13009"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 Avenue de Luminy"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf3012f51739c416798319574d3a2b7ed",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Génomique procaryote et virale. Transcriptomique. Métagénomique. Protéomique. Biologie Structurale (EM and X-ray crystallography)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N76809c992bcb40219fbe207f90ed80a2",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "212439"
+      }
+    ]
+  },
+  {
+    "@id": "_:N13414e1eabc54957bcbc0f670de61db2",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "PACA Bioinfo"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://www.igs.cnrs-mrs.fr/paca-bioinfo/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3d9ae49d6be14100b79c5ccc518e47a0",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "649"
+      },
+      {
+        "@value": "647"
+      },
+      {
+        "@value": "646"
+      },
+      {
+        "@value": "3831"
+      }
+    ]
+  }
+]

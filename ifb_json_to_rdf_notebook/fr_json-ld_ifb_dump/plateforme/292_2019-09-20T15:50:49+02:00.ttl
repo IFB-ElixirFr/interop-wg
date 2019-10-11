@@ -1,0 +1,206 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/cbib",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N1e09e381fc6b4ef0ab67a7639a34c780"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N39424fd73aef4b679777323fbabe3cea"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N8ef8afcf11a7475f9d494d68708bb5ce"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N35a28f06c65742c284c4e63c837c5f5b"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N0175dfc7b4df41849714cc8edd295e44"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-21T10:27:52+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-07T11:00:05+01:00"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nb6d607770a1d47e69559d3c2f9aa7bc1"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "CBiB"
+      }
+    ],
+    "http://sw-portal.deri.org/ontologies/swportal#hasSoftware": [
+      {
+        "@id": "_:Nd6d3b8e263d841aa8cf02cc0e2560c88"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N93b4a4c4cc644688bc375b187066c276"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nb9aa9c4ab2cc4aaabcf986546730e64e"
+      }
+    ]
+  },
+  {
+    "@id": "_:N35a28f06c65742c284c4e63c837c5f5b",
+    "http://schema.org/identifier": [
+      {
+        "@value": "601"
+      },
+      {
+        "@value": "602"
+      }
+    ]
+  },
+  {
+    "@id": "_:N39424fd73aef4b679777323fbabe3cea",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "600"
+      }
+    ]
+  },
+  {
+    "@id": "_:N8ef8afcf11a7475f9d494d68708bb5ce",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "360.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb6d607770a1d47e69559d3c2f9aa7bc1",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "38"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0175dfc7b4df41849714cc8edd295e44",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>L'objectif du Centre de Bioinformatique de Bordeaux (CBiB) est de concevoir, mettre en œuvre et fournir l’accès aux services d’analyse de données biologiques adaptés à une production à haut débit (ex., génomique, protéomique, métabolomique, etc.). Cette exigence d’analyser les données de grande volumétrie de façon rapide et fiable, amène le CBiB à développer les méthodes de type « Big Data ». Pour ce faire, le CBiB réunit les compétences nécessaires en bioinformatique et en informatique ; le centre est équipé de moyens de calculs et stockage adaptés, en cohérence avec les équipements régionaux (le Mésocentre de Calcul Aquitain - MCIA) et l’infrastructure nationale de Bioinformatique (Investissement d’Avenir, Institut Français de Bioinformatique - IFB).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Le CBiB structure ses activités autour de trois axes stratégiques:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>1. NGS : Activité de service pour le traitement de données issues des Nouvelles Technologies de Séquençage. Cet axe est réalisé en collaboration avec la Plate-forme Génome-Transcriptome de Bordeaux, productrice des données et avec GenoToul Bioinformatique à Toulouse dans le cadre du rapprochement initié ReNaBi/IBiSA (échanges de compétences techniques, mutualisation des formations aux biologistes, missions de service et thématique R&amp;D).</p>\r\n\r\n<p>2. Génomique Comparative : activité de recherche et de service pour le stockage, l'analyse et la comparaison à grande échelle de génomes bactériens au travers de la plateforme MolliGen.</p>\r\n\r\n<p><br />\r\n3. Métabolomique : En collaboration avec la Plate-forme Métabolomique de Bordeaux, (PMB) productrice des données, le CBiB est impliqué dans des projets de gestion de données en métabolomique avec l’extension récente de ces travaux aux données éco-physiologique. Par ailleurs, le CBiB est très fortement impliqué dans les activités de standardisation de données métabolomiques au niveau Européen (projet Européen COSMOS).</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Le Centre de bioinformatique de Bordeaux (CBiB) fournit un accès à des ressources de calcul de haute performance, assure l'analyse des données et dispose d'une expertise en programmation. Ces ressources sont au service des scientifiques académiques et des entreprises privées pour leur permettre de répondre à leurs besoins en bioinformatique de manière efficace et rentable.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nd6d3b8e263d841aa8cf02cc0e2560c88",
+    "@type": [
+      "http://semweb.mmlab.be/ns/odapps#Tool"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "1418"
+      },
+      {
+        "@value": "598"
+      },
+      {
+        "@value": "1417"
+      },
+      {
+        "@value": "597"
+      },
+      {
+        "@value": "599"
+      },
+      {
+        "@value": "600"
+      },
+      {
+        "@value": "2242"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1e09e381fc6b4ef0ab67a7639a34c780",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Infrastructure de virtualisation:</p>\r\n\r\n<ul>\r\n\t<li>Cluster Proxmox : 3 serveurs DELL PowerEdge R640 (2 CPU Xeon 4114, 20 coeurs, 256Go, stockage dédié partagé 20To)</li>\r\n</ul>\r\n\r\n<p>Infrastructure de stockage:</p>\r\n\r\n<ul>\r\n\t<li>Un stockage pour la production sur IBM Spectrum Scale, ~300To utile, IBM Spectrum Scale (ex-GPFS) composé de 2 nœuds GPFS [Dell R730] + JBOD [Dell MD3460]</li>\r\n\t<li>Un stockage dans un site distant pour la réplication du stockage de production basé sur GlusterFS, ~400To</li>\r\n\t<li>Un stockage pour la sauvegarde basé sur ZFS, 50To (répliquée sur un site distant)</li>\r\n\t<li>Un système de stockage distribué. Projet MCIA-iRODS</li>\r\n</ul>\r\n\r\n<p>Infrastructure de calcul:</p>\r\n\r\n<ul>\r\n\t<li>Cluster cortex. Total de 25 nœuds de calcul, 512 cœurs, 7.2To RAM : 24 nœuds de calcul standard, Dell R630 (20 cœurs, 256 Go RAM), 1 nœud de calcul \"big memory\", Dell R630 (32 cœurs, 1To RAM), 2 nœuds de login, Dell R630 (20 cœurs, 256 Go RAM)</li>\r\n\t<li>Portail Galaxy, 1 serveur DELL PowerEdge R910 (32 coeurs/64 threads, 128Go RAM, 800 Go d'espace disque)</li>\r\n</ul>\r\n\r\n<p>Infrastructure réseau:</p>\r\n\r\n<ul>\r\n\t<li>Accès Internet ~1 Gbits/s (partagé) fournit par l’Université de Bordeaux</li>\r\n\t<li>LAN Intel Omni-Path (données), 100Gbit/s</li>\r\n\t<li>LAN Ethernet, 10 Gbits/s</li>\r\n</ul>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb9aa9c4ab2cc4aaabcf986546730e64e",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Centre de Bioinformatique de Bordeaux"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.cbib.u-bordeaux.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N93b4a4c4cc644688bc375b187066c276",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Bordeaux"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "33076"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "146 Rue Léo Saignat"
+      }
+    ]
+  }
+]

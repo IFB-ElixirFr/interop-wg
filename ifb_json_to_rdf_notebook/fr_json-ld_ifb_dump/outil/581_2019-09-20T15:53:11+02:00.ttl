@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/espriptendscript",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "200000"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "40000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "ESPript/ENDscript "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:02:07+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T10:37:06+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N27cea6048ca5481380a8302a6107f9f4"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2892"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://espript.ibcp.fr/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N27cea6048ca5481380a8302a6107f9f4",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>http://espript.ibcp.fr et http://endscript.ibcp.fr</p>\r\n\r\n<p>Le serveur ESPript/ENDscript est accessible gratuitement, via Internet et sans enregistrement, à la communauté scientifique pour un usage académique.</p>\r\n"
+      }
+    ]
+  }
+]

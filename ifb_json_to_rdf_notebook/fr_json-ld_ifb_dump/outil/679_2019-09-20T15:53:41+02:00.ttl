@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/rsat-neat",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "180000"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Regulatory Sequence Analysis Tools (RSAT)"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-22T12:09:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-05-11T18:23:04+02:00"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2819"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://rsat.eu/"
+      }
+    ]
+  }
+]

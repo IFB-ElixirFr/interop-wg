@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/metabolicdesign",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "MetabolicDesign"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:43:35+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Algorithm, implemented in the user-friendly program Metabolic Design, to design efficient explorative probes. (téléchargeable).</p>\r\n\r\n<p><br />\r\n&nbsp;&nbsp; &nbsp;Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Terrat, S., E. Peyretaillade, O. Goncalves, E. Dugat-Bony, F. Gravelat, A. Mone, C. Biderre-Petit, D. Boucher, J. Troquet, and P. Peyret (2010) Detecting variants with Metabolic Design, a new software tool to design probes for explorative functional DNA microarray development. BMC Bioinformatics 11:478.<br />\r\n&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:52+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N214b868291f14fbe9fab50d5662ed22d"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2"
+      }
+    ]
+  },
+  {
+    "@id": "_:N214b868291f14fbe9fab50d5662ed22d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit</p>\r\n"
+      }
+    ]
+  }
+]

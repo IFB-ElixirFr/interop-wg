@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/rnaseq-novo-assembly",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville-Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:04:20+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session has been designed to give you an overview of the methods and tools used to de novo assemble transcriptomic short reads. You will learn how to pre-process your raw data (fastq files), how an assembler works and how to use it. Finally you will learn how to assess the quality of your assemblies in order to choose the best one. Organized jointly by the Sigenae and bioinfo genotoul platforms.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-10T12:04:36+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "RNAseq de novo assembly"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/rnaseq-de-novo-assembly-2/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/south-green",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N6c9dac261bc948e8811dc5cf5f428f58"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasCPU": [
+      {
+        "@id": "_:N9338426dad194ad8a3249e5b05624f80"
+      }
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#hasStorage": [
+      {
+        "@id": "_:N3bf5ec7bdb6b46919ac2d52e3504be62"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N4d7cf73fd334425b95f2151042a63cfe"
+      }
+    ],
+    "http://dbpedia.org/ontology/Infrastructure": [
+      {
+        "@value": "Propriétaire "
+      }
+    ],
+    "http://purl.org/cerif/frapo/supports": [
+      {
+        "@id": "_:N3ce4a571ea334d4bbbb1d1dc375e80a2"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:07:14+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-03-15T14:30:11+01:00"
+      }
+    ],
+    "http://rdf.geospecies.org/ont/geospecies#hasProject": [
+      {
+        "@id": "_:N79f16258eda24f1cb83caa49541a6a22"
+      }
+    ],
+    "http://rdf.myexperiment.org/ontologies/base/User": [
+      {
+        "@id": "_:Nbf49a4de34804e6e9bdbf124286af6a3"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "South Green"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N932075fdb49f416a8bf66eebd90de3ac"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N46bd4c12bc74411e951aa34da8143f93"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:N051b25f90dfb4ec9b65a46c279b53c12"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3ce4a571ea334d4bbbb1d1dc375e80a2",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p><u><strong>Appels d'offres plateforme spécifique:</strong></u></p>\r\n\r\n<p>Ces appels d'offres sont à privilgéier pour financement du matériel et les demandes de contrats d'ingénieurs informaticiens ou bioinformaticiens qui participeront au support et développements de la PF. La répartition des financements entre instituts partenaires sera décidée en fonction du type de projet et du montage du projet. Le comité pilotage doit être informé avant la soumission d'un projet qui engage la visibilité de la PF anfin de recevoir un accord de principe.</p>\r\n\r\n<p>Appels d'offres de projets scientifiques (ANR ...):</p>\r\n\r\n<p>Dans le cas d'un projet nécessitant des besoins importants de stockage ou de calculs, la personne porteuse du projet doit se référer au plateau adéquat, dès le montage du projet, et les responsables du plateau informeront les membres de South Green lors des réunions mensuelles. Dans le cas d'un projet nécessitant l'évolution d'applications existantes, ou le développement de nouvelles applications ayant pour vocation à être intégré dans South Green, la personne porteuse du projet doit informer le comité de pilotage de South Green, dès le montage du projet.</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N3bf5ec7bdb6b46919ac2d52e3504be62",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#storage"
+    ],
+    "http://cookingbigdata.com/linkeddata/ccinstances#storage_size": [
+      {
+        "@value": "370.00"
+      }
+    ]
+  },
+  {
+    "@id": "_:N79f16258eda24f1cb83caa49541a6a22",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "4"
+      }
+    ]
+  },
+  {
+    "@id": "_:N4d7cf73fd334425b95f2151042a63cfe",
+    "http://schema.org/identifier": [
+      {
+        "@value": "692"
+      },
+      {
+        "@value": "691"
+      },
+      {
+        "@value": "693"
+      },
+      {
+        "@value": "689"
+      },
+      {
+        "@value": "690"
+      }
+    ]
+  },
+  {
+    "@id": "_:N051b25f90dfb4ec9b65a46c279b53c12",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "South green"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.southgreen.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N932075fdb49f416a8bf66eebd90de3ac",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "131"
+      },
+      {
+        "@value": "133"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbf49a4de34804e6e9bdbf124286af6a3",
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "300"
+      }
+    ]
+  },
+  {
+    "@id": "_:N46bd4c12bc74411e951aa34da8143f93",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "34398"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "Agropolis"
+      }
+    ]
+  },
+  {
+    "@id": "_:N9338426dad194ad8a3249e5b05624f80",
+    "@type": [
+      "http://cookingbigdata.com/linkeddata/ccinstances#cpu"
+    ],
+    "http://purl.org/onto-ocds/ocds#valueAmount": [
+      {
+        "@value": "1184"
+      }
+    ]
+  },
+  {
+    "@id": "_:N6c9dac261bc948e8811dc5cf5f428f58",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Cluster de calcul Dell 24 noeuds</p>\r\n\r\n<p>2 noeuds hypermem, un Dell, un Fujitsu</p>\r\n\r\n<p>Serveurs bases de données, et serveurs web</p>\r\n\r\n<p>Lames de virtualisation</p>\r\n\r\n<p>Stockages scratch et NAS</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/formations/methods-phylogenetics-trees-construction",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Auzeville -Tolosane"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T11:07:37+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>This training session is organized by the bios4Biol CATI and aims at training participants to construct and interpret phylogenetic trees.<br />\r\nYou will discover how to choose an evolutionary model and a phylogenetic inference method (among distance, parsimony, maximum likelihood and Bayesian methods) and how to evaluate the robustness of a tree using bootstrap.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-08-02T14:56:38+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Methods for phylogenetics trees construction"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://bioinfo.genotoul.fr/index.php/events/methods-for-phylogenetic-trees-construction/"
+      }
+    ]
+  }
+]

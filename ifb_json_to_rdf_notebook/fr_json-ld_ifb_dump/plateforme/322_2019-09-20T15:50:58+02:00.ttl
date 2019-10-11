@@ -1,0 +1,75 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/imgt",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T14:05:28+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-04-06T11:27:42+02:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "IMGT"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:Nbcb170707aec4d88a7553af44a1cff27"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N90277590c7834175a03ab1a048a367e5"
+      }
+    ]
+  },
+  {
+    "@id": "_:N90277590c7834175a03ab1a048a367e5",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Montpellier"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": ""
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "34396"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "141 rue de la Cardonille"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nbcb170707aec4d88a7553af44a1cff27",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  }
+]

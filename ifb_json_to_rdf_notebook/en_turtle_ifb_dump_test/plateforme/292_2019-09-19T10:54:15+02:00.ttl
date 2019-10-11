@@ -1,0 +1,113 @@
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cci: <http://cookingbigdata.com/linkeddata/ccinstances#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dfcore: <http://ontology.tno.nl/dfcore/> .
+@prefix dqm: <http://purl.org/dqm-vocabulary/v1/dqm#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix geosp: <http://rdf.geospecies.org/ont/geospecies#> .
+@prefix gleif-base: <https://www.gleif.org/ontology/Base/> .
+@prefix ifb: <https://www.france-bioinformatique.fr/> .
+@prefix ifbn: <https://www.france-bioinformatique.fr/node/> .
+@prefix meb: <http://rdf.myexperiment.org/ontologies/base/> .
+@prefix nno: <https://w3id.org/nno/ontology#> .
+@prefix ns1: <cogs:> .
+@prefix ocds: <http://purl.org/onto-ocds/ocds#> .
+@prefix odapps: <http://semweb.mmlab.be/ns/odapps#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix premis: <http://sw-portal.deri.org/ontologies/swportal#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <https://www.w3.org/TR/vcard-rdf/> .
+@prefix wl: <http://www.wsmo.org/ns/wsmo-lite#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.france-bioinformatique.fr/en/platforms/cbib> a schema:LaboratoryScience ;
+    ns1:Server [ dc:description """<p>Virtualization infrastructure</p>\r
+\r
+<ul>\r
+	<li>Cluster VMware</li>\r
+	<li>2 servers DELL PowerEdge R905 (16 cores, 64 Go RAM)</li>\r
+</ul>\r
+\r
+<p>Storage infrastructure</p>\r
+\r
+<ul>\r
+	<li>1 storage based on ZFS for production, 50 TB (mirrored on remote site)</li>\r
+	<li>1 NetApp appliance for production, 20 TB</li>\r
+	<li>1 NetApp appliance for backup (remote site), 20 TB</li>\r
+</ul>\r
+\r
+<p>Computing infrastructure</p>\r
+\r
+<ul>\r
+	<li>1 computing server DELL PowerEdge R820 (32 cores, 512 Go RAM, 5 TB of space disk)</li>\r
+	<li>1 computing server DELL PowerEdge R815 (32 cores, 256 Go RAM, 2.5 TB of space disk)</li>\r
+	<li>Galaxy portal, 1 server DELL PowerEdge R910 (32 cores/64 threads, 128 Go RAM, 800 GB of space disk)</li>\r
+</ul>\r
+\r
+<p>Network infrastructure</p>\r
+\r
+<ul>\r
+	<li>Internet access 1 Gbits/s (shared)</li>\r
+	<li>LAN&nbsp; 10 Gbits/s</li>\r
+	<li>SAN FiberChannel 4 Gbits/s</li>\r
+</ul>\r
+""" ] ;
+    cci:hasCPU [ a cci:cpu ;
+            ocds:valueAmount "600" ] ;
+    cci:hasStorage [ a cci:storage ;
+            cci:storage_size "360.00" ] ;
+    dbpedia-owl:Database [ schema:identifier "601",
+                "602" ] ;
+    dbpedia-owl:Infrastructure "Propriétaire " ;
+    frapo:hasExpertise [ dc:description """<pre>\r
+The goal of Bordeaux Bioinformatics Center (CBiB) is to design, implement and provide access to biological data analysis services suited to high speed production (eg., Genomics, proteomics, metabolomics, etc. .). This requirement to analyse large volumes of data quickly and reliably, brings the CBiB to develop "Big Data" specific methods. To do this, the CBiB meets the necessary skills in bioinformatics and computer science; the center is equipped with appropriate computing and storage means, consistent with regional facilities (the Mésocentre Calculation Aquitaine - CEC) and the National Bioinformatics Infrastructure (Investment Future, French Institute of Bioinformatics - IFB).\r
+\r
+\r
+The CBiB structures its activities around three strategic areas:</pre>\r
+\r
+<p>&nbsp;</p>\r
+\r
+<pre>\r
+1. NGS: Service activity for the treatment of data from New Sequencing Technologies. This axis developed in collaboration with the Platform Genome-Transcriptome Bordeaux, producer of data and with Genotoul Bioinformatics in Toulouse in the incipient collaboration ReNaBi / IBiSA (exchanges of expertise, sharing of training biologists, R &amp; D missions).\r
+\r
+​2. Comparative Genomics: research activity and service for the storage, analysis and large-scale comparison of bacterial genomes through the Molligen platform.\r
+\r
+3. Metabolomics: In collaboration with the Metabolomics Platform Bordeaux (PMB) that produces the data, the CBiB is involved in data management projects in metabolomics with the recent extension of this work to eco-physiological data. Moreover, the CBiB is heavily involved in metabolomic data standardization activities at the European level (European COSMOS project).</pre>\r
+\r
+<pre>\r
+\r
+\r
+​The Bordeaux Bioinformatics Center (CBiB) provides access to high performance computing resources, provides data analysis and features programming expertise. These resources are at the service of academic scientists and private companies to enable them to meet their needs in bioinformatics in an efficient and profitable manner.</pre>\r
+""" ] ;
+    frapo:supports [ dc:description """<p>2 &nbsp;supporting system modes for projects: service provision or collaboration (R&amp;D).</p>\r
+""" ] ;
+    dc:created "2015-07-21T10:27:52+02:00" ;
+    dc:modified "2019-03-07T11:00:05+01:00" ;
+    geosp:hasProject [ ocds:valueAmount "4" ] ;
+    meb:User [ ocds:valueAmount "38" ] ;
+    schema:name "CBiB" ;
+    premis:hasSoftware [ a odapps:Tool ;
+            schema:identifier "1417",
+                "1418",
+                "2242",
+                "597",
+                "598",
+                "599",
+                "600" ] ;
+    org:siteAddress [ a schema:PostalAddress ;
+            schema:addressCountry "FR" ;
+            schema:addressLocality "Bordeaux" ;
+            schema:postOfficeBoxNumber "" ;
+            schema:postalCode "33076" ;
+            schema:streetAddress "146 Rue Léo Saignat" ] ;
+    gleif-base:hasWebsite [ a schema:WebSite ;
+            schema:name "Bordeaux Bioinformatics Center" ;
+            schema:url "http://www.cbib.u-bordeaux2.fr/" ] .
+

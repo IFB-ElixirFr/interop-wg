@@ -1,0 +1,41 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/rulnet",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "RulNet "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:56:19+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Rule Inference and Network Visualization is a web-oriented platform dedicated to the inference and analysis of regulatory networks from qualitative and quantitative –omics data by means of rule discovery and statistical techniques.</p>\r\n\r\n<p><br />\r\n&nbsp;Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Vincent J, Martre P, Gouriou B, Ravel C, Dai ZW, Petit JM, Pailloux M (2015) RulNet: A Web-Oriented Platform for Regulatory Network Inference, Application to Wheat -Omics Data. Plos One 10(5) e0127127. doi:10.1371/journal.pone.0127127</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:50+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1c2d1eadc9ae4552b8bb93225f0bdb1d"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1c2d1eadc9ae4552b8bb93225f0bdb1d",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://rulnet.isima.fr</p>\r\n"
+      }
+    ]
+  }
+]

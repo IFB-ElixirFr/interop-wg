@@ -1,0 +1,38 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/introduction-à-phylogénie-moléculaire",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-21T11:13:36+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Le C3BI propose des cours pour acquérir les notions théoriques de phylogénie et maitriser les outils et logiciels.<br />\r\nLes cours d'”Introduction à la phylogénie moléculaire” sont ouverts EN ACCES LIBRE&nbsp; à tous les Pasteuriens et dispensés en langue française .<br />\r\nl'après midi les travaux pratiques sont limités à 15 personnes (sur inscription)</p>\r\n\r\n<p>** Mardi 29 septembre<br />\r\n– 9h30-11h : Méthodes de distance (A. Criscuolo)<br />\r\n– 14h-15h30 : Méthodes de Maximum de Parcimonie (O. Gascuel)<br />\r\n** Mercredi 30 septembre<br />\r\n– 9h30-11h : Modèles d’évolution (O. Gascuel)<br />\r\n– 14h-15h30 : Méthodes de Maximum de Vraisemblance (O. Gascuel)<br />\r\n** Jeudi 1er octobre<br />\r\n– 9h30-11h : Méthodes Bayesiennes (G. Perriere)<br />\r\n– 14h-15h30 : Inférences des forces sélectives (G. Perriere)</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/educationLevel": [
+      {
+        "@value": "Formation professionnelle "
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-21T11:30:51+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "Introduction à la phylogénie moléculaire"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "c3bi.pasteur.fr"
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/askomics",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Askomics"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T10:17:58+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>AskOmics is a visual SPARQL query builder for RDF database.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-10-01T14:34:51+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N1320cda8efd5496d93e50c72b9cb1806"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://github.com/askomics"
+      }
+    ]
+  },
+  {
+    "@id": "_:N1320cda8efd5496d93e50c72b9cb1806",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Free</p>\r\n"
+      }
+    ]
+  }
+]

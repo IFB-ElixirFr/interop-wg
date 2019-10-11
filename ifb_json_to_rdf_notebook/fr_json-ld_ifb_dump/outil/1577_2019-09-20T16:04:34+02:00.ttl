@@ -1,0 +1,46 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/phylarray",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "PhylArray"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2016-03-01T21:35:27+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Program for designing oligonucleotide probes (from 16S rRNA) for use in phylogenetic microarray experiments.<br />\r\n&nbsp;&nbsp; &nbsp;</p>\r\n\r\n<p>Publication :<br />\r\n&nbsp;&nbsp; &nbsp;Militon, C., S. Rimour, M. Missaoui, C. Biderre, V. Barra, D. Hill, A. Mone, G. Gagne, H. Meier, E. Peyretaillade, and P. Peyret (2007) PhylArray: phylogenetic probe design algorithm for microarray. Bioinformatics (Oxford, England) 23:2550-2557.<br />\r\n&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-10T15:52:52+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:Ne4bdc0f249bd4238ab50591d27c949b1"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "8"
+      }
+    ]
+  },
+  {
+    "@id": "_:Ne4bdc0f249bd4238ab50591d27c949b1",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Gratuit sur http://g2im.u-clermont1.fr/serimour/phylarray/</p>\r\n"
+      }
+    ]
+  }
+]

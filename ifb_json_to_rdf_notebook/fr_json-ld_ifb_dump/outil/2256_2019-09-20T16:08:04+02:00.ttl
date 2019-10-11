@@ -1,0 +1,51 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/galaxybird",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "26"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy@BiRD"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-24T17:30:17+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Le portail Galaxy de BiRD propose des outils pour l'analyse de données de :</p>\r\n\r\n<ul>\r\n\t<li>séquençage NGS : analyse de variants et transcriptomique</li>\r\n\t<li>puces à ADN</li>\r\n\t<li>puces à protéines</li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-25T18:58:10+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N841bf31231fd404aa745dd8c8f9cc95f"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://galaxy-bird.univ-nantes.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N841bf31231fd404aa745dd8c8f9cc95f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>L'accès à Galaxy nécessite la création d'un compte sur le cluster : http://www.pf-bird.univ-nantes.fr/07074276/0/fiche___pagelibre/&amp;RH=1442585061597</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+      }
+    ]
+  }
+]

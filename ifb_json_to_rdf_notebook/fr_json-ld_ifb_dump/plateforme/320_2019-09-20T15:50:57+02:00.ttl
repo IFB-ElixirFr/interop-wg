@@ -1,0 +1,135 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/platforms/CAZy",
+    "@type": [
+      "http://schema.org/LaboratoryScience"
+    ],
+    "cogs:Server": [
+      {
+        "@id": "_:N7e4982d6ff464fb499d8d1dc9073cb27"
+      }
+    ],
+    "http://dbpedia.org/ontology/Database": [
+      {
+        "@id": "_:N0ba9ae4ec38b48ef9f27bdc5203942aa"
+      }
+    ],
+    "http://purl.org/cerif/frapo/hasExpertise": [
+      {
+        "@id": "_:N563e5b9b85734922b91e7a8d84f0455d"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-07-24T12:25:01+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-03-03T14:32:40+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "CAZy"
+      }
+    ],
+    "http://www.w3.org/ns/org#Organization": [
+      {
+        "@id": "_:N41127e16067d4bf18f948ee31b602c00"
+      }
+    ],
+    "http://www.w3.org/ns/org#siteAddress": [
+      {
+        "@id": "_:N44411a178b8e40c696217df58943dd95"
+      }
+    ],
+    "https://www.gleif.org/ontology/Base/hasWebsite": [
+      {
+        "@id": "_:Nf883c283a95e49c59d97da0d20221db3"
+      }
+    ]
+  },
+  {
+    "@id": "_:N7e4982d6ff464fb499d8d1dc9073cb27",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>1 cluster de 136 cœurs, 4 calculateurs SMP à 64 cœurs, 2 calculateurs à 8 cœurs</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:N0ba9ae4ec38b48ef9f27bdc5203942aa",
+    "http://schema.org/identifier": [
+      {
+        "@value": "644"
+      }
+    ]
+  },
+  {
+    "@id": "_:N41127e16067d4bf18f948ee31b602c00",
+    "@type": [
+      "http://www.w3.org/ns/org#Organization"
+    ],
+    "http://schema.org/identifier": [
+      {
+        "@value": "132"
+      }
+    ]
+  },
+  {
+    "@id": "_:N44411a178b8e40c696217df58943dd95",
+    "@type": [
+      "http://schema.org/PostalAddress"
+    ],
+    "http://schema.org/addressCountry": [
+      {
+        "@value": "FR"
+      }
+    ],
+    "http://schema.org/addressLocality": [
+      {
+        "@value": "Marseille"
+      }
+    ],
+    "http://schema.org/postOfficeBoxNumber": [
+      {
+        "@value": "Case 932"
+      }
+    ],
+    "http://schema.org/postalCode": [
+      {
+        "@value": "13009"
+      }
+    ],
+    "http://schema.org/streetAddress": [
+      {
+        "@value": "163 Avenue de Luminy"
+      }
+    ]
+  },
+  {
+    "@id": "_:N563e5b9b85734922b91e7a8d84f0455d",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Recherche, identification, classement en familles/sous-familles, des enzymes d'assemblage et déconstruction des sucres complexes dans les données génomiques et métagénomique et interprétation des résultats (relations séquence:structure:fonction). Applications dans le domaine médical (microbiote intestinal), agroalimentaire (rumen, enzymes pour la modification des polysaccharides alimentaires), environnemental (échantillons provenant de sols, de milieux marins, etc), biotechnologique (enzymes pour biocarburants) et biologique (évolution des génomes et adaptation à l'environnement)</p>\r\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nf883c283a95e49c59d97da0d20221db3",
+    "@type": [
+      "http://schema.org/WebSite"
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "http://www.cazy.org/"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://www.cazy.org/"
+      }
+    ]
+  }
+]

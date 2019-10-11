@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/geno3d",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "16419"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "5837"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Geno3D@ "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:03:05+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Modélisation par homologie automatisée de la structure tridimensionnelle des protéines.</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2017-01-27T16:30:38+01:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N470ca66c5db84000acc02706806d539b"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "304"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://geno3d-prabi.ibcp.fr"
+      }
+    ]
+  },
+  {
+    "@id": "_:N470ca66c5db84000acc02706806d539b",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>https://geno3d-prabi.ibcp.fr (depuis février 2001).</p>\r\n"
+      }
+    ]
+  }
+]

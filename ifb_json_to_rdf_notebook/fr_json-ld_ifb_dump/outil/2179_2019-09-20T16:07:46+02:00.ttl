@@ -1,0 +1,56 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/en/services/outils/jflow",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "JFlow"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2017-01-18T11:19:36+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Workflow management system in JS using Makeflow/Weaver</p>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:35:52+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N362d489528404cfbaf68755640d59a96"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "2"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "https://forgemia.inra.fr/genotoul-bioinfo/jflow"
+      }
+    ],
+    "https://w3id.org/nno/ontology#hasDownloadCount": [
+      {
+        "@value": "1357"
+      }
+    ]
+  },
+  {
+    "@id": "_:N362d489528404cfbaf68755640d59a96",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>The software package is available under the GNU General Public License (GPL) and can be downloaded from the gitlab forgemia : https://forgemia.inra.fr/genotoul-bioinfo/jflow.</p>\r\n"
+      }
+    ]
+  }
+]

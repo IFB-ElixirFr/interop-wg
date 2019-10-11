@@ -1,0 +1,61 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/services/outils/galaxy-piloté-sigenae",
+    "@type": [
+      "http://schema.org/SoftwareApplication"
+    ],
+    "http://dbpedia.org/ontology/visitorsPerYear": [
+      {
+        "@value": "9963"
+      }
+    ],
+    "http://dbpedia.org/ontology/visitorsTotal": [
+      {
+        "@value": "4112"
+      }
+    ],
+    "http://edamontology.org/data_1190": [
+      {
+        "@value": "Galaxy (piloté par Sigenae) "
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2015-09-15T10:55:50+02:00"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@value": "<p>Galaxy is a workbench available for biologists from Sigenae Platform. Galaxy objectives are:</p>\r\n\r\n<div>\r\n<ul>\r\n\t<li>Make bioinfo Linux tools accessible to biogists.</li>\r\n\t<li>Hide the complexity of the infrastructure.</li>\r\n\t<li>Allow creation, execution and sharing of workflows.</li>\r\n</ul>\r\n</div>\r\n"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2019-07-09T16:31:03+02:00"
+      }
+    ],
+    "http://purl.org/dqm-vocabulary/v1/dqm#hasCondition": [
+      {
+        "@id": "_:N71bae610b2fb440f88a0e1a8ed944d3f"
+      }
+    ],
+    "http://purl.org/spar/c4o/GlobalCitationCount": [
+      {
+        "@value": "6"
+      }
+    ],
+    "http://schema.org/url": [
+      {
+        "@value": "http://sigenae-workbench.toulouse.inra.fr/galaxy/"
+      }
+    ]
+  },
+  {
+    "@id": "_:N71bae610b2fb440f88a0e1a8ed944d3f",
+    "http://purl.org/dqm-vocabulary/v1/dqm#Condition": [
+      {
+        "@value": "<p>Available on a web site with login and password.</p>\r\n"
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "@id": "https://www.france-bioinformatique.fr/fr/formations/toggle-workflow-manager-performe-large-scale-ngs-analysis",
+    "@type": [
+      "http://edamontology.org/data_3669"
+    ],
+    "http://dbpedia.org/ontology/location": [
+      {
+        "@value": "Centre IRD Montpellier"
+      }
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@value": "2018-03-15T17:51:48+01:00"
+      }
+    ],
+    "http://purl.org/dc/terms/modified": [
+      {
+        "@value": "2018-12-10T15:53:55+01:00"
+      }
+    ],
+    "http://schema.org/name": [
+      {
+        "@value": "TOGGLe, a workflow manager to perform large-scale NGS analysis"
+      }
+    ]
+  }
+]
