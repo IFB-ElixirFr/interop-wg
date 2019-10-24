@@ -1,4 +1,4 @@
-This wiki aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
+This web page aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
 
 Main contributors : 
   - Thomas Rosnet
