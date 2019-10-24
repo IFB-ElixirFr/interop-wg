@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+This wiki aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
 
-You can use the [editor on GitHub](https://github.com/IFB-ElixirFr/interop-wg/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Main contributors : 
+  - Thomas Rosnet
+  - Marie-Dominique Devignes
+  - Alban Gaignard
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Ressources for interoperability
 
-### Markdown
+## ELIXIR Webinar: Application of recently developed FAIR metrics to the ELIXIR Core Data Resources (Thu 17 October 2019)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Webinar description:  
+https://elixir-europe.org/events/webinar-fairness-CDR
 
-```markdown
-Syntax highlighted code block
+Record of the Webinar (1h):  
+https://vimeo.com/367296899
 
-# Header 1
-## Header 2
-### Header 3
+Slides of the Webinar:  
+https://www.slideshare.net/pistoiaalliance/application-of-recently-developed-fair-metrics-to-the-elixir-core-data-resources
 
-- Bulleted
-- List
+## ELIXIR Webinar: ELIXIR Beacon & Beacon Network As A Service (Wed 16 October 2019)
 
-1. Numbered
-2. List
+Webinar description:  
+https://elixir-europe.org/events/elixir-webinar-elixir-beacon-beacon-network-service
 
-**Bold** and _Italic_ and `Code` text
+Record of the Webinar (50mn):  
+https://www.youtube.com/watch?v=98UUwcNQF9g
 
-[Link](url) and ![Image](src)
-```
+Slides of the Webinar:  
+https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IFB-ElixirFr/interop-wg/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Next coming events
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+# Meeting minutes
+* 
