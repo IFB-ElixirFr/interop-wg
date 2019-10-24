@@ -28,4 +28,6 @@ https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd
 # Next coming events
 
 # Meeting minutes
-* 
+## 2019
+ - [16 of October 2019](https://docs.google.com/document/d/1vgo-CniOngrJDmeh6sbtEzwtsqZMMpG-dBePMNakSPw/edit#heading=h.ps5gcxnf8axy)
+ - 
