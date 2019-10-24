@@ -26,6 +26,9 @@ https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd
 
 
 # Next coming events
+ - November 2019: [https://www.biohackathon-europe.org]()
+ - November 2019: IFB / Elixir-FR meeting 
+ - 
 
 # Meeting minutes
 ## 2019
