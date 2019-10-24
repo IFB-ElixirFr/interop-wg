@@ -3,7 +3,9 @@ theme: jekyll-theme-cayman
 title: [IFB / Elixir-FR interoperability working group]
 description: [Interoperability resources and guidelines for bioinformatics]
 
-author: Thomas Rosnet
-author: Alban Gaignard
-author: Marie-Dominique Devignes
+author: 
+ - Thomas Rosnet
+ - Alban Gaignard
+ - Marie-Dominique Devignes
+ 
 isPartOf: https://www.france-bioinformatique.fr
