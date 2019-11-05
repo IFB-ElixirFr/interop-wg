@@ -1,4 +1,6 @@
 theme: jekyll-theme-cayman
+timezone: TIMEZONE
+future: true
 
 title: [IFB / Elixir-FR interoperability working group]
 description: [Interoperability resources and guidelines for bioinformatics]
