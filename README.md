@@ -15,13 +15,13 @@ Main contributors :
 ## ELIXIR Webinar: ELIXIR Beacon & Beacon Network As A Service (Wed 16 October 2019)
 
 Webinar description:  
-https://elixir-europe.org/events/elixir-webinar-elixir-beacon-beacon-network-service
+[https://elixir-europe.org/events/elixir-webinar-elixir-beacon-beacon-network-service]()
 
 Record of the Webinar (50mn):  
-https://www.youtube.com/watch?v=98UUwcNQF9g
+[https://www.youtube.com/watch?v=98UUwcNQF9g]()
 
 Slides of the Webinar:  
-https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd
+[https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd]()
 
 
 
