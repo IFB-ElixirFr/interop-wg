@@ -2,7 +2,7 @@ theme: jekyll-theme-cayman
 
 title: [IFB / Elixir-FR interoperability working group]
 description: [Interoperability resources and guidelines for bioinformatics (in construction)]
-excluse: fairmetrics_interface_tests
+excluse: linked-data-webapp
 
 author: 
  - Thomas Rosnet
