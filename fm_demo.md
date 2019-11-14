@@ -16,6 +16,9 @@ filename: fm_demo
 
 ## Approach 
 
+For now, we are willing to use the FAIRMetrics smartapi to create a simple interface and provide the user with an easy way to verify how FAIR is his ressource.
+We want to provide the user with clear informations on how to validate each aspect of the FAIR principles and help him to improve the FAIRness of his ressource.
+
 ## Demonstration
 
 The aim of this demonstration is to provide a typical usecase for this project idea.
