@@ -1,5 +1,5 @@
 ---
-title: Self-assessment FM demo
+title: Self-assessment interface using FAIRMetrics
 layout: template
 filename: fm_demo
 --- 
