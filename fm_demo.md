@@ -8,6 +8,8 @@ filename: fm_demo
 
 ## Context
 
+The 2019 FAIR Evaluator framework (Wilkinson, Dumontier et al., Scientific Data 6:174 is composed of Maturity Indicators (MI), compliance tests and the evaluator application itself. The authors expect growing contributions in MI specification and compliance tests to improve relevance and coverage of FAIR evaluation. They also propose that these tests should be carried out by third party organisations. However, small efforts have been done so far from a user perspective, to take advantage from MI compliance tests in the process of improving FAIRness of one’s own resources.
+
 ## Related works
 
 ### FAIRMetrics
