@@ -4,4 +4,4 @@ layout: template
 filename: fm_demo
 --- 
 
-Test demo
+# Monitoring progress in FAIRification through self-assessment of resources maturity indicators
