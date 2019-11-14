@@ -1,3 +1,8 @@
+---
+title: Home page
+layout: template
+filename: index
+--- 
 This web page aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
 
 Main contributors: 
