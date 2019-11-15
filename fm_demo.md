@@ -6,11 +6,11 @@ filename: fm_demo
 
 # Monitoring progress in FAIRification through self-assessment of resources maturity indicators
 
-## Context
+## Context and related works
 
-The 2019 FAIR Evaluator framework (Wilkinson, Dumontier et al., Scientific Data 6:174 is composed of Maturity Indicators (MI), compliance tests and the evaluator application itself. The authors expect growing contributions in MI specification and compliance tests to improve relevance and coverage of FAIR evaluation. They also propose that these tests should be carried out by third party organisations. However, small efforts have been done so far from a user perspective, to take advantage from MI compliance tests in the process of improving FAIRness of one’s own resources.
-
-## Related works
+The FAIR Evaluator framework [Wilkinson, Dumontier et al., Scientific Data 6:174] is composed of Maturity Indicators (MI), compliance tests and the evaluator application itself. The authors expect growing contributions in MI specifications and compliance tests to improve relevance and coverage of FAIR evaluation. They also propose that these tests should be carried out by third party organisations. 
+In spite of many research contributions highlighting the potential benefits of FAIR principles for the research community and their potential impacts, few efforts have been done so far to take advantage from their concrete implementation, in the process of improving FAIRness of users/community resources. Early prototypes focus on publishing FAIRness metrics computed offline for predefined sets of public web accessible resources. However this does not provide concrete help to developers for better sharing their published works. 
+In this work we propose a web demonstrator, leveraging existing web APIs, aimed at i) evaluating FAIR maturity indicators and ii) providing hints to progress in the FAIRification process. 
 
 ### FAIRMetrics
 
