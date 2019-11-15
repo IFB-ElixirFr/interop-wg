@@ -41,7 +41,7 @@ The researcher submit his resource throught a URL or DOI with minimal informatio
 
 Provide the researcher with a one page result, with negative or positive score for each Maturity Indicator.
 
-### Step 5 - Self-assesment of the FAIRness
+### Step 5 - Self-assessment of the FAIRness
 
 When the result is negative, explain where it failed, and provide suggestions of how to validate this Maturity Indicator.
 This will provide a usefull help to the researcher, and then allow him to improve the FAIRness of his ressource.
