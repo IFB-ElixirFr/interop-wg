@@ -30,7 +30,7 @@ Slides of the Webinar:
 
 # Next coming events
  - November 2019: [https://www.biohackathon-europe.org](https://www.biohackathon-europe.org)
- - November 2019: IFB / Elixir-FR meeting
+ - November 2019: [IFB / Elixir-FR meeting](https://ifb-ag.sciencesconf.org)
  - November 2019: ReproHackathon
 
 # Meeting minutes
