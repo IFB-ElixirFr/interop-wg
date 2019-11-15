@@ -1,7 +1,7 @@
 ---
 title: Home page
 layout: template
-filename: interop-wg/interop-wg/index
+filename: index
 --- 
 This web page aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
 
