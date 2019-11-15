@@ -1,7 +1,7 @@
 ---
 title: Self-assessment interface using FAIRMetrics
 layout: template
-filename: /linked-data-webapp/fm_demo
+filename: /interop-wg/linked-data-webapp/fm_demo
 --- 
 
 # Monitoring progress in FAIRification through self-assessment of resources maturity indicators
