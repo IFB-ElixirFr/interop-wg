@@ -5,6 +5,7 @@ description: [Interoperability resources and guidelines for bioinformatics (in c
 exclude: 
  - linked-data-webapp/README.md
  - web
+ - README.md
  
 author: 
  - Thomas Rosnet
