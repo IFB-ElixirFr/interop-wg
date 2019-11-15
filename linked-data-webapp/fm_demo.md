@@ -46,7 +46,7 @@ Provide the researcher with a one page result, with negative or positive score f
 When the result is negative, explain where it failed, and provide suggestions of how to validate this Maturity Indicator.
 This will provide a usefull help to the researcher, and then allow him to improve the FAIRness of his ressource.
 
-![fb_result_screen](/images/screen_fm_app.png)
+![fb_result_screen](interop-wg/images/screen_fm_app.png)
 
 ### Step 6 - Improve and repeat
 
