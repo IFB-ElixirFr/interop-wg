@@ -13,7 +13,7 @@ Main contributors:
 # Ressources for interoperability
 
 ## ELIXIR Webinar: Application of recently developed FAIR metrics to the ELIXIR Core Data Resources (Thu 17 October 2019)
- - Webinar: [https://elixir-europe.org/events/webinar-fairness-CDR]()
+ - Webinar: [https://elixir-europe.org/events/webinar-fairness-CDR](https://elixir-europe.org/events/webinar-fairness-CDR)
  - Video capture (1h): [https://vimeo.com/367296899]()
  - Slides: [https://www.slideshare.net/pistoiaalliance/application-of-recently-developed-fair-metrics-to-the-elixir-core-data-resources]()
 
