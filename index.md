@@ -5,11 +5,6 @@ filename: index
 --- 
 This web page aims at sharing guidelines and resources gathered and produced by the Elixir-FR Interoperability working group (French Bioinformatics institute). 
 
-Main contributors: 
-  - Thomas Rosnet
-  - Marie-Dominique Devignes
-  - Alban Gaignard
-
 # Ressources for interoperability
 
 ## ELIXIR Webinar: Application of recently developed FAIR metrics to the ELIXIR Core Data Resources (Thu 17 October 2019)
