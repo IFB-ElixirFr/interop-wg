@@ -12,10 +12,6 @@ The FAIR Evaluator framework [Wilkinson, Dumontier et al., Scientific Data 6:174
 In spite of many research contributions highlighting the potential benefits of FAIR principles for the research community and their potential impacts, few efforts have been done so far to take advantage from their concrete implementation, in the process of improving FAIRness of users/community resources. Early prototypes focus on publishing FAIRness metrics computed offline for predefined sets of public web accessible resources. However this does not provide concrete help to developers for better sharing their published works. 
 In this work we propose a web demonstrator, leveraging existing web APIs, aimed at i) evaluating FAIR maturity indicators and ii) providing hints to progress in the FAIRification process. 
 
-### FAIRMetrics
-
-### Fair Maturity Indicators WG (RDA)
-
 ## Approach 
 
 For now, we are willing to use the FAIRMetrics smartapi to create a simple interface and provide the user with an easy way to verify how FAIR is his resource.
