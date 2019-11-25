@@ -9,17 +9,17 @@ This web page aims at sharing guidelines and resources gathered and produced by 
 
 ## Open interoperability standards, tools and services at EMBL-EBI
 
- - Video capture (50mn): 
+ - Video capture (50mn):  
  [https://vimeo.com/373355050](https://vimeo.com/373355050)
- - Slides: 
+ - Slides:  
  [https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019](https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019)
 
 ## ELIXIR Webinar: Application of recently developed FAIR metrics to the ELIXIR Core Data Resources (Thu 17 October 2019)
- - Webinar: 
+ - Webinar:  
  [https://elixir-europe.org/events/webinar-fairness-CDR](https://elixir-europe.org/events/webinar-fairness-CDR)
- - Video capture (1h): 
+ - Video capture (1h):  
  [https://vimeo.com/367296899](https://vimeo.com/367296899)
- - Slides: 
+ - Slides:  
  [https://www.slideshare.net/pistoiaalliance/application-of-recently-developed-fair-metrics-to-the-elixir-core-data-resources](https://www.slideshare.net/pistoiaalliance/application-of-recently-developed-fair-metrics-to-the-elixir-core-data-resources)
 
 ## ELIXIR Webinar: ELIXIR Beacon & Beacon Network As A Service (Wed 16 October 2019)
