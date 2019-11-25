@@ -9,8 +9,8 @@ This web page aims at sharing guidelines and resources gathered and produced by 
 
 ## Open interoperability standards, tools and services at EMBL-EBI
 
-- Video capture (50mn): [https://vimeo.com/373355050](https://vimeo.com/373355050)
-- Slides: [https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019](https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019)
+ - Video capture (50mn): [https://vimeo.com/373355050](https://vimeo.com/373355050)
+ - Slides: [https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019](https://www.slideshare.net/pistoiaalliance/open-interoperability-standards-tools-and-services-at-embl-ebi-henriette-harmse-14nov2019)
 
 ## ELIXIR Webinar: Application of recently developed FAIR metrics to the ELIXIR Core Data Resources (Thu 17 October 2019)
  - Webinar: [https://elixir-europe.org/events/webinar-fairness-CDR](https://elixir-europe.org/events/webinar-fairness-CDR)
@@ -19,13 +19,13 @@ This web page aims at sharing guidelines and resources gathered and produced by 
 
 ## ELIXIR Webinar: ELIXIR Beacon & Beacon Network As A Service (Wed 16 October 2019)
 
-Webinar description:  
+ - Webinar description:  
 [https://elixir-europe.org/events/elixir-webinar-elixir-beacon-beacon-network-service](https://elixir-europe.org/events/elixir-webinar-elixir-beacon-beacon-network-service)
 
-Record of the Webinar (50mn):  
+ - Video capture (50mn) (50mn):  
 [https://www.youtube.com/watch?v=98UUwcNQF9g](https://www.youtube.com/watch?v=98UUwcNQF9g)
 
-Slides of the Webinar:  
+ - Slides:  
 [https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd](https://drive.google.com/open?id=1ZmCp_vpaO85wCjn93WVlxr9QJxpAMdUd)
 
 # Next coming events
