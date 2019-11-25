@@ -23,6 +23,10 @@ We propose that the results of such FAIR metrics evaluations remain private to b
 
 Our tool is available as a web demonstrator, hosted by the Elixir-FR node. The tool has been developed in Python with the Flask framework. It leverages the REST protocol to send queries to the FAIR evaluation framework APIs resulting from community efforts. The outputs of each MI metric evaluation is parsed and presented in a user-friendly way. Links to useful resources for improving the resource FAIRness are provided. 
 
+## Conclusion and future works
+
+In this work we propose a simple web tool, aimed at supporting resource creators and developers  in their sharing effort to better conform to standardization efforts such as the FAIR principles. s future works we plan to i) investigate how some of the metrics could be more efficiently computed and ii) join already started community efforts towards transparent and explainable automated computation  of FAIR metrics. 
+
 ## Demonstration
 
 The aim of this demonstration is to provide a typical usecase for this project idea.
