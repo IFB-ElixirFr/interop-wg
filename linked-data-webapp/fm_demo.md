@@ -16,6 +16,12 @@ In this work we propose a web demonstrator, leveraging existing web APIs, aimed 
 
 For now, we are willing to use the FAIRMetrics smartapi to create a simple interface and provide the user with an easy way to verify how FAIR is his resource.
 We want to provide the user with clear informations on how to validate each aspect of the FAIR principles and help him to improve the FAIRness of his resource.
+We address the following use-case. A researcher/developer just produced new results in terms of data, software, or web-accessible documents. She wants to assess, for instance, how findable or reusable is the proposed resource. She submits to the self-assessment tool the resource identifier or web location (URL). This tool dynamically computes the metrics as specified by the community initiatives and provides the users with a score for each metrics. A particular attention is paid to provide users with explanation on why a particular metrics is failing, and which technical solution  could be adopted to enhance the FAIR metrics evaluation. 
+We propose that the results of such FAIR metrics evaluations remain private to better help resource creators and developer in their repeated efforts towards more findable and reusable machine-actionable resources. 
+
+## System Implementation
+
+Our tool is available as a web demonstrator, hosted by the Elixir-FR node. The tool has been developed in Python with the Flask framework. It leverages the REST protocol to send queries to the FAIR evaluation framework APIs resulting from community efforts. The outputs of each MI metric evaluation is parsed and presented in a user-friendly way. Links to useful resources for improving the resource FAIRness are provided. 
 
 ## Demonstration
 
