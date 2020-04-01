@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import rdflib
-from SPARQLWrapper import SPARQLWrapper, JSON
+rom SPARQLWrapper import SPARQLWrapper, JSON
 from string import Template
 
 

@@ -28,7 +28,7 @@ def biotoolsRestRequest(page):
             response = requests.get(url, timeout=TIMEOUT)
             json_response = response.json()
             break
-        except SSLError:
+        except requests.exceptions.SSLError:
             time.sleep(5)
         except requests.exceptions.Timeout:
             time.sleep(5)

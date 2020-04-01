@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Tue, 11 Feb 2020 14:24:03 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: *
+Transfer-Encoding: chunked
+Content-Type: application/json+ld
+

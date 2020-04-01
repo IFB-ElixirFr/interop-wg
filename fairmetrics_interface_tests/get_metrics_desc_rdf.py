@@ -123,9 +123,7 @@ def requestOnRDF(rdf_object, term, prefix):
     color = "cyan"
     if term == "rdfs:label": color = "yellow"
     print(term.replace(term, termcolor.colored(term, color) + ": "), end="")
-    for s, p, o in query_res:
-        # print("%s publisher %s" % row)
-        print(o)
+
 
     return query_res
 
@@ -148,6 +146,24 @@ def listDirFiles(dir):
 def sortFAIRList(list):
     list.sort()
 
+def writeTSV(header, json_result):
+
+    header.insert(0, "MI Name")
+
+    tsv_text = "\";\"".join(header)
+    tsv_text = "\"" + tsv_text + "\""
+
+    for MI in json_result.keys():
+        tsv_text += "\n\"" + MI + "\""
+        for field_key in json_result[MI].keys():
+            tsv_text += ";\"" + json_result[MI][field_key].replace("\"", "\'") + "\""
+
+    file = open("metrics_desc.tsv", "w")
+    file.write(tsv_text)
+    file.close()
+
+
+
 if __name__ == "__main__":
     if not os.path.isdir(TEMP_DIR):
         cloneRepo()
@@ -162,9 +178,20 @@ if __name__ == "__main__":
 
     list_res_files = listDirFiles(RES_DIR)
 
-    terms_list = ["fairmi:measuring", "fairmi:procedure", "fairmi:validation"]
+    terms_list = [
+                    "rdfs:label",
+                    "fairmi:measuring",
+                    "fairmi:procedure",
+                    "fairmi:rationale",
+                    "fairmi:relevance",
+                    "fairmi:requirements",
+                    "fairmi:validation"
+                ]
+
+    json_result = {}
 
     for filename in list_res_files:
+        json_result[filename] = {}
         try:
             graph, rdf_string = readRDF(RES_DIR + '/' + filename)
             prefix = getPrefix(rdf_string)
@@ -172,6 +199,12 @@ if __name__ == "__main__":
             print(filename.replace(filename, termcolor.colored(filename, "yellow")))
             for term in terms_list:
                 query_res = requestOnRDF(graph, term, prefix)
+                for s, p, o in query_res:
+                    # print("%s publisher %s" % row)
+                    print(o)
+                    json_result[filename][term] = o
                 # makeGraph(query_res)
         except rdflib.plugins.parsers.notation3.BadSyntax:
             pass
+
+    writeTSV(terms_list, json_result)

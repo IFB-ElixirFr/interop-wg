@@ -22,13 +22,14 @@ import requests
 
 # timeout (connect, read) in secondes
 TIMEOUT = (10, 300)
-NB = '7000'
+NB = 1000
+TYPE = "dataset"
 OUTPUT_DIR = "input"
 
 def zenodoRestRequest():
     print("REST request to zenedo...")
     # rest request
-    url = 'https://zenodo.org/api/records/?sort=mostrecent&page=1&size=' + NB
+    url = 'https://zenodo.org/api/records/?sort=mostrecent&page=1&size=' + "7000"
     while True:
         try:
             response = requests.get(url, timeout=TIMEOUT)
@@ -45,10 +46,14 @@ def zenodoJsonParser(response):
     json_response = response.json()
 
     dois_list = []
+    count = 1
     for element in json_response["hits"]["hits"]:
         type = element["metadata"]["resource_type"]["type"]
-        if type == "dataset":
-            dois_list.append(element["doi"])
+        if type == TYPE:
+            if count > NB: break
+            dois_list.append("https://doi.org/" + element["doi"])
+            count += 1
+
 
     return dois_list
 

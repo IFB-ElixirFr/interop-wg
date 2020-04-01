@@ -151,6 +151,12 @@ def testMetric(metric_api_url, data):
 
     @return String Result returned by the request that is JSON-LD formated
     """
+
+    ##### BRICOLAGE A MODIFIER QUAND FAIRMETRICS SERA A JOUR
+    base_url = "http://linkeddata.systems/cgi-bin/FAIR_Tests/"
+    sub_url = metric_api_url.split('/')[5]
+    metric_api_url = base_url + sub_url
+
     while True:
         try:
             response = requests.request(method='POST', url=metric_api_url, data=data, timeout=TIMEOUT)
@@ -247,7 +253,6 @@ def testMetrics(GUID):
                 if PRINT_DETAILS:
                     # print informations related to the metric
                     printMetricInfo(metric_info)
-
                 # evaluate the metric
                 start_time = getCurrentTime()
                 metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
@@ -659,10 +664,11 @@ def getMetrics():
     @return json Result returned by the request that is JSON-LD formated
     """
 
-    metrics_url = 'https://ejp-evaluator.appspot.com/FAIR_Evaluator/metrics.json'
+    metrics_url = 'https://fair-evaluator.semanticscience.org/FAIR_Evaluator/metrics.json'
+
     while(True):
         try:
-            response = requests.get(metrics_url, timeout=TIMEOUT)
+            response = requests.get(url=metrics_url, timeout=TIMEOUT)
             break
         except SSLError:
             time.sleep(5)

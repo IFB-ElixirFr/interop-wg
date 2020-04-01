@@ -3,7 +3,7 @@
 
 
 import rdflib
-from SPARQLWrapper import SPARQLWrapper, JSON
+#from SPARQLWrapper import SPARQLWrapper, JSON
 
 
 from rdflib.extras.external_graph_libs import rdflib_to_networkx_multidigraph
@@ -18,7 +18,7 @@ def readRDF():
     """
 
     g = rdflib.Graph()
-    result = g.parse("./biotoolsRdf/biotools-dump-20171129.ttl", format='turtle')
+    result = g.parse("http://bigasterisk.com/foaf.rdf")
     # result = g.parse("http://www.w3.org/People/Berners-Lee/card")
 
     print("graph has %s statements." % len(g))
