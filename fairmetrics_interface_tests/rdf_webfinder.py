@@ -1,53 +1,209 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
+import rdflib
 import json
 import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import urllib.parse
+from bs4 import BeautifulSoup
+import extruct
 from extruct.jsonld import JsonLdExtractor
+from selenium import webdriver
+import re
+
 from pprint import pprint
 from tqdm import tqdm
 import time
+import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import rcParams
 
-
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 TIMEOUT = (10, 300)
-MAX_DOIS_PER_FILE = 400
+MAX_DOIS_PER_FILE = 5
+URL_WITH_RDF = {}
+DEPTH_LIMIT = 3
 
-def retrieveWebJSONLD(url):
+def retrieveWebRDF(base_url, list_tested=[], depth=-1):
+    # if base_url.endswith('/'):
+    #     base_url = base_url[:-1]
 
+    page = getPage(base_url)
+    html = page.content
+    headers_content_type = page.headers.get('content-type')
+    print("################################################")
+    print(headers_content_type)
+
+
+    data = {}
+
+    if headers_content_type:
+        if not "text/html" in headers_content_type: return data
+
+    depth += 1
+    if depth > DEPTH_LIMIT and DEPTH_LIMIT != 0: return data
+    print("***DEPTH: " + str(depth) + "***")
+
+    if base_url not in list_tested:
+        data = rdfFromHTML(html, base_url)
+
+    # driver = webdriver.Chrome()
+    # driver.get(base_url)
+    # print(driver.page_source)
+
+    if DEPTH_LIMIT == 0: return data
+
+    url_list = get_urls(html, base_url)
+
+    # print(url_list)
+    # print(list_tested)
+    if url_list != []:
+        for url in url_list:
+            if not url: continue
+
+            # if url.endswith('/'):
+            #     url = url[:-1]
+
+            # create the full url
+            full_url = urllib.parse.urljoin(base_url, url)
+            if full_url not in list_tested:
+
+                list_tested.append(full_url)
+                full_page = getPage(full_url)
+                full_html = full_page.content
+                data_sub = rdfFromHTML(full_html, full_url)
+
+                retrieveWebRDF(full_url, list_tested, depth)
+    # print(list_tested)
+
+    return data
+
+def getPage(base_url):
     while True:
         try:
-            page = requests.get(url, timeout=TIMEOUT)
+            page = requests.get(base_url, timeout=TIMEOUT, verify=False, allow_redirects=True)
             break
         except requests.exceptions.SSLError as err:
-            print(url)
+            print(base_url)
             print(err)
             # print("Error, retrying...")
             # temp fix, should change
             # break
             time.sleep(5)
         except requests.exceptions.Timeout:
-            print(url)
+            print(base_url)
             print(err)
             print("Timeout error, retrying...")
             time.sleep(5)
         except requests.exceptions.ConnectionError as err:
-            print(url)
+            print(base_url)
             print(err)
             print("Connection error, retrying in 60 sec...")
             time.sleep(20)
 
+    return page
 
-    html = page.content
+def rdfFromHTML(html, base_url):
+    data = extruct.extract(html, syntaxes=['microdata', 'rdfa', 'json-ld'], errors='ignore')
 
-    jslde = JsonLdExtractor()
 
-    data = jslde.extract(html)
-    # pprint(data)
+    print("URL: [" + base_url + "]")
+    # print(html)
+    # print(json.dumps(data, indent=2))
+    for type_key in data.keys():
+        # print(type_key)
+
+
+        # list of namespaces
+        ns_list = getRdfNameSpaces(data[type_key])
+
+        if data[type_key] != []:
+            print(type_key + " Found !")
+
+
+
+        # if data[type_key] != []:
+        if not base_url in URL_WITH_RDF.keys():
+            URL_WITH_RDF[base_url] = {}
+        URL_WITH_RDF[base_url][type_key] = ns_list
+    print("")
+
     return data
+
+def getRdfNameSpaces(elem):
+    res = []
+    namespaces = []
+    if elem != []:
+        json_str = json.dumps(elem)
+        # print(json_str)
+        g = rdflib.Graph()
+        result = g.parse(data=json_str, format='json-ld')
+
+        # print(len(result))
+        try:
+            rdf_string = g.serialize(format="turtle").decode("utf-8")
+        except Exception as err:
+            print(err)
+
+        # res = g.parse(data=rdf_string, format='turtle')
+        for ns in g.namespaces():
+            # print(ns)
+            # print(ns[1])
+            if ns[0].startswith('ns'):
+                namespaces.append(ns[1])
+    return namespaces
+
+def writeRdfTSV():
+    f = open("rdf_webfinder_res_depth_3.tsv", "w")
+    # write header
+    f.write('"URL"\t"microdata"\t"json-ld"\t"rdfa"\n')
+    for url in URL_WITH_RDF.keys():
+        row = '"' + url + '"'
+        for type_key in URL_WITH_RDF[url].keys():
+            value = '"'
+            for namespace in URL_WITH_RDF[url][type_key]:
+                value += namespace + '\n'
+            value = value.rstrip('\n')
+            value += '"'
+            row += '\t' + value
+        row += '\n'
+        f.write(row)
+
+
+
+    f.close()
+
+def get_urls(html, url):
+    url_list = []
+    if not url: return url_list
+
+    # if url.endswith('/'):
+    #     url = url[:-1]
+
+    soup = BeautifulSoup(html, "html5lib")
+    # for link in soup.findAll('a'):
+    #     print(link.get('href'))
+
+    # for link in soup.findAll('a'):
+    ignore_ext_list = [
+        "pdf",
+        "png",
+        "jpg",
+        "jpeg",
+        "gz",
+        "svg",
+        "jptb1m"
+    ]
+    for link in soup.findAll('a', attrs={'href': re.compile("^/")}):
+        if link.get('href').split(".")[-1] in ignore_ext_list: continue
+        url_list.append(link.get('href'))
+        # print(link.get('href'))
+
+
+    return url_list
 
 def readDOIsFile(filename):
     """
@@ -152,6 +308,54 @@ def stackedBarPlot(total_property_count, dict_property_count):
 
 if __name__ == "__main__":
 
+    uniprot_url = "https://www.uniprot.org/uniprot/P04637"
+    # uniprot_url = "https://www.uniprot.org/uniprot/P38398"
+
+    rir_elixir = [
+        "https://biit.cs.ut.ee/gprofiler/gost", # javascript generated
+        "https://identifiers.org/", # javascript generated
+        # "https://fairsharing.org/", # json-ld schema.org
+        # "https://fairsharing.org/collection/ComputationalModeling",
+        # "https://fairsharing.org/recommendation/ScientificData",
+        "http://intermine.org/", #rdfa basique w3.org
+        "https://isa-tools.org/", #rdfa basique w3.org
+        "https://www.ebi.ac.uk/ols/index", #rdfa avec https://ogp.me/ onto
+        "https://3dbionotes.cnb.csic.es/ws/api", # rien du tout
+        # "https://www.bridgedb.org/", # CertificateError tester ouverture navigateur
+        "https://www.disgenet.org/rdf", # rien du tout
+        "https://molgenis.github.io/", #rdfa basique w3.org
+        "https://fair-dom.org/platform/seek/", # rdfa w3.org
+        "https://dev.workflowhub.eu",
+
+
+
+    ]
+
+    # list_tested = []
+    for ressource_url in rir_elixir:
+        # print("------------------------------------------------")
+        # print("URL: [" + ressource_url + "]")
+        res_rdf = retrieveWebRDF(ressource_url)
+        # for type_key in res_rdf.keys():
+        #     print(type_key)
+        #     # print(json.dumps(res_rdfa[type_key], indent=2))
+        #     for res in res_rdf[type_key]:
+        #         if "@context" in res.keys():
+        #             print("@context: " + res["@context"])
+        #         else:
+        #             print(res)
+        #
+        #         if "@type" in res.keys():
+        #             print("@type: " + res["@type"])
+        #
+        #     print("")
+
+    print(json.dumps(URL_WITH_RDF, indent=4))
+    writeRdfTSV()
+    sys.exit(0)
+
+    time.sleep(10)
+
     url = "https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/HAEY8H"
     url = "https://zenodo.org/record/3727291#.XnzkZKHPyUk"
     url = "https://doi.pangaea.de/10.1594/PANGAEA.109987"
@@ -181,7 +385,7 @@ if __name__ == "__main__":
         for url in tqdm(url_sublist, total=MAX_DOIS_PER_FILE):
 
             # get json ld
-            json_ld = retrieveWebJSONLD(url)
+            json_ld = retrieveWebRDF(url)["json-ld"]
 
             try:
                 exist = json_ld[0]

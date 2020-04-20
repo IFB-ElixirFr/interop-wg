@@ -1,0 +1,87 @@
+Description	"Tests whether a machine is able to find structured metadata.  This could be (for example) RDFa, embedded json, json-ld, or content-negotiated structured metadata such as RDF Turtle"	"Tests whether a machine is able to find 'grounded' metadata.  i.e. metadata terms that are in a resolvable namespace, where resolution leads to a definition of the meaning of the term. Examples include JSON-LD, embedded schema, or any form of RDF. This test currently excludes XML, even when terms are namespaced.  Future versions of this test may be more flexible."
+GUID	F2	F2	F	total
+"https://fairsharing.org/"	"INFO: TEST VERSION '0.2'
+INFO: Found a URI.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers text/xhtml,text/xml.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"text/xhtml,text/xml"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers application/json.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"application/json"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers 'Accept: */*'.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"*/*"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+SUCCESS: found linked-data style structured metadata."	"INFO: TEST VERSION '0.2'
+INFO: Found a URI.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"text/turtle, application/ld+json, application/rdf+xml, text/xhtml+xml, application/n3, application/rdf+n3, application/turtle, application/x-turtle, text/n3, text/turtle, text/rdf+n3, text/rdf+turtle, application/n-triples"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers text/xhtml,text/xml.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"text/xhtml,text/xml"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers application/json.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"application/json"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+INFO:  Attempting to resolve https://fairsharing.org/ using HTTP Headers 'Accept: */*'.
+INFO: following redirection using this header led to the following URL: https://fairsharing.org/.  Using the output from this URL for the next few tests...
+INFO: Found html text/html type of content when resolving https://fairsharing.org/ using HTTP Accept header {"Accept"=>"*/*"}.
+INFO: parsing as HTML. 
+INFO:  Using 'extruct' to try to extract metadata from return value (message body) of https://fairsharing.org/.
+WARN: the extruct tool failed to find parseable data at https://fairsharing.org/
+INFO: Using 'Kellog's Distiller' to try to extract metadata from return value (message body).
+INFO: The message body is being examined by Distiller
+INFO: The Distiller found parseable data.  Parsing as RDF
+INFO: The response message body component appears to contain RDF::Raptor::Turtle::Format.
+SUCCESS: found linked-data style structured metadata."
