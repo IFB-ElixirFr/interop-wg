@@ -151,8 +151,7 @@ def testMetric(metric_api_url, data):
 
     @return String Result returned by the request that is JSON-LD formated
     """
-    print(data)
-    print(metric_api_url)
+
     ##### BRICOLAGE A MODIFIER QUAND FAIRMETRICS SERA A JOUR
     base_url = "http://linkeddata.systems/cgi-bin/FAIR_Tests/"
     sub_url = metric_api_url.split('/')[5]
@@ -250,47 +249,47 @@ def testMetrics(GUID):
 
             if True:
             # if principle[0:2] != 'I2':
-                if principle[0:2] == 'I2':
-                    if PRINT_DETAILS:
-                        # print informations related to the metric
-                        printMetricInfo(metric_info)
-                    # evaluate the metric
-                    start_time = getCurrentTime()
-                    metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
-                    end_time = getCurrentTime()
-                    # print(metric_evaluation_result_text)
-                    metric_evaluation_result = json.loads(metric_evaluation_result_text)
-                    test_time = end_time - start_time
+            # if principle[0:2] == 'I2':
+                if PRINT_DETAILS:
+                    # print informations related to the metric
+                    printMetricInfo(metric_info)
+                # evaluate the metric
+                start_time = getCurrentTime()
+                metric_evaluation_result_text = processFunction(testMetric, [metric["smarturl"], data], 'Evaluating metric ' + principle +'... ')
+                end_time = getCurrentTime()
+                # print(metric_evaluation_result_text)
+                metric_evaluation_result = json.loads(metric_evaluation_result_text)
+                test_time = end_time - start_time
 
-                    if PRINT_DETAILS:
-                        #print results of the evaluation
-                        printTestMetricResult(metric_evaluation_result_text, test_time)
+                if PRINT_DETAILS:
+                    #print results of the evaluation
+                    printTestMetricResult(metric_evaluation_result_text, test_time)
 
-                    # get comment
-                    # REQUETE SPARQL !!!!!
-                    comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
-                    # remove empty lines from the comment
-                    comment = cleanComment(comment)
-                    # filter comment based on args
-                    if args.write_comment:
-                        comment = filterComment(comment, args.write_comment)
-                    comment = '"' + comment + '"'
+                # get comment
+                # REQUETE SPARQL !!!!!
+                comment = requestResultSparql(metric_evaluation_result_text, "schema:comment")
+                # remove empty lines from the comment
+                comment = cleanComment(comment)
+                # filter comment based on args
+                if args.write_comment:
+                    comment = filterComment(comment, args.write_comment)
+                comment = '"' + comment + '"'
 
 
-                    # get the score
-                    score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
-                    score = str(int(float(score)))
+                # get the score
+                score = requestResultSparql(metric_evaluation_result_text, "ss:SIO_000300")
+                score = str(int(float(score)))
 
-                    # add score, principle, time, comment and description
+                # add score, principle, time, comment and description
 
-                    metric_test_results.append({
-                        "@id": metric["@id"],
-                        "principle": principle,
-                        "score": score,
-                        "test_time": test_time,
-                        "comment": comment,
-                        "description": description,
-                    })
+                metric_test_results.append({
+                    "@id": metric["@id"],
+                    "principle": principle,
+                    "score": score,
+                    "test_time": test_time,
+                    "comment": comment,
+                    "description": description,
+                })
 
     # list that will contains the score for each metric test
     test_score_list = []
@@ -723,10 +722,11 @@ if __name__ == "__main__":
     # GUID_test = "https://doi.pangaea.de/10.1594/PANGAEA.902591"
 
     # Dataset
-    GUID_test = "https://doi.org/10.5061/dryad.615"
+    # GUID_test = "https://doi.org/10.5061/dryad.615"
     GUID_test = "https://www.france-bioinformatique.fr/en"
     # GUID_test = "https://fairsharing.org/"
     # GUID_test = "https://biit.cs.ut.ee/gprofiler/gost"
+    # GUID_test = "https://bio.tools/rsat_peak-motifs"
     if args.input: GUID_test = args.input
     # !!!! preblematic url !!!!
     # GUID_test = "10.1155/2019/2561828"
