@@ -1,0 +1,7 @@
+GUID	F1	F1	F1	F2	F2	F3	F3	F4	A1.1	A1.1	A1.2	A1.2	A2	I1	I1	I1	I1	I2	I2	I3	R1.1	R1.1	F	A	I	R	total
+	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+https://www.ebi.ac.uk/ols/ontologies/ncit/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C2985	1	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	2	2	0	0	4
+https://tess.elixir-europe.org/materials/train-the-trainer	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	2	0	0	3
+https://api.datacite.org/dois/application/ld+json/10.6084/m9.figshare.c.3607916_d7.v1	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	2	0	0	3
+http://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/	1	0	0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	0	0	1	0	0	4	2	3	0	9
+https://bio.tools/rsat_peak-motifs	1	0	0	1	1	0	0	0	0	1	0	1	0	1	1	0	0	0	0	1	0	0	3	2	3	0	8

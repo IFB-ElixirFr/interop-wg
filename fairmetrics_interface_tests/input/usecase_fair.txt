@@ -1,0 +1,17 @@
+https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/TKMGCQ
+https://doi.pangaea.de/10.1594/PANGAEA.914331
+https://zenodo.org/record/3349821#.Xp7m9SNR2Uk
+https://explore.openaire.eu/search/software?softwareId=r37b0ad08687::275ecd99e516ed1b863e2a7586063a64
+https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/5K9HCS
+https://bio.tools/rsat_peak-motifs
+https://workflowhub.eu/workflows/18
+http://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/
+https://fairsharing.org/FAIRsharing.ZPRtfG
+http://remap.univ-amu.fr
+https://bioportal.bioontology.org/ontologies/OCRE
+https://www.ebi.ac.uk/ols/ontologies/ncit/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C2985
+https://search.datacite.org/works/10.7892/boris.108387
+https://doi.org/10.6084/m9.figshare.c.3607916_d7.v1
+https://search.datacite.org/works/10.6084/m9.figshare.c.3607916_d7.v1
+https://api.datacite.org/dois/application/ld+json/10.6084/m9.figshare.c.3607916_d7.v1
+https://tess.elixir-europe.org/materials/train-the-trainer
