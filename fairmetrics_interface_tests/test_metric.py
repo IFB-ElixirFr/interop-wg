@@ -719,11 +719,12 @@ if __name__ == "__main__":
     # GUID_test = "10.1093/nar/gky317"
 
     # Dataset +++
-    # GUID_test = "https://doi.pangaea.de/10.1594/PANGAEA.902591"
+    GUID_test = "https://doi.pangaea.de/10.1594/PANGAEA.902591"
 
     # Dataset
-    # GUID_test = "https://doi.org/10.5061/dryad.615"
-    GUID_test = "https://www.france-bioinformatique.fr/en"
+    #GUID_test = "https://doi.org/10.5061/dryad.615"
+    #GUID_test = "10.5061/dryad.615"
+    # GUID_test = "https://www.france-bioinformatique.fr/en"
     # GUID_test = "https://fairsharing.org/"
     # GUID_test = "https://biit.cs.ut.ee/gprofiler/gost"
     # GUID_test = "https://bio.tools/rsat_peak-motifs"
@@ -731,6 +732,7 @@ if __name__ == "__main__":
     # !!!! preblematic url !!!!
     # GUID_test = "10.1155/2019/2561828"
     # GUID_test = "10.1155/2017/3783714"
+
 
 
     # GUID_test = "https://identifiers.org/biotools:the_flux_capacitor"
