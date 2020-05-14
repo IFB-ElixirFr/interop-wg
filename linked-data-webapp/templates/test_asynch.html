@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+{% include 'nav.html' %}
+{% endblock %}
+
+{% block body %}
+
+<script type="text/javascript" charset="utf-8">
+    $( document ).ready(function() {
+        console.log( "ready!" );
+
+        console.log('trying to connect...');
+        //var socket = io.connect('http://127.0.0.1:5000');
+        var socket = io();
+        console.log('connected');
+
+        socket.on('connect', function() {
+            console.log('ack from server');
+            socket.emit('hello', {data: 'I\'m connected!'});
+            console.log('hello message sent');
+        });
+
+        socket.on('my ack', function(value) {
+            console.log('received ack');
+        });
+
+        socket.on('hi', function(value) {
+            console.log('received hi from server');
+        });
+
+        socket.on('p1.value', function(value) {
+            console.log('received '+str(value)+' for p1');
+            $("progress[p1]").attr("value",value);
+        });
+
+        socket.on('p2.value', function(value) {
+            console.log('received '+str(value)+' for p2');
+            $("progress[p2]").attr("value",value);
+        });
+    });
+</script>
+
+<h1 class="title">How FAIR is my resource</h1>
+<progress id="p1" class="progress" is-primary value="{{ progress.a }}" max="100">{{ progress.a }}%</progress>
+<progress id="p2" class="progress" is-link value="{{ progress.b }}" max="100">{{ progress.b }}%</progress>
+
+{% endblock %}

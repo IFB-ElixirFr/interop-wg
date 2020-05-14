@@ -1,6 +1,11 @@
 import csv
 from flask import Flask, redirect, url_for, request, render_template
 from flask_socketio import SocketIO, emit
+from concurrent.futures import ThreadPoolExecutor
+import concurrent.futures
+import threading
+
+import time
 import random
 
 from rdflib import ConjunctiveGraph
@@ -19,6 +24,43 @@ from subprocess import run
 app = Flask(__name__)
 socketio = SocketIO(app)
 
+@socketio.on('hello')
+def handle_hello(json):
+    print('received hello: ' + str(json))
+
+#@socketio.on('hi')
+def emit_hi():
+    print('sending hi from server')
+    socketio.emit('hi', {'data': "Hi from server"})
+    print('sent')
+
+def long_task():
+    time.sleep(5)
+    print("long task done")
+
+def short_task():
+    time.sleep(1)
+    print("short task done")
+
+def multiple_tasks():
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        tasks = []
+        for i in range(0,2):
+            future = executor.submit(long_task())
+            tasks.append(future)
+        for i in range(0,3):
+            future = executor.submit(short_task())
+            tasks.append(future)
+
+        for future in concurrent.futures.as_completed(tasks):
+            try:
+                data = future.result()
+                socketio.emit('p1.value', 10, broadcast=True)
+                socketio.emit('p2.value', 20, broadcast=True)
+            except Exception as exc:
+                print('generated an exception: %s' % (exc))
+            else:
+                print('DONE for all tasks')
 
 
 
@@ -26,7 +68,20 @@ socketio = SocketIO(app)
 def index():
     return render_template('index.html')
 
+@app.route('/test_asynch')
+def test_asynch():
+    progress = {}
+    progress['a'] = None
+    progress['b'] = 0
+    print("CALL to test_asynch")
 
+    emit_hi()
+    socketio.emit('my ack', progress, broadcast=True)
+    socketio.emit('p1.value', progress, broadcast=True)
+    socketio.emit('p2.value', progress, broadcast=True)
+
+    # multiple_tasks()
+    return render_template('test_asynch.html', progress=progress)
 
 @app.route('/is_it_fair')
 def is_it_fair():
@@ -71,8 +126,9 @@ def test_message(message):                        # test_message() is the event 
 if __name__ == "__main__":
     # context = ('server.crt', 'server.key')
     # app.run(host='0.0.0.0', port=5000, debug=True, ssl_context=context)
-    app.run(host='0.0.0.0', port=5000, debug=True)
-    socketio.run(app)
+    socketio.run(app, debug=True)
+    #app.run(host='0.0.0.0', port=5000, debug=True)
+
 
 
 
