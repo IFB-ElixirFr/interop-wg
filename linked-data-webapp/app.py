@@ -1,6 +1,6 @@
 import csv
 from flask import Flask, redirect, url_for, request, render_template
-from flask_socketio import SocketIO, emit
+from flask_socketio import SocketIO
 from concurrent.futures import ThreadPoolExecutor
 import concurrent.futures
 import threading
@@ -26,12 +26,12 @@ socketio = SocketIO(app)
 
 @socketio.on('hello')
 def handle_hello(json):
-    print('received hello: ' + str(json))
+    print('received hello from client: ' + str(json))
 
-#@socketio.on('hi')
-def emit_hi():
+@socketio.on('hello')
+def emit_hi(json):
     print('sending hi from server')
-    socketio.emit('hi', {'data': "Hi from server"})
+    socketio.emit('hi response', json, broadcast=True)
     print('sent')
 
 def long_task():
@@ -75,7 +75,7 @@ def test_asynch():
     progress['b'] = 0
     print("CALL to test_asynch")
 
-    emit_hi()
+    emit_hi({'data': 'hi message from server'})
     socketio.emit('my ack', progress, broadcast=True)
     socketio.emit('p1.value', progress, broadcast=True)
     socketio.emit('p2.value', progress, broadcast=True)
@@ -116,11 +116,6 @@ def testUrl():
 
     return render_template('result.html', test_url=test_url,
                                             results_list=results_list,)
-
-
-@socketio.on('my event')                          # Decorator to catch an event called "my event":
-def test_message(message):                        # test_message() is the event callback function.
-    emit('my response', {'data': 'got it!'})      # Trigger a new event called "my response"
 
 
 if __name__ == "__main__":

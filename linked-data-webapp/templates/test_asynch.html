@@ -11,8 +11,8 @@
         console.log( "ready!" );
 
         console.log('trying to connect...');
-        //var socket = io.connect('http://127.0.0.1:5000');
-        var socket = io();
+        var socket = io.connect('http://127.0.0.1:5000');
+        //var socket = io();
         console.log('connected');
 
         socket.on('connect', function() {
@@ -21,12 +21,9 @@
             console.log('hello message sent');
         });
 
-        socket.on('my ack', function(value) {
-            console.log('received ack');
-        });
-
-        socket.on('hi', function(value) {
+        socket.on('hi response', function(value) {
             console.log('received hi from server');
+            console.log(value);
         });
 
         socket.on('p1.value', function(value) {
@@ -38,6 +35,8 @@
             console.log('received '+str(value)+' for p2');
             $("progress[p2]").attr("value",value);
         });
+
+        socket.emit('hello', {data: 'hello again'});
     });
 </script>
 
