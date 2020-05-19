@@ -27,6 +27,7 @@ socketio = SocketIO(app)
 @socketio.on('hello')
 def handle_hello(json):
     print('received hello from client: ' + str(json))
+    multiple_tasks()
 
 @socketio.on('hello')
 def emit_hi(json):
@@ -34,33 +35,44 @@ def emit_hi(json):
     socketio.emit('hi response', json, broadcast=True)
     print('sent')
 
-def long_task():
+def long_task(iteration, size):
     time.sleep(5)
     print("long task done")
+    return ('long', iteration/size*100)
 
-def short_task():
+def short_task(iteration, size):
     time.sleep(1)
     print("short task done")
+    return ('short', iteration/size*100)
 
+@socketio.on('start_process')
 def multiple_tasks():
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         tasks = []
-        for i in range(0,2):
-            future = executor.submit(long_task())
+        long_size = 10
+        for i in range(0,long_size):
+            future = executor.submit(long_task, i+1, long_size)
             tasks.append(future)
-        for i in range(0,3):
-            future = executor.submit(short_task())
+
+
+        short_size = 40
+        for i in range(0,short_size):
+            future = executor.submit(short_task, i+1, short_size)
             tasks.append(future)
+
 
         for future in concurrent.futures.as_completed(tasks):
             try:
-                data = future.result()
-                socketio.emit('p1.value', 10, broadcast=True)
-                socketio.emit('p2.value', 20, broadcast=True)
+                type, value = future.result()
+                if type == 'short':
+                    socketio.emit('p1.value', value, broadcast=True)
+                elif type == 'long':
+                    socketio.emit('p2.value', value, broadcast=True)
             except Exception as exc:
                 print('generated an exception: %s' % (exc))
             else:
                 print('DONE for all tasks')
+
 
 
 
@@ -71,7 +83,7 @@ def index():
 @app.route('/test_asynch')
 def test_asynch():
     progress = {}
-    progress['a'] = None
+    progress['a'] = 0
     progress['b'] = 0
     print("CALL to test_asynch")
 
@@ -80,7 +92,8 @@ def test_asynch():
     socketio.emit('p1.value', progress, broadcast=True)
     socketio.emit('p2.value', progress, broadcast=True)
 
-    # multiple_tasks()
+
+    #multiple_tasks()
     return render_template('test_asynch.html', progress=progress)
 
 @app.route('/is_it_fair')
