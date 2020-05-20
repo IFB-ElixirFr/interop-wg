@@ -5,12 +5,12 @@
         </p>
     </header>
     <div class="card-content">
-        <div class="content">
-            Mesures if ... ... ...
+        <div class="content is-small">
+            {{ desc }}
         </div>
     </div>
     <footer class="card-footer">
-        <a id="status_{{ title }}" href="#" class="card-footer-item">Status</a>
-        <a id="test_{{ title }}" href="#" class="card-footer-item">Test</a>
+        <div class="card-footer-item"> <a id="test_{{ title }}" href="#" class="button is-small is-info">Check</a> </div>
+        <div class="card-footer-item"> <a id="status_{{ title }}" href="#" class="button is-small ">Status</a> </div>
     </footer>
 </div>
