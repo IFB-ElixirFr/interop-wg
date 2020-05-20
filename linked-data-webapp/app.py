@@ -30,7 +30,33 @@ app = Flask(__name__)
 #socketio = SocketIO(app,async_mode = 'eventlet')
 socketio = SocketIO(app)
 
-connections = []
+metrics = [{'name':'f1', 'category':'F'},
+           {'name':'f2', 'category':'F'},
+           {'name':'f3', 'category':'F'},
+           {'name':'a1', 'category':'A'},
+           {'name':'a2', 'category':'A'}]
+
+@socketio.on('evaluate_f1')
+def handle_f1(url):
+    print('RUNNING F1 for '+str(url))
+    emit('running_f1')
+    time.sleep(10)
+    emit('done_f1')
+    print('DONE F1')
+
+@socketio.on('evaluate_f2')
+def handle_f2(url):
+    print('RUNNING F2 for '+str(url))
+    emit('running_f2')
+    time.sleep(10)
+    emit('done_f2')
+    print('DONE F2')
+
+@socketio.on('long')
+def handle_metric():
+    print("long task for " + request.sid)
+    long_task()
+    emit('long', 'long task done')
 
 @socketio.on('connected')
 def handle_connected(json):
@@ -58,13 +84,12 @@ def handle_slow():
 
 @socketio.on('fast')
 def handle_fast():
-    print('received slow fast client: ' + str(request.sid))
+    print('received fast client: ' + str(request.sid))
     #socketio.emit('ack', 'everything is fine', broadcast=True)
     #emit('ack', 'everything is fine', broadcast=True)
     for i in range(0,100):
-        time.sleep(0.2)
+        time.sleep(0.01)
         emit('fast', i)
-        i+=2
     emit('fast', 'done')
 
 @socketio.on('long')
@@ -86,7 +111,8 @@ def cb():
 
 @app.route('/test_asynch')
 def test_asynch():
-    return render_template('test_asynch.html')
+    #return render_template('test_asynch.html')
+    return render_template('metrics_summary.html', f_metrics=metrics)
 
 @app.route('/is_it_fair')
 def is_it_fair():

@@ -16,21 +16,9 @@
         //var socket = io();
         console.log('connected');
 
-
-
         socket.on('connect', function() {
             socket.emit('hello', {data: 'I\'m connected!'});
             console.log('hello message sent');
-        });
-
-        socket.on('message', function(value) {
-            console.log('received message from server: ');
-            console.log(value);
-        });
-
-        socket.on('ack', function(value) {
-            console.log('received ack from server: ');
-            console.log(value);
         });
 
         socket.on('fast', function(value) {
@@ -57,8 +45,6 @@
             $("#notif").removeClass("is-hidden");
         });
 
-        //socket.emit('hello', {data: 'hello again'});
-        //socket.emit('truc', {data: 'TRUC'});
         socket.emit('fast');
         socket.emit('slow');
         socket.emit('long');
@@ -69,6 +55,6 @@
 <progress id="p1" class="progress is-primary"  value="" max="100"></progress>
 <progress id="p2" class="progress is-link"  value="" max="100"></progress>
 
-<div id="notif" class="notification is-primary"> <button class="delete"></button>long task done</div>
+<div id="notif" class="notification is-info"> <button class="delete"></button>long task done</div>
 
 {% endblock %}
