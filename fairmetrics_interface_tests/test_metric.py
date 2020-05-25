@@ -156,6 +156,7 @@ def testMetric(metric_api_url, data):
     base_url = "http://linkeddata.systems/cgi-bin/FAIR_Tests/"
     sub_url = metric_api_url.split('/')[5]
     metric_api_url = base_url + sub_url
+    print(metric_api_url)
 
     while True:
         try:
@@ -325,6 +326,12 @@ def testMetrics(GUID):
     # if args.time:
     return (headers_list, descriptions_list, test_score_list, list(map(str, time_list)), comments_list)
 
+def asyncTestMetric(metric):
+    global args
+    args = parser.parse_args()
+    args.write_comment = False
+    return pTestMetric(metric)
+
 def pTestMetric(metric):
     # retrieve more specific info about each metric
     metric_info = getMetricInfo(metric[0]["@id"])
@@ -332,6 +339,7 @@ def pTestMetric(metric):
     principle = metric_info["principle"].rsplit('/', 1)[-1]
     # get the description on the metric
     description = '"' + metric_info["description"] + '"'
+
 
     # if principle[0:2] != 'I2':
     # if principle[0] == 'F':
@@ -366,7 +374,6 @@ def pTestMetric(metric):
             "comment": comment,
             "description": description,
         }
-
         return dict_result
 
     return False

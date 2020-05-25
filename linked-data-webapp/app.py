@@ -40,7 +40,7 @@ metrics = [{'name':'f1', 'category':'F'},
 def handle_f1(url):
     print('RUNNING F1 for '+str(url))
     emit('running_f1')
-    time.sleep(10)
+    time.sleep(3)
     emit('done_f1')
     print('DONE F1')
 
@@ -48,7 +48,7 @@ def handle_f1(url):
 def handle_f2(url):
     print('RUNNING F2 for '+str(url))
     emit('running_f2')
-    time.sleep(10)
+    time.sleep(3)
     emit('done_f2')
     print('DONE F2')
 
