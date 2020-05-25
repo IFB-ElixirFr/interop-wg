@@ -23,8 +23,8 @@
         {% for f in f_metrics %}
         $("#test_{{f.name}}").click(function(){
             console.log("Testing metrics {{f.name}}")
-            $(this).addClass("is-loading")
-            socket.emit('evaluate_{{f.name}}', 'http://my/url');
+            $(this).addClass("is-loading");
+            socket.emit('evaluate_{{f.name}}', $("#url").val());
         });
         {% endfor %}
 
@@ -40,7 +40,8 @@
 
         {% for f in f_metrics %}
         socket.on('done_{{f.name}}', function(value) {
-            $(this).removeClass("is-loading")
+            console.log('DONE {{f.name}}');
+            $("#test_{{f.name}}").removeClass("is-loading");
         });
         {% endfor %}
 
@@ -75,13 +76,23 @@
 </script>
 
 <h1 class="title">How FAIR is my resource</h1>
-<progress id="p1" class="progress is-primary"  value="" max="100"></progress>
+
+<div class="section">
+    <progress id="p1" class="progress is-primary"  value="" max="100"></progress>
+</div>
+
+<div class="section">
+    <div class="control">
+          <input id="url" name="url" class="input is-large" type="text" placeholder="FAIR resource URL" value="http://bio.tools/bwa">
+    </div>
+</div>
 
 <div class="columns is-multiline is-mobile">
 <!--    <div class="column is-one-fifth"><code>Findable</code></div>-->
     {% for f in f_metrics %}
-        <div class="column is-one-fifth">
+        <div class="column is-one-third">
             {% set title=f.name %}
+            {% set desc=f.desc %}
             {% include 'metrics_card.html' with context %}
         </div>
     {% endfor %}

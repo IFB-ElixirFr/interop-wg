@@ -15,8 +15,8 @@ import random
 from rdflib import ConjunctiveGraph
 
 import sys
-sys.path.append('../fairmetrics_interface_tests')
 
+sys.path.append('../fairmetrics_interface_tests')
 import test_metric
 
 # Command line exec
@@ -27,12 +27,12 @@ from subprocess import run
 
 app = Flask(__name__)
 #socketio = SocketIO(app, cors_allowed_origins="*")
-#socketio = SocketIO(app,async_mode = 'eventlet')
-socketio = SocketIO(app)
+socketio = SocketIO(app,async_mode = 'eventlet')
+#socketio = SocketIO(app)
 
-metrics = [{'name':'f1', 'category':'F'},
-           {'name':'f2', 'category':'F'},
-           {'name':'f3', 'category':'F'},
+metrics = [{'name':'f1', 'category':'F', 'desc': 'F1 verifies that ...  '},
+           {'name':'f2', 'category':'F', 'desc': 'F2 verifies that ...  '},
+           {'name':'f3', 'category':'F', 'desc': 'F3 verifies that ...  '},
            {'name':'a1', 'category':'A'},
            {'name':'a2', 'category':'A'}]
 
@@ -40,7 +40,14 @@ metrics = [{'name':'f1', 'category':'F'},
 def handle_f1(url):
     print('RUNNING F1 for '+str(url))
     emit('running_f1')
+<<<<<<< HEAD
     time.sleep(3)
+=======
+    data = '{"subject": "' + url + '"}'
+    print(data)
+    res = test_metric.testMetric("http://linkeddata.systems/cgi-bin/FAIR_Tests/gen2_unique_identifier", data)
+    print(res)
+>>>>>>> 1058dab1f3c54d2137a057c6c3bef764d8451199
     emit('done_f1')
     print('DONE F1')
 
