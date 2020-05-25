@@ -30,40 +30,85 @@ app = Flask(__name__)
 socketio = SocketIO(app,async_mode = 'eventlet')
 #socketio = SocketIO(app)
 
-metrics = [{'name':'f1', 'category':'F', 'desc': 'F1 verifies that ...  '},
-           {'name':'f2', 'category':'F', 'desc': 'F2 verifies that ...  '},
-           {'name':'f3', 'category':'F', 'desc': 'F3 verifies that ...  '},
+metrics = [{'name':'f1', 'category':'F', 'description': 'F1 verifies that ...  '},
+           {'name':'f2', 'category':'F', 'description': 'F2 verifies that ...  '},
+           {'name':'f3', 'category':'F', 'description': 'F3 verifies that ...  '},
            {'name':'a1', 'category':'A'},
            {'name':'a2', 'category':'A'}]
 
-@socketio.on('evaluate_f1')
-def handle_f1(url):
+@socketio.on('evaluate_metric_1')
+def handle_f1(json):
+
+    url = json['url']
+    api_url = json['api_url']
+    id = json['id']
     print('RUNNING F1 for '+str(url))
     emit('running_f1')
-<<<<<<< HEAD
-    time.sleep(3)
-=======
     data = '{"subject": "' + url + '"}'
     print(data)
-    res = test_metric.testMetric("http://linkeddata.systems/cgi-bin/FAIR_Tests/gen2_unique_identifier", data)
+    res = test_metric.testMetric(api_url, data)
     print(res)
->>>>>>> 1058dab1f3c54d2137a057c6c3bef764d8451199
-    emit('done_f1')
+
+    # get the score
+    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
+    score = str(int(float(score)))
+
+    # get comment
+    comment = test_metric.requestResultSparql(res, "schema:comment")
+    # remove empty lines from the comment
+    comment = test_metric.cleanComment(comment)
+
+    emit('done_' + id, {"score": score, "comment": comment})
     print('DONE F1')
 
-@socketio.on('evaluate_f2')
-def handle_f2(url):
+@socketio.on('evaluate_metric_2')
+def handle_f2(json):
+    url = json['url']
+    api_url = json['api_url']
+    id = json['id']
     print('RUNNING F2 for '+str(url))
     emit('running_f2')
-    time.sleep(3)
-    emit('done_f2')
+    data = '{"subject": "' + url + '"}'
+    print(data)
+    res = test_metric.testMetric(api_url, data)
+    print(res)
+
+    # get the score
+    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
+    score = str(int(float(score)))
+
+    # get comment
+    comment = test_metric.requestResultSparql(res, "schema:comment")
+    # remove empty lines from the comment
+    comment = test_metric.cleanComment(comment)
+
+    emit('done_' + id, {"score": score, "comment": comment})
     print('DONE F2')
 
-@socketio.on('long')
-def handle_metric():
-    print("long task for " + request.sid)
-    long_task()
-    emit('long', 'long task done')
+@socketio.on('evaluate_metric')
+def handle_metric(json):
+    url = json['url']
+    api_url = json['api_url']
+    id = json['id']
+    principle = json['principle']
+    print('RUNNING ' + principle + ' for '+str(url))
+    emit('running_f')
+    data = '{"subject": "' + url + '"}'
+    print(data)
+    res = test_metric.testMetric(api_url, data)
+    print(res)
+
+    # get the score
+    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
+    score = str(int(float(score)))
+
+    # get comment
+    comment = test_metric.requestResultSparql(res, "schema:comment")
+    # remove empty lines from the comment
+    comment = test_metric.cleanComment(comment)
+
+    emit('done_' + id, {"score": score, "comment": comment})
+    print('DONE ' + principle)
 
 @socketio.on('connected')
 def handle_connected(json):
@@ -119,6 +164,18 @@ def cb():
 @app.route('/test_asynch')
 def test_asynch():
     #return render_template('test_asynch.html')
+    metrics = []
+    metrics_res = test_metric.getMetrics()
+    for metric in metrics_res:
+        metrics.append({
+            "name": metric["name"],
+            "description": metric["description"],
+            "api_url": metric["smarturl"],
+            "id": "metric_" + metric["@id"].rsplit('/', 1)[-1],
+            "principle_tag": metric["principle"].rsplit('/', 1)[-1],
+            "principle": metric["principle"],
+        })
+
     return render_template('metrics_summary.html', f_metrics=metrics)
 
 @app.route('/is_it_fair')

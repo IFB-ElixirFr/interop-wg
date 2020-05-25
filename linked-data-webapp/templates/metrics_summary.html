@@ -21,10 +21,19 @@
         //////////////////
 
         {% for f in f_metrics %}
-        $("#test_{{f.name}}").click(function(){
-            console.log("Testing metrics {{f.name}}")
+        $("#test_{{f.id}}").click(function(){
+            console.log("Testing metric {{f.name}}");
+            console.log("ID: " + "{{f.id}}");
+            console.log("Value: " + "{{f.api_url}}");
             $(this).addClass("is-loading");
-            socket.emit('evaluate_{{f.name}}', $("#url").val());
+
+            // socket.emit('evaluate_{{f.id}}', {
+            socket.emit('evaluate_metric', {
+                          url: $("#url").val(),
+                          api_url: "{{f.api_url}}",
+                          id: "{{f.id}}",
+                          principle: "{{f.principle}}",
+                        });
         });
         {% endfor %}
 
@@ -39,9 +48,18 @@
 
 
         {% for f in f_metrics %}
-        socket.on('done_{{f.name}}', function(value) {
+        socket.on('done_{{f.id}}', function(value) {
             console.log('DONE {{f.name}}');
-            $("#test_{{f.name}}").removeClass("is-loading");
+            $("#test_{{f.id}}").removeClass("is-loading");
+
+            console.log(value['score']);
+            if (value['score'] == 1) {
+              $("#status_{{f.id}}").addClass("is-success");
+            } else {
+              $("#status_{{f.id}}").addClass("is-danger");
+            }
+            console.log(value['comment']);
+
         });
         {% endfor %}
 
@@ -92,7 +110,11 @@
     {% for f in f_metrics %}
         <div class="column is-one-third">
             {% set title=f.name %}
-            {% set desc=f.desc %}
+            {% set principle=f.principle %}
+            {% set tag=f.principle_tag %}
+            {% set desc=f.description %}
+            {% set api_url=f.api_url %}
+            {% set id=f.id %}
             {% include 'metrics_card.html' with context %}
         </div>
     {% endfor %}

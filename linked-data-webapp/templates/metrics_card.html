@@ -1,16 +1,27 @@
 <div class="card">
     <header class="card-header">
         <p class="card-header-title">
-            {{ title }}
+            {{ tag }} - {{ title }}
         </p>
+
     </header>
     <div class="card-content">
         <div class="content is-small">
             {{ desc }}
         </div>
+        <p class="subtitle is-small">
+            {{ principle }}
+        </p>
+        <div class="message">
+            <div class="message-body">
+                Result commentary ?
+            </div>
+        </div>
     </div>
     <footer class="card-footer">
-        <div class="card-footer-item"> <a id="test_{{ title }}" href="#" class="button is-small is-info">Check</a> </div>
-        <div class="card-footer-item"> <a id="status_{{ title }}" href="#" class="button is-small ">Status</a> </div>
+        <div class="card-footer-item">
+            <a id="test_{{ id }}" href="#" value="{{ api_url }}" class="button is-small is-info">Check</a>
+        </div>
+        <div class="card-footer-item"> <a id="status_{{ id }}" href="#" class="button is-small ">Status</a> </div>
     </footer>
 </div>
