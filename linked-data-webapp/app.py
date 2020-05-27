@@ -83,8 +83,6 @@ metrics = [{'name':'f1', 'category':'F', 'description': 'F1 verifies that ...  '
            {'name':'a1', 'category':'A'},
            {'name':'a2', 'category':'A'}]
 
-<<<<<<< HEAD
-=======
 kgs = {}
 
 @socketio.on('evaluate_metric_1')
@@ -135,7 +133,6 @@ def handle_f2(json):
 
     emit('done_' + id, {"score": score, "comment": comment})
     print('DONE F2')
->>>>>>> 53b140f7cdb47d677d09fdb68a02c448bf9469b7
 
 @socketio.on('evaluate_metric')
 def handle_metric(json):
