@@ -14,6 +14,20 @@ import random
 import re
 
 from rdflib import ConjunctiveGraph
+import json
+import requests
+
+import rdflib
+from rdflib import ConjunctiveGraph
+from rdflib.compare import to_isomorphic, graph_diff
+import pyshacl
+
+import extruct
+from extruct.jsonld import JsonLdExtractor
+
+import re
+
+
 
 import sys
 
@@ -30,6 +44,38 @@ app = Flask(__name__)
 #socketio = SocketIO(app, cors_allowed_origins="*")
 socketio = SocketIO(app,async_mode = 'eventlet')
 #socketio = SocketIO(app)
+sample_resources = {
+    'input_data': [
+        "https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/TKMGCQ", # dataset INRA Dataverse
+        "https://doi.pangaea.de/10.1594/PANGAEA.914331", # dataset in PANGAEA
+    ],
+    'input_software' : [
+        "https://zenodo.org/record/3349821#.Xp7m9SNR2Uk", # VM image in zenodo
+        "https://explore.openaire.eu/search/software?softwareId=r37b0ad08687::275ecd99e516ed1b863e2a7586063a64", # same VM image in OpenAir
+        "https://data.inra.fr/dataset.xhtml?persistentId=doi:10.15454/5K9HCS", # code in INRA Dataverse
+        "https://bio.tools/rsat_peak-motifs", # Tool in biotools
+        "https://workflowhub.eu/workflows/18", # Workflow in WorkflowHub
+        "http://tara-oceans.mio.osupytheas.fr/ocean-gene-atlas/", # OGA Main page of webtool
+    ],
+    'input_database' : [
+        "https://fairsharing.org/FAIRsharing.ZPRtfG", # knowledge base in FAIRsharing (AgroLD)
+        "http://remap.univ-amu.fr" # Database of transcriptional regulators
+    ],
+    'input_ontology' : [
+        "https://bioportal.bioontology.org/ontologies/OCRE", # Ontology in bioportal
+        "https://www.ebi.ac.uk/ols/ontologies/ncit/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FNCIT_C2985" # OLS entry
+    ],
+    'input_publication' : [
+        "https://doi.org/10.1145/1614320.1614332", # Paper from lod.openair
+        "https://search.datacite.org/works/10.7892/boris.108387", # Publication in Datacite
+        "https://doi.org/10.6084/m9.figshare.c.3607916_d7.v1", # Publication figure in FigShare
+        "https://search.datacite.org/works/10.6084/m9.figshare.c.3607916_d7.v1", # Publication figure in Datacite (same as previous)
+        "https://api.datacite.org/dois/application/ld+json/10.6084/m9.figshare.c.3607916_d7.v1" # Publication figure with Datacite API
+    ],
+    'input_training' : [
+        "https://tess.elixir-europe.org/materials/train-the-trainer", # Training material in TeSS
+    ]
+}
 
 metrics = [{'name':'f1', 'category':'F', 'description': 'F1 verifies that ...  '},
            {'name':'f2', 'category':'F', 'description': 'F2 verifies that ...  '},
@@ -37,6 +83,59 @@ metrics = [{'name':'f1', 'category':'F', 'description': 'F1 verifies that ...  '
            {'name':'a1', 'category':'A'},
            {'name':'a2', 'category':'A'}]
 
+<<<<<<< HEAD
+=======
+kgs = {}
+
+@socketio.on('evaluate_metric_1')
+def handle_f1(json):
+
+    url = json['url']
+    api_url = json['api_url']
+    id = json['id']
+    print('RUNNING F1 for '+str(url))
+    emit('running_f1')
+    data = '{"subject": "' + url + '"}'
+    print(data)
+    res = test_metric.testMetric(api_url, data)
+    print(res)
+
+    # get the score
+    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
+    score = str(int(float(score)))
+
+    # get comment
+    comment = test_metric.requestResultSparql(res, "schema:comment")
+    # remove empty lines from the comment
+    comment = test_metric.cleanComment(comment)
+
+    emit('done_' + id, {"score": score, "comment": comment})
+    print('DONE F1')
+
+@socketio.on('evaluate_metric_2')
+def handle_f2(json):
+    url = json['url']
+    api_url = json['api_url']
+    id = json['id']
+    print('RUNNING F2 for '+str(url))
+    emit('running_f2')
+    data = '{"subject": "' + url + '"}'
+    print(data)
+    res = test_metric.testMetric(api_url, data)
+    print(res)
+
+    # get the score
+    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
+    score = str(int(float(score)))
+
+    # get comment
+    comment = test_metric.requestResultSparql(res, "schema:comment")
+    # remove empty lines from the comment
+    comment = test_metric.cleanComment(comment)
+
+    emit('done_' + id, {"score": score, "comment": comment})
+    print('DONE F2')
+>>>>>>> 53b140f7cdb47d677d09fdb68a02c448bf9469b7
 
 @socketio.on('evaluate_metric')
 def handle_metric(json):
@@ -106,15 +205,42 @@ def handle_fast():
         emit('fast', i)
     emit('fast', 'done')
 
-@socketio.on('long')
-def handle_long():
-    print("long task for " + request.sid)
-    long_task()
-    emit('long', 'long task done')
 
-def long_task():
-    print('long long long)')
-    time.sleep(5)
+#######################################
+#######################################
+@socketio.on('retrieve_embedded_annot')
+def handle_embedded_annot(data):
+    step = 0
+    sid = request.sid
+    print(sid)
+    URI = str(data['url'])
+    print('retrieving embedded annotations for '+URI)
+    print("Retrieve KG for URI: " + URI)
+    page = requests.get(URI)
+    html = page.content
+    d = extruct.extract(html, syntaxes=['microdata', 'rdfa', 'json-ld'], errors='ignore')
+    print(d)
+    kg = ConjunctiveGraph()
+    print(json.dumps(d['json-ld'], ensure_ascii=False))
+    for md in d['json-ld']:
+        kg.parse(data=json.dumps(md, ensure_ascii=False).encode('utf-8'), format="json-ld")
+    for md in d['rdfa']:
+        kg.parse(data=json.dumps(md, ensure_ascii=False).encode('utf-8'), format="json-ld")
+    #kg.parse(data=json.dumps(d['rdfa']), format="json-ld")
+    #kg.parse(data=json.dumps(d['microdata']), format="json-ld")
+
+    kgs[sid] = kg
+
+    step += 1
+    emit('update_annot', step)
+    emit('send_annot', str(kg.serialize(format='turtle').decode()))
+
+@socketio.on('complete_kg')
+def handle_complete_kg(json):
+    print('completing KG for ' + str(json['url']))
+
+#######################################
+#######################################
 
 @app.route('/')
 def index():
@@ -145,6 +271,14 @@ def test_asynch():
         })
 
     return render_template('metrics_summary.html', f_metrics=metrics)
+
+@app.route('/kg_metrics')
+def kg_metrics():
+    m = [{  "name": "i1",
+            "description": "desc i1",
+            "id": "metric_i1",
+            "principle": "principle for i1" }]
+    return render_template('kg_metrics.html', f_metrics=m, sample_data=sample_resources)
 
 @app.route('/is_it_fair')
 def is_it_fair():
