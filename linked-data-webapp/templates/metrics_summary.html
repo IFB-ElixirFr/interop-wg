@@ -21,7 +21,8 @@
         //////////////////
 
         {% for f in f_metrics %}
-        $("#test_{{f.id}}").click(function(){
+        $("#test_{{f.id}}").click(function($e){
+            $e.preventDefault();
             console.log("Testing metric {{f.name}}");
             console.log("ID: " + "{{f.id}}");
             console.log("Value: " + "{{f.api_url}}");
@@ -52,13 +53,27 @@
             console.log('DONE {{f.name}}');
             $("#test_{{f.id}}").removeClass("is-loading");
 
+            console.log(value['time']);
             console.log(value['score']);
+
+            // change status color
             if (value['score'] == 1) {
               $("#status_{{f.id}}").addClass("is-success");
+              $("#result_{{f.id}}").addClass("is-success");
             } else {
               $("#status_{{f.id}}").addClass("is-danger");
+              $("#result_{{f.id}}").addClass("is-danger");
             }
-            console.log(value['comment']);
+
+            // add score to result
+            $("#score_{{f.id}}").text(value['score']);
+            // add time to result
+            $("#time_{{f.id}}").text(value['time']);
+            // add comment to result
+            $("#comment_{{f.id}}").text(value['comment']);
+            // show table
+            $("#result_table_{{f.id}}").show();
+
 
         });
         {% endfor %}
@@ -98,6 +113,38 @@
 <div class="section">
     <progress id="p1" class="progress is-primary"  value="" max="100"></progress>
 </div>
+
+
+
+
+{% for cat in ['F', 'A', 'I', 'R'] %}
+    <table id="metrics_checkboxes" class="table is-hoverable">
+        <thead>
+            <th>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    {{ cat }}
+
+                </label>
+            </th>
+        </thead>
+        <tbody>
+        {% for f in f_metrics %}
+            {% if f.principle_category == cat %}
+            <tr>
+                <th>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        {{ f.principle_tag }} - {{ f.name }}
+
+                    </label>
+                </th>
+            </tr>
+            {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endfor %}
 
 <div class="section">
     <div class="control">

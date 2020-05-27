@@ -11,6 +11,7 @@ import threading
 
 import time
 import random
+import re
 
 from rdflib import ConjunctiveGraph
 
@@ -36,54 +37,6 @@ metrics = [{'name':'f1', 'category':'F', 'description': 'F1 verifies that ...  '
            {'name':'a1', 'category':'A'},
            {'name':'a2', 'category':'A'}]
 
-@socketio.on('evaluate_metric_1')
-def handle_f1(json):
-
-    url = json['url']
-    api_url = json['api_url']
-    id = json['id']
-    print('RUNNING F1 for '+str(url))
-    emit('running_f1')
-    data = '{"subject": "' + url + '"}'
-    print(data)
-    res = test_metric.testMetric(api_url, data)
-    print(res)
-
-    # get the score
-    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
-    score = str(int(float(score)))
-
-    # get comment
-    comment = test_metric.requestResultSparql(res, "schema:comment")
-    # remove empty lines from the comment
-    comment = test_metric.cleanComment(comment)
-
-    emit('done_' + id, {"score": score, "comment": comment})
-    print('DONE F1')
-
-@socketio.on('evaluate_metric_2')
-def handle_f2(json):
-    url = json['url']
-    api_url = json['api_url']
-    id = json['id']
-    print('RUNNING F2 for '+str(url))
-    emit('running_f2')
-    data = '{"subject": "' + url + '"}'
-    print(data)
-    res = test_metric.testMetric(api_url, data)
-    print(res)
-
-    # get the score
-    score = test_metric.requestResultSparql(res, "ss:SIO_000300")
-    score = str(int(float(score)))
-
-    # get comment
-    comment = test_metric.requestResultSparql(res, "schema:comment")
-    # remove empty lines from the comment
-    comment = test_metric.cleanComment(comment)
-
-    emit('done_' + id, {"score": score, "comment": comment})
-    print('DONE F2')
 
 @socketio.on('evaluate_metric')
 def handle_metric(json):
@@ -95,8 +48,15 @@ def handle_metric(json):
     emit('running_f')
     data = '{"subject": "' + url + '"}'
     print(data)
+
+
+    # evaluate metric
+    start_time = test_metric.getCurrentTime()
     res = test_metric.testMetric(api_url, data)
     print(res)
+    end_time = test_metric.getCurrentTime()
+    evaluation_time = end_time - start_time
+    print(evaluation_time)
 
     # get the score
     score = test_metric.requestResultSparql(res, "ss:SIO_000300")
@@ -106,8 +66,10 @@ def handle_metric(json):
     comment = test_metric.requestResultSparql(res, "schema:comment")
     # remove empty lines from the comment
     comment = test_metric.cleanComment(comment)
+    # select only success and failure
+    comment = test_metric.filterComment(comment, "sf")
 
-    emit('done_' + id, {"score": score, "comment": comment})
+    emit('done_' + id, {"score": score, "comment": comment, "time": str(evaluation_time)})
     print('DONE ' + principle)
 
 @socketio.on('connected')
@@ -165,15 +127,21 @@ def cb():
 def test_asynch():
     #return render_template('test_asynch.html')
     metrics = []
+    ###### A DEPLACER AU LANCEMENT DU SERVEUR ######
     metrics_res = test_metric.getMetrics()
     for metric in metrics_res:
+        # remove "FAIR Metrics Gen2" from metric name
+        name = metric["name"].replace('FAIR Metrics Gen2- ','')
+        # same but other syntax because of typo
+        name = name.replace('FAIR Metrics Gen2 - ','')
         metrics.append({
-            "name": metric["name"],
+            "name": name,
             "description": metric["description"],
             "api_url": metric["smarturl"],
             "id": "metric_" + metric["@id"].rsplit('/', 1)[-1],
-            "principle_tag": metric["principle"].rsplit('/', 1)[-1],
             "principle": metric["principle"],
+            "principle_tag": metric["principle"].rsplit('/', 1)[-1],
+            "principle_category": metric["principle"].rsplit('/', 1)[-1][0],
         })
 
     return render_template('metrics_summary.html', f_metrics=metrics)

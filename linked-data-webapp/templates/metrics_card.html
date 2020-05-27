@@ -6,17 +6,44 @@
 
     </header>
     <div class="card-content">
-        <div class="content is-small">
-            {{ desc }}
-        </div>
-        <p class="subtitle is-small">
-            {{ principle }}
-        </p>
-        <div class="message">
-            <div class="message-body">
-                Result commentary ?
+        <article class="message is-info">
+            <div class="message-header">
+                <p>Description</p>
             </div>
-        </div>
+            <div class="message-body is-size-7">
+                {{ desc }}
+                <br>
+                <br>
+                <a href="{{ principle }}" target="_blank">{{ principle }}</a>
+            </div>
+        </article>
+        <p class="content is-small">
+
+        </p>
+        <article id="result_{{ id }}" class="message">
+            <div class="message-header">
+                <p>Result</p>
+            </div>
+            <div class="message-body is-size-7">
+                Launch the test to see the result !
+                <table hidden id="result_table_{{ id }}" class="table is-hoverable">
+                    <tbody>
+                        <tr>
+                            <td>Score</td>
+                            <td id="score_{{ id }}">score here !</td>
+                        </tr>
+                        <tr>
+                            <td>Time</td>
+                            <td id="time_{{ id }}">time here !</td>
+                        </tr>
+                        <tr>
+                            <td>Comment</td>
+                            <td id="comment_{{ id }}">comment here !</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
     </div>
     <footer class="card-footer">
         <div class="card-footer-item">

@@ -28,3 +28,11 @@ span.tag.is-danger {
     display: grid;
     text-align: center;
 }
+
+article.message.is-info .message-header {
+    background-color: #417da7;
+}
+
+table#metrics_checkboxes {
+	display: inline-block;
+}
