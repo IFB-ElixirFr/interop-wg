@@ -25,8 +25,8 @@ span.tag.is-success {
 }
 
 span.tag.is-danger {
-    display: grid;
-    text-align: center;
+  display: grid;
+  text-align: center;
 }
 
 article.message.is-info .message-header {
@@ -35,4 +35,34 @@ article.message.is-info .message-header {
 
 table#metrics_checkboxes {
 	display: inline-block;
+}
+
+/* radar chart style */
+.radar-chart .area {
+  fill-opacity: 0.4;
+}
+
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+
+.radar-chart .axis .legend {
+  font-size: 16px;
+}
+
+.area.failure,
+.failure .circle {
+  fill: #f13;
+  stroke: none;
+}
+
+.area.success,
+.success .circle {
+
+  fill: #3a4;
+  stroke: none;
 }

@@ -168,6 +168,7 @@ def handle_metric(json):
     emit('done_' + id, {"score": score, "comment": comment, "time": str(evaluation_time)})
     print('DONE ' + principle)
 
+
 @socketio.on('connected')
 def handle_connected(json):
     print(request.namespace.socket.sessid)
@@ -267,7 +268,7 @@ def test_asynch():
             "principle_category": metric["principle"].rsplit('/', 1)[-1][0],
         })
 
-    return render_template('metrics_summary.html', f_metrics=metrics)
+    return render_template('metrics_summary.html', f_metrics=metrics, sample_data=sample_resources)
 
 @app.route('/kg_metrics')
 def kg_metrics():
