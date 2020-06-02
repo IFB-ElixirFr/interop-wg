@@ -1,6 +1,12 @@
 from SPARQLWrapper import SPARQLWrapper, N3, JSON, RDF, TURTLE, JSONLD
 from rdflib import Graph, Namespace
 from rdflib.namespace import RDF
+import requests
+
+import re
+
+# DOI regex
+regex = r"10.\d{4,9}\/[-._;()\/:A-Z0-9]+"
 
 # Describe datacite
 def describe_opencitation(uri, g):
@@ -69,7 +75,7 @@ def describe_wikidata(uri, g):
             PREFIX bd: <http://www.bigdata.com/rdf#>
 
             DESCRIBE ?x WHERE {   
-                ?x wdt:P356 '10.6084/M9.FIGSHARE.4539889' 
+                ?x wdt:P356 '""" + uri + """' 
             }
     """)
 
@@ -82,3 +88,24 @@ def describe_wikidata(uri, g):
 
     # print(g.serialize(format='turtle').decode())
     return g
+
+# Describe a tool based on experimental bio.tools SPARQL endpoint
+def describe_biotools(uri, g):
+    print(f'SPARQL for [ {uri} ] with enpoint [ bio.tools ]')
+
+    h = {'Accept': 'text/turtle'}
+    p = {'query': "DESCRIBE <" + uri + ">"}
+    res = requests.get("https://134.158.247.76/sparql", headers=h, params=p, verify=False)
+
+    g.parse(data=res.text, format="turtle")
+
+    #print(g.serialize(format='turtle').decode())
+    return g
+
+
+def is_DOI(uri):
+    return bool(re.search(regex, uri, re.MULTILINE | re.IGNORECASE))
+
+def get_DOI(uri):
+    match = re.search(regex, uri, re.MULTILINE | re.IGNORECASE)
+    return match.group(0)

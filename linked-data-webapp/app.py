@@ -23,13 +23,16 @@ from rdflib.compare import to_isomorphic, graph_diff
 import pyshacl
 
 import extruct
-from extruct.jsonld import JsonLdExtractor
+#from extruct.jsonld import JsonLdExtractor
 
 import re
 
+import metrics.util  as util
 
 
 import sys
+
+
 
 sys.path.append('../fairmetrics_interface_tests')
 import test_metric
@@ -74,6 +77,7 @@ sample_resources = {
     ],
     'input_training' : [
         "https://tess.elixir-europe.org/materials/train-the-trainer", # Training material in TeSS
+        "https://tess.elixir-europe.org/materials/bioccheck-a-thon-check-in"
     ]
 }
 
@@ -210,31 +214,108 @@ def handle_embedded_annot(data):
     step = 0
     sid = request.sid
     print(sid)
-    URI = str(data['url'])
-    print('retrieving embedded annotations for '+URI)
-    print("Retrieve KG for URI: " + URI)
-    page = requests.get(URI)
+    uri = str(data['url'])
+    print('retrieving embedded annotations for '+uri)
+    print("Retrieve KG for uri: " + uri)
+    page = requests.get(uri)
     html = page.content
     d = extruct.extract(html, syntaxes=['microdata', 'rdfa', 'json-ld'], errors='ignore')
+
     print(d)
     kg = ConjunctiveGraph()
-    print(json.dumps(d['json-ld'], ensure_ascii=False))
+
     for md in d['json-ld']:
-        kg.parse(data=json.dumps(md, ensure_ascii=False).encode('utf-8'), format="json-ld")
+        if '@context' in md.keys():
+            print(md['@context'])
+            if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
+                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+        kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
     for md in d['rdfa']:
-        kg.parse(data=json.dumps(md, ensure_ascii=False).encode('utf-8'), format="json-ld")
-    #kg.parse(data=json.dumps(d['rdfa']), format="json-ld")
-    #kg.parse(data=json.dumps(d['microdata']), format="json-ld")
+        if '@context' in md.keys():
+            if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
+                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+        kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
+    for md in d['microdata']:
+        if '@context' in md.keys():
+            if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
+                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+        kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
 
     kgs[sid] = kg
 
     step += 1
     emit('update_annot', step)
     emit('send_annot', str(kg.serialize(format='turtle').decode()))
+    print(len(kg))
+
+    #check if id or doi in uri
+    if util.is_DOI(uri):
+        uri = util.get_DOI(uri)
+        print(f'FOUND DOI: {uri}')
+        # describe on lod.openair
+
+    kg = util.describe_loa(uri, kg)
+    step += 1
+    emit('update_annot', step)
+    emit('send_annot', str(kg.serialize(format='turtle').decode()))
+    print(len(kg))
+
+    kg = util.describe_opencitation(uri, kg)
+    step += 1
+    emit('update_annot', step)
+    emit('send_annot', str(kg.serialize(format='turtle').decode()))
+    print(len(kg))
+
+    kg = util.describe_wikidata(uri, kg)
+    step += 1
+    emit('update_annot', step)
+    emit('send_annot', str(kg.serialize(format='turtle').decode()))
+    print(len(kg))
+
+    kg = util.describe_biotools(uri, kg)
+    step += 1
+    emit('update_annot', step)
+    emit('send_annot', str(kg.serialize(format='turtle').decode()))
+    print(f'ended with step {step}')
+    print(len(kg))
+    print(step)
 
 @socketio.on('complete_kg')
 def handle_complete_kg(json):
     print('completing KG for ' + str(json['url']))
+
+@socketio.on('check_kg')
+def check_kg(data):
+    step = 0
+    sid = request.sid
+    print(sid)
+    uri = str(data['url'])
+    if (not sid in kgs.keys()) :
+        handle_embedded_annot(data)
+    elif (not kgs[sid]):
+        handle_embedded_annot(data)
+    kg = kgs[sid]
+
+    query_classes = """
+        SELECT DISTINCT ?class { ?s rdf:type ?class } ORDER BY ?class
+    """
+    query_properties = """
+        SELECT DISTINCT ?prop { ?s ?prop ?o } ORDER BY ?prop
+    """
+
+    table_content = {'classes':[], 'properties':[]}
+    qres = kg.query(query_classes)
+    for row in qres:
+        table_content['classes'].append(row["class"])
+        print(f'{row["class"]}')
+
+    qres = kg.query(query_properties)
+    for row in qres:
+        table_content['properties'].append(row["prop"])
+        print(f'{row["prop"]}')
+
+    emit('done_check', table_content)
+
 
 #######################################
 #######################################
@@ -271,10 +352,11 @@ def test_asynch():
 
 @app.route('/kg_metrics')
 def kg_metrics():
-    m = [{  "name": "i1",
-            "description": "desc i1",
-            "id": "metric_i1",
-            "principle": "principle for i1" }]
+    # m = [{  "name": "i1",
+    #         "description": "desc i1",
+    #         "id": "metric_i1",
+    #         "principle": "principle for i1" }]
+    m = []
     return render_template('kg_metrics.html', f_metrics=m, sample_data=sample_resources)
 
 @app.route('/is_it_fair')
