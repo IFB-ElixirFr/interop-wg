@@ -103,11 +103,26 @@
         // exec all button
         //////////////////
 
-        $("#btn_test_all").one('click', function($e){
-          $('[id^=test_metric_]').each(function( id ) {
-            $(this).trigger( "click" );
-            // console.log($(this).attr('id'))
+        $("#btn_test_all").on('click', function($e){
+
+
+          $('[id^=checkbox_test_]').each(function( id ) {
+            is_checked = $(this).prop("checked");
+            target_id = $(this).data("target");
+            // console.log(target);
+            // console.log(is_checked);
+            if (is_checked) {
+              console.log("gogo metric");
+              console.log(target_id);
+              $("#" + target_id).trigger( "click" );
+            }
           });
+
+
+          // $('[id^=test_metric_]').each(function( id ) {
+          //   $(this).trigger( "click" );
+          //   // console.log($(this).attr('id'))
+          // });
         });
 
         // socket.on('fast', function(value) {
@@ -166,7 +181,7 @@
 <div class="section">
     <div class="field is-grouped">
           <input id="url" name="url" class="input" type="text" placeholder="FAIR resource URL" value="http://bio.tools/bwa">
-          <p class="control"><a id="btn_test_all" class="button is-info">Test all metrics</a></p>
+          <p class="control"><a id="btn_test_all" class="button is-info">Test checked metrics</a></p>
     </div>
 
 </div>
@@ -183,20 +198,21 @@
         <thead>
             <th>
                 <label class="checkbox">
-                    <input type="checkbox">
+                    <input id="checkbox_all_{{ category }}"type="checkbox">
                     {{ category }}
 
                 </label>
             </th>
         </thead>
         <!-- Remove hidden to show tables -->
-        <tbody hidden>
+        <tbody>
+        <!-- <tbody hidden> -->
         {% for f in f_metrics %}
             {% if f.principle_category == category %}
             <tr>
                 <th>
                     <label class="checkbox">
-                        <input type="checkbox">
+                        <input id="checkbox_test_{{ f.id }}" data-target="test_{{ f.id }}" type="checkbox">
                         {{ f.principle_tag }} - {{ f.name }}
 
                     </label>
