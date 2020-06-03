@@ -87,7 +87,11 @@
             var rows = '';
             $.each(value['classes'], function(index, item) {
                 var row = '<tr>';
-                row += '<td>' + item + '</td>';
+                row += '<td>' + item['name'] ;
+                $.each(item['tag'], function(index, t) {
+                    row += ' <span class="tag is-primary is-pulled-right">' + t + '</span>'
+                });
+                row += '</td>';
                 rows += row + '<tr>';
             });
             $('#t_classes').html(rows);
@@ -95,7 +99,11 @@
             var rows = '';
             $.each(value['properties'], function(index, item) {
                 var row = '<tr>';
-                row += '<td>' + item + '</td>';
+                row += '<td>' + item['name'] ;
+                $.each(item['tag'], function(index, t) {
+                    row += ' <span class="tag is-primary is-pulled-right">' + t + '</span>'
+                });
+                row += '</td>';
                 rows += row + '<tr>';
             });
             $('#t_properties').html(rows);

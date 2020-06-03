@@ -109,3 +109,52 @@ def is_DOI(uri):
 def get_DOI(uri):
     match = re.search(regex, uri, re.MULTILINE | re.IGNORECASE)
     return match.group(0)
+
+def ask_OLS(uri):
+    """
+    Checks that the URI is registered in one of the ontologies indexed in OLS.
+    :param uri:
+    :return: True if the URI is registered in one of the ontologies indexed in OLS, False otherwise.
+    """
+    print(f'call to the OLS REST API for [ {uri} ]')
+    h = {'Accept': 'application/json'}
+    p = {'iri': uri}
+    res = requests.get("http://www.ebi.ac.uk/ols/api/terms", headers=h, params=p, verify=False)
+
+    if res.json()['page']['totalElements'] > 0:
+        return True
+    else:
+        return False
+
+def ask_LOV(uri):
+    """
+    Checks that the URI is registered in one of the ontologies indexed in LOV (Linked Open Vocabularies).
+    :param uri:
+    :return: True if the URI is registered in one of the ontologies indexed in LOV, False otherwise.
+    """
+    print(f'SPARQL for [ {uri} ] with enpoint [ https://lov.linkeddata.es/dataset/lov/sparql ]')
+
+    h = {'Accept': 'application/sparql-results+json'}
+    p = {'query': "ASK { ?s ?p <" + uri + ">}"}
+    res = requests.get("https://lov.linkeddata.es/dataset/lov/sparql", headers=h, params=p, verify=False)
+
+    #print(res.text)
+    return res.json()['boolean']
+
+# def ask_BioPortal(uri):
+#     """
+#
+#     http://sparql.bioontology.org
+#
+#     Checks that the URI is registered in one of the ontologies indexed in OLS.
+#     :param uri:
+#     :return: True if the URI is registered in one of the ontologies indexed in OLS, False otherwise.
+#     """
+#     print(f'SPARQL for [ {uri} ] with enpoint [ http://sparql.bioontology.org ]')
+#
+#     h = {'Accept': 'application/sparql-results+json'}
+#     p = {'query': "ASK { ?s ?p <" + uri + ">}"}
+#     res = requests.get("http://sparql.bioontology.org/sparql", headers=h, params=p, verify=False)
+#
+#     print(res.text)
+#     return res.json()['boolean']
