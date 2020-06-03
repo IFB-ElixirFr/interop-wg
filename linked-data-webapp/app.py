@@ -307,15 +307,48 @@ def check_kg(data):
     table_content = {'classes':[], 'properties':[]}
     qres = kg.query(query_classes)
     for row in qres:
-        table_content['classes'].append(row["class"])
+        table_content['classes'].append({'name': row["class"], 'tag':[]})
         print(f'{row["class"]}')
 
     qres = kg.query(query_properties)
     for row in qres:
-        table_content['properties'].append(row["prop"])
+        table_content['properties'].append({'name': row["prop"], 'tag':[]})
         print(f'{row["prop"]}')
 
     emit('done_check', table_content)
+
+    for c in table_content['classes']:
+        if util.ask_OLS(c['name']):
+            c['tag'].append('OLS')
+            emit('done_check', table_content)
+        if util.ask_LOV(c['name']):
+            c['tag'].append('LOV')
+            emit('done_check', table_content)
+
+    for p in table_content['properties']:
+        if util.ask_OLS(p['name']):
+            p['tag'].append('OLS')
+            emit('done_check', table_content)
+        if util.ask_LOV(p['name']):
+            p['tag'].append('LOV')
+            emit('done_check', table_content)
+
+@socketio.on('check_kg_shape')
+def check_kg_shape(data):
+    step = 0
+    sid = request.sid
+    print(sid)
+    uri = str(data['url'])
+    if (not sid in kgs.keys()):
+        handle_embedded_annot(data)
+    elif (not kgs[sid]):
+        handle_embedded_annot(data)
+    kg = kgs[sid]
+
+    warnings, errors = util.shape_checks(kg)
+    data = {'errors': errors, 'warnings': warnings}
+    emit('done_check_shape', data)
+
 
 
 #######################################
