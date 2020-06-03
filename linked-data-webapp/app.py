@@ -333,6 +333,22 @@ def check_kg(data):
             p['tag'].append('LOV')
             emit('done_check', table_content)
 
+@socketio.on('check_kg_shape')
+def check_kg_shape(data):
+    step = 0
+    sid = request.sid
+    print(sid)
+    uri = str(data['url'])
+    if (not sid in kgs.keys()):
+        handle_embedded_annot(data)
+    elif (not kgs[sid]):
+        handle_embedded_annot(data)
+    kg = kgs[sid]
+
+    warnings, errors = util.shape_checks(kg)
+    data = {'errors': errors, 'warnings': warnings}
+    emit('done_check_shape', data)
+
 
 
 #######################################

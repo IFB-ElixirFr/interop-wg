@@ -1,7 +1,9 @@
 from SPARQLWrapper import SPARQLWrapper, N3, JSON, RDF, TURTLE, JSONLD
-from rdflib import Graph, Namespace
+from rdflib import Graph, ConjunctiveGraph, Namespace
 from rdflib.namespace import RDF
 import requests
+from jinja2 import Template
+from pyshacl import validate
 
 import re
 
@@ -141,20 +143,154 @@ def ask_LOV(uri):
     #print(res.text)
     return res.json()['boolean']
 
-# def ask_BioPortal(uri):
-#     """
-#
-#     http://sparql.bioontology.org
-#
-#     Checks that the URI is registered in one of the ontologies indexed in OLS.
-#     :param uri:
-#     :return: True if the URI is registered in one of the ontologies indexed in OLS, False otherwise.
-#     """
-#     print(f'SPARQL for [ {uri} ] with enpoint [ http://sparql.bioontology.org ]')
-#
-#     h = {'Accept': 'application/sparql-results+json'}
-#     p = {'query': "ASK { ?s ?p <" + uri + ">}"}
-#     res = requests.get("http://sparql.bioontology.org/sparql", headers=h, params=p, verify=False)
-#
-#     print(res.text)
-#     return res.json()['boolean']
+def shape_checks(kg):
+
+    types = ['schema:SoftwareApplication', 'schema:CreativeWork', 'schema:Dataset', 'schema:ScholarlyArticle']
+    minimal_dataset_properties = ['schema:name', 'schema:description', 'schema:identifier', 'schema:keywords', 'schema:url']
+    recommended_dataset_properties = ['schema:license', 'schema:creator', 'schema:citation']
+
+    minimal_software_properties = ['schema:name', 'schema:description', 'schema:url']
+    recommended_software_properties = ['schema:additionalType', 'schema:applicationCategory', 'schema:applicationSubCategory', 'schema:author' 'schema:license', 'schema:citation', 'schema:featureList', 'schema:softwareVersion']
+
+    minimal_publication_properties = ['schema:headline', 'schema:identifier']
+    recommended_publication_properties = ['schema:about', 'schema:alternateName', 'schema:author', 'schema:backstory', 'schema:citation', 'schema:dateCreated', 'schema:dateModified', 'schema:datePublished', 'schema:isBasedOn', 'schema:isPartOf', 'schema:keywords', 'schema:license', 'schema:pageEnd', 'schema:pageStart', 'schema:url']
+
+    shape_template = """
+    @prefix dash: <http://datashapes.org/dash#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix schema: <http://schema.org/> .
+    @prefix sh: <http://www.w3.org/ns/shacl#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix edam: <http://edamontology.org/> .
+    @prefix biotools: <https://bio.tools/ontology/> .
+
+    schema:SoftwareShape
+        a sh:NodeShape ;
+        sh:targetClass schema:SoftwareApplication ;
+
+        {% for prop_name in data['software_min'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Violation
+        ] ;
+        {% endfor %}
+    .
+    
+    schema:SoftwareShape
+        a sh:NodeShape ;
+        sh:targetClass schema:SoftwareApplication ;
+
+        {% for prop_name in data['software_reco'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Warning
+        ] ;
+        {% endfor %}
+    .
+        
+    schema:DatasetShape
+        a sh:NodeShape ;
+        sh:targetClass schema:Dataset ;
+
+        {% for prop_name in data['dataset_min'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Violation
+        ] ;
+        {% endfor %}
+    .
+    
+    schema:DatasetShape
+        a sh:NodeShape ;
+        sh:targetClass schema:Dataset ;
+
+        {% for prop_name in data['dataset_reco'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Warning
+        ] ;
+        {% endfor %}
+    .
+    
+    schema:PaperShape
+        a sh:NodeShape ;
+        sh:targetClass schema:ScholarlyArticle ;
+
+        {% for prop_name in data['paper_min'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Violation
+        ] ;
+        {% endfor %}
+    .
+    
+    schema:PaperShape
+        a sh:NodeShape ;
+        sh:targetClass schema:ScholarlyArticle ;
+
+        {% for prop_name in data['paper_reco'] %}
+        sh:property [
+            sh:path {{prop_name}} ;
+            sh:minCount 1 ;
+            sh:severity sh:Warning
+        ] ;
+        {% endfor %}
+    .
+    
+    """
+
+    data = {
+        'software_min': minimal_software_properties,
+        'software_reco': recommended_software_properties,
+        'dataset_min': minimal_dataset_properties,
+        'dataset_reco': recommended_dataset_properties,
+        'paper_min': minimal_publication_properties,
+        'paper_reco': recommended_publication_properties}
+
+    template = Template(shape_template)
+    shape = template.render(data=data)
+    print(shape)
+    g = ConjunctiveGraph()
+    g.parse(data=shape, format='turtle')
+    print(len(g))
+
+    r = validate(data_graph=kg,
+                 data_graph_format='turtle',
+                 shacl_graph=shape,
+                 # shacl_graph = my_shacl_constraint,
+                 shacl_graph_format='turtle',
+                 ont_graph=None,
+                 inference='rdfs',
+                 abort_on_error=False,
+                 meta_shacl=False,
+                 debug=True)
+
+    conforms, results_graph, results_text = r
+
+    report_query = """
+        SELECT ?node ?path ?severity WHERE {
+            ?v rdf:type sh:ValidationReport ;
+               sh:result ?r .
+            ?r sh:focusNode ?node ;
+               sh:sourceShape ?s . 
+            ?s sh:path ?path ;
+               sh:severity ?severity .
+        }
+    """
+
+    results = results_graph.query(report_query)
+    warnings = []
+    errors = []
+    for r in results:
+        if "#Warning" in r['severity']:
+            warnings.append(f'Property {r["path"]} <span class="has-text-warning has-text-weight-bold">should be</span> provided')
+        if "#Violation" in r['severity']:
+            errors.append(f'Property {r["path"]} <span class="has-text-danger has-text-weight-bold">must be</span> provided')
+
+    return warnings, errors

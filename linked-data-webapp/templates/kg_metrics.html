@@ -50,12 +50,26 @@
 
         $("#btn_kg").click(function(){
             $(this).addClass("is-loading");
+            $("#section-KG").removeClass("is-hidden");
+            $("#section-LinkedData").addClass("is-hidden");
+            $("#section-BioSchemas").addClass("is-hidden");
             socket.emit('retrieve_embedded_annot', {url: $("#url").val()});
         });
 
         $("#btn_fairness").click(function(){
             $(this).addClass("is-loading");
+            $("#section-KG").removeClass("is-hidden");
+            $("#section-LinkedData").removeClass("is-hidden");
+            $("#section-BioSchemas").addClass("is-hidden");
             socket.emit('check_kg', {url: $("#url").val()});
+        });
+
+        $("#btn_bioschemas").click(function(){
+            $(this).addClass("is-loading");
+            $("#section-KG").removeClass("is-hidden");
+            $("#section-LinkedData").addClass("is-hidden");
+            $("#section-BioSchemas").removeClass("is-hidden");
+            socket.emit('check_kg_shape', {url: $("#url").val()});
         });
 
         //////////////////
@@ -111,6 +125,27 @@
              $("#btn_fairness").removeClass("is-loading");
          });
 
+         socket.on('done_check_shape', function(value) {
+            console.log(value);
+            var rows = '';
+            $.each(value['errors'], function(index, item) {
+                var row = '<tr>';
+                row += '<td>' + item + '</td>';
+                rows += row + '<tr>';
+            });
+            $('#t_errors').html(rows);
+
+            var rows = '';
+            $.each(value['warnings'], function(index, item) {
+                var row = '<tr>';
+                row += '<td>' + item + '</td>';
+                rows += row + '<tr>';
+            });
+            $('#t_warnings').html(rows);
+
+             $("#btn_bioschemas").removeClass("is-loading");
+         });
+
         {% for f in f_metrics %}
         socket.on('done_{{f.id}}', function(value) {
             console.log('DONE {{f.name}}');
@@ -156,98 +191,106 @@
     });
 </script>
 
-<h1 class="title">How FAIR is my resource</h1>
-<p> Bla bla bla bla </p>
+<div class="section">
+    <h1 class="title is-1">How FAIR are my tools, workflows, datasets ?</h1>
+    <p> These FAIR checks aim at leveraging semantic web technologies to check that metadata use standards and recognized
+        ontologies or controlled vocabularies.</p>
+    <br>
+    <p> First, embedded semantic annotations are extracted from web pages, forming a minimal knowledge graph. Then, these knowledge are completed based on already deployed knowledge graphs (Datacite, OpenAire, WikiData). Finally, the resulting knowledge graph is tested to check that classes and properties are recognized through Linked Open Vocabularies (LOV), or Ontology Lookup Service (OLS)</p>
+</div>
 
-<h3 class="title is-5">Pick a sample resource identifier</h3>
-<div class="columns is-multiline is-mobile">
-    {% for k in sample_data.keys() %}
-        <div class="column is-2">
-            <div class="field">
-                <label class="label">{{k}}</label>
-                <div class="control">
+<div class="section">
+    <div class="columns is-multiline is-mobile">
+        {% for k in sample_data.keys() %}
+            <div class="column is-4">
+                <div class="field">
+                    <label class="label">{{k}}</label>
+                    <div class="control">
 
-                    <div class="select">
-                        <select id="sample_{{k}}">
-                            {% for s in sample_data[k] %}
-                            <option>{{ s }}</option>
-                            {% endfor %}
-                        </select>
+                        <div class="select">
+                            <select id="sample_{{k}}">
+                                {% for s in sample_data[k] %}
+                                <option>{{ s }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 </div>
 
-<div class="section">
-    <progress id="p1" class="progress is-primary"  value="0" max="5"></progress>
-</div>
 
 <div class="section">
-
     <div class="field is-grouped">
           <p class="control is-expanded">
             <input id="url" name="url" class="input" type="text" placeholder="Resource URL" value="http://bio.tools/bwa">
           </p>
         <p class="control"><a id="btn_kg" class="button is-info">Build KG</a></p>
-        <p class="control"><a id="btn_fairness" class="button is-primary">Check FAIRness</a></p>
+        <p class="control"><a id="btn_fairness" class="button is-primary">Interop checks</a></p>
+        <p class="control"><a id="btn_bioschemas" class="button is-warning">BioSchemas checks</a></p>
     </div>
 </div>
 
-<!--<div class="section">-->
-<!--    <textarea id="editor"></textarea>-->
-<!--</div>-->
-<div class="section">
-    <div class="field">
-      <div class="control">
-        <textarea id="microdata" class="textarea is-small" placeholder="Small textarea"></textarea>
-      </div>
-    </div>
+<div class="section is-hidden">
+    <progress id="p1" class="progress is-primary"  value="0" max="5"></progress>
 </div>
 
-<div class="columns is-multiline is-mobile">
-<!--    <div class="column is-one-fifth"><code>Findable</code></div>-->
-    {% for f in f_metrics %}
-        <div class="column is-one-third">
-            {% set title=f.name %}
-            {% set principle=f.principle %}
-            {% set tag=f.principle_tag %}
-            {% set desc=f.description %}
-            {% set api_url=f.api_url %}
-            {% set id=f.id %}
-            {% include 'metrics_card.html' with context %}
+<section id="section-KG" class="section is-hidden">
+    <div class="section">
+        <div class="field">
+          <div class="control">
+            <textarea id="microdata" class="textarea is-small" placeholder="Knowledge graph, in RDF, turtle syntax" rows="15"></textarea>
+          </div>
         </div>
-    {% endfor %}
-</div>
-<!--<div class="columns is-multiline is-mobile">-->
-<!--    <div class="column is-one-quarter"><code>A1</code></div>-->
-<!--    <div class="column is-one-quarter"><code>A2</code></div>-->
-<!--    <div class="column is-one-quarter"><code>A3</code></div>-->
-<!--</div>-->
-<!--<div class="columns is-multiline is-mobile">-->
-<!--    <div class="column is-one-quarter"><code>I1</code></div>-->
-<!--</div>-->
-<!--<div class="columns is-multiline is-mobile">-->
-<!--    <div class="column is-one-quarter"><code>R1</code></div>-->
-<!--    <div class="column is-one-quarter"><code>R2</code></div>-->
-<!--</div>-->
+    </div>
+</section>
 
-<div class="columns is-multiline is-mobile">
-    <div class="column is-one-half">
-        <table class="table is-striped is-fullwidth">
-            <thead><tr><th>Classes</th></tr></thead>
-            <tbody id="t_classes">
-            </tbody>
-        </table>
+<section id="section-LinkedData" class="section is-hidden">
+    <h3 class="title is-3">Interoperability validation</h3>
+    <p>What</p>
+    <p>Why</p>
+    <p>How</p>
+    <div class="columns is-multiline is-mobile">
+        <div class="column is-one-half">
+            <table class="table is-striped is-fullwidth">
+                <thead><tr><th>Classes</th></tr></thead>
+                <tbody id="t_classes">
+                </tbody>
+            </table>
+        </div>
+        <div class="column is-one-half">
+            <table class="table is-striped is-fullwidth">
+                <thead><tr><th>Properties</th></tr></thead>
+                <tbody id="t_properties">
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="column is-one-half">
-        <table class="table is-striped is-fullwidth">
-            <thead><tr><th>Properties</th></tr></thead>
-            <tbody id="t_properties">
-            </tbody>
-        </table>
+</section>
+
+<section id="section-BioSchemas" class="section is-hidden">
+    <h3 class="title is-3">BioSchemas validation</h3>
+    <p>What</p>
+    <p>Why</p>
+    <p>How</p>
+    <div class="columns is-multiline is-mobile">
+        <div class="column is-one-half">
+            <table class="table is-striped is-fullwidth">
+                <thead><tr><th>Requirements</th></tr></thead>
+                <tbody id="t_errors">
+                </tbody>
+            </table>
+        </div>
+        <div class="column is-one-half">
+            <table class="table is-striped is-fullwidth">
+                <thead><tr><th>Improvements</th></tr></thead>
+                <tbody id="t_warnings">
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
+</section>
 
 {% endblock %}
