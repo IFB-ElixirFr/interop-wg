@@ -1,15 +1,22 @@
 <div class="card">
     <header class="card-header">
-        <p class="card-header-title">
-            {{ tag }} - {{ title }}
-        </p>
+        <div class="card-header-title">
+            <p>{{ tag }} - {{ title }}</p>
+        </div>
+        <div class="card-header-icon" style="cursor: default;">
+            <span id="status_{{ id }}" class="tag is-small">Status</span>
+        </div>
+        <a class="card-header-icon card-toggle">
+          <i class="fa fa-angle-down"></i>
+        </a>
 
     </header>
-    <div class="card-content">
+    <div id="metric_card_content_{{ id }}" class="card-content is-hidden">
         <article class="message is-info">
             <div class="message-header">
 
-                <p>Description</p><a href="#desc_message_{{ id }}" data-action="collapse">Collapse/Expand</a>
+                <p>Description</p>
+                <!-- <a href="#desc_message_{{ id }}" data-action="collapse">Collapse/Expand</a> -->
             </div>
             <div id="desc_message_{{ id }}" class="message-body is-size-7 is-collapsible">
                 <div class="message-body-content">
@@ -26,7 +33,6 @@
                 <p>Result</p>
             </div>
             <div class="message-body is-size-7">
-                Launch the test to see the result !
                 <table hidden id="result_table_{{ id }}" class="table is-hoverable">
                     <tbody>
                         <tr>
@@ -54,6 +60,6 @@
         <div class="card-footer-item">
             <a id="test_{{ id }}" href="#" value="{{ api_url }}" class="button is-small is-info">Check</a>
         </div>
-        <div class="card-footer-item"> <span id="status_{{ id }}" class="tag is-small ">Status</span> </div>
+
     </footer>
 </div>
