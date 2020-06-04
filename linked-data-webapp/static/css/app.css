@@ -29,9 +29,13 @@ span.tag.is-danger {
   text-align: center;
 }
 
-article.message.is-info .message-header {
+article.message.is-info > div:first-child.message-header {
     background-color: #417da7;
 }
+
+/* article.message.is-primary > div:first-child.message-header {
+    background-color: #50c3b2;
+} */
 
 table#metrics_checkboxes {
 	display: inline-block;

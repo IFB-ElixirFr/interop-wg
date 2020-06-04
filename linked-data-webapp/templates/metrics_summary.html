@@ -92,6 +92,9 @@
             $("#comment_{{f.id}}").text(value['comment']);
             // show table
             $("#result_table_{{f.id}}").show();
+            // open card
+            $("#metric_card_content_{{f.id}}").removeClass("is-hidden");
+
 
 
             update_radar_chart();
@@ -103,14 +106,22 @@
         // exec all button
         //////////////////
 
-        $("#btn_test_all").on('click', function($e){
 
+        // check all category boxes
+        $('[id^=checkbox_all_]').on('click', function($e){
+            target_name = $(this).data("target");
+            is_checked = $(this).prop("checked");
+            $('[name=' + target_name + ']').prop("checked", is_checked);
+
+        });
+
+        // start all selected metrics test
+        $("#btn_test_checked").on('click', function($e){
 
           $('[id^=checkbox_test_]').each(function( id ) {
             is_checked = $(this).prop("checked");
             target_id = $(this).data("target");
-            // console.log(target);
-            // console.log(is_checked);
+
             if (is_checked) {
               console.log("gogo metric");
               console.log(target_id);
@@ -118,11 +129,14 @@
             }
           });
 
+        });
 
-          // $('[id^=test_metric_]').each(function( id ) {
-          //   $(this).trigger( "click" );
-          //   // console.log($(this).attr('id'))
-          // });
+        // start all metrics test
+        $("#btn_test_all").on('click', function($e){
+          $('[id^=test_metric_]').each(function( id ) {
+            $(this).trigger( "click" );
+            // console.log($(this).attr('id'))
+          });
         });
 
         // socket.on('fast', function(value) {
@@ -157,90 +171,142 @@
 
 <h1 class="title">How FAIR is my resource</h1>
 
-<h3 class="title is-5">Pick a sample resource identifier</h3>
-<div class="columns is-multiline is-mobile">
-    {% for k in sample_data.keys() %}
-        <div class="column is-2">
-            <div class="field">
-                <label class="label">{{k}}</label>
-                <div class="control">
+<!-- description section -->
+<article class="message is-info">
+    <div class="message-header">
+        <p>Demo description and goal</p>
+    </div>
+    <div class="message-body">
+        Text explaining why we did this
+    </div>
+</article>
 
-                    <div class="select">
-                        <select id="sample_{{k}}">
-                            {% for s in sample_data[k] %}
-                            <option>{{ s }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                </div>
-            </div>
+<!-- input uri section -->
+<article class="message is-info">
+    <div class="message-header">
+        <p>Pick a sample resource identifier</p>
+    </div>
+    <div class="message-body">
+      <div class="columns is-multiline is-mobile">
+          {% for k in sample_data.keys() %}
+              <div class="column is-one-third">
+                  <div class="field">
+                      <label class="label">{{k}}</label>
+                      <div class="control">
+
+                          <div class="select">
+                              <select id="sample_{{k}}">
+                                  {% for s in sample_data[k] %}
+                                  <option>{{ s }}</option>
+                                  {% endfor %}
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          {% endfor %}
+      </div>
+      <input id="url" name="url" class="input" type="text" placeholder="FAIR resource URL" value="http://bio.tools/bwa">
+    </div>
+</article>
+
+<!-- Start metric section -->
+<article class="message is-info">
+    <div class="message-header">
+        <p>Start basic or advanced test (select metrics using checkboxes below)</p>
+    </div>
+    <div class="message-body">
+        <div class="field is-grouped is-grouped-centered">
+            <p class="control">
+                <a id="btn_test_all" class="button is-info">Test all metrics</a>
+            </p>
+            <p class="control">
+                <a id="btn_test_checked" class="button is-info">Test checked metrics</a>
+            </p>
         </div>
-    {% endfor %}
-</div>
-
-<div class="section">
-    <div class="field is-grouped">
-          <input id="url" name="url" class="input" type="text" placeholder="FAIR resource URL" value="http://bio.tools/bwa">
-          <p class="control"><a id="btn_test_all" class="button is-info">Test checked metrics</a></p>
+        <progress id="p1" class="progress is-primary"  value="0" max="22"></progress>
     </div>
 
-</div>
-
-<div class="section">
-    <progress id="p1" class="progress is-primary"  value="0" max="22"></progress>
-</div>
+</article>
 
 
 
 
-{% for category in ['F', 'A', 'I', 'R'] %}
-    <table id="metrics_checkboxes" class="table is-hoverable">
-        <thead>
-            <th>
-                <label class="checkbox">
-                    <input id="checkbox_all_{{ category }}"type="checkbox">
-                    {{ category }}
+<!-- Metrics sselection checkboxes section -->
+<article class="message is-info">
+    <div class="message-header">
+        <p>Select the metrics you want to test</p>
+    </div>
+    <div class="message-body">
+        {% for category in ['F', 'A', 'I', 'R'] %}
+            <table id="metrics_checkboxes" class="table is-hoverable">
+                <thead>
+                    <th>
+                        <label class="checkbox">
+                            <input id="checkbox_all_{{ category }}" data-target="checkbox_{{ category }}" type="checkbox">
+                            {{ category }} - All
 
-                </label>
-            </th>
-        </thead>
-        <!-- Remove hidden to show tables -->
-        <tbody>
-        <!-- <tbody hidden> -->
-        {% for f in f_metrics %}
-            {% if f.principle_category == category %}
-            <tr>
-                <th>
-                    <label class="checkbox">
-                        <input id="checkbox_test_{{ f.id }}" data-target="test_{{ f.id }}" type="checkbox">
-                        {{ f.principle_tag }} - {{ f.name }}
+                        </label>
+                    </th>
+                </thead>
+                <!-- Remove hidden to show tables -->
+                <tbody>
+                <!-- <tbody hidden> -->
+                {% for f in f_metrics %}
+                    {% if f.principle_category == category %}
+                    <tr>
+                        <th>
+                            <label class="checkbox">
+                                <input name="checkbox_{{ category }}" id="checkbox_test_{{ f.id }}" data-target="test_{{ f.id }}" type="checkbox">
+                                {{ f.principle_tag }} - {{ f.name }}
 
-                    </label>
-                </th>
-            </tr>
-            {% endif %}
+                            </label>
+                        </th>
+                    </tr>
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
         {% endfor %}
-        </tbody>
-    </table>
-{% endfor %}
+    </div>
+</article>
 
-{% include 'radar_chart.html' %}
 
-<div class="columns is-multiline is-mobile">
-<!--    <div class="column is-one-fifth"><code>Findable</code></div>-->
-    {% for f in f_metrics %}
-        <div class="column is-one-third">
-            {% set title=f.name %}
-            {% set principle=f.principle %}
-            {% set principle_category=f.principle_category %}
-            {% set tag=f.principle_tag %}
-            {% set desc=f.description %}
-            {% set api_url=f.api_url %}
-            {% set id=f.id %}
-            {% include 'metrics_card.html' with context %}
-        </div>
-    {% endfor %}
-</div>
+<article class="message is-info">
+    <div class="message-header">
+        <p>Radar chart of metrics completion</p>
+    </div>
+    <div class="message-body">
+        {% include 'radar_chart.html' %}
+    </div>
+</article>
+
+
+
+<article class="message is-info">
+    <div class="message-header">
+        <p>List of metrics with details and completion status</p>
+    </div>
+    <div class="message-body">
+      <div class="columns is-multiline is-mobile">
+      <!--    <div class="column is-one-fifth"><code>Findable</code></div>-->
+          {% for f in f_metrics %}
+              <div class="column is-one-third">
+                  {% set title=f.name %}
+                  {% set principle=f.principle %}
+                  {% set principle_category=f.principle_category %}
+                  {% set tag=f.principle_tag %}
+                  {% set desc=f.description %}
+                  {% set api_url=f.api_url %}
+                  {% set id=f.id %}
+                  {% include 'metrics_card.html' with context %}
+              </div>
+          {% endfor %}
+      </div>
+    </div>
+</article>
+
+
 <!--<div class="columns is-multiline is-mobile">-->
 <!--    <div class="column is-one-quarter"><code>A1</code></div>-->
 <!--    <div class="column is-one-quarter"><code>A2</code></div>-->
@@ -253,5 +319,16 @@
 <!--    <div class="column is-one-quarter"><code>R1</code></div>-->
 <!--    <div class="column is-one-quarter"><code>R2</code></div>-->
 </div>
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+	let cardToggles = document.getElementsByClassName('card-toggle');
+	for (let i = 0; i < cardToggles.length; i++) {
+		cardToggles[i].addEventListener('click', e => {
+			e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+		});
+	}
+});
+</script>
 
 {% endblock %}

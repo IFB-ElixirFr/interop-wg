@@ -1,7 +1,5 @@
-Radar chart here
-
-<button id="update">Update</button>
-<div id="chart-radar"></div>
+<!-- <button id="update">Update</button> -->
+<div id="chart-radar" class="columns is-mobile is-centered"></div>
 
 <script type="text/javascript" charset="utf-8">
 
@@ -11,8 +9,8 @@ Radar chart here
     color: function() {},
     w: 400,
     h: 400,
-    levels: 4,
-    maxValue: 8,
+    levels: 5,
+    maxValue: 1,
     minValue: 0,
     factor: 0.7,
   });
@@ -30,16 +28,16 @@ Radar chart here
         {axis: "Reusable", value: 0},
       ]
     },
-    {
-      className: 'failure',
-      axes: [
-        {axis: "Findable", value: 0},
-        {axis: "Accessible", value: 0},
-        {axis: "Interoperable", value: 0},
-        {axis: "Reusable", value: 0},
-
-      ]
-    }
+    // {
+    //   className: 'failure',
+    //   axes: [
+    //     {axis: "Findable", value: 0},
+    //     {axis: "Accessible", value: 0},
+    //     {axis: "Interoperable", value: 0},
+    //     {axis: "Reusable", value: 0},
+    //
+    //   ]
+    // }
   ];
 
 
@@ -69,13 +67,16 @@ Radar chart here
           fs_count['failure'][category] = 0;
         }
 
+        size = $('[name=checkbox_' + category + ']').length;
+        console.log(size);
+
         if (value == 1) {
-          fs_count['success'][category] += 1;
+          fs_count['success'][category] += 1/size;
 
           console.log( id + ": " + value );
           console.log( id + ": " + category );
         } else if (value == 0){
-          fs_count['failure'][category] += 1;
+          fs_count['failure'][category] += 1/size;
           console.log( id + ": " + value );
           console.log( id + ": " + category );
         }
@@ -95,16 +96,16 @@ Radar chart here
             {axis: "Reusable", value: fs_count['success']['R']},
           ]
         },
-        {
-          className: 'failure',
-          axes: [
-            {axis: "Findable", value: fs_count['failure']['F']},
-            {axis: "Accessible", value: fs_count['failure']['A']},
-            {axis: "Interoperable", value: fs_count['failure']['I']},
-            {axis: "Reusable", value: fs_count['failure']['R']},
-
-          ]
-        }
+        // {
+        //   className: 'failure',
+        //   axes: [
+        //     {axis: "Findable", value: fs_count['failure']['F']},
+        //     {axis: "Accessible", value: fs_count['failure']['A']},
+        //     {axis: "Interoperable", value: fs_count['failure']['I']},
+        //     {axis: "Reusable", value: fs_count['failure']['R']},
+        //
+        //   ]
+        // }
       ];
 
       d3.selectAll("svg > *").remove();
