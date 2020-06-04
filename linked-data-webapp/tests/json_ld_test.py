@@ -22,6 +22,17 @@ sample_2 = """
 }
 """
 
+sample_3 = """
+{
+  "@context": "../static/data/jsonldcontext.json",
+  "@type": "Person",
+  "name": "Jane Doe",
+  "jobTitle": "Professor",
+  "telephone": "(425) 123-4567",
+  "url": "http://www.janedoe.com"
+}
+"""
+
 if __name__ == '__main__':
 
     g1 = ConjunctiveGraph()
@@ -31,4 +42,8 @@ if __name__ == '__main__':
     g2 = ConjunctiveGraph()
     g2.parse(data=sample_2, format="json-ld")
     print(g2.serialize(format="turtle").decode())
+
+    g3 = ConjunctiveGraph()
+    g3.parse(data=sample_3, format="json-ld")
+    print(g3.serialize(format="turtle").decode())
 
