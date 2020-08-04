@@ -1,0 +1,162 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.2.1"
+
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+	@swagger.score = 0
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+	
+	hash = metadata.hash
+	
+	properties = Utils::deep_dive_properties(hash)
+
+	
+	@swagger.addComment("INFO: Searching metadata for likely identifiers to the data record\n")
+	@identifier = ""
+	
+	properties.each do |keyval|
+		key, value = nil, nil
+		(key, value) = keyval;
+		key = key.to_s
+		
+		@swagger.addComment("INFO: Searching hash-style metadata for keys indicating a pointer to data.\n")
+		Utils::DATA_PREDICATES.each do |prop|
+			prop =~ /.*[#\/]([^#\/]+)$/
+			prop = $1
+			@swagger.addComment("INFO: Searching for key: #{prop}.\n")
+			if key == prop
+				@swagger.addComment "INFO: found '#{prop}' in metadata.  Setting data GUID to #{value} for next test.\n"
+				@identifier=value.to_s
+			end
+		end
+	end
+
+
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything yet?
+		@swagger.addComment("INFO: Searching Linked Data metadata for predicates indicating a pointer to data.\n")
+		@identifier = CommonQueries::GetDataIdentifier(g, @swagger)		
+		# hopefully we have it by now... if not... we fail!
+		#$stderr.puts "\n\nfound identifier #{@identifier} \n\n"
+	end
+	
+	unless @identifier =~ /\w+/
+			@swagger.score = 0
+			@swagger.addComment "FAILURE: Was unable to locate the data identifier in the metadata using any (common) property/predicate reserved" +
+" for this purpose."
+			@swagger.addComment "Tested the following #{Utils::DATA_PREDICATES}(or their plain JSON hash-key equivalents)\n"
+	else
+			@swagger.addComment "INFO: Now resolving #{@identifier} to test its properties.\n"
+			testIdentifier(@identifier) # this will add more comments and a score to @swagger
+	end
+	return @swagger.createEvaluationResponse
+end
+
+
+def testIdentifier(guid)
+	
+	# This is verbatim from the gen2_metadata_identifier_persistence
+	type = Utils::typeit(guid)  # this is where the magic happens!
+
+	if !type
+		@swagger.addComment("FAILURE: The GUID identifier of the data #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+	elsif type == "uri"
+		@swagger.addComment("INFO: The GUID appears to be a URL.  Testing known URL persistence schemas (purl, oclc, fdlp, purlz, w3id, ark).\n")
+		if (guid =~ /(purl)\./) or (guid =~ /(oclc)\./) or(guid =~ /(fdlp)\./) or (guid =~ /(purlz)\./) or (guid =~ /(w3id)\./) or (guid =~ /(ark)\:/)
+			@swagger.addComment("SUCCESS: The GUID conforms with #{$1}, which is known to be persistent.\n")
+			@swagger.score = 1
+		else
+			@swagger.addComment("FAILURE: The GUID does not conform with any known permanent-URL system.\n")
+			@swagger.score = 0
+		end
+	else 
+		@swagger.addComment("SUCCESS: The GUID of the data is a #{type}, which is known to be persistent.\n")
+		@swagger.score = 1
+	end
+
+
+end
+
+
+
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi fail
+#	@input = '{"subject": "10.5281/zenodo.1065973"}'  # doi fail
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle (fail)
+#	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # handle
+	@input = '{"subject": "10411/GSGDSV"}'  # handle
+
+else 
+	@input = $stdin.read
+end
+
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Data Identifier Persistence",
+			:description => "Metric to test if the unique identifier of the data resource is likely to be persistent. Known schema are registered in FAIRSharing (https://fairsharing.org/standards/?q=&selected_facets=type_exact:identifier%20schema). For URLs that don't follow a schema in FAIRSharing we test known URL persistence schemas (purl, oclc, fdlp, purlz, w3id, ark).  ",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_F1B',
+			:version => VERSION,
+			:applies_to_principle => "F1",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_data_identifier_persistence',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false				 				 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

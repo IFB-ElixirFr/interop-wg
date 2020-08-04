@@ -1,0 +1,139 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require './fair_metrics_utilities.rb'
+require 'cgi'
+require 'json'
+require 'uri'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.2.1"
+
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The GUID identifier #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+	
+	if metadata.hash.size > 1
+		properties = Utils::deep_dive_properties(hash)
+		@swagger.addComment("INFO: Testing hash-style metadata for a key matching the regexp /persistencePolicy$/\n")
+
+		properties.each do |keyval|
+			key, value = nil, nil
+			(key, value) = keyval;
+			key = key.to_s
+			if key =~ /persistencePolicy$/
+				@swagger.addComment "SUCCESS: found a persistencePolicy property in hashed metadata.\n"
+				@swagger.score = 1
+				return @swagger.createEvaluationResponse
+			end
+		end
+	end
+
+
+	g = metadata.graph
+	
+	if g.size > 0  # have we found anything yet?
+		@swagger.addComment("INFO: Found linked data.  Testing for the 'http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy' predicate.\n")
+		query = SPARQL.parse("select ?o where {?s <http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy> ?o}")
+		results = query.execute(g)
+		if results.any?
+			@swagger.addComment "INFO: Found persistence policy predicate with #{results.first[:o]} as its value.  This should be a resolveable URL; Now testing resolution.\n"
+			$stderr.puts "\n\n\nFound persistence policy predicate with #{results.first[:o]} as its value.  Now testing resolution. \n\n\n"
+			policyURI = results.first[:o].value
+			unless policyURI =~ /:\/\/\w+\.\w+/  # the structure of a URI
+				@swagger.addComment "FAILURE: http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy states that the range of the property must be a resource.  The discovered value (#{polucyURI}) is not a URL.\n"
+				@swagger.score = 0
+				return @swagger.createEvaluationResponse
+			end
+			
+			head, body = Utils::fetch(policyURI, {"Accept" => "*/*"})  # returns HTTP object, or false
+			if head
+				@swagger.addComment("SUCCESS: Persistence policy URL resolved.\n")
+				@swagger.score = 1
+				return @swagger.createEvaluationResponse
+			else
+				@swagger.addComment("FAILURE: Persistence policy did not resolve.\n")
+				@swagger.score = 0
+				return @swagger.createEvaluationResponse
+			end
+		else
+			@swagger.addComment("WARN: Did not find the #persistencePolicy predicate in the linked data.\n")
+		end
+			
+	else 
+		@swagger.addComment("WARN: Could not find any linked data to test for persistence policy references.\n")
+	end
+	
+	if @swagger.score < 1
+		@swagger.addComment("FAILURE: was unable to find a persistence policy using any approach.\n")
+	end
+	
+	return @swagger.createEvaluationResponse
+
+	
+end
+
+
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle
+	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # url
+
+else 
+	@input = $stdin.read
+end
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Metadata Persistence",
+			:description => "Metric to test if the metadata contains a persistence policy, explicitly identified by a persistencePolicy key (in hashed data) or a http://www.w3.org/2000/10/swap/pim/doc#persistencePolicy predicate in Linked Data.",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_FA2',
+			:version => VERSION,
+			:applies_to_principle => "A2",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_metadata_persistence',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+				 				 
+})
+
+
+if (!cgi.request_method or cgi.request_method == "GET")  and !debug
+	puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+	puts @swagger.getSwagger
+	
+elsif cgi.request_method == "POST"  or debug
+	input_json = JSON.parse(@input)
+	guid = input_json["subject"]
+	@swagger.testedGUID = guid
+	response = testGUID
+	puts "Content-type: application/json+ld\n\n"
+	puts response
+end

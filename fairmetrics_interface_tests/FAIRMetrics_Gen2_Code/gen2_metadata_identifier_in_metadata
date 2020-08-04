@@ -1,0 +1,128 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.4.4"
+
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end	
+
+	foundID = []
+	if metadata.graph.size > 0
+		@swagger.addComment("INFO: Linked Data Found.  Now searching for the metadata identifier using appropriate linked data predicates (#{Utils::SELF_IDENTIFIER_PREDICATES}).\n")
+		
+		foundID = CommonQueries::GetSelfIdentifier(metadata.graph, @swagger)
+
+		# query pattern-match in an object position
+		if !foundID.first
+			@swagger.score = 0
+			@swagger.addComment("FAILURE: No metadata identifiers were found in the metadata record\n")
+			return @swagger.createEvaluationResponse  # release the result from all other tests
+		end
+		if foundID.first.empty?
+			@swagger.score = 0
+			@swagger.addComment("FAILURE: No metadata identifiers were found in the metadata record using predicates #{Utils::SELF_IDENTIFIER_PREDICATES}. \n")
+			return @swagger.createEvaluationResponse  # release the result from all other tests
+		end
+		unless foundID.first =~ /\w/
+			@swagger.score = 0
+			@swagger.addComment("FAILURE: No metadata identifiers were found in the metadata record using predicates #{Utils::SELF_IDENTIFIER_PREDICATES}. \n")
+			return @swagger.createEvaluationResponse  # release the result from all other tests
+		end
+
+	else
+		@swagger.score = 0
+		@swagger.addComment("FAILURE: linked data metadata was not found, so its identifier could not be located. \n")
+		return @swagger.createEvaluationResponse
+	end
+	
+	if foundID.include?(guid)
+			@swagger.score = 1
+			@swagger.addComment("SUCCESS: the starting identifier (#{guid}) was found in the structured metadata\n")
+	else	
+			@swagger.score = 0
+			@swagger.addComment("FAILURE: While (apparent) metadata record identifiers were found (#{foundID}) none of them matched the initial GUID provided to the test (#{guid}).  Exact identifier match is required.\n")
+	end
+
+	return @swagger.createEvaluationResponse  # release the result from all other tests
+	
+end
+
+
+
+# =======================================================================
+
+
+if debug
+#       @input = '{"subject": "10.5281/zenodo.1147435"}'  # doi
+#		@input = '{"subject": "https://www.gbif.org/dataset/67c54f85-7910-4cbf-8de4-6f0b136a0e34"}'  # url
+@input = '{"subject": "https://www.nb.no/sprakbanken/show?serial=oai%3Anb.no%3Asbr-49&lang=nb"}'  # url
+#       @input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#       @input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#       @input = '{"subject": "20.1000/105"}'  # handle
+#       @input = '{"subject": "10.25504/FAIRsharing.z4xpxx"}'  # handle
+#        @input = '{"subject": "https://doi.org/10.5281/zenodo.3349821"}'  # contains identifier clause
+
+else
+	@input = $stdin.read
+end
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2- Metadata Identifier Explicitly In Metadata",
+			:description => "Metric to test if the metadata contains the unique identifier to the metadata itself.  This is done using a variety of 'scraping' tools, including DOI metadata resolution, the use of the 'extruct' Python tool, and others.  The test is executed by searching for the predicates 'http[s]://purl.org/dc/terms/identifier','http[s]://schema.org/identifier ",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_F3',
+			:version => VERSION,
+			:applies_to_principle => "F3",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_metadata_identifier_in_metadata',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false			 				 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

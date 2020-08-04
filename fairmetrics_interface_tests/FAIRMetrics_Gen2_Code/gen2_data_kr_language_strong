@@ -1,0 +1,192 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.3.1"
+# 0.3.0  completely changed method - now checks the content-type header of the resource
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+	@swagger.score = 0
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+	
+	hash = metadata.hash
+	
+	properties = Utils::deep_dive_properties(hash)
+
+	
+	@swagger.addComment("INFO: Searching metadata for likely identifiers to the data record\n")
+	@identifier = ""
+	
+	properties.each do |keyval|
+		key, value = nil, nil
+		(key, value) = keyval;
+		key = key.to_s
+		
+		@swagger.addComment("INFO: Searching hash-style metadata for keys indicating a pointer to data.\n")
+		Utils::DATA_PREDICATES.each do |prop|
+			prop =~ /.*[#\/]([^#\/]+)$/
+			prop = $1
+			@swagger.addComment("INFO: Searching for key: #{prop}.\n")
+			if key == prop
+				@swagger.addComment "INFO: found '#{prop}' in metadata.  Setting data GUID to #{value} for next test.\n"
+				@identifier=value.to_s
+			end
+		end
+	end
+
+
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything yet?
+		@swagger.addComment("INFO: Searching Linked Data metadata for predicates indicating a pointer to data.\n")
+		@identifier = CommonQueries::GetDataIdentifier(g, @swagger)		
+		# hopefully we have it by now... if not... we fail!
+		#$stderr.puts "\n\nfound identifier #{@identifier} \n\n"
+
+		unless @identifier =~ /\w+/
+			@swagger.score = 0
+			@swagger.addComment "FAILURE: Was unable to locate the data identifier in the metadata using any (common) property/predicate reserved for this purpose.  Tested the following #{Utils::DATA_PREDICATES}\n"
+		else
+			@swagger.addComment "INFO: Now resolving #{@identifier} to test its response body.\n"
+			testIdentifier(@identifier) # this will add more comments and a score to @swagger
+		end
+	end
+	
+	if @swagger.score == 0
+		@swagger.addComment "FAILURE: the data could not be found, or does not appear to be in a recognized knowledge representation language.\n"
+	end
+
+	return @swagger.createEvaluationResponse
+end
+
+
+def testIdentifier(guid)
+	
+	type, url = Utils::convertToURL(guid)
+	if url.nil?
+		@swagger.addComment("INFO: The GUID identifier of the data #{guid} did not match any known identification system (tested inchi, doi, handle, uri) and therefore did not pass this metric.  If you think this is an error, please contact the FAIR Metrics group (http://fairmetrics.org).")
+		@swagger.score = 0
+		return
+	end
+
+	if type == "handle"
+		@swagger.addComment("INFO: The GUID of the data is a Handle.\n")
+	elsif type == "doi"
+		@swagger.addComment("INFO: The GUID of the data is a DOI.\n")
+	elsif type == "inchi"
+		@swagger.addComment("INFO: The GUID of the data is a InChI.\n")
+	elsif type == "uri"
+		@swagger.addComment("INFO: The GUID of the data appears to be a URI/URL.\n")
+	else
+		@swagger.addComment("INFO: The GUID of the data could not be typed, therefore it cannot be tested.\n")
+		@swagger.score = 0
+		return
+	end
+	headers = Utils::head(url, Utils::AcceptHeader) # returns headers or false
+	if headers
+		if headers.keys.include?(:content_type)
+			type = headers[:content_type]
+			rdfformats = Utils::RDF_FORMATS.values.flatten
+			if rdfformats.include?(type)
+				@swagger.addComment("SUCCESS: The reported content-type of the data is [#{type}] which is a known Linked Data format\n")
+				@swagger.score = 1
+				return
+			else 
+				@swagger.addComment("FAILURE: The reported content-type of the data is [#{type}] which is not a known Linked Data format\n")
+				@swagger.score = 0
+				return
+			end
+		else
+			@swagger.addComment("FAILURE: The URL to the data is not reporting a Content-Type in its headers.  This test will now halt.\n")
+			@swagger.score = 0
+			return
+		end
+	else
+		@swagger.addComment("FAILURE: The url #{url} failed to resolve via a HEAD call with headers #{Utils::AcceptHeader}, therefore we cannot continue\n")
+		@swagger.score = 0
+		return
+	end
+		
+
+end
+
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi fail
+#	@input = '{"subject": "10.5281/zenodo.1065973"}'  # doi fail
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle (fail)
+#	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # handle
+#	@input = '{"subject": "10.25504/FAIRsharing.6k0kwd"}'  # doi fail
+#	@input = '{"subject": "11676/tG1ftg14-_ipJY7UgUTqvVy3"}'
+	@input = '{"subject": "http://www.daim.snm.ku.dk/Flora-Danica-details-en?auto_id=3982"}'
+
+
+
+else 
+	@input = $stdin.read
+end
+
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Data Knowledge Representation Language (strong)",
+			:description => "Maturity Indicator to test if the data uses a formal language broadly applicable for knowledge representation.  This particular test takes a broad view of what defines a 'knowledge representation language'; in this evaluation, a knowledge representation language is interpreted as one in which terms are semantically-grounded in ontologies.  Any form of ontologically-grounded linked data will pass this test. ",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_I1B',
+			:version => VERSION,
+			:applies_to_principle => "I1",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_data_kr_language_strong',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false				 				 	 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

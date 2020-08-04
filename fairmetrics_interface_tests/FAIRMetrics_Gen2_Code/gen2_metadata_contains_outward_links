@@ -1,0 +1,129 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.2.3"
+
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+	@swagger.score = 0
+	
+	finalURI = metadata.finalURI
+	
+	
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system.\n")
+		return @swagger.createEvaluationResponse
+	end
+	
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything yet?
+		@swagger.addComment("INFO: Linked data was found.\n")
+	else
+		@swagger.addComment("FAILURE: No linked data was found.  Test is exiting.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+
+	success = 0  # we will accept 5/10 failures
+	count = 0
+	finalURI.each do |uri|
+		next unless uri.kind_of?(URI::HTTP)
+		@swagger.addComment("INFO: Now testing for any triples whose Object is an outward link (i.e. not #{uri.host})\n")		
+	end
+
+	hosts = Array.new
+	finalURI.each {|uri| next unless uri =~ /http/; this = URI(uri); hosts << this.host}  #fill the list of domains that this resource is found i
+	g.each do |stm|
+		predicate = stm.predicate
+		next if predicate.to_s =~ /1999\/xhtml/  # ignore XHTML structural triples like buttons
+		object = stm.object
+		next unless object.resource? && !object.anonymous?
+		thisuri = URI(object.value)
+		@swagger.addComment("INFO: Testing #{thisuri}.\n")
+		success += 1 unless hosts.include?(thisuri.host) # note that we're checking for outward links
+		count+=1
+	end
+	
+	if success >= 1   # this is a very weak test!
+		@swagger.addComment("SUCCESS: #{success} of the #{count} triples discovered in the linked metadata pointed to resources hosted elsewhere.  ")
+		@swagger.score = 1
+	else
+		@swagger.addComment("FAILURE: #{success} of the #{count} triples discovered in the linked metadata pointed to resources hosted elsewhere.  The minimum to pass this test is 1.  ")
+		@swagger.score = 0		
+	end
+	
+	return @swagger.createEvaluationResponse
+end
+
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi fail
+#	@input = '{"subject": "10.5281/zenodo.1065973"}'  # doi fail
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle (fail)
+	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # handle
+
+else 
+	@input = $stdin.read
+end
+
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Metadata contains qualified outward references)",
+			:description => "Maturity Indicator to test if the metadata links outward to third-party resources.  It only tests metadata that can be represented as Linked Data.  ",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_I3A',
+			:version => VERSION,
+			:applies_to_principle => "I3",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_metadata_contains_outward_links',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false				 				 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

@@ -174,10 +174,14 @@
 <!-- description section -->
 <article class="message is-info">
     <div class="message-header">
-        <p>Demo description and goal</p>
+        <p>Demo context and goal</p>
     </div>
     <div class="message-body">
-        Text explaining why we did this
+        <h3 class="title">Monitoring progress in FAIRification through self-assessment of resources maturity indicators</h3>
+        <!-- <br> -->
+        This demo is based on the FAIRMetrics framework [Wilkinson, Dumontier et al., Scientific Data 6:174] that is composed of Maturity Indicators (MI), compliance tests and the evaluator application itself.
+        For now, few efforts have been done so far to take advantage from their concrete implementation, in the process of improving FAIRness of users/community resources.
+        Furthermore, this does not provide concrete help or guidelines to developers for better sharing their published works. In this work we propose a web demonstrator, leveraging existing web APIs, aimed at i) evaluating FAIR maturity indicators and ii) providing hints to progress in the FAIRification process.
     </div>
 </article>
 
@@ -238,36 +242,40 @@
         <p>Select the metrics you want to test</p>
     </div>
     <div class="message-body">
+        <div class="columns">
         {% for category in ['F', 'A', 'I', 'R'] %}
-            <table id="metrics_checkboxes" class="table is-hoverable">
-                <thead>
-                    <th>
-                        <label class="checkbox">
-                            <input id="checkbox_all_{{ category }}" data-target="checkbox_{{ category }}" type="checkbox">
-                            {{ category }} - All
-
-                        </label>
-                    </th>
-                </thead>
-                <!-- Remove hidden to show tables -->
-                <tbody>
-                <!-- <tbody hidden> -->
-                {% for f in f_metrics %}
-                    {% if f.principle_category == category %}
-                    <tr>
+            <div class="is-one-quarter">
+                <table id="metrics_checkboxes" class="table is-hoverable">
+                    <thead>
                         <th>
                             <label class="checkbox">
-                                <input name="checkbox_{{ category }}" id="checkbox_test_{{ f.id }}" data-target="test_{{ f.id }}" type="checkbox">
-                                {{ f.principle_tag }} - {{ f.name }}
+                                <input id="checkbox_all_{{ category }}" data-target="checkbox_{{ category }}" type="checkbox">
+                                {{ category }} - All
 
                             </label>
                         </th>
-                    </tr>
-                    {% endif %}
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <!-- Remove hidden to show tables -->
+                    <tbody>
+                    <!-- <tbody hidden> -->
+                    {% for f in f_metrics %}
+                        {% if f.principle_category == category %}
+                        <tr>
+                            <th>
+                                <label class="checkbox">
+                                    <input name="checkbox_{{ category }}" id="checkbox_test_{{ f.id }}" data-target="test_{{ f.id }}" type="checkbox">
+                                    {{ f.principle_tag }} - {{ f.name }}
+
+                                </label>
+                            </th>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         {% endfor %}
+        </div>
     </div>
 </article>
 

@@ -1,0 +1,337 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+require 'net/https'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.2.7"
+
+
+#config = ParseConfig.new('config.conf')
+#@accessKey = config['bing']['accessKey'] if config['bing'] && config['bing']['accessKey'] && !config['bing']['accessKey'].empty?
+@accessKey = ENV['BING_API']
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	@swagger.score = 0
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system (tested inchi, doi, handle, uri) and therefore did not pass this metric.  If you think this is an error, please contact the FAIR Metrics group (http://fairmetrics.org).\n")
+		return @swagger.createEvaluationResponse
+	end
+
+	unless @accessKey 
+		@swagger.addComment("FAILURE: NO ACCESS KEY CONFIGURED FOR BING. This test will now abort with failure")
+		return @swagger.createEvaluationResponse
+	end
+
+
+	finalURI = metadata.finalURI
+	
+	hash = metadata.hash
+	
+###################  TITLE
+	@swagger.addComment "INFO: testing any hash-style metadata for a key matching 'title' in any case.\n"
+	flatlist = hash.flatten(40) # hopefully no hash is more than 40 deep!
+	title = ""
+	for x in 1..flatlist.length do
+		term = flatlist[x-1]
+		next if !term.is_a?String
+		#$stderr.puts term
+		if term.match(/title$/i) # in a flattened hash, find something matching 'title' at the end of the term
+			title = flatlist[x]  # the next thing should be the title
+			break
+		end
+	end		
+	unless title =~ /\w+/
+		@swagger.addComment "WARN: could not find a structured reference to the title in the hash-style metadata.\n"
+	end
+	
+	if title =~ /\w+/
+		@swagger.addComment "INFO: found title #{title}.  Searching Bing\n"
+		searchresults = callBing(title)
+		h = JSON.parse(searchresults)
+		if h["webPages"]
+			@swagger.addComment "INFO: found matches in Bing.  Checking for results that match any of #{finalURI.map{|b| b.to_s}}.\n"
+			h["webPages"]["value"].each do |p|
+				if finalURI.include?(p["url"])   # compare to the final URI from the Utils::fetch routine (the page of metadata)
+					@swagger.addComment "SUCCESS: found a search record referencing #{p["url"]} based on an exact-match title search against Bing.\n  "
+					@swagger.score = 1
+				end
+			end
+			unless @swagger.score == 1
+					@swagger.addComment "INFO: No results from Bing included any of #{finalURI.map{|b| b.to_s}}.\n"
+			end
+		else
+			@swagger.addComment "WARN:  Bing search for #{title} found no results.\n"			
+		end
+	end
+
+#############  Keywords
+	flatlist = hash.flatten(40) # hopefully no hash is more than 40 deep!
+	keywords = ""
+	for x in 1..flatlist.length do
+		term = flatlist[x-1]
+		#$stderr.puts term
+		next if !term.is_a?String
+		if term.match(/keywords?$/i) # in a flattened hash, find something matching 'keywords?' at the end of the term
+			keywords = flatlist[x]  # the next thing should be the keywords
+			break
+		end
+	end		
+	#keywords = keywords.gsub!("\,", "")
+	unless keywords =~ /\w+/
+		@swagger.addComment "WARN: could not find any human-readeable keywords in hash-style metadata.\n"
+	end
+
+	if keywords =~ /\w+/
+		@swagger.addComment "INFO: found keywords #{keywords}.  Now searching Bing.\n"
+		searchresults = callBing(keywords)
+		h = JSON.parse(searchresults)
+		if h["webPages"]
+			@swagger.addComment "INFO: found matches in Bing.  Checking for results that match any of #{finalURI.map{|b| b.to_s}}\n"
+			h["webPages"]["value"].each do |p|
+				if finalURI.include?(p["url"])   # compare to the final URI from the Utils::fetch routine (the page of metadata)
+					@swagger.addComment "SUCCESS: found a search hit matching #{p["url"]} using metadata keywords in search on Bing.\n  "
+					@swagger.score = 1
+				end
+			end
+			unless @swagger.score == 1
+				@swagger.addComment "INFO: No keyword search results from Bing included any of #{finalURI.map{|b| b.to_s}}.\n"
+			end
+
+		else
+			@swagger.addComment "INFO: Bing returned no search results for keywords #{keywords}.\n"  
+		end
+	end
+	
+#####################  now with the graph data
+	
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything
+		@swagger.addComment "INFO: Testing Linked Data-formatted metadata for any predicate that contains 'title' in any case.\n "
+		query = SPARQL.parse("select distinct ?o where {?s ?p ?o  FILTER(CONTAINS(lcase(str(?p)), 'title'))}") # find predicate containing "title", take object
+		results = query.execute(g)
+		if results.any?
+			@swagger.addComment "INFO: found title predicate.\n "
+			seen = Hash.new(false)  # appaerntly, distinct isn't working in the sparql...??
+			results.each do |res|
+				next if seen[res[:o].to_s]
+				seen[res[:o].to_s] = true
+	
+				title = res[:o].to_s  # get the title
+				@swagger.addComment "INFO: found possible Title:  #{title}.\n "
+				#$stderr.puts "looking for #{title}"
+				@swagger.addComment "INFO: Calling Bing search using #{title}.\n "
+				searchresults = callBing(title)  # search bing
+				#$stderr.puts JSON::pretty_generate(JSON(searchresults))
+				h = JSON.parse(searchresults)  # parse json
+				if h["webPages"]   # are there results
+					@swagger.addComment "INFO: Bing found results for#{title}.  Checking for results that match #{finalURI.map{|b| b.to_s}}.\n"
+					h["webPages"]["value"].each do |p|  # for each matching pge do
+						if finalURI.include?(p["url"])   # compare to the final URI from the Utils::fetch routine (the page of metadata)
+							@swagger.addComment "SUCCESS: found a search record referencing #{p["url"]} based on an exact-match title search against Bing.\n  "
+							@swagger.score = 1
+						end
+					end
+					unless @swagger.score == 1
+						@swagger.addComment "INFO: No results from Bing included any of #{finalURI.map{|b| b.to_s}}.\n"
+					end
+				else
+					@swagger.addComment "INFO: No search results from Bing using the title of the record\n  "
+				end
+			end
+		end
+		query = SPARQL.parse("select distinct ?o where {?s ?p ?o  FILTER(CONTAINS(lcase(str(?p)), 'name'))}") # find predicate containing "name", take object
+		results = query.execute(g)
+		if results.any?
+			@swagger.addComment "INFO: found a 'name' predicate; presuming this is a pointer to a title.\n "
+			seen = Hash.new(false)  # appaerntly, distinct isn't working in the sparql...??
+			results.each do |res|
+				next if seen[res[:o].to_s]
+				seen[res[:o].to_s] = true
+				title = res[:o].to_s  # get the title
+				@swagger.addComment "INFO: found possible Title:  #{title}.\n "
+				#$stderr.puts "looking for #{title}"
+				@swagger.addComment "INFO: Calling Bing search using #{title}.\n "
+				searchresults = callBing(title)  # search bing
+				#$stderr.puts JSON::pretty_generate(JSON(searchresults))
+				h = JSON.parse(searchresults)  # parse json
+				if h["webPages"]   # are there results
+					@swagger.addComment "INFO: Bing found results for#{title}.  Checking for results that match #{finalURI.map{|b| b.to_s}}.\n"
+					h["webPages"]["value"].each do |p|  # for each matching pge do
+						if finalURI.include?(p["url"])  # compare to the final URI from the Utils::fetch routine (the page of metadata)
+							@swagger.addComment "SUCCESS: found a search record referencing #{p["url"]} based on an exact-match title search against Bing.\n  "
+							@swagger.score = 1
+						end
+					end
+					unless @swagger.score == 1
+						@swagger.addComment "INFO: No results from Bing included any of #{finalURI.map{|b| b.to_s}}.\n"
+					end
+				else
+					@swagger.addComment "INFO: No search results from Bing\n  "
+				end
+			end
+		end
+
+	end
+
+#######  keywords in graph
+
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything
+		@swagger.addComment "INFO: Testing Linked Data-formatted metadata for any predicate that contains 'keyword' in any case.\n "
+		query = SPARQL.parse("select distinct ?o where {?s ?p ?o  FILTER(CONTAINS(lcase(str(?p)), 'keyword'))}") # find predicate containing "title", take object
+		results = query.execute(g)
+		if results.any?
+			seen = Hash.new(false)  # appaerntly, distinct isn't working in the sparql...??
+			results.each do |res|
+				next if seen[res[:o].to_s]
+				seen[res[:o].to_s] = true
+				keywords = res[:o].to_s  # get the keywords
+				@swagger.addComment "INFO: found keywords.\n "
+				@swagger.addComment "INFO: found keywords #{keywords}.\n "
+				@swagger.addComment "INFO: Calling Bing search using #{keywords}.\n "
+				searchresults = callBing(keywords)  # search bing
+				#$stderr.puts "keywords #{keywords}"
+				#$stderr.puts "results: #{searchresults}"
+				h = Hash.new
+				begin
+					h = JSON.parse(searchresults)  # parse json
+				rescue
+					$stderr.puts "whatever came back from Bing was not parsable JSON"
+					@swagger.addComment "INFO: Bing returned a non-JSON response, indicating that the request failed for some reason\n"
+				end
+	
+				if h["webPages"]   # are there results
+					@swagger.addComment "INFO: Bing found matches using #{keywords}. Testing matches for a reference to #{finalURI.map{|b| b.to_s}}\n"
+					h["webPages"]["value"].each do |p|  # for each matching pge do
+						if finalURI.include?(p["url"])  # compare to the final URI from the Utils::fetch routine (the page of metadata)
+							@swagger.addComment "SUCCESS: found a search record referencing #{p["url"]} based on a keyword search against Bing.\n  "
+							@swagger.score = 1
+						end
+					end
+					unless @swagger.score == 1
+						@swagger.addComment "INFO: No results from Bing included any of #{finalURI.map{|b| b.to_s}}.\n"
+					end
+	
+				else
+					@swagger.addComment "INFO: No results from Bing using keywords #{keywords}.\n"
+				end
+			end
+		end
+	end
+
+	unless @swagger.score == 1
+		@swagger.addComment "FAILURE: Was unable to discover the metadata record by search in Bing using any method\n"
+	end
+		
+	return @swagger.createEvaluationResponse
+	
+end
+
+
+def callBing(phrase)
+	uri  = "https://api.cognitive.microsoft.com"
+	path = "/bing/v7.0/search"
+	
+	if @accessKey.length != 32 then
+			$stderr.puts "Invalid Bing Search API subscription key!"
+			$stderr.puts "Please add this to your environment."
+			abort
+	end
+	escapedphrase = URI.escape(phrase)
+	if escapedphrase.length > 1500
+		escapedphrase = escapedphrase[0..1500] # microsoft suggested maximum query length
+		match = escapedphrase.match(/(.*)(\%.*)/)  # trim off any partially escaped things at the end
+		escapedphrase = match[1] if match[1]
+	end
+	
+	uri = URI(uri + path + "?q=#{escapedphrase}&count=50")
+#$stderr.puts "HTTP URI: #{uri}"
+	
+	request = Net::HTTP::Get.new(uri)
+	request['Ocp-Apim-Subscription-Key'] = @accessKey
+	
+	response = Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+			http.request(request)
+	end
+#$stderr.puts "HTTP response: #{response.inspect}"
+	return response.body
+
+end
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi fail
+	@input = '{"subject": "10.5878/6ctk-2b56"}'  # doi fail
+#	@input = '{"subject": "10.5281/zenodo.1065973"}'  # doi fail
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle (fail)
+#	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # handle
+#@input = '{"subject": "https://www.go-fair.org/fair-principles/"}'
+
+else 
+	@input = $stdin.read
+end
+
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Searchable in major search engine",
+			:description => "Tests whether a machine is able to discover the resource by search, using Microsoft Bing",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_F4',
+			:version => VERSION,
+			:applies_to_principle => "F4",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_searchable',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false				 				 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

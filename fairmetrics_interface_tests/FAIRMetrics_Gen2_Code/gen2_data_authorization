@@ -1,0 +1,149 @@
+#!/home/mark_moby_wilkinson/.rvm/rubies/ruby-2.5.1/bin/ruby
+require_relative 'fair_metrics_utilities'
+require 'cgi'
+require 'json'
+require 'uri'
+require 'rdf'
+require 'rdf/turtle'
+require 'sparql'
+
+debug = false
+VERSION = HARVESTER_VERSION + ":" + "Tst-0.2.1"
+
+
+def testGUID
+
+	@swagger.addComment("INFO: TEST VERSION '#{VERSION}'\n")
+	
+	
+	guid = @swagger.testedGUID
+	
+	metadata = Utils::resolveit(guid)  # this is where the magic happens!
+	@swagger.score = 0
+
+	metadata.comments.each do |c|
+		@swagger.addComment(c)
+	end
+
+	if metadata.guidtype == "unknown"
+		@swagger.addComment("FAILURE: The identifier #{guid} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+	
+	hash = metadata.hash
+	
+	properties = Utils::deep_dive_properties(hash)
+
+	
+	@swagger.addComment("INFO: Searching metadata for likely identifiers to the data record\n")
+	@identifier = ""
+	
+	properties.each do |keyval|
+		key, value = nil, nil
+		(key, value) = keyval;
+		key = key.to_s
+		
+		@swagger.addComment("INFO: Searching hash-style metadata for keys indicating a pointer to data.\n")
+		Utils::DATA_PREDICATES.each do |prop|
+			prop =~ /.*[#\/]([^#\/]+)$/
+			prop = $1
+			@swagger.addComment("INFO: Searching for key: #{prop}.\n")
+			if key == prop
+				@swagger.addComment "INFO: found '#{prop}' in metadata.  Setting data GUID to #{value} for next test.\n"
+				$stderr.puts "INFO: found '#{prop}' in metadata.  Setting data GUID to #{value} for next test.\n"
+				@identifier=value.to_s
+			end
+		end
+	end
+
+
+	g = metadata.graph
+	if @swagger.debug
+		g.each {|s| $stderr.puts s.subject.to_s + "\tPRED: " + s.predicate.to_s + "\tOBJ: " + s.object.to_s + "\n"}
+	end
+	
+	if g.size > 0  # have we found anything yet?
+		@swagger.addComment("INFO: Searching Linked Data metadata for predicates indicating a pointer to data.\n")
+		@identifier = CommonQueries::GetDataIdentifier(g, @swagger)		
+		# hopefully we have it by now... if not... we fail!
+		$stderr.puts "\n\nfound identifier #{@identifier} \n\n"
+	end
+	
+	if @identifier.nil? 
+		@swagger.addComment("FAILURE: No data identifier was found in the metadata record.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	end
+
+	metadata2 = Utils::typeit(@identifier)  
+	
+	if !metadata2
+		@swagger.addComment("FAILURE: The identifier #{@identifier} did not match any known identification system.\n")
+		@swagger.score = 0
+		return @swagger.createEvaluationResponse
+	else
+		@swagger.addComment("SUCCESS: The identifier #{@identifier} is recognized as a #{metadata2}, which is resolvable by an protocol that allows authorization/authentication.\n")
+		@swagger.score = 1
+		return @swagger.createEvaluationResponse
+	end
+
+	
+end
+
+
+	# if we	get here, we at least have a string representing the GUID.
+	# Let's now run it through the metadata collection routine
+	# to see what it is
+
+
+
+if debug
+#	@input = '{"subject": "10.5281/zenodo.1147435"}'  # doi fail
+#	@input = '{"subject": "10.5281/zenodo.1065973"}'  # doi fail
+#	@input = '{"subject": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"}' # inchi
+#	@input = '{"subject": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N"}' # another inchi
+#	@input = '{"subject": "20.1000/105"}'  # handle (fail)
+	@input = '{"subject": "http://w3id.org/Magnaporthe/polyA_Sites"}'  # handle
+
+else 
+	@input = $stdin.read
+end
+
+
+cgi = CGI.new
+
+schemas = {'subject' => ['string', "the GUID being tested"]}
+
+@swagger = Swagger.new({
+			:title => "FAIR Metrics Gen2 - Data authentication and authorization",
+			:description => "Test a discovered data GUID for the ability to implement authentication and authorization in its resolution protocol.  Currently passes InChI Keys, DOIs, Handles, and URLs.  It also searches the metadata for the Dublin Core 'accessRights' property, which may point to a document describing the data access process. Recognition of other identifiers will be added upon request by the community.",
+			:tests_metric => 'https://purl.org/fair-metrics/Gen2_FM_A1.2',
+			:version => VERSION,
+			:applies_to_principle => "A1.2",
+			:organization => 'FAIR Metrics Authoring Group',
+			:org_url => 'http://fairmetrics.org',
+			:responsible_developer => "Mark D Wilkinson",
+			:email => 'markw@illuminae.com',
+			:developer_ORCiD => '0000-0001-6960-357X',
+			:protocol => ENV['TEST_PROTOCOL'],
+			:host => ENV['TEST_HOST'],
+			:basePath => ENV['TEST_PATH'],
+			:path => 'gen2_data_authorization',
+			:response_description => 'The response is a binary (1/0), success or failure',
+			:schemas => schemas,
+			:fairsharing_key_location => ENV['FAIRSHARING_KEY'],
+			:debug => false			 				 
+})
+
+if (!cgi.request_method or cgi.request_method == "GET") and !debug
+        puts "Content-type: application/openapi+yaml;version=3.0\n\n"
+        puts @swagger.getSwagger
+elsif cgi.request_method == "POST" or debug
+        input_json = JSON.parse(@input)
+        guid = input_json["subject"]
+        @swagger.testedGUID = guid
+        response = testGUID
+        puts "Content-type: application/json+ld\n\n"
+        puts response
+end

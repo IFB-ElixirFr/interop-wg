@@ -361,6 +361,25 @@ def index():
 def cb():
     print("received message originating from server")
 
+def buidJSONLD():
+    jld = {
+        "@context": "https://schema.org/",
+        "@type": "WebApplication",
+        "@id": "https://github.com/IFB-ElixirFr/interop-wg/tree/master/linked-data-webapp",
+        "name": "FAIR playground",
+        "applicationCategory": "FAIR Test",
+        "applicationSubCategory": "Demonstrator",
+        "operatingSystem": "Any",
+        "description": """This demo is based on the FAIRMetrics framework [Wilkinson, Dumontier et al., Scientific Data 6:174] that is composed of Maturity Indicators (MI), compliance tests and the evaluator application itself.
+                        For now, few efforts have been done so far to take advantage from their concrete implementation, in the process of improving FAIRness of users/community resources.
+                        Furthermore, this does not provide concrete help or guidelines to developers for better sharing their published works. In this work we propose a web demonstrator, leveraging existing web APIs, aimed at i) evaluating FAIR maturity indicators and ii) providing hints to progress in the FAIRification process.""",
+        "citation": "https://dx.doi.org/10.1038%2Fsdata.2018.118",
+
+    }
+    print(jld)
+    raw_jld = json.dumps(jld)
+    return raw_jld
+
 @app.route('/test_asynch')
 def test_asynch():
     #return render_template('test_asynch.html')
@@ -382,7 +401,9 @@ def test_asynch():
             "principle_category": metric["principle"].rsplit('/', 1)[-1][0],
         })
 
-    return render_template('metrics_summary.html', f_metrics=metrics, sample_data=sample_resources)
+    raw_jld = buidJSONLD()
+    print(raw_jld)
+    return render_template('metrics_summary.html', f_metrics=metrics, sample_data=sample_resources, jld=raw_jld)
 
 @app.route('/kg_metrics')
 def kg_metrics():
