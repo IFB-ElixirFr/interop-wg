@@ -176,11 +176,13 @@ def handle_metric(json):
 @socketio.on('connected')
 def handle_connected(json):
     print(request.namespace.socket.sessid)
-    print(request.namespace)
+    #print(request.namespace)
+    #print(url_for('static', filename='data/jsonldcontext.json'))
 
 @socketio.on('hello')
 def handle_hello(json):
     print(request.sid)
+    print(url_for('static', filename='data/jsonldcontext.json'))
     print('received hello from client: ' + str(json))
     #socketio.emit('ack', 'everything is fine', broadcast=True)
     #emit('ack', 'everything is fine', broadcast=True)
@@ -225,21 +227,28 @@ def handle_embedded_annot(data):
     print(d)
     kg = ConjunctiveGraph()
 
+    #TODO this is a workaround for Schema.org / json-ld issue
+    #print(url_for('static', filename='data/jsonldcontext.json'))
+    context_url = "http://localhost:5000" + url_for('static', filename='data/jsonldcontext.json')
+
     for md in d['json-ld']:
         if '@context' in md.keys():
             print(md['@context'])
             if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
-                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                # md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                md['@context'] = context_url
         kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
     for md in d['rdfa']:
         if '@context' in md.keys():
             if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
-                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                #md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                md['@context'] = context_url
         kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
     for md in d['microdata']:
         if '@context' in md.keys():
             if ('https://schema.org' in md['@context']) or ('http://schema.org' in md['@context']) :
-                md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                #md['@context'] = 'https://schema.org/docs/jsonldcontext.json'
+                md['@context'] = context_url
         kg.parse(data=json.dumps(md, ensure_ascii=False), format="json-ld")
 
     kgs[sid] = kg
