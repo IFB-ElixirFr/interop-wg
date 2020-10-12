@@ -700,7 +700,7 @@ def ifbAuthenticate(payload):
     while True:
         try:
             logger.info('Connecting to IFB website...')
-            s.post('https://www.france-bioinformatique.fr/user', data=payload, timeout=TIMEOUT)
+            s.post('https://ressources.france-bioinformatique.fr/user', data=payload, timeout=TIMEOUT)
             logger.info('Connected')
             print("Connected !")
             break
@@ -732,6 +732,12 @@ def setupCustomLogger(name, filename):
     # logger.addHandler(screen_handler)
     return logger
 
+def writeJSON(json_result):
+    string_json = json.dumps(json_result)
+
+    file = open("ifb_content.json", "w")
+    file.write(string_json)
+
 if __name__ == "__main__":
 
     # info_node_list = []
@@ -747,6 +753,8 @@ if __name__ == "__main__":
 
     # graph containing all nodes
     all_res_graph = rdflib.Graph()
+    # res json
+    all_res_json = []
     # opening a session
     with requests.Session() as s:
 
@@ -776,11 +784,14 @@ if __name__ == "__main__":
                 nodes_pbar.set_description('Processing node [' + node_id + ']')
 
                 # print("Requesting node " + str(node_id) + " ...")
-                json_result = requestsIFB('https://www.france-bioinformatique.fr/fr/node/' + node_id + '/node_export/json', s, node_id)
+                json_result = requestsIFB('https://ressources.france-bioinformatique.fr/fr/node/' + node_id + '/node_export/json', s, node_id)
 
                 # if their is a json, rdfize it
                 if not json_result:
                     continue
+                # print("found: " + json_result['type'])
+                # append json node
+                all_res_json.append(json_result)
                 # print("################## " + json_result['type'])
                 type_to_rdfize = ['outil', 'plateforme', 'formation']
                 # type_to_rdfize = ['plateforme']
@@ -801,6 +812,9 @@ if __name__ == "__main__":
     single_file_path = OUTPUT_DIR + "/" +  "all_nodes.ttl"
     with open(single_file_path  ,"w") as file:
         file.write(rdf_string)
+
+    writeJSON(all_res_json)
+
     print("\n\n\nDump done !")
                 # check node if they have json and their title
 
